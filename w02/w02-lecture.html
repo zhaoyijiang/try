@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#an-example-bacterial-mutation-wait-times" id="markdown-toc-an-example-bacterial-mutation-wait-times">An example: bacterial mutation wait times</a>    <ul>
+      <li><a href="#a-short-aside-on-poisson-processes" id="markdown-toc-a-short-aside-on-poisson-processes">A short aside on Poisson processes</a></li>
+      <li><a href="#what-can-we-say-about-the-mutation-parameter-lambda" id="markdown-toc-what-can-we-say-about-the-mutation-parameter-lambda">What can we say about the mutation parameter \(\lambda\)?</a></li>
+      <li><a href="#what-does-this-function-of-lambda-tells-us" id="markdown-toc-what-does-this-function-of-lambda-tells-us">What does this function of \(\lambda\) tells us?</a></li>
+    </ul>
+  </li>
+  <li><a href="#probabilities-used-to-quantify-degrees-of-belief" id="markdown-toc-probabilities-used-to-quantify-degrees-of-belief">Probabilities used to quantify degrees of belief</a></li>
+  <li><a href="#forward-probabilities-and-inverse-probabilities" id="markdown-toc-forward-probabilities-and-inverse-probabilities">Forward probabilities and inverse probabilities</a></li>
+  <li><a href="#notation-likelihood-and-priors" id="markdown-toc-notation-likelihood-and-priors">Notation: likelihood and priors</a></li>
+  <li><a href="#using-posterior-probabilities-to-make-subsequent-predictions" id="markdown-toc-using-posterior-probabilities-to-make-subsequent-predictions">Using posterior probabilities to make subsequent predictions</a>    <ul>
+      <li><a href="#another-example-the-effectiveness-of-a-new-mrna-vaccine" id="markdown-toc-another-example-the-effectiveness-of-a-new-mrna-vaccine">Another example: the effectiveness of a new mRNA vaccine</a></li>
+      <li><a href="#note-on-marginalization" id="markdown-toc-note-on-marginalization">Note on marginalization:</a></li>
+      <li><a href="#note-on-probability-densities" id="markdown-toc-note-on-probability-densities">Note on probability densities.</a></li>
+    </ul>
+  </li>
+  <li><a href="#parameters-best-estimates-and-confidence-intervals" id="markdown-toc-parameters-best-estimates-and-confidence-intervals">Parameter’s best estimates and confidence intervals</a></li>
+  <li><a href="#best-estimates-and-confidence-intervals-for-the-bacterial-mutation-wait-times" id="markdown-toc-best-estimates-and-confidence-intervals-for-the-bacterial-mutation-wait-times">Best estimates and confidence intervals for the bacterial mutation wait times</a></li>
+</ul>
+
+<h1 class="no_toc" id="week-02">week 02:</h1>
+
+<h1 class="no_toc" id="probability-and-inference-of-parameters"><em>Probability and inference of parameters</em></h1>
+
+<p>For this topic, MacKay’s Chapter 3 is a good source, also MacKay’s
+<a href="http://www.inference.org.uk/itprnn_lectures/10_mackay.mp4">lecture
+10</a>,
+and Sivia’s Chapter 2. I would also read this short article <a href="http://eddylab.org/publications/Eddy-ATG3/Eddy-ATG3-reprint.pdf">``What is
+Bayesian statistics’’ by
+S. R. Eddy</a></p>
+
+<h2 id="an-example-bacterial-mutation-wait-times">An example: bacterial mutation wait times</h2>
+
+<p>Bacteria can mutate spontaneously from virus sensitive to virus resistant. This was demonstrated in a hugely important 1943 paper by <a href="LuriaDelbruck.pdf">Luria and Delbruck</a>. Luria and Delbruck showed that the change to virus resistance was not the result of being in contact with the virus (acquired immunity), but due to mutations that occurred spontaneously and independently of the presence of the virus.</p>
+
+<p>In a large bacterial colony, we have a visual method to identify when individual bacterium become resistant. After a bacterium mutates, it changes color, and we can record the event. Once mutated the bacteria do not revert to their original virus-sensitive state. We assume that each bacterium can mutate independently from each other, and we want to estimate a expected mutation wait time before becoming virus resistant.</p>
+
+<p>In a particular experiment in which we observe mutation events that
+occur in a window of time from \(t=1\) to \(t=20\) minutes, we observe
+\(N= 6\) bacteria that mutated at times</p>
+
+\[1.2, 2.1, 3.4, 4.1, 7, 11 \mbox{mins.}\]
+
+<p>We can  assume that the probability that a bacterium mutates and becomes virus resistant after time
+\(t\) follows an exponential decay,</p>
+
+<p>\begin{equation}
+e^{- t/\lambda},
+\end{equation}</p>
+
+<p>where we call \(\lambda\) the mutation rate. The rate parameter \(\lambda\) has dimensions of time.</p>
+
+<h3 id="a-short-aside-on-poisson-processes">A short aside on Poisson processes</h3>
+
+<p>This bacterial example is a particular realization of a <strong>Poisson process</strong>. In a Poisson process, a parameter \(\lambda&gt;0\) determines the rate of events occurring per unit time. All events are considered to be independent from each other.</p>
+
+<p>There are several questions that you can ask about a Poisson process, each controlled by a different distribution</p>
+
+<ul>
+  <li>
+    <p>Time (\(t\)) to first event, <strong>The exponential distribution</strong></p>
+
+\[P(t) = \frac{1}{\lambda}\ e^{-t/\lambda}\]
+  </li>
+  <li>
+    <p>Time (\(t\)) to the \(r^{\mbox{rt}}\) event, <strong>The Gamma distribution</strong></p>
+
+\[P(t) = \frac{t^{r-1}}{\lambda^r} \frac{e^{-t/\lambda}}{\Gamma(r)}\]
+  </li>
+  <li>
+    <p>Number of events (\(n\)) in a time period \(t\), <strong>The Poisson distribution</strong></p>
+
+\[P(n) = \frac{(t/\lambda)^n}{n!}\ e^{-t/\lambda}\]
+  </li>
+</ul>
+
+<h3 id="what-can-we-say-about-the-mutation-parameter-lambda">What can we say about the mutation parameter \(\lambda\)?</h3>
+
+<p>If the observation time were infinity, we remember that the
+exponential distribution has mean \(\lambda\), and we could use the
+sample mean as a proxy for the value of the mutation rate \(\lambda\).</p>
+
+<p>The sample mean is</p>
+
+<p>\begin{equation}
+\frac{1.2+2.1+3.4+4.1+7+11}{6} = 4.97.
+\end{equation}</p>
+
+<p>This estimation does not tell us anything about mutations that
+occur after \(t=20\) mins, which can happen, so we know this is an
+underestimation of \(\lambda\), but by how much?</p>
+
+<p>Let’s try to do some inference on the mutation parameter \(\lambda\).
+We can write down the probability (density) of a bacterium mutating
+after time \(t\) as</p>
+
+\[\begin{equation}
+P(t\mid \lambda) =\left\{
+\begin{array}{ll}
+e^{- t/\lambda} / Z(\lambda)  &amp; 0&lt;t&lt;20\\
+0                           &amp; \mbox{otherwise}
+\end{array}
+\right.
+\end{equation}\]
+
+<p>where normalization imposes
+\begin{equation}
+Z(\lambda)
+= \int_0^{20} e^{- t/\lambda} dt
+= \left. -\lambda e^{- t/\lambda}\right|_{t=0}^{t=20}
+= \lambda(1 - e^{-20/\lambda}).
+\end{equation}</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="exponential_density.png" style="width:300px;" /> <br />
+    Figure 1. The probability density as a function of t, for different values of the mutation parameter.
+  </div>
+</div>
+
+<p>If we observe \(N\) individual bacterium that have mutated at times \(t_1, t_2,\ldots t_N\),
+since they are all independent</p>
+
+<p>\begin{equation}
+P(t_1,\ldots t_N\mid \lambda) = \prod_i P(t_i\mid \lambda) = \frac{e^{-\sum_i t_i/\lambda}}{Z^N(\lambda)}
+\end{equation}</p>
+
+<p>Using Bayes theorem, we have
+\begin{equation}
+P(\lambda\mid t_1,\ldots t_N)
+= \frac{P(t_1,\ldots t_N\mid \lambda) P(\lambda)}{P(t_1,\ldots t_N)}
+\propto
+\frac{e^{-\sum_i t_i/\lambda}}{Z^N(\lambda)} P(\lambda).
+\end{equation}</p>
+
+<p>Now, we have turned around what was the probability of the data given
+the parameter \(\lambda\) into a probability for the parameter
+itself, given the data.</p>
+
+<h3 id="what-does-this-function-of-lambda-tells-us">What does this function of \(\lambda\) tells us?</h3>
+
+<p>We can plot \(P(t \mid \lambda)\) as a function of time for different
+values \(\lambda\), which is the standard way to look at the
+exponential distribution (Figure 1).  But, we can also plot
+\(P(t_1,\ldots, t_N\mid \lambda)\) as a function of \(\lambda\) for
+our particular example, \(\{t_i\}_1^6=\{1.2,2.1,3.4,4.1,7,11\}\),
+(Figure 2).</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="exponential.png" style="width:300px;" /> <br />
+	  Figure 2. The probability of the data given the model (aka. the likelihood)
+	  as a function of the mutation parameter. The maximal probability corresponds to a mutation rate of  5.5.
+  </div>
+</div>
+
+<p>From this distribution, we already get a clear picture of which are
+the most favorable values of the parameter \(\lambda\).  From this
+distribution, you can calculate, for instance, the value of
+\(\lambda\) that maximizes the probability of the data, which is
+\(\lambda^\ast = 5.5\) (larger than the sample mean which is
+\(4.97\)).</p>
+
+<p>This is what we can do using Bayes’ theorem: obtain information about
+the parameters of the model (in this case \(\lambda\)) based on what the
+data tells us \(P(t_1,\ldots t_6\mid \lambda)\).</p>
+
+<h2 id="probabilities-used-to-quantify-degrees-of-belief">Probabilities used to quantify degrees of belief</h2>
+
+<p>The mutation wait time \(\lambda\) has a unique value (within a fixed
+bacterial environment) that correctly describes the process.  We use a
+probability distribution to describe \(\lambda\), but that does not mean
+that we think it is an stochastic process. Different values of
+\(\lambda\) represent mutually exclusive alternatives, of which only one
+is true.  \(P(\lambda\mid \mbox{data})\) represent our beliefs (or state
+of knowledge) for each one of those alternative values given the data
+and the assumptions.  We call this a <strong>posterior probability</strong> of the
+parameter, given the data and the assumptions.</p>
+
+<p>There is an interesting historical precedent. Pierre-Simon Laplace
+(1749-1827) astronomer and mathematician used <em>his</em> probability
+theory (Laplace rediscovered Bayes’ theorem on his own) to determine a
+probability distribution for the mass of Saturn, based on different
+observations of Saturn’s orbit from different observatories.
+Obviously, Saturn’s mass is not a random variable from which we could
+sample.  Laplace’s probability distribution (which is Gaussian-like)
+is a posterior probability for the mass of Saturn based on existing
+knowledge \(P(M\, \mbox{Saturn}\mid \mbox{data})\). Laplace’s estimate of
+Saturn’ mass based on that posterior distribution only differs from
+the modern value by about 0.5%.</p>
+
+<h2 id="forward-probabilities-and-inverse-probabilities">Forward probabilities and inverse probabilities</h2>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="sivia_Figure1.png" style="width:300px;" /> <br />
+  </div>
+</div>
+
+<p>Given the assumptions listed above (bacterium mutation times follow a
+exponential distribution) that we represent by \(H\), and the data (the
+six-point dataset) that we represent by \(D\), the posterior probability
+of the parameter \(\lambda\) is
+\begin{equation}
+P(\lambda\mid D, H) = \frac{P(D\mid \lambda, H) P(\lambda) }{P(D\mid H)}.
+\end{equation}</p>
+
+<p>This result shows that probabilities can be used in two different ways:</p>
+
+<ul>
+  <li>
+    <p><strong>Forward probabilities.</strong> They describe frequencies of outcomes in
+random experiments.  They require a generative (probabilistic)
+model, from which we can calculate the probabilities of quantities
+produced by the process. These quantities can be sampled.</p>
+  </li>
+  <li>
+    <p><strong>Inverse probabilities</strong> They also requires a generative
+(probabilistic) model, but an inverse probabilities refers to a
+quantity not directly produced by the process. For any such
+derivative quantity, we calculate its conditional probability given
+the observed quantities. Inverse probabilities require the use of
+Bayes theorem.</p>
+  </li>
+</ul>
+
+<p>Sivia represents these two situations with a graph in his <a href="">book</a>
+(Figure 1.1) that I reproduce here.</p>
+
+<h2 id="notation-likelihood-and-priors">Notation: likelihood and priors</h2>
+<p>If \(\lambda\) denotes the unknown parameters, \(D\) denotes the data, and
+\(H\) the overall hypothesis, the equation</p>
+
+<p>\begin{equation}
+P(\lambda\mid D, H) = \frac{P(D\mid \lambda, H) P(\lambda\mid H) }{P(D\mid H)}
+\end{equation}</p>
+
+<p>is written as</p>
+
+<p>\begin{equation}
+\mbox{posterior}\quad =
+\quad \frac{\mbox{likelihood}\,\times\,\mbox{prior}}{\mbox{evidence}}
+\end{equation}</p>
+
+<p>Some important points:</p>
+
+<ul>
+  <li>
+    <p><strong>Priors are not an ``initial guess’’ of the value of the
+  parameters.</strong>  Specifying a prior is providing a whole probability
+distribution over all values of the parameter(s), not singling out
+one particular value.</p>
+
+    <p>Priors are the more subjective part of the inference process. If you have no
+other input, the maximum entropy principle tells you you should use a uniform
+distribution as the prior distribution.</p>
+
+    <p>In our previous example, a uniform prior would mean \(P(\lambda) = 1\)
+so that \(\int_0^1P(\lambda) = 1\).</p>
+  </li>
+  <li>
+    <p><strong>The value of the evidence is not important.</strong>  The
+evidence, \(P(D\mid H)\), does not depend on the parameters, and
+oftentimes it is left uncalculated if you are only interested in
+the relative posterior probabilities of the parameters.
+The evidence can be calculated by marginalization as
+\begin{equation}
+P(D\mid H) = \int_{\lambda} P(D\mid \lambda, H)\ P(\lambda\mid H)\ d \lambda.
+\end{equation}
+In week03’ lectures, we will use the evidence when comparing different models.</p>
+  </li>
+  <li>
+    <p><strong>Never say ‘the likelihood of the data’.</strong>  You can refer
+to \(P(D\mid \lambda, H)\) as the <strong>likelihood of the parameters</strong>
+or more correctly <em>the likelihood of the parameters given the
+  data</em>. ``Likelihood’’ means that as a function of the parameters
+it is NOT a probability distribution (does not sum to one over all
+values of the parameters, but for a given value of the parameters it
+does sum to one for all data).</p>
+
+    <p>I prefer to always refer to \(P(D\mid \lambda, H)\) as <strong>the
+  probability of the data given the parameters</strong>.</p>
+  </li>
+  <li>
+    <p><strong>The likelihood principle.</strong> Given a generative model for
+data \(D\) given parameters \(\lambda\), \(P(D\mid \lambda)\), and having
+observed a particular outcome \(D_1\), all inferences and predictions
+should be based only on the function \(P(D_1\mid \lambda)\).</p>
+
+    <p>This looks deceivingly simple, but many classical statistical test
+fail to obey it, as they introduce additional and obscure
+assumptions not part of the generative process.</p>
+  </li>
+</ul>
+
+<h2 id="using-posterior-probabilities-to-make-subsequent-predictions">Using posterior probabilities to make subsequent predictions</h2>
+
+<h3 id="another-example-the-effectiveness-of-a-new-mrna-vaccine">Another example: the effectiveness of a new mRNA vaccine</h3>
+
+<p>A new mRNA vaccine for a plague is tested on a group of volunteers. From a group
+of \(N\) subjects, \(n\) are disease free a year after their vaccination.</p>
+
+<p><strong>What is the probability \(f\) that the vaccine is effective?</strong></p>
+
+<p>The probability, given \(f\), that \(n\) subjects have not contracted the disease is
+given by the binomial distribution
+\begin{equation}
+P(n \mid N, f) = {N\choose n} f^{n} (1-f)^{N-n}
+\end{equation}</p>
+
+<p>The posterior probability of \(f\) is, 
+\begin{equation}
+P(f\mid n,N) = \frac{P(n,N\mid f) P(f)}{P(n,N)}.
+\end{equation}</p>
+
+<p>The evidence (not dependent on \(f\)) is given by
+\begin{equation}
+P(n\mid N)= \int_0^1 P(n,N\mid g)\, P(g)\,dg.
+\end{equation}</p>
+
+<p>If we assume an uniform prior \(P(f)=1\),
+\begin{equation}
+P(f\mid n,N) = \frac{f^{n} (1-f)^{N-n}}{\int_0^1 g^{n} (1-g)^{N-n}\,dg}.
+\end{equation}</p>
+
+<p>The denominator is the beta function and has a nice analytical
+expression, and it is important to know
+\begin{equation}
+\int_0^1 g^{n} (1-g)^{N-n} \, dg = \frac{n!(N-n)!}{(N+1)!}
+\end{equation}</p>
+
+<p>Our inference for \(f\) is then
+\begin{equation}
+P(f\mid n,N) = \frac{(N+1)!}{n!(N-n)!}f^{n} (1-f)^{N-n}.
+\end{equation}</p>
+
+<p>For the case \(N=10\) and \(n=6\), this posterior probability of \(f\)
+is given in Figure 3.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="binomial.png" style="width:300px;" /> <br />
+    Figure 3. Posterior probability density for the mRNA
+      vaccine success frequency given the data of N=10 total subjects
+      and n=6 plague free subjects. 
+  </div>
+</div>
+
+<p>We can calculate the most probable value of \(f\) (<em>i.e.</em> the value
+that maximizes the posterior probability density), and the mean value
+of \(f\).  This is going to be part of your homework this week.</p>
+
+<p>Now, we can use the posterior probability distribution of \(f\) to make
+<strong>predictions</strong>.</p>
+
+<p>Given the pilot test we have done so far for this mRNA vaccine, you
+would like to estimate the probability that a new subject would be
+plague free after treatment with the vaccine.</p>
+
+<p>The probability of finding one disease free subject is \(f\), the mean of
+\(f\) respect to the posterior distribution of \(f\) is then</p>
+
+<p>\begin{equation}
+P(\mbox{next subject  plague free}\mid n,N) = \int_0^1 f \times P(f\mid n, M) df 
+\end{equation}</p>
+
+<p>Notice that we are not putting our bets in one particular value of the
+probability parameter, instead we integrate over all possible values
+of \(f.\)  This has the effect of taking into account our uncertainty
+predicting \(f\). This concept is at the heart of Bayesian inference.</p>
+
+<p>The solution is</p>
+
+\[\begin{aligned}
+P(\mbox{next subject  plague free}\mid n,N)
+&amp;=  \frac{(N+1)!}{n!(N-n)!} \int_0^1 f \times f^n(1-f)^{N-n} df\\
+&amp;=  \frac{(N+1)!}{n!(N-n)!} \int_0^1 f^{n+1}(1-f)^{N-n} df\\
+&amp;= \frac{(N+1)!}{n!(N-n)!}\frac{(n+1)!(N-n)!}{(N+2)!} = \frac{n+1}{N+2}.
+\end{aligned}\]
+
+<p>This result is known as <em>Laplace’s rule.</em></p>
+
+<p>For \(N=10\) subjects and \(n=6\),</p>
+
+\[\begin{aligned}
+P(\mbox{next subject  plague free}\mid n=6,N=10)
+&amp;=  \frac{7}{12} = 0.58.
+\end{aligned}\]
+
+<p>This is a way in which Bayesian statistics is different from classical
+statistics.  In classical statistics, once you run a ``test’’ that
+accepts a model at some significance level, then one uses exclusively
+that model to make predictions. Here, we have make our next
+prediction, considering (integrating) over all possible values of the
+effectiveness parameter.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="binomial_1.png" style="width:300px;" /> <br />
+    <img src="binomial_2.png" style="width:300px;" /> <br />
+    <img src="binomial_4.png" style="width:300px;" /> <br />
+    <img src="binomial_6.png" style="width:300px;" /> <br />
+    <img src="binomial_20.png" style="width:300px;" /> <br />
+    <img src="binomial_100.png" style="width:300px;" /> <br />
+    Figure 4. Posterior probability distribution for the vaccine
+      effectiveness frequency f for different data. As the number of
+      data points increases, the probability distribution narrows
+      around the optimal value of the parameter.
+  </div>
+</div>
+
+<p>It is interesting to see how the posterior probability distribution
+changes as the amount of data increases.  In Figure 4, I show a few
+examples for our vaccine example. Notice, that by the time I have just
+2 data points, I can already say a lot about the value of \(f\). As the
+amount of data increases, the posterior distributions narrows around
+the true value.</p>
+
+<h3 id="note-on-marginalization">Note on marginalization:</h3>
+
+<p>We have found an example of marginalization when calculating the
+<em>evidence</em>, that is, the probability of the data given the hypothesis
+that the results follow a Binomial distributions \(P(D\mid H)\), where
+the data D is that \(n=6\) out of \(N=10\) individuals suffer no disease
+after one year.</p>
+
+<p>The hypothesis is characterized by the effectiveness of the vaccine
+\(f\), but if all we care about is the hypothesis itself, and not the
+actual value of \(f\),  then, the effectiveness is a variable that we
+integrate out</p>
+
+\[P(n \mid N, H) = \int_0^1 P(n\mid N, f, H)\ P(f\mid H)\ df.\]
+
+<p>Assuming a uniform distribution for the prior \(P(f\mid H)\), we have</p>
+
+\[\begin{aligned}
+P(n \mid N, H) &amp;= \frac{N!}{n! (N-n)!}\ \int_0^1 f^n\ (1-f)^{N-n}\ df\\
+&amp;=\frac{N!}{n! (N-n)!}\ \frac{n! (N-n)!}{(N+1)!}\\
+&amp;= \frac{1}{N+1}.
+\end{aligned}\]
+
+<p>Where  we have used the result for the beta function given earlier.</p>
+
+<h3 id="note-on-probability-densities">Note on probability densities.</h3>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="largerthanone.png" style="width:300px;" /> <br />
+Figure 5. Posterior probability density and cumulative probability for the effectiveness of a mRNA vaccine.
+For N=10 subjects, and n=6 plague free after one year.
+  </div>
+</div>
+
+<p>We have calculated the posterior probability <em>density</em> for the
+effectiveness of the mRNA vaccine as</p>
+
+\[P(f\mid n, N, H) = \frac{(N+1)!}{n!(N-n)!}\ f^n (1-f)^{N-n}\]
+
+<p>If we plot this <strong>probability density function (PDF)</strong> (for \(n=6\)
+and \(N=10\)), we see that for many values of \(f\) their pdf is
+<strong>larger than one!</strong> (see Figure 5).</p>
+
+<p>Yet, the <strong>cumulative probability distribution (CDF)</strong>, defined
+as the probability that the value is less than or equal to f,</p>
+
+\[0\leq CDF(f) = \int_0^f P(f^\prime \mid n, N, H)\ df^\prime \leq 1,\]
+
+<p>is properly bound (see Figure 5). That is because of the <em>other</em> term
+in the integrand (\(df^\prime\)) that correspond to the width that
+defines the infinitesimal area to sum. The product of the two term is
+such that as a result, the CDF is bound to be smaller than one for any
+value of \(f\).</p>
+
+<p>So, to interpret the actual value of the posterior probability for the
+effectiveness parameters, as with sampling, you want to look at the
+CDF. One can ask for instance, what is the probability that the
+effectiveness is \(0.6\pm 0.001\)?</p>
+
+<p>That is given by</p>
+
+\[CDF(f=0.601) - CDF(f=0.599) = 0.5369 - 0.5314 = 0.0052.\]
+
+<h2 id="parameters-best-estimates-and-confidence-intervals">Parameter’s best estimates and confidence intervals</h2>
+
+<p>We have had a taste of how posterior probabilities convey information
+about the value of the parameters given the data.  Often, we would
+like to summarize the information in the posterior probability
+distributions into the best estimate (the maximum likelihood value),
+and its reliability (the standard deviation around the best estimate).</p>
+
+<p>We can tell a lot about confidence intervals, by doing a Taylor
+expansion around the maximum likelihood estimate.</p>
+
+<p>We have calculated a posterior probability density for our parameters
+\(\lambda\) given the data \(D\) and the hypothesis \(H\)
+\begin{equation}
+P(\lambda\mid D, H)
+\end{equation}</p>
+
+<p>the best estimate of \(\lambda\) is the one that satisfies</p>
+
+\[\begin{equation}
+\left.
+\frac{d P(\lambda\mid D, H)}{d\lambda}
+\right|_{\lambda = \lambda_{\ast}} = 0.
+\end{equation}\]
+
+<p>Let’s now consider the function \(L=\log P(\lambda\mid D, H)\) instead
+of the probability itself. Because \(L(\lambda)\) and \(P(\lambda)\) are
+both monotonically increasing positive functions, a optimal value of \(p\) is also an
+optimal value of \(L\), and it is easier to work with \(L\) than with \(P\).
+A Taylor expansion around \(\lambda_{\ast}\) tells us</p>
+
+\[\begin{aligned}
+L
+&amp;= L(\lambda_{\ast}) + \left.\frac{d L}{d\lambda}\right|_{\lambda_{\ast}}  (\lambda-\lambda_{\ast})
++ \left.\frac{1}{2}\frac{d^2L}{d\lambda^2}\right|_{\lambda_{\ast}} (\lambda-\lambda_{\ast})^2 + \dots\\
+&amp;= L(\lambda_{\ast})
++ \left.\frac{1}{2}\frac{d^2L}{d\lambda^2}\right|_{\lambda_{\ast}} (\lambda-\lambda_{\ast})^2 + \dots.
+\end{aligned}\]
+
+<p>The linear term is zero, because we are expanding around a maximum.
+Next comes The quadratic term.  Thus ignoring higher orders, we have a
+Gaussian distribution to approximate the posterior as</p>
+
+\[\begin{equation}
+P(\lambda\mid D, H) \propto e^{\left.\frac{1}{2}\frac{d^2L}{d\lambda^2}\right|_{\lambda_{\ast}}(\lambda-\lambda_{\ast})^2}
+= e^{-\frac{(\lambda-\lambda_{\ast})^2}{2\sigma^2}}
+\end{equation}\]
+
+<p>where \(\sigma\) is given by</p>
+
+\[\begin{equation}
+\frac{1}{\sigma^2} =- \left.\frac{d^2L}{d\lambda^2}\right|_{\lambda_{\ast}}.
+\end{equation}\]
+
+<p>which is positive because as \(\lambda_{\ast}\) is a maximum,  the second derivative has to be negative.</p>
+
+<h2 id="best-estimates-and-confidence-intervals-for-the-bacterial-mutation-wait-times">Best estimates and confidence intervals for the bacterial mutation wait times</h2>
+
+<p>Let’s calculate the best estimate and confidence interval for the
+posterior distribution of the exponential problem we started with of
+the time between mutations in a bacterial colony.</p>
+
+<p>The posterior probability density for the time parameters \(\lambda\)
+was
+\begin{equation}
+P(\lambda\mid {t_1,\ldots,t_N}) = A \frac{e^{-\mu N/\lambda}}{\lambda^N\ (1-e^{-20/\lambda})^N}
+\end{equation}
+where \(\mu = \frac{1}{N}\sum_i t_i\) is the mean of the given waiting
+times, and the normalization constant \(A\) is independent of \(\lambda\).</p>
+
+<p>The log of the posterior \(L=\log P(\lambda\mid N, \mu)\) is given by
+\begin{equation}
+L = \log A+ \frac{-\mu N}{\lambda} - N\ \log{\lambda} - N\ \log(1-e^{-20/\lambda}).
+\end{equation}</p>
+
+<p>For simplicity sake, we are going to ignore the last term. If instead
+of measuring for 20 minutes, we’ve done it for a much longer period of
+time \(\log(1-e^{-{(t&gt;&gt;20)}/\lambda})\sim log(1) = 0\), and then
+\begin{equation}
+L = \log A+ \frac{-\mu N}{\lambda} - N\ \log{\lambda}.
+\end{equation}</p>
+
+<p>The derivative respect to \(\lambda\) is</p>
+
+<p>\begin{equation}
+\frac{d L}{d\lambda} = \frac{N\mu}{\lambda^2} - \frac{N}{\lambda}.
+\end{equation}</p>
+
+<p>The value of \(\lambda\) that maximized the log probability is given by</p>
+
+\[\begin{equation}
+\frac{N\mu}{\lambda^2_\ast} - \frac{N}{\lambda_\ast} = 0,
+\end{equation}\]
+
+<p>or</p>
+
+<p>\begin{equation}
+\lambda_\ast = \mu.
+\end{equation}</p>
+
+<p>The second derivative is</p>
+
+<p>\begin{equation}
+\frac{d^2 L}{d\lambda^2} = \frac{-2N\mu}{\lambda^3}  +\frac{N}{\lambda^2} = \frac{N}{\lambda^2}\left(1-2\frac{\mu}{\lambda}\right),
+\end{equation}</p>
+
+<p>and the standard deviation is given by</p>
+
+\[\begin{equation}
+\frac{1}{\sigma^2} = - \left.\frac{d^2 L}{d\lambda^2}\right|_{\lambda_\ast} = \frac{N}{\lambda^2_\ast}
+\end{equation}\]
+
+<p>or</p>
+
+<p>\begin{equation}
+\sigma = \frac{\mu}{\sqrt{N}}.
+\end{equation}</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="exponential_gaussian.png" style="width:300px;" /> <br />
+Figure 6. Posterior probability of the mutation wait time 
+      (for a slightly simplified case in which the observation time is
+      very large) and its Gaussian approximation around the maximal
+      value that estimates the value of the parameter to be 4.97 +/- 2.03.	
+  </div>
+</div>
+
+<p>Thus our estimation of the parameter \(\lambda\) is given by</p>
+
+\[\lambda \approx \mu \pm \frac{\mu}{\sqrt{N}}\]
+
+<p>where \(\mu = \frac{\sum_i t_i}{N}\) is the sample mean.</p>
+
+<p>This results is much more general that how we have deduced it here:</p>
+
+<p><strong>The error in the derivation of our parameters estimates is
+  always proportional to the inverse of the square root of the amount
+  of data.</strong></p>
+
+<p>So, whichever experiment you are running, always be
+mindful of this quantity</p>
+
+<p>\begin{equation}
+\frac{1}{\sqrt{N}}.
+\end{equation}</p>
+
+<p>In Figure 6, I present the Gaussian approximation and the standard deviation
+compared with the actual posterior distribution for the bacterial mutation wait time.</p>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

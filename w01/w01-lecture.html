@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#what-is-information-content-and-how-to-measure-it" id="markdown-toc-what-is-information-content-and-how-to-measure-it">What is information content, and how to measure it</a>    <ul>
+      <li><a href="#properties-of-information-content" id="markdown-toc-properties-of-information-content">Properties of information content</a>        <ul>
+          <li><a href="#information-content-is-inversely-related-to-how-frequent-an-event-is" id="markdown-toc-information-content-is-inversely-related-to-how-frequent-an-event-is">Information content is inversely related to how frequent an event is</a></li>
+          <li><a href="#information-content-is-additive" id="markdown-toc-information-content-is-additive">Information content is additive</a></li>
+        </ul>
+      </li>
+      <li><a href="#ta-da" id="markdown-toc-ta-da">Ta-da!</a></li>
+      <li><a href="#lets-see-how-additivity-for-the-information-of-two-independent-events-works" id="markdown-toc-lets-see-how-additivity-for-the-information-of-two-independent-events-works">Let’s see how additivity for the information of two independent events works</a></li>
+      <li><a href="#note-about-the-log-scale" id="markdown-toc-note-about-the-log-scale">Note about the log scale</a></li>
+    </ul>
+  </li>
+  <li><a href="#information-redundancy-and-compression" id="markdown-toc-information-redundancy-and-compression">Information, Redundancy and Compression</a></li>
+  <li><a href="#entropy-the-average-information-content-of-an-ensemble" id="markdown-toc-entropy-the-average-information-content-of-an-ensemble">Entropy: the average information content of an ensemble</a></li>
+  <li><a href="#relative-entropy-the-kullback-leibler-divergence" id="markdown-toc-relative-entropy-the-kullback-leibler-divergence">Relative entropy: the Kullback-Leibler divergence</a></li>
+  <li><a href="#mutual-information" id="markdown-toc-mutual-information">Mutual Information</a></li>
+  <li><a href="#the-principle-of-maximizing-entropy-or-trusting-shannon-to-be-fair" id="markdown-toc-the-principle-of-maximizing-entropy-or-trusting-shannon-to-be-fair">The principle of maximizing entropy. Or trusting Shannon to be fair</a>    <ul>
+      <li><a href="#maximum-entropy-estimates" id="markdown-toc-maximum-entropy-estimates">Maximum-entropy estimates</a></li>
+      <li><a href="#particular-maximum-entropy-distributions-are" id="markdown-toc-particular-maximum-entropy-distributions-are">Particular maximum-entropy distributions are:</a>        <ul>
+          <li><a href="#when-you-do-not-know-anything-about-the-distribution" id="markdown-toc-when-you-do-not-know-anything-about-the-distribution">When you do not know anything about the distribution</a></li>
+          <li><a href="#when-you-know-the-mean" id="markdown-toc-when-you-know-the-mean">When you know the mean</a></li>
+          <li><a href="#when-you-know-the-standard-deviation" id="markdown-toc-when-you-know-the-standard-deviation">When you know the standard deviation</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-01">week 01:</h1>
+
+<h1 class="no_toc" id="introduction-to-information-theory"><em>Introduction to Information Theory</em></h1>
+
+<p>For this topic, you will probably find relevant MacKay’s book
+(Sections 2.4, 2.5, 2.6), and also MacKay’s <a href="01_mackay.mp4">lecture 1</a> and <a href="02_mackay.mp4">lecture 2</a> from his
+online <a href="http://www.inference.org.uk/mackay/itprnn/">``Course on Information Theory, Pattern Recognition, and Neural
+Networks’’</a>,
+from which I have borrowed a lot of the language.</p>
+
+<p>Here is another set of related materials <a href="https://colah.github.io/posts/2015-09-Visual-Information/">“Visual Information
+Theory”</a>. I
+don’t follow it directly, but it covers many of the same basic topic,
+with very explicit visualizations. If you find my notes or MacKay’s
+book difficult to follow, you should definitely check this reference
+out. We don’t all learn the same way.</p>
+
+<h2 id="what-is-information-content-and-how-to-measure-it">What is information content, and how to measure it</h2>
+
+<p>The term information content was introduced by Claude Shannon
+(1916-2001) in his 1948 landmark paper <a href="http://worrydream.com/refs/Shannon%20-%20A%20Mathematical%20Theory%20of%20Communication.pdf">“A Mathematical Theory of
+Communication”</a>
+to solve communication problems. With this paper, Shannon founded the field of <strong>Information Theory</strong>. I strongly recommend that you look at the actual paper. It’s a long paper, pages 1 and 2, and Section 6 (“Choice, uncertainty and entropy”, page 14) are a good start for what we will discuss in this lecture.</p>
+
+<p>As a side, I also recommend that you learn about Shannon’s closest collaborator <a href="https://blogs.scientificamerican.com/voices/betty-shannon-unsung-mathematical-genius/">Betty Moore Shannon</a>.</p>
+
+<p>The problem was how to obtain
+<strong>“reliable communication over an unreliable channel”</strong>.</p>
+
+<p>Examples relevant to you can be:</p>
+
+<ul>
+  <li>voice                          \(\rightarrow\) ear             (channel = air)</li>
+  <li>DNA                            \(\rightarrow\) DNA replication (channel = DNA polymerase)</li>
+  <li>biological system perturbation \(\rightarrow\) measurement     (channel = your experimental design)</li>
+</ul>
+
+<p>The received signal is never identical to the sent signal.  How can we
+make it so the received message is as similar as possible to the sent
+message?</p>
+
+<p>For the case of your biological experiment, you could either</p>
+
+<ul>
+  <li>Improve the experiment</li>
+  <li>Add redundancy (Hamming codes).</li>
+</ul>
+
+<h3 id="properties-of-information-content">Properties of information content</h3>
+
+<h4 id="information-content-is-inversely-related-to-how-frequent-an-event-is">Information content is inversely related to how frequent an event is</h4>
+
+<p>Consider these examples. We barely know each other, I run into you and I say:</p>
+
+<ul>
+  <li>I had breakfast this morning,</li>
+  <li>Today is not my birthday,</li>
+  <li>Today is my birthday,</li>
+  <li>I ran the first (2016) Cambridge half-marathon,</li>
+  <li>I ran the first and second Cambridge half-marathons,</li>
+  <li>I ran the first, second and third Cambridge half-marathons,</li>
+  <li>I have been to Antarctica,</li>
+</ul>
+
+<p>Which of these events you think carries the most information?
+(Disclaimer: not all events directly apply to me.)</p>
+
+<p>The information conveyed by one event is ‘somehow’ inversely related
+to how frequent that event is (we will specify the ‘how’ later). And
+often times, how frequent an event is depends on the number of
+possible outcomes. Such that,</p>
+
+<ul>
+  <li>
+    <p>The rarer an event is, the lower its probability, and the more
+information you could transmit by running the experiment (listening
+at the end of the channel).</p>
+  </li>
+  <li>
+    <p>Equivalently, the more ignorant you are about the outcome
+(because the number of possibilities is very large), the smaller the
+probability of each individual outcome, and the more information you
+could get from listening at the end of the channel.</p>
+  </li>
+</ul>
+
+<p>Thus, for an event \(e\) that has probability \(p\), we expect that</p>
+
+<p>\begin{equation}
+\mbox{the Information_Content} (e)\quad \mbox{grows monotonically as 1/p.}
+\end{equation}</p>
+
+<h4 id="information-content-is-additive">Information content is additive</h4>
+
+<p>A second desired property of information is that, for two independent
+events \(e_1\) and \(e_2\), we expect the total information to be</p>
+
+<p>\begin{equation}
+  \mbox{Information_Content} (e_1 \&amp; e_2) =
+  \mbox{Information_Content} (e_1) + \mbox{Information_Content} (e_2).
+\end{equation}</p>
+
+<h3 id="ta-da">Ta-da!</h3>
+<p>Using these two desirable properties for information content, we can
+derive its mathematical form.</p>
+
+<p>The <em>logarithm function</em> has the convenient property:</p>
+
+<p>\begin{equation}
+\log(ab) = \log(a) + \log(b).
+\end{equation}</p>
+
+<p><a href="http://worrydream.com/refs/Shannon%20-%20A%20Mathematical%20Theory%20of%20Communication.pdf">Shannon</a>
+postulated that, for an event \(e\) that has probability \(p\), the
+right way of measuring its information is,</p>
+
+<p>\begin{equation}
+  \mbox{Information Content}(e) = h(e) = \log_2 \frac{1}{p} \quad \mbox{in bits.}
+\end{equation}</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="information.jpg" style="width:300px;" /> <br />
+	Figue 1. Shannon information content as a function of the probability value. Examples:
+      h(p=0.1) = 3.32 bits, h(0.9)= 0.15 bits. 
+  </div>
+</div>
+
+<p>In Figure 1, we see how information content varies as a function of the probability.
+Going back to my examples,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>Event</em></th>
+      <th><em>Probability</em></th>
+      <th><em>Entropy (bits)</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I had breakfast today</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Today is not my birthday</td>
+      <td>364/365</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Today IS my birthday</td>
+      <td>1/365</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Ran first Cambridge half-marathon</td>
+      <td>4,500/4,700,000\(^\ast\)</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>Ran first &amp; second Cambridge half-marathon</td>
+      <td>(4,500/4,700,000)x(6,500/4,700,000)\(^{\ast\ast}\)</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>I’ve been to Antarctica</td>
+      <td>925,000/7,400,000,000\(^{+}\)</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <td>I’ve lived in Antarctica in winter (June)</td>
+      <td>25,000/7,400,000,000\(^{++}\)</td>
+      <td>18.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>\(^{\ast}\)I have considered the greater Boston population (4.7 millions).</p>
+
+<p>\(^{\ast\ast}\)I have assumed that the two events (running the first and second half-marathon) are independent, but in fact they aren’t.</p>
+
+<p>\(^{+}\)Tourists to Antarctica in 2009-2010 season amounted to 37,000. I have considered 25 years of visits (since the 1990s).</p>
+
+<p>\(^{++}\) About 1,000 people live in Antarctica in winter. I have considered 25 years of Antarctica colonization.</p>
+
+<p>Do these results agree with your intuition about how much you learned about me by knowing those facts?</p>
+
+<h3 id="lets-see-how-additivity-for-the-information-of-two-independent-events-works">Let’s see how additivity for the information of two independent events works</h3>
+
+<p>For two independent events \(e_1\) and
+\(e_2\),</p>
+
+<p>\begin{equation}
+P(e_1,e_2) = P(e_1)P(e_2),
+\end{equation}</p>
+
+<p>then</p>
+
+<p>\begin{eqnarray}
+  h(e_1 \&amp; e_2)
+  &amp;=&amp; \log_2 \frac{1}{P(e_1,e_2)}<br />
+  &amp;=&amp; \log_2 \frac{1}{P(e_1)P(e_2)}<br />
+  &amp;=&amp; \log_2 \frac{1}{P(e_1)} + \log_2 \frac{1}{P(e_2)}<br />
+  &amp;=&amp; h(e_1) + h(e_2).
+\end{eqnarray}</p>
+
+<h3 id="note-about-the-log-scale">Note about the log scale</h3>
+
+<p>You can define entropy using any logarithm base you want.</p>
+
+<ul>
+  <li>If I say \(I = \ln(\frac{1}{p})\quad\quad\) I am measuring entropy in <strong>nats</strong></li>
+  <li>If I say \(I = \log_{2}(\frac{1}{p})\quad\) I am measuring entropy in <strong>bits</strong></li>
+  <li>If I say \(I = \log_{10}(\frac{1}{p})\quad\) I am measuring entropy in <strong>base 10</strong></li>
+</ul>
+
+<p>The relationship is</p>
+
+\[\begin{aligned}
+\ln(a)       &amp;= b\quad\,\,\,\ \mbox{means}\quad  a = e^{b}\\
+\log_2(a)    &amp;= b_2\quad\,\,  \mbox{means}\quad  a = 2^{b_{2}}\\
+\log_{10}(a) &amp;= b_{10}\quad  \mbox{means}\quad  a = 10^{b_{10}}\\
+\log_{n}(a)  &amp;= b_{n}\quad\,\  \mbox{means}\quad  a = n^{b_{n}} \quad\mbox{for an arbitrary base}\, n\\
+\end{aligned}\]
+
+<p>Then</p>
+
+\[e^{b} = 2^{b_{2}} = 10^{b_{10}} = n^{b_n},\]
+
+<p>Thus, the relationship between natural logs and logs in any other base \(n\) is</p>
+
+\[b = \ln(n^{b_n}) = b_n\ln(n).\]
+
+<p>In particular, the relationship between nats and bits is</p>
+
+\[b_{\mbox{nats}} = b_2\ \ln(2).\]
+
+<p><strong>In general, I will use \(\log(x)\) interchangeably with \(\ln(x)\) to refer to natural logs. If I don’t specify a base, I am using natural logs.</strong></p>
+
+<h2 id="information-redundancy-and-compression">Information, Redundancy and Compression</h2>
+
+<p>The information content is inversely related to redundancy. The less
+information an event carries, the more it can be compressed.</p>
+
+<p>Shannon postulated that, for an event \(e\) of probability \(p\), its
+information content is the compression to which we should aspire.</p>
+
+<h2 id="entropy-the-average-information-content-of-an-ensemble">Entropy: the average information content of an ensemble</h2>
+
+<p>The entropy of a random variable X is the average information content
+of an ensemble of all the possible outcomes (variables) for X,</p>
+
+<p>\begin{equation}
+  \mbox{Entropy}(X) = H(X) = \sum_x p(x) \log \frac{1}{p(x)},
+\end{equation}</p>
+
+<p>with the convention that if \(p(x) = 0\), then \(0\times \log\frac{1}{0}
+= 0\).</p>
+
+<p>Notice that the entropy is never negative,
+\begin{equation}
+H(X) \geq 0,
+\end{equation}</p>
+
+<p>with</p>
+
+<p>\begin{equation}
+H(X) = 0\quad\mbox{ if and only if}\quad
+p(x)=1 \quad\mbox{for one}\quad x.
+\end{equation}</p>
+
+<p>A desirable property of H that <a href="http://worrydream.com/refs/Shannon%20-%20A%20Mathematical%20Theory%20of%20Communication.pdf">Shannon describes in his classical
+paper</a>
+is that if a choice is broken down in two different choices the
+original H should be the weighted sum of the individual entropies.
+Graphically, using Shannon’s own figure</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="shannon_fig6.png" style="width:300px;" /> <br />
+  </div>
+</div>
+
+<p>We have the equality,</p>
+
+\[H\left(\frac{1}{2},\frac{1}{3},\frac{1}{6}\right)
+= H\left(\frac{1}{2},\frac{1}{2}\right) + \frac{1}{2} H\left(\frac{2}{3},\frac{1}{3}\right).\]
+
+<p>The coefficient \(\frac{1}{2}\) weights the fact that the second choice only
+happens half of the time.</p>
+
+<h2 id="relative-entropy-the-kullback-leibler-divergence">Relative entropy: the Kullback-Leibler divergence</h2>
+
+<p>For two probability distributions \(P(x)\) and \(Q(x)\) defined over
+the same space, their relative entropy or Kullback-Leibler (KL)
+divergence is defined by</p>
+
+\[D_{KL}(P||Q) = \sum_x P(x)\, \log{\frac{P(x)}{Q(x)}}.\]
+
+<p>The relative entropy has the following properties</p>
+
+<ul>
+  <li>
+    <p>It satisfies <em>Gibbs’s inequality</em></p>
+
+\[D_{KL}(P||Q) \geq 0.\]
+
+    <p>It is zero only if \(P=Q\).</p>
+  </li>
+  <li>
+    <p>It is not symmetric. In general,</p>
+
+\[D_{KL}(P||Q) \neq  D_{KL}(Q||P).\]
+
+    <p>Thus, it is not a <em>distance</em> although oftentimes it is called the KL distance.</p>
+  </li>
+  <li>
+    <p>For continuous distributions it takes the form</p>
+
+\[D_{KL}(P||Q) = \int_x p(x)\, \log{\frac{p(x)}{q(x)}}\, dx,\]
+
+    <p>where \(p(x)\) and \(q(x)\) are the densities of \(P\) and \(Q\).</p>
+  </li>
+</ul>
+
+<h2 id="mutual-information">Mutual Information</h2>
+
+<p>Mutual Information is a particular case of relative entropy.</p>
+
+<p>For two random variables \(X\) and \(Y\), with join probability
+  distribution \(P_{XY}\), and marginal probability distributions \(P_X\)
+  and \(P_Y\), we define the mutual information as</p>
+
+\[MI(X,Y) = D_{KL}(P_{XY}||P_X  P_Y) = \int_x\int_y p(x,y)\, \log{\frac{p(x,y)}{p(x)p(y)}}\, dx\, dy,\]
+
+<p>Mutual information measures how different the random variables \(X, Y\) are from being independent of each other.</p>
+
+<h2 id="the-principle-of-maximizing-entropy-or-trusting-shannon-to-be-fair">The principle of maximizing entropy. Or trusting Shannon to be fair</h2>
+
+<p>Imagine you have 8 pieces of cake that you want to distribute amongst
+3 kids, without cutting the pieces further. How would you do that?
+Unless you are Gru (despicable me), you would like to be as fair as
+possible to all three kids.</p>
+
+<p>Here are some options. Would you give?</p>
+
+<ul>
+  <li>4 4 0</li>
+  <li>4 2 2</li>
+  <li>3 3 2</li>
+</ul>
+
+<p>Then entropy of these three different scenarios are</p>
+
+<ul>
+  <li>\(H(4,4,0) = 1.00\) bits</li>
+  <li>\(H(4,2,2) = 1.50\) bits</li>
+  <li>\(H(3,3,2) = 1.56\) bits</li>
+</ul>
+
+<p>Do these entropy values correlate with your gut feel about fairness?</p>
+
+<p>In the same way, when you are working in an experiment for which you
+expect different possible outcomes, but you have no idea of which are
+more favorable, being fair to all of them (that is, not giving
+preference to each) you should also use the maximum entropy principle.</p>
+
+<p><strong>The maximum entropy distribution is the one that
+  favors any of the possible outcomes the least.  Thus, the maximum
+  entropy distribution is the one that should be used in the absence
+  of any other information.</strong></p>
+
+<p>The principle of maximal entropy was introduced by E.T. Jaynes in his
+1957 paper <a href="ETJaynes.pdf">“Information theory and statistical
+mechanics</a>.</p>
+
+<p>Still in the issue of being fair to the 3 kids and the 8 pieces of cake,
+now consider this option in which you give 2 pieces to each kids and leave
+2 pieces out:</p>
+
+<p>\begin{equation}
+H(2,2,2) = \frac{2}{6}\log_2\frac{1}{2/6} + \frac{2}{6}\log_2\frac{1}{2/6} + \frac{2}{6}\log_2\frac{1}{2/6}
+= \log_2(3) = 1.59 \, \mbox{bits}.
+\end{equation}</p>
+
+<p>What do you think about this result? This entropy is even higher than
+the (3,3,2) case that seemed pretty fair. How come?</p>
+
+<p>You can formally ask, what is the probability distribution that
+maximizes the entropy of the system?  This is an optimization problem.</p>
+
+<h3 id="maximum-entropy-estimates">Maximum-entropy estimates</h3>
+
+<p>In Section 2, <a href="ETJaynes.pdf">Jaynes</a> establishes the properties of maximum-entropy inference. Following Jaynes, I will assume a discrete distribution, but it works as well for any continuous distribution.</p>
+
+<p>The random variable \(X\) takes discrete values \(\{x_1,\ldots , x_n\}\), but we <strong>don’t know</strong> the probability distribution</p>
+
+<p>\begin{equation}
+p_i = P(x_i)\quad\quad \sum_{i=1}^n p_i = 1.
+\end{equation}</p>
+
+<p>The <strong>only thing we know</strong> is the expected value of a particular function \(f(x)\), given by</p>
+
+<p>\begin{equation}
+\sum_{i=1}^n f(x_i)\ p_i = {\hat f}.
+\end{equation}</p>
+
+<p>Using only this information, what can we say about \(p_i\)?</p>
+
+<p>The maximum-entropy principle says that we need to maximize the entropy of the probability distribution</p>
+
+<p>\begin{equation}
+H(p_1\ldots p_n) = -\sum_i p_i\ \log p_i,
+\end{equation}</p>
+
+<p>subject to the two constraints,</p>
+
+\[\begin{aligned}
+\sum_i p_i &amp;= 1,\\
+\sum_i f(x_i)\ p_i &amp;= {\hat f}.
+\end{aligned}\]
+
+<p>We solve such constrained optimization problem by introducing one Lagrange multiplier for each constraint (\(\lambda\) and \(\lambda_f\)), such that the function to optimize is give by</p>
+
+<p>\begin{equation}
+L = -\sum_j p_j \log{p_j} -\lambda \left(\sum_j p_j - 1\right) - \lambda_f \left(\sum_j p_j\ f(x_j) - {\hat f}\right).
+\end{equation}</p>
+
+<p>The derivative respect to one such probability \(p_i\) is</p>
+
+<p>\begin{equation}
+\frac{d}{d p_i} L = -\log{p_i} - p_i \frac{1}{p_i} - \lambda -\lambda_f f(x_i),
+\end{equation}</p>
+
+<p>which becomes optimal when \(\frac{d}{d p_i} L = 0\), then</p>
+
+<p>\begin{equation}
+\log{p^{\ast}_i} =  -\left[1 + \lambda + \lambda_f\ f(x_i)\right],
+\end{equation}</p>
+
+<p>or</p>
+
+<p>\begin{equation}
+p^{\ast}_i = e^{-\left[1+\lambda + \lambda_f\ f(x_i)\right]}.
+\end{equation}</p>
+
+<p>Because \(\sum_i p_i = 1\), that implies that</p>
+
+\[1 = e^{-(1+\lambda)} \sum_i e^{-\lambda_f\ f(x_i)}\]
+
+<p>And the maximum-entropy probability distribution is given by</p>
+
+<p>\begin{equation}
+p^{\ast}_i = \frac{e^{-\lambda_f\ f(x_i)} }{\sum_j e^{-\lambda_f\ f(x_j)} }.
+\end{equation}</p>
+
+<p>This result generalizes for any number of functions \(f_r\) for which we know their averages</p>
+
+\[\sum_i f_r(x_i)\ p_i = {\hat f_r}\]
+
+<p>the maximum-entropy probability distribution is given by</p>
+
+<p>\begin{equation}
+p^{\ast}_i =
+\frac
+{ e^{-\left[\lambda_1\ f_1(x_i) +\ldots + \lambda_m\ f_m(x_i)\right]} }
+{ \sum_j e^{-\left[\lambda_1\ f_1(x_j)+\ldots + \lambda_m\ f_m(x_j)\right]} }.
+\end{equation}</p>
+
+<p>Paraphrasing Jaynes, <strong>the maximum-entropy distribution has the important property that no possible outcome is ignored. Every situation that is not explicitly forbidden by the given information gets a positive weight</strong>.</p>
+
+<h3 id="particular-maximum-entropy-distributions-are">Particular maximum-entropy distributions are:</h3>
+
+<h4 id="when-you-do-not-know-anything-about-the-distribution">When you do not know anything about the distribution</h4>
+
+<p>In the particular case in which we don’t even know the average of any value,</p>
+
+\[f=0\]
+
+<p>then, the equation above becomes</p>
+
+<p>\begin{equation}
+p^{\ast}_i = \frac{1}{N}, \quad \mbox{for}\quad 1\leq i\leq N.
+\end{equation}</p>
+
+<p>That is, the maximum-entropy distribution in the absence of any information is   the <strong>uniform distribution</strong></p>
+
+<p>Notice that in the case of the three kids each with 2 pieces of cake,
+we used a uniform distribution.</p>
+
+<p>We could have done the same for a continuous distribution in a range \([a,b]\), then
+the maximum entropy uniform distribution looks like
+\begin{equation}
+p(x) = \frac{1}{b-a}, \quad \mbox{for}\quad x\in [a,b],
+\end{equation}
+such that, \(\int_{x=a}^{x=b} p(x) dx = 1\).</p>
+
+<h4 id="when-you-know-the-mean">When you know the mean</h4>
+
+<p>When you know the mean (\(\mu\)) of the distribution, that is, the function is</p>
+
+\[f(x) = x,\]
+
+<p>and you know that</p>
+
+\[\int f(x)\ p(x) = \int x\ p(x) = \mu\]
+
+<p>The maximum-entropy solution when you know the mean of the distribution is given by an <strong>exponential distribution</strong></p>
+
+<p>\begin{equation}
+p^\star(x) = \frac{e^{-\lambda_{\mu}\ x}}{\int_y e^{-\lambda_{\mu}\ y}}
+\end{equation}</p>
+
+<p>The value of \(\lambda_{\mu}\) can be determined using the condition</p>
+
+\[\mu = \int_x x\ p^\ast(x) dx = \frac{\int_x x e^{-\lambda_{\mu}\ x}}{\int_y e^{-\lambda_{\mu}\ y}}\]
+
+<p>So far, we have said nothing about the range of x. This equation has a solution only if all x are positive.</p>
+
+<p>Now, we remember that
+\begin{equation}
+\int_0^{\infty} e^{-\lambda_{\mu} x} dx = \frac{1}{\lambda_{\mu}}
+\end{equation}</p>
+
+<p>and</p>
+
+<p>\begin{equation}
+\int_0^{\infty} x\, e^{-\lambda_{\mu} x} dx = \frac{1}{\lambda_{\mu}^2}.
+\end{equation}</p>
+
+<p>(You can find these results in the <a href="Mathematical_Handbook_of_Formulas_and_Ta.pdf">Spiegel manual, (equation 18.76)</a>).</p>
+
+<p>The solution is
+\begin{equation}
+\mu = \frac{1/\lambda_{\mu}^2}{1/\lambda_{\mu}} = \frac{1}{\lambda_{\mu}}.
+\end{equation}</p>
+
+<p>Thus, the exponential distribution
+\begin{equation}
+p(x) = \frac{1}{\mu} e^{-x/\mu}  \quad x\geq 0,
+\end{equation}
+is the maximum entropy distribution amongst all distributions in the
+\([0,\infty)\) range that have mean \(\mu\).</p>
+
+<h4 id="when-you-know-the-standard-deviation">When you know the standard deviation</h4>
+
+<p>If what we know is the variance of the distribution
+(\(\sigma^2\)), that is, the function is</p>
+
+\[f(x) = (x-\mu)^2,\]
+
+<p>and you know that</p>
+
+\[\int f(x)\ p(x) = \int (x-\mu)^2\ p(x) = \sigma^2\]
+
+<p>then</p>
+
+<p>\begin{equation}
+p^{\ast}(x) = \frac{e^{-(x-\mu)^2\lambda_{\sigma}}}{\int_y e^{-(y-\mu)^2\lambda_{\sigma}} dy},
+\end{equation}</p>
+
+<p>that is the maximum-entropy distribution when you know the variance is the <strong>Gaussian distribution</strong>.</p>
+
+<p>The value of \(\lambda_{\sigma}\) can be determined using the condition
+\begin{equation}
+\sigma^2
+\equiv \int_x (x-\mu)^2 p(x) dx
+= \frac{\int_x (x-\mu)^2 e^{-(x-\mu)^2\lambda_{\sigma}} dx}{\int_y e^{-(y-\mu)^2\lambda_{\sigma}} dy}.
+\end{equation}</p>
+
+<p>Now, we remember that</p>
+
+<p>\begin{equation}
+  \int_{-\infty}^{\infty} e^{-(x-\mu)^2\lambda_{\sigma}} dx =
+  \sqrt{\frac{\pi}{\lambda_{\sigma}}}
+\end{equation}
+and
+\begin{equation}
+  \int_{-\infty}^{\infty} (x-\mu)^2 e^{-(x-\mu)^2\lambda_{\sigma}} dx =
+  \sqrt{\frac{\pi}{\lambda_{\sigma}}} \frac{1}{2\lambda_{\sigma}}.
+\end{equation}</p>
+
+<p>(You can find these results in the <a href="Mathematical_Handbook_of_Formulas_and_Ta.pdf">Spiegel manual, (equation 18.77)</a>).</p>
+
+<p>The solution is
+\begin{equation}
+\sigma^2
+= \frac{1}{2\lambda_{\sigma}}.
+\end{equation}</p>
+
+<p>Thus, the Gaussian distribution</p>
+
+<p>\begin{equation}
+p(x) = \frac{1}{\sqrt{\pi/\lambda_{\sigma}}}\ e^{-(x-\mu)^2\lambda_{\sigma}} =
+\frac{1}{\sqrt{2\pi\sigma^2}}\ e^{-\frac{(x-\mu)^2}{2\sigma^2}},
+\end{equation}</p>
+
+<p>is the maximum entropy distribution amongst
+all distributions in the \((-\infty,\infty)\) range that have variance
+ \(\sigma^2\).</p>
+
+<p>In summary, when you want to model a set of observations with a
+probability distribution, them maximum entropy principle tells you
+that if you don’t know anything about the probability of the different
+outcomes, you should use a uniform distribution, if you know the mean,
+the maximum entropy distribution is an exponential distribution, and
+if you know the standard deviation the maximum entropy distribution is
+the Gaussian distribution.</p>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

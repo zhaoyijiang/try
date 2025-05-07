@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#what-is-sampling" id="markdown-toc-what-is-sampling">What is sampling?</a></li>
+  <li><a href="#why-sampling" id="markdown-toc-why-sampling">Why sampling?</a></li>
+  <li><a href="#the-cool-thing-we-are-showing-here" id="markdown-toc-the-cool-thing-we-are-showing-here">The cool thing we are showing here</a></li>
+  <li><a href="#some-notation-on--pdfs-and-cdfs" id="markdown-toc-some-notation-on--pdfs-and-cdfs">Some notation on  PDFs and CDFs</a></li>
+  <li><a href="#the-cdf-for-the-uniform-distribution" id="markdown-toc-the-cdf-for-the-uniform-distribution">The CDF for the Uniform distribution</a></li>
+  <li><a href="#the-random-variable-f_xx-is-uniformly-distributed" id="markdown-toc-the-random-variable-f_xx-is-uniformly-distributed">The random variable \(F_X(X)\) is uniformly distributed</a>    <ul>
+      <li><a href="#what-does-this-mean" id="markdown-toc-what-does-this-mean">What does this mean?</a></li>
+      <li><a href="#proof" id="markdown-toc-proof">Proof</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-inverse-transformation-method-for-sampling" id="markdown-toc-the-inverse-transformation-method-for-sampling">The Inverse Transformation Method for sampling</a>    <ul>
+      <li><a href="#how-it-works" id="markdown-toc-how-it-works">How it works</a></li>
+      <li><a href="#why-it-works" id="markdown-toc-why-it-works">Why it works</a></li>
+      <li><a href="#example-sampling-from-an-exponential-distribution" id="markdown-toc-example-sampling-from-an-exponential-distribution">Example: sampling from an Exponential Distribution</a></li>
+    </ul>
+  </li>
+  <li><a href="#indirect-sampling-methods" id="markdown-toc-indirect-sampling-methods">Indirect sampling methods</a>    <ul>
+      <li><a href="#rejection-sampling" id="markdown-toc-rejection-sampling">Rejection sampling</a></li>
+      <li><a href="#importance-sampling" id="markdown-toc-importance-sampling">Importance sampling</a></li>
+      <li><a href="#monte-carlo-sampling" id="markdown-toc-monte-carlo-sampling">Monte Carlo sampling</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-00">week 00:</h1>
+
+<h1 class="no_toc" id="sampling-from-a-probability-distribution"><em>Sampling from a probability distribution</em></h1>
+
+<h2 id="what-is-sampling">What is sampling?</h2>
+
+<p>Sampling from a distribution means to take a number of data points
+such that their likelihood is determined by the distribution’s
+probability density function.  As the number of samples increases, the
+histogram of the drawn point will increasingly resemble the original
+distribution.</p>
+
+<p>Consider the distributions in Figure 1, you expect to see the
+points to start accumulating around the regions with higher
+probability. If the sampling continues indefinitely, you expect to
+eventually cover the whole sampling region. The histogram of sampled
+points will approximate the actual probably density function. The
+larger the number of points, the better the approximation.</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="sample.png" style="width:300px;" /> <br />
+	  Figure 1. Top: samples for a Normal distribution. Bottom: samples  for an exponential distribution.
+	  Left: 10 samples, Right: 50 samples.
+	  Sampled points are in red.
+	</div>
+</div>
+
+<h2 id="why-sampling">Why sampling?</h2>
+
+<p>Sampling from a distribution has a number of uses. One of them is to
+test alternative hypothesis. We do that when we want to test how data
+produced in an experiment fits a simpler and perhaps more boring
+hypothesis than the interesting hypothesis we are testing. Oftentimes
+the alternative hypothesis can be formulated mathematically and
+samples can be taken from it, and those can be compared to the actual
+measurements. Another use is when the probability distribution is the
+posterior distribution of the parameters of a model, and sampling from
+that distribution provides samples of models compatible with the data.</p>
+
+<p>Once we have a sample \(\{x_i\}\) for a given distribution probability
+density \(p(x)\), then we can use those to estimate the averages of
+quantities derived from \(X\), \(f(x)\) as follows</p>
+
+\[\int f(x)\  p(x)\ dx \approx \frac{1}{N}\sum_{i=1}^N f(x_i)\]
+
+<p>For instance, an estimation of the mean of the distribution from the
+sample corresponds to</p>
+
+\[\mu = \int x\  p(x)\ dx \approx \frac{1}{N}\sum_{i=1}^N x_i\]
+
+<h2 id="the-cool-thing-we-are-showing-here">The cool thing we are showing here</h2>
+
+<p>Here we are going to show that <strong>one can produce samples from any
+arbitrary probability distribution just by using samples from a uniform
+random variable \([0,1]\)</strong>.</p>
+
+<p>This is an important result because even though Python has functions
+to generate samples from most standard probability distributions using
+<a href="https://docs.scipy.org/doc/scipy/reference/stats.html">scypy.stats</a>,
+for instance, you can sample from the exponential distribution using
+<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.expon.html#scipy.stats.expon">expon.rvs</a>,
+those don’t help if you have an experimentally determined probability
+distribution <strong>without</strong> an analytical expression.</p>
+
+<p>The thing is, you only need
+<a href="https://docs.python.org/3/library/random.html">math.random()</a> to
+sample from any arbitrary distribution.</p>
+
+<h2 id="some-notation-on--pdfs-and-cdfs">Some notation on  PDFs and CDFs</h2>
+
+<p>For a random variable \(X\), we define the probability density function (PDF) as</p>
+
+<p>\begin{equation}
+	P(X = x) = p(x),
+\end{equation}</p>
+
+<p>and the cumulative density function (CDF) as</p>
+
+<p>\begin{equation}
+	F_X(x) = P(X\leq x) = \int_{y\leq x} p(y)\ dy.
+\end{equation}</p>
+
+<p>\(F_X(x)\) is the probability of getting the value \(x\) or any value
+smaller than it. When the PDF is high, the slope of the CDF is large, when the PDF is low, the slope of the CDF is small.</p>
+
+<p>The CDF has (for a continuous variable) the following properties,</p>
+
+\[\lim_{x\rightarrow -\infty} F_X(x) = 0,\]
+
+\[\lim_{x\rightarrow +\infty} F_X(x) = 1.\]
+
+<p>The CDF function \(F_X(x)\) is always increasing, that is if \(x\leq
+y\) then \(F_X(x)\leq F_X(y)\). Most continuous distribution are also
+strictly increasing, but it does not have to be that way, and it could
+be the case that \(F_X(x)=F_X(y)\) for \(x&lt; y\).</p>
+
+<p>Geometrically \(F_X(x)\) is the area under the curve of \(P(X)\) up to
+\(x\). See Figure 2. And we can see that</p>
+
+\[P(a\leq x \leq b) = F_X(b) - F_X(a).\]
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="CDF.png" style="width:300px;" /> <br />
+	  Figure 2. Relationship between the probability density function (PDF) and the cumulative density function  (CDF).
+	</div>
+</div>
+
+<h2 id="the-cdf-for-the-uniform-distribution">The CDF for the Uniform distribution</h2>
+
+<p>Let’s take a moment to remind ourselves of an important property
+of the Uniform distribution.</p>
+
+<p>A uniform random variable \(U(a,b)\) on \([a,b]\) is such that the PDF is given by</p>
+
+\[\begin{equation}
+P(U=x) = 
+\begin{cases}
+0             &amp; \mbox{if}\quad x &lt; a\\
+\frac{1}{b-a} &amp; \mbox{if}\quad a\leq x \leq b\\
+0             &amp; \mbox{if}\quad x &gt; b
+
+\end{cases}
+\end{equation}\]
+
+<p>And the CDF is given by</p>
+
+\[\begin{equation}
+F_U(x) = P(U\leq x) = \int_{-\infty}^{x} P(U=y)\ dy =
+\begin{cases}
+0&amp;\mbox{if}\quad x &lt; a\\
+\frac{x-a}{b-a}&amp;\mbox{if}\quad a\leq x \leq b\\
+1&amp;\mbox{if}\quad x &gt; b
+\end{cases}
+\end{equation}\]
+
+<p>And in the particular case of a uniform random variable \(U\) on
+\([0,1]\), we have the results</p>
+
+\[\begin{equation}
+F_U(x) = 
+\begin{cases}
+0&amp;\mbox{if}\quad x &lt; 0\\
+x&amp;\mbox{if}\quad 0\leq x \leq 1\\
+1&amp;\mbox{if}\quad x &gt; 1
+\end{cases}
+\end{equation}\]
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="uniform.png" style="width:300px;" /> <br />
+	  Figure 3. The Uniform distribution. (left) the probability density function (PDF), (right) the cumulative density  function (CDF)
+	</div>
+</div>
+
+<p>That is, if we sample a number \(r\in[0,1]\) using a random number
+generator, such as
+<a href="https://docs.python.org/3/library/random.html">random.random()</a>, we
+have that</p>
+
+\[F_U(r) = P(U\leq r) = r.\]
+
+<p>In particular, because for <strong>any</strong> CDF,  \(F_X(X)\) takes values in \([0,1]\) then we have,</p>
+
+\[P(U \leq F_X(x)) = F_X(x).\]
+
+<p>This apparently trivial result is at the core of the Inverse
+Transformation method for sampling that we discuss next.</p>
+
+<h2 id="the-random-variable-f_xx-is-uniformly-distributed">The random variable \(F_X(X)\) is uniformly distributed</h2>
+
+<p>For any random variable \(X\) that follows the  probability distribution \(P(X)\), such that \(F_X(x)  = P(X\leq x)\),
+we can show that  \(F_X(X)\) is the uniform distribution U in \([0,1]\).</p>
+
+<h3 id="what-does-this-mean">What does this mean?</h3>
+
+<p>It means that if \(x_1,\ldots, x_N\) is a sample from a probability distribution with CDF \(F_X\), then the sample given by</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="python.png" style="width:300px;" /> <br />	  
+	</div>
+</div>
+
+\[u_1,\ldots, u_N \quad \mbox{such that}\quad u_i = F_X(x_i)\]
+
+<p>follows a uniform distristribution in \([0,1]\).</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="Normal_CDFisUniform.png" style="width:300px;" /> <br />
+	  Figure 4.
+	</div>
+</div>
+
+<p>In python pseudo code</p>
+
+<p>Produces the result in Figure 4.</p>
+
+<h3 id="proof">Proof</h3>
+<p>Introduce \(Z=F_X(X)\). Then for the CDF of Z we have,</p>
+
+\[F_Z(x) = P(F_X(X) \leq x) = P(X\leq F_X^{-1}(x)) = F_X(F_X^{-1}(x)) = x.\]
+
+<p>Thus, \(Z=F_X(X)\) is the uniform distribution in \([0,1]\).`</p>
+
+<p>We will also use this result later in the course when we discuss
+p-values. After all, a p-value is a CDF (or \(1-CDF\) more precisely),
+which means that p-values are uniformly distributed. We will discuss
+the implications of that fact.</p>
+
+<h2 id="the-inverse-transformation-method-for-sampling">The Inverse Transformation Method for sampling</h2>
+
+<p>This method allows us to sample from an arbitrary probability
+distribution using only a random number generator that samples
+uniformly on \([0,1]\).</p>
+
+<h3 id="how-it-works">How it works</h3>
+
+<p>The Inverse Transformation method just requires to sample a value
+\(r\) from the Uniform distribution on \([0,1]\), and to take
+\(x=F_X^{-1}(r)\) as the sampled value.</p>
+
+<p>In practice, it  requires to have the cumulative distribution function  and</p>
+
+<ul>
+  <li>Generate a uniformly distributed sample \(r\)  in \([0,1]\).</li>
+  <li>Visualize a horizontal line to the CDF.</li>
+  <li>Output index of the intersection as a sample.</li>
+</ul>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="InverseSampling.png" style="width:300px;" /> <br />
+	  Figure 5. Graphical representation of the Inverse transformation sampling methods
+	</div>
+</div>
+
+<p>Notice that for this Inverse Transformation to work, the CDF \(F_X\)
+has to be invertible, which requires that if \(x&lt; y\) then \(F_X(x) &lt;
+F_X(y)\), but not \(F_X(x) = F_X(y)\), in which case the inverse would
+not be possible to calculate.</p>
+
+<h3 id="why-it-works">Why it works</h3>
+
+<p>We want to show that \(P(X\leq x)\) when \(x = F_X^{-1}(r)\) and \(r\)
+has been sampled uniformly in \([0,1]\) is indeed \(F_X(x)\).</p>
+
+<p>Introduce the random variable  \(A = F_X^{-1}(U)\) , we	want to show that \(A=X\).</p>
+
+\[F_A(x) = P(A \leq x) = P (F_X^{-1}(U) \leq x)\]
+
+<p>Because \(F_X^{-1}(U) = X\) means that \(U = F_X(X)\), then</p>
+
+\[P(A \leq x) = P (F_X^{-1}(U) \leq x) = P(U\leq F_X(x)) = F_X(x),\]
+
+<p>where the last equalty is the result of the property we show before
+for the Uniform distribution, so that \(A = X\).</p>
+
+<p>where for the last step, I have used the property that we found for
+the uniform distribution in the previous section, and described in the
+bottom right plot in Figure 2.</p>
+
+<h3 id="example-sampling-from-an-exponential-distribution">Example: sampling from an Exponential Distribution</h3>
+
+<p>The exponential distribution is one of the few cases of a distribution
+for which the CDF \(F_E\) has an inverse \(F^{-1}_E\) with an analytic
+expression.</p>
+
+<p>The exponential distribution describes processes that occur randomly
+over time with a fixed rate \(\lambda\).  The exponential distribution
+is widely used in biology to describe decay processes such as RNA or
+protein degradation for instance.</p>
+
+<p>The PDF of the exponential distribution is given by</p>
+
+\[P(E=x) = \lambda\ e^{-\lambda x},\]
+
+<p>where \(\lambda &gt; 0\)  is an arbitrary parameter, and the range of  \(x\) is \([0,\infty)\).</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="expon.png" style="width:300px;" /> <br />
+	  Figure 6. Inverse sampling for the exponential distribution.
+	</div>
+</div>
+
+<p>The CDF can be calculated analytically as</p>
+
+\[F_E(x) = \int_{-\infty}^x \lambda e^{-\lambda y}\ dy = -e^{-\lambda y}\mid_{\infty}^x = -e^{-\lambda x} + 1 = 1 - e^{-\lambda x}.\]
+
+<p>For a value \(r_i\) sampled uniformly in \([0,1]\), a \(x_i\) sampled
+according to the exponential distribution can be obtained using the
+expression,</p>
+
+\[r_i  =1 -  e^{-\lambda x_i}\]
+
+<p>that is</p>
+
+\[1 - r_i  = e^{-\lambda x_i}\]
+
+<p>or</p>
+
+\[log(1-r_i) = -\lambda x_i\]
+
+<p>finally</p>
+
+\[x_i  = -\frac{1}{\lambda}\log(1-r_i) = F_E^{-1}(r_i).\]
+
+<p>In summary, to sample from an exponential distribution  can be obtained from uniformly sampled values \(r_i\) on  \([0,1]\) as</p>
+
+\[-\frac{1}{\lambda}\log(1-r_i)\]
+
+<p>Notice that the sampled values are positive as \(log(1-r) &lt; 0\) if \(0&lt;r&lt;1\),</p>
+
+<h2 id="indirect-sampling-methods">Indirect sampling methods</h2>
+
+<p>The Inverse Transformation Method directly samples from the
+distribution \(p(x)\). In some cases, \(p(x)\) is not available, and
+several algorithms have been designed to sample when directly sampling
+from \(p(x)\) is not possible.</p>
+
+<h3 id="rejection-sampling">Rejection sampling</h3>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="rejection.png" style="width:300px;" /> <br />
+	  Figure 7. Rejection  sampling
+	</div>
+</div>
+
+<p>To sample from a probability density \(p(x)\) is to sample uniformly
+the area under the curve. In rejection sampling, you sample the area
+under a different density \(q(x)\), with the restriction that \(p(x)
+\leq M*q(x)\), see Figure 7 from <a href="rejection.pdf">“MonteCarlo
+Sampling”</a> by M I Jordan.</p>
+
+<p>To generate a sample from \(p(x)\),</p>
+
+<ul>
+  <li>
+    <p>sample \(x_i\) in \(q(x)\)</p>
+  </li>
+  <li>
+    <p>sample \(r\) uniformly in  \([0,1]]\)</p>
+  </li>
+  <li>
+    <p>then,
+\(\begin{equation}
+\begin{cases}
+\mbox{if}\, r &lt; \frac{p(x_i)}{M*q(x_i)} &amp;\mbox{accept}\quad x_i\\
+\mbox{else}                            &amp;\mbox{reject}\quad x_i\\
+\end{cases}
+\end{equation}\)</p>
+  </li>
+</ul>
+
+<p>In regions where \(p(x)\) is high, we are less likely to reject a sample \(x\),
+and we will get more values in that region.</p>
+
+<p>This method we may waste a lot of time rejecting samples if the
+distribution has many peaks and valleys.</p>
+
+<h3 id="importance-sampling">Importance sampling</h3>
+
+<p>Importance sampling is used when sampling from a given distribution
+with density \(p(x)\) is very difficult, but there is a related
+distribution \(g(x)\) from which it is easier to sample.</p>
+
+<p>Importance sampling does not allow to calculate directly samples of
+\(p(x)\), but it can be used to calculate averages of an arbitrary
+function \(f(x)\) respect to the density \(p(x)\).</p>
+
+\[\langle f\rangle = \int f(x)\ p(x)\ dx,\]
+
+<p>which can be expressed using the auxiliary distribution \(g(x)\) as</p>
+
+\[\langle f\rangle_p = \int f(x)\ p(x)\ dx = \int f(x)\ \frac{p(x)}{g(x)}\ g(x)\ dx= \int f(x)\ w(x)\ g(x)\ dx = \langle f*w\rangle_g\,\]
+
+<p>where the weights are  defined as
+\(w(x) = \frac{p(x)}{g(x)}.\)</p>
+
+<p>The importance sampling method goes as follows</p>
+
+<ul>
+  <li>
+    <p>Take N samples \(\{x_i\}_{i=1}^N\) from \(g(x)\)</p>
+  </li>
+  <li>
+    <p>calculate the weights \(w(x_i) = \frac{p(x_i)}{g(x_i)}\)</p>
+  </li>
+  <li>
+    <p>estimate
+\(\langle f\rangle \approx \frac{1}{N} \sum_if(x_i)\ w(x_i).\)</p>
+  </li>
+</ul>
+
+<h3 id="monte-carlo-sampling">Monte Carlo sampling</h3>
+
+<p>Monte Carlo sampling is a very generic term to describe any method
+that allows you to approximate a probability distribution \(p(x)\) by
+taking a number of samples \(\{x_i\}\), such that for any function
+\(f(x)\) of the random variable you can use,</p>
+
+\[\int f(x)\  p(x)\ dx \approx \frac{1}{N}\sum_{i=1}^N f(x_i).\]
+
+<p>Many difference techniques or “sampling rules” can be used to produce
+those samples \(\{x_i\}\) representatives of \(p(x)\).</p>
+
+<p>Rejection sampling and Importance sampling are examples of Monte Carlo
+sampling. Another well known method is Markov Chain Monte Carlo (MCMC), in
+which the sampling rule is a Markov process (that is, a process that
+depends only on the previously sampled value).</p>
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#hypothesis-testing-an-example" id="markdown-toc-hypothesis-testing-an-example">Hypothesis testing: an example</a>    <ul>
+      <li><a href="#the-classical-test-chi-squared-test" id="markdown-toc-the-classical-test-chi-squared-test">The classical test: \(\chi\)-squared test</a>        <ul>
+          <li><a href="#what-does-this-result-mean" id="markdown-toc-what-does-this-result-mean">What does this result mean?</a></li>
+          <li><a href="#which-chi2-test" id="markdown-toc-which-chi2-test">Which \(\chi^2\) test?</a></li>
+          <li><a href="#which-result-would-you-believe" id="markdown-toc-which-result-would-you-believe">Which result would you believe?</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-bayesian-approach" id="markdown-toc-the-bayesian-approach">The Bayesian approach</a></li>
+    </ul>
+  </li>
+  <li><a href="#model-comparison" id="markdown-toc-model-comparison">Model comparison</a></li>
+  <li><a href="#occams-razor" id="markdown-toc-occams-razor">Occam’s razor</a>    <ul>
+      <li><a href="#or-why-more-complicated-models-can-turn-out-to-be-less-probable" id="markdown-toc-or-why-more-complicated-models-can-turn-out-to-be-less-probable">Or why more complicated models can turn out to be less probable</a></li>
+      <li><a href="#occams-razor-example" id="markdown-toc-occams-razor-example">Occam’s razor Example</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-03">week 03:</h1>
+
+<h1 class="no_toc" id="model-comparison-and-hypothesis-testing"><em>Model Comparison and Hypothesis Testing</em></h1>
+
+<p>For this week’s lectures, I am following <a href="http://www.inference.phy.cam.ac.uk/itprnn/book.pdf">Mackay’s
+book</a>, Chapter 37,
+and Chapter 28, in that order. MacKay’s video <a href="http://www.inference.org.uk/itprnn_lectures/10_mackay.mp4">Lecture
+10</a> is also relevant.</p>
+
+<h2 id="hypothesis-testing-an-example">Hypothesis testing: an example</h2>
+
+<p>Continuing with our malaria vaccine example. Now we want to compare to
+a control treatment with no active ingredients. We have 40 volunteers,
+30 of which receive the vaccine (V) and the other 10 receive the
+control (C). Of the 30 that receive the vaccine, one contracts
+malaria, of the 10 that receive the control treatment, three contract
+malaria.</p>
+
+<p>Is our vaccine treatment V better than the control treatment C?</p>
+
+<p>Let us assume that the probability of contracting malaria after taking
+the vaccine is \(f_v\), and the probability of contracting malaria under
+the control treatment is \(f_c\).  These are the two unknown quantities,
+we would like to infer. What does the data tells us about them?</p>
+
+<p>You may want to compare these two alternative hypotheses:</p>
+
+<ul>
+  <li>
+    <p><strong>\(H_1\):</strong> The vaccine treatment is more effective than the control, \(f_v &lt; f_c\).</p>
+  </li>
+  <li>
+    <p><strong>\(H_0\):</strong> Both treatments have the same effectiveness, \(f_v= f_c\).</p>
+  </li>
+</ul>
+
+<p>The data measurements are</p>
+
+<p>\(N_v=30\) the number of subjects that took the vaccine,</p>
+
+<p>\(N^+_v=1\) the number of subjects that took the vaccine and contracted malaria,</p>
+
+<p>\(N_c=10\) the number of subjects in the control,</p>
+
+<p>\(N^+_c=3\) the number of subjects that contracted malaria under the control treatment.</p>
+
+<h3 id="the-classical-test-chi-squared-test">The classical test: \(\chi\)-squared test</h3>
+
+<p>A well used classical statistical hypothesis test is the <a href="https://en.wikipedia.org/wiki/Chi-squared_test">\(\chi^2\)
+test</a>.</p>
+
+<p>In the \(\chi^2\) test, one compares the observed values (\(O_i\)) to the expected
+values (\(E_i\)) under the null hypothesis as</p>
+
+\[\chi^2 = \sum_{i=1}^N \frac{(O_i-E_i)^2}{E_i}.\]
+
+<p>Then we assume that this quantity \(\chi^2\) follows the <a href="https://en.wikipedia.org/wiki/Chi-squared_distribution">\(\chi^2\)
+distribution</a>
+with \(n\) degrees of freedom, where \(n\) is equal to the number of
+measurements \(N\) minus the number of “constraint”.</p>
+
+<p>In this example, the null model is that both treatment are equally
+effective. The probability of contracting malaria under the null hypothesis is an unknown
+parameter that a frequentist would estimate as</p>
+
+\[f_{H_0} = \frac{1+3}{30+10} = \frac{1}{10}.\]
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th><em>Observed</em></th>
+      <th><em>Expected</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>took vaccine &amp; malaria</td>
+      <td>1</td>
+      <td>\(30\times \frac{1}{10} = 3\)</td>
+    </tr>
+    <tr>
+      <td>took vaccine &amp; no malaria</td>
+      <td>29</td>
+      <td>\(30\times \frac{9}{10} = 27\)</td>
+    </tr>
+    <tr>
+      <td>no   vaccine &amp; malaria</td>
+      <td>3</td>
+      <td>\(10\times \frac{1}{10} = 1\)</td>
+    </tr>
+    <tr>
+      <td>no   vaccine &amp; no malaria</td>
+      <td>7</td>
+      <td>\(10\times \frac{9}{10} = 9\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Then, \(\chi^2\) is</p>
+
+\[\chi^2 =
+\frac{(1-3)^2}{3} +
+\frac{(29-27)^2}{27} +
+\frac{(3-1)^2}{1} +
+\frac{(7-9)^2}{9} = 5.926.\]
+
+<p>To calculate the number of degrees of freedom, from the four data sets, we realize
+that there are two constrains (1+29=30 and 3+7 = 10), and also the fact that
+the \(f_{H_0}\) is not known. The result is \(4-3=1\) degrees of freedom.</p>
+
+<p>A classical statistician then goes to <a href="https://en.wikipedia.org/wiki/Chi-squared_distribution#Table_of_.CF.872_values_vs_p-values">a table for \(n=1\)-degree of
+freedom \(\chi^2\)
+values</a>
+and finds</p>
+
+\[p = P(\chi^2 \geq 3.84)  = 1 - CDF_{\chi^2_{n=1}}(3.84) = 0.05\\
+p = P(\chi^2 \geq 6.64) = 1 - CDF_{\chi^2_{n=1}}(6.64) = 0.01\]
+
+<p>and interpolating she decides that <strong>the p-value is 0.02</strong>.</p>
+
+<h4 id="what-does-this-result-mean">What does this result mean?</h4>
+
+<ul>
+  <li>
+    <p>It <strong>does not mean</strong> that there is a 98% chance that the two treatments are different.</p>
+  </li>
+  <li>
+    <p>It <strong>means</strong> (and this is the actual definition of a p-value) that
+if we were to repeat the experiment many time and the two
+treatments were identical, 2% of the time we will find a result
+with a \(\chi^2\) at least as larger than 5.926.</p>
+
+    <p><em>A lot more about p-values in the next week of lectures!</em></p>
+  </li>
+</ul>
+
+<p>Paraphrasing Mackay: This is at best an <em>indirect</em> result regarding what we really want to know: have the two treatments different
+  effectiveness?</p>
+
+<h4 id="which-chi2-test">Which \(\chi^2\) test?</h4>
+
+<p>The is a number of different \(\chi^2\) tests,</p>
+
+<ul>
+  <li>Pearson’s \(\chi^2\) test, which is the one we just used above</li>
+  <li>Yates’s test</li>
+  <li>Cochran-Mantel-Haenszel’s test</li>
+  <li>Tukey’s test of additivity</li>
+  <li>portmanteau test</li>
+  <li>…</li>
+</ul>
+
+<p>For instance if you use Yates’s \(\chi^2\) test, which says</p>
+
+\[\chi^2 = \sum_{i=1}^N \frac{(\mid O_i-E_i\mid -\ 0.5)^2}{E_i},\]
+
+<p>In classical statistics, a p-value of 0.05 is usually accepted as the boundary between
+rejecting (if the p-value is smaller than 0.05) or not rejecting (if p-value larger than 0.05)
+the null hypothesis.
+We would have obtained a \(\chi^2 = 3.34\). This corresponds to a p-value \(\geq 0.05\), extrapolating let’s say 0.07.</p>
+
+<h4 id="which-result-would-you-believe">Which result would you believe?</h4>
+
+<p>In classical statistics, a p-value of 0.05 is usually accepted as the boundary between
+rejecting (if the p-value is smaller than 0.05) or not rejecting (if p-value larger than 0.05)
+the null hypothesis.</p>
+
+<ul>
+  <li>Pearson’s \(\chi^2\) rejects the null hypothesis with a p-value of 0.02</li>
+  <li>Yates’s   \(\chi^2\)  does not reject the null hypothesis with a p-value of 0.07</li>
+</ul>
+
+<p>On this topic, I recommend that your read this note from David MacKay
+<a href="http://www.inference.phy.cam.ac.uk/mackay/Chi2.pdf">“Bayes or Chi-square? Or does it not
+matter?”</a>”. 
+In this note, Mackay uses the example of inferring the language
+of a text by sampling random characters from the text.</p>
+
+<p>Let’s now take the Bayesian approach to hypothesis testing for the
+vaccine question.</p>
+
+<h3 id="the-bayesian-approach">The Bayesian approach</h3>
+
+<p>As we have done before in this course, let us see what the data tells us about
+the possible values of the unknown parameters \(f_v\) and \(f_c\).</p>
+
+<p>The posterior probability of the parameters given the data is
+\begin{equation}
+P(f_v, f_c\mid D) = \frac{P(D\mid f_v, f_c) P(f_v, f_c)}{P(D)},
+\end{equation}</p>
+
+<p>where the probability of the data given the parameters \(f_v\) and \(f_c\) is
+\begin{equation}
+P(D\mid f_v, f_c) = {N_v \choose N^+_v} f_v^{N^+_v} (1-f_v)^{N_v-N^+_v} {N_c \choose N^+_c} f_c^{N^+_c} (1-f_c)^{N_c-N^+_c}.
+\end{equation}</p>
+
+<p>If we assume uniform priors \(P(f_v, f_c) = 1\), then we can factorize the posteriors and obtain
+\begin{equation}
+P(f_v, f_c\mid D) = P(f_v\mid N_v, N^+_v)P(f_c\mid N_c, N^+_c),
+\end{equation}
+and</p>
+
+\[\begin{aligned}
+  P(f_v\mid N_v, N^+_v) &amp;= \frac{f_v^{N^+_v} (1-f_v)^{N_v-N^+_v}}{\int_0^1 f ^{N^+_v} (1-f)^{N_v-N^+_v} df}, \\
+  P(f_c\mid N_c, N^+_c) &amp;= \frac{f_c^{N^+_c} (1-f_c)^{N_c-N^+_c}}{\int_0^1 f ^{N^+_c} (1-f)^{N_c-N^+_c} df}.
+\end{aligned}\]
+
+<p>Using the beta integral again</p>
+
+\[\begin{aligned}
+  P(f_v\mid N_v, N^+_v) &amp;= \frac{(N_v+1)!}{(N^+_v)! (N_v-N^+_v)!}\, f_v^{N^+_v} (1-f_v)^{N_v-N^+_v}, \\
+  P(f_c\mid N_c, N^+_c) &amp;= \frac{(N_c+1)!}{(N^+_c)! (N_c-N^+_c)!}\, f_c^{N^+_c} (1-f_c)^{N_c-N^+_c}.
+\end{aligned}\]
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="vaccine.png" style="width:300px;" /> <br />
+    Figure 1. Posterior probabilities of the effectiveness for the
+      vaccine and the control treatments. The parameter's standard
+      deviation are calculated using a second order Taylor expansion
+      around the optimal value.
+  </div>
+</div>
+
+<p>For our particular example</p>
+
+\[\begin{aligned}
+  P(f_v\mid N_v=30, N^+_v=1) &amp;= \frac{31!}{1! 29!}\, f_v (1-f_v)^{29}, \\
+  P(f_c\mid N_c=10, N^+_c=3) &amp;= \frac{11!}{3! 7!}\, f_c^3 (1-f_c)^{7}.\\
+\end{aligned}\]
+
+<p>The two posterior distributions are shown in Figure 1.</p>
+
+<p><em>Exercise: reproduce on your own the optimal values and standard
+deviations given in Figure 1 for the parameters of the two
+treatments. (The standard deviations have been calculated according to
+the Gaussian approximation.)</em></p>
+
+<p>The question: <strong>how probable is that \(f_v &lt; f_c\)?</strong> has now a very clean answer</p>
+
+\[\begin{aligned}
+P(f_v&lt;f_c\mid D) &amp;=
+\int_0^1 df_c\ \int_0^{f_c} df_v\
+\left[P\left(f_c\mid N_c=10, N^+_c=3\right)\times
+P\left(f_v\mid N_v=30, N^+_v=1\right) \right]\\
+&amp;= \int_0^1 df_c  \int_0^{f_c} df_v\ \left[\frac{11!}{3! 7!} f_c^3 (1-f_c)^{7}\times  \frac{31!}{1! 29!} f_v (1-f_v)^{29}\right]
+\end{aligned}\]
+
+<p>This integral does not have an easy analytical expression, but it is easy to do it numerically
+\begin{equation}
+P(f_v&lt;f_c\mid D) = 0.987.
+\end{equation}</p>
+
+<p>This means that there is a 98.7% chance, given the data and our prior
+assumptions, that the vaccine treatment is more effective than the
+control.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="effectiveness.png" style="width:300px;" /> <br />
+    Figure 2. Vaccine effectiveness.
+  </div>
+</div>
+
+<p>The question: <strong>what is the probability that \(f_v  = \alpha f_c\)</strong>  can be estimated using</p>
+
+\[\begin{aligned}
+P(f_v=\alpha f_c\mid D) &amp;=
+\int_0^1 df_c\ 
+\left[P\left(f_c\mid N_c=10, n_c=3\right)\times
+P\left(f_v=\alpha f_c\mid N_v=30, n_v=1\right) \right]\\
+&amp;= \int_0^1 df_c   \left[\frac{11!}{3! 7!} f_c^{3} (1-f_c)^{7}\times  \frac{31!}{1! 29!} (\alpha\ f_c) (1-\alpha\ f_c)^{29}\right]
+\end{aligned}\]
+
+<p>And the vaccine effectiveness \(1-\frac{f_v}{f_c}\) is given in Figure 2.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="moderna.png" style="width:300px;" /> <br />
+    Figure 3. MODERNA mRNA vaccine effectiveness.
+  </div>
+</div>
+
+<p>You can compare this result with the effectiveness obtained in Nov 2020 for the covid-19 MODERNA mRNA vaccine where 15,000 people were tested in each groups (\(N_v=N_c = 15000\))
+and a total of \(95\) contracted covid-19, five of them in the vaccinated group (\(n_v=5, n_c = 90\)). The effectiveness results for that trial are given in Figure 3.</p>
+
+<h2 id="model-comparison">Model comparison</h2>
+
+<p>If we actually want to quantitatively compare the two hypotheses: \(H_1\) that \(f_v\neq f_c\) and
+\(H_0\) that \(f_v=f_c\), then we can use
+\begin{equation}
+\frac{P(H_1\mid D)}{P(H_0\mid D)} = \frac{P(D\mid H_1) P(H_1)}{P(D\mid H_0) P(H_0)}.
+\end{equation}</p>
+
+<p>Giving both hypotheses equal prior probability gives
+\begin{equation}
+\frac{P(H_1\mid D)}{P(H_0\mid D)}
+= \frac{P(D\mid H_1)}{P(D\mid H_0)}.
+\end{equation}</p>
+
+<p>The probability of the data under \(H_1\) (the evidence of the data
+under \(H_1\)) is, using marginalization, given by</p>
+
+<p>\begin{equation}
+P(D\mid H_1) = \int_{f_v=0}^1\int_{f_c=0}^1 P(D\mid f_v, f_c, H_1) P(f_v,f_c\mid H_1)\, df_c df_v,
+\end{equation}</p>
+
+<p>and the probability of the data under \(H_0\) is given by</p>
+
+<p>\begin{equation}
+P(D\mid H_0) = \int_{f_v=f_c=f} P(D\mid f, f, H_0) P(f\mid H_0)\, df.
+\end{equation}</p>
+
+<p>If we use uniform priors again, in this case for 
+\(P(f_v,f_c\mid H_1)=1\) and \(P(f\mid H_0)=1\), then we have</p>
+
+\[P(D\mid H_1) =
+{N_c\choose N_c^+}
+{N_v\choose N_v^+}
+\int_{0}^{1} df_c\,  f^{N_c^+}_c (1-f_c)^{N_c-N_c^+} 
+\int_{0}^{1} df_v\,  f^{N_v^+}_v (1-f_v)^{N_v-N_v^+},\]
+
+<p>and</p>
+
+\[P(D\mid H_0) =
+{N_c\choose N_c^+}{N_v\choose N_v^+}\int_{0}^{1} f^{N_c^++N_v^+} (1-f)^{N_c+N_v-N^+_v-N^+_c} df.\]
+
+<p>Then,</p>
+
+\[\begin{aligned}
+  \frac{P(H_1\mid D)}{P(H_0\mid D)}
+  &amp;=
+   \frac
+   {\int_{0}^{1}    f^{N_c^+}_c (1-f_c)^{N_c-N_c^+} df_c \int_{0}^{1} f^{N_v^+}_v (1-f_v)^{N_v-N_v^+} df_v }
+   {\int_{0}^{1}df\,                       f^{N_c^+ + N_v^+} (1-f)^{N_c+N_v-N_c^+-N_v^+}}\\
+       &amp;=
+   \frac
+   { \frac{(N^+_c)!(N_c-N^+_c)!}{(N_c+1)!} \frac{(N^+_v)!(N_v-N^+_v)!}{(N_v+1)!} }
+   {\frac{(N^+_c+N^+_v)!(N_c+N_v-N^+_c-N^+_v)!}{(N_c+N_v+1)!}}\\
+\end{aligned}\]
+
+<p>In our particular example: \(N_v =30\), \(N_v^+=1\), \(N_c =10\), \(N_c^+=3\), we have</p>
+
+\[\frac{P(H_1\mid D)}{P(H_0\mid D)} =
+\frac{ \frac{1!29!}{31!} \frac{3!7!}{11!}}
+{ \frac{4!36!}{41!} }.\]
+
+<p>That is,</p>
+
+<p>\begin{equation}
+\frac{P(H_1\mid D)}{P(H_0\mid D)} = \frac{0.0029}{0.00096} = 3.042.
+\end{equation}</p>
+
+<p>This results tells us that hypothesis \(H_1\) (the vaccine treatment is
+more effective than the control) is 3 times more likely than the
+control treatment.</p>
+
+<p>The raw data sort of told us that the malaria treatment was more
+effective. Bayesian analysis gives us a quantification of that
+intuitive assessment.</p>
+
+<p>Consider now this other case in which the amount of data is small,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th>Vaccine</th>
+      <th>Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Got malaria</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Did not</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Total treated</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In this case, using the expression we just deduced</p>
+
+\[\begin{aligned}
+\frac{P(H_1\mid D)}{P(H_0\mid D)} &amp;=
+\frac{\int_{0}^{1} df_c\,f_c (1-f_c)\,\int_{0}^{1}df_v\,(1-f_v)^{3}}{ \int_{0}^{1}df\,f\,(1-f)^{4}}\\
+&amp;=
+\frac{ \frac{1!1!}{3!} \frac{0!3!}{4!}}{\frac{1!4!}{6!}}\\
+&amp;=
+\frac{\frac{1}{6}\frac{1}{4}}{\frac{1}{30}}\\
+&amp;=
+\frac{1/24}{1/30} = \frac{0.55}{0.44}.
+\\
+\end{aligned}\]
+
+<p>So, from our prior assumption that the two hypotheses were 50:50, the
+data shifts the posterior probability to 55:44 in favor of \(H_1\).</p>
+
+<p>Bayesian analysis gives us a quantification of the intuitive
+acknowledgment that such small sample give us ``some’’ weak
+evidence in favor of the vaccine treatment.</p>
+
+<h2 id="occams-razor">Occam’s razor</h2>
+
+<h3 id="or-why-more-complicated-models-can-turn-out-to-be-less-probable">Or why more complicated models can turn out to be less probable</h3>
+
+<p>Occam’s razor advises that if several explanations are compatible
+with a set of observations, one should go with the simplest. Applied
+to our model selection problem, Occam’s razor advised that if two
+different models can explain the data, we should use the one with the
+fewer number of parameters.</p>
+
+<p>Why shall we follow Occam’s razor?</p>
+
+<p>There is an aesthetic reason: more complexity is uglier, simpler is
+prettier. Bayesian inference offers another justification.</p>
+
+<p>The plausibility of two alternative hypotheses \(H_1\) and \(H_2\) can be
+expressed as</p>
+
+<p>\begin{equation}
+\frac{P(H_1\mid D)}{P(H_2\mid D)} = \frac{P(D\mid H_1) P(H_1)}{P(D\mid H_2) P(H_2)}.
+\end{equation}</p>
+
+<p>If we use uniform priors \(P(H_1) = P(H_2)\), then the ratio of the
+two hypotheses is the ratio of the evidence of the data under the two
+hypotheses</p>
+
+<p>\begin{equation}
+\frac{P(H_1\mid D)}{P(H_2\mid D)} = \frac{P(D\mid H_1)}{P(D\mid H_2)}.
+\end{equation}</p>
+
+<p>Assume that \(H_1\) depends on parameter(s) \(p_1\), and \(H_2\) on
+parameter(s) \(p_2\). We can write,</p>
+
+<p>\begin{equation}
+P(D\mid H_1) = \int_{p_1} P(D\mid p_1, H_1) P(p_1\mid H_1) dp_1,
+\end{equation}</p>
+
+<p>and similarly for \(H_2\).</p>
+
+<p>Remember that in many cases we have considered, the posterior
+probability of the parameter has a strong peak at the most probable
+value \(p^\ast\).  We can expand the probability \(P(D\mid p_1, H_1)\)
+around the most probable value, defined by,
+\begin{equation}
+\frac{d}{dp_1} \left. \log P(D\mid p_1, H_1)\right|_{p_1=p_1^\ast} = 0.
+\end{equation}</p>
+
+<p>A Taylor expansion gives us</p>
+
+\[\begin{equation}
+\log P(D\mid p_1, H_1)
+= \log P(D\mid p^\ast_1, H_1) - \frac{(p_1-p_1^\ast)^2}{2{\sigma_{1}^{\ast}}^2} + {\cal O}(p_1-p_1^\ast)^3,
+\end{equation}\]
+
+<p>such that</p>
+
+\[\begin{equation}
+\frac{1}{\sigma_{1}^{\ast}{^2}} \equiv - \left. \frac{d^2\log P(D\mid p_1, H_1)}{dp_1^2}\right|_{p_1=p_1^\ast}.
+\end{equation}\]
+
+<p>Then we can approximate \(P(D\mid p_1, H_1)\) as</p>
+
+<p>\begin{equation}
+P(D\mid p_1, H_1) \approx P(D\mid p^\ast_1, H_1)\, e^{-\frac{(p_1-p_1^\ast)^2}{2{\sigma_1^{\ast}}^2}}.
+\end{equation}</p>
+
+<p>This expansion goes by the name of <strong>Laplace’s Method</strong>.</p>
+
+<p>Using the Laplace approximation in \(P(D\mid H_1)\), we have</p>
+
+\[\begin{aligned}
+  P(D\mid H_1)
+  &amp;\approx
+  P(D\mid p^\ast_1, H_1)  \int_{p_1}  e^{-\frac{(p_1-p_1^\ast)^2}{2{\sigma_1^{\ast}}^2}} P(p_1\mid H_1)\, dp_1. 
+\end{aligned}\]
+
+<p>If we assume that an uniform prior</p>
+
+\[\begin{equation}
+P(p_1\mid H_1) = \left\{
+\begin{array}{ll}
+\frac{1}{p_1^{+} - p_1^{-}} \equiv \frac{1}{\sigma_1}  &amp; p_1^{-} \leq p \leq p_1^{+}\\
+0                                                      &amp; \mbox{otherwise}
+\end{array}
+\right.
+\end{equation}\]
+
+<p>such that \(p_1^{-} \leq p^\ast \leq p_1^{+}\), and such that the bounds \(p^{\pm}\) are large enough</p>
+
+\[\begin{aligned}
+  P(D\mid H_1)
+  &amp;\approx
+  P(D\mid p^\ast_1, H_1)  \int^{p_1^{+}}_{p_1^{-}}\, e^{-\frac{(p_1-p_1^\ast)^2}{2{\sigma_1^{\ast}}^2}} dp_1 \times \frac{1}{\sigma_1}\\
+  &amp;\approx
+  P(D\mid p^\ast_1, H_1)\,  \sqrt{2\pi}\sigma_1^\ast \frac{1}{\sigma_1}. \\
+\end{aligned}\]
+
+<p>Then the probability ratio between the two hypotheses results to be</p>
+
+\[\begin{aligned}
+\frac{P(H_1\mid D)}{P(H_2\mid D)}
+&amp;\approx
+\frac{ P(D\mid p^\ast_1, H_1)}{ P(D\mid p^\ast_2, H_2)}\,\times\,\frac{\sigma_1^{\ast}/\sigma_1}{\sigma_2^{\ast}/\sigma_2}\\
+&amp;\approx
+\mbox{best data fit}\quad\times\quad\mbox{Occam factor}
+\end{aligned}\]
+
+<p>The ratio of the probability of the two hypotheses has two terms:</p>
+
+<ul>
+  <li>
+    <p><strong>Best data fit.</strong></p>
+
+    <p>This term gives us the best fit of the
+model to the data. If we are not Bayesian, this would be the only
+term to consider.</p>
+
+    <p>If \(H_1\) and \(H_2\) are two nested hypothesis such that \(H_2\)
+has more parameters and includes \(H_1\) as a particular case (\(H_1
+\subset H_2\)), then it is always going to be possible for \(H_2\)
+to fit the data better than \(H_1\). The model with more parameters
+can use the extra parameters to over-fit to the data.</p>
+
+    <p>That is, for nested hypotheses \(H_1 \subset H_2\),</p>
+
+\[P(D\mid p^\ast_2, H_2) \geq P(D\mid p^\ast_1, H_1).\]
+
+    <p>This term alone would tells us that a model with more parameters
+would always have higher probability.</p>
+  </li>
+  <li>
+    <p><strong>Bayesian Occam razor.</strong></p>
+
+    <p>But we are Bayesians, then we have another
+term. This term is equal to the posterior accessible volume of the
+parameters of the hypothesis.  The more posterior uncertainty we
+have about the model, the more it is favored.</p>
+  </li>
+</ul>
+
+<p>For the two nested hypotheses \(H_1 \subset H_2\)</p>
+
+<ul>
+  <li>
+    <p>On the one hand,
+   \begin{equation}
+   P(D\mid p^\ast_2, H_2)\geq P(D\mid p^\ast_1, H_1)
+   \end{equation}
+   because \(H_2\) is going to fit the data at least as well as \(H_1\)</p>
+  </li>
+  <li>
+    <p>On the other hand,
+  \begin{equation}
+  \frac{\sigma_2^\ast}{\sigma_2} \leq \frac{\sigma_1^\ast}{\sigma_1}
+  \end{equation}
+  because for \(H_2\) the posterior of the parameter has a higher
+  peak, thus it has a smaller spread.</p>
+  </li>
+</ul>
+
+<p>Then for a model with more parameters to have a higher probability,
+  the gain in the fit of the data (the data fit term), has to
+  compensate the decrease in uncertainty about the parameter(s) (the
+  Bayesian Occam’s razor term).</p>
+
+<h3 id="occams-razor-example">Occam’s razor Example</h3>
+
+<p>Let us go back to our example in <a href="../w02/w02-lecture.html">Week 02</a>
+  about the wait time for bacterial mutation.  In that example, we
+  assumed there was one type of bacteria, with one single mutational
+  time constant \(\lambda\).</p>
+
+<p>What if there was more than one species of bacteria with distinct
+  mutational time constants?  Can the data tell us if that is the
+  case?</p>
+
+<p>In order to do that, we want to compare two nested hypotheses:</p>
+<ul>
+  <li>
+    <p><strong>\(H_1\): One mutation time constant \(\lambda\).</strong></p>
+
+    <p>The probability for a bacterium to wait time \(t\) before mutating
+  under \(H_1\) is
+  \begin{equation}
+  P(t\mid \lambda, H_1) =
+  \frac{e^{-t/\lambda}}{Z(\lambda)},
+  \end{equation}
+  where \(Z(\lambda)\) is determined by the normalization condition
+  \begin{equation}
+  Z(\lambda) =
+  \int_{t_{-}}^{t_{+}} e^{-t/\lambda}\, dt.
+  \end{equation}
+  Where we have assumed that we observe the bacterial colony in the
+time interval times \([t_{-},t_{+}]\).</p>
+  </li>
+  <li>
+    <p><strong>\(H_2\): Two mutation time constants \(\lambda_1, \lambda_2\).</strong></p>
+
+    <p>The probability for a bacterium to wait time \(t\) before mutating
+  under \(H_2\) is
+  \begin{equation}
+  P(t\mid \lambda_1,\lambda_2, H_2) \propto
+  \eta \frac{e^{-t/\lambda_1}}{Z(\lambda_1)} + (1-\eta) \frac{e^{-t/\lambda_2}}{Z(\lambda_2)},
+  \end{equation}</p>
+
+    <p>such that there is a probability \(\eta\) that the bacterium
+  mutates with rate \(\lambda_1\) and a probability \(1-\eta\) that
+  it mutates with rate \(\lambda_2\). For simplicity, we assume that
+  \(\eta\) is a fixed value.</p>
+  </li>
+</ul>
+
+<p>We want to calculate the ratio of the probability of the two
+  hypotheses, which as we have seen before is given by
+  \begin{equation}
+  \frac{P(H_1\mid D)}{P(H_2\mid D)} = \frac{P(D\mid H_1)}{P(D\mid H_2)},
+  \end{equation}
+  assuming an equal prior for the two hypotheses.</p>
+
+<p>Let’s calculate the evidences \(P(D\mid H_1)\) and \(P(D\mid H_2)\) for
+  the two hypotheses. If we assume we have \(N\) data that correspond to
+  mutation times \(t_1,\ldots,t_N\), then</p>
+
+<ul>
+  <li>
+    <p><strong>Evidence for H_1:</strong>
+For a given parameter \(\lambda\) we have,
+  \begin{equation}
+  P(D\mid \lambda, H_1) = \frac{e^{-\sum_i t_i/\lambda}}{Z^N(\lambda)}.
+  \end{equation}</p>
+
+    <p>The evidence is obtained by marginalization over all allowed
+  values of \(\lambda\) as</p>
+
+\[\begin{aligned}
+  P(D\mid H_1)
+    &amp;= \int_{\lambda} P(D\mid \lambda, H_1) P(\lambda\mid H_1)\, d\lambda\\
+    &amp;= \int_{\lambda^-}^{\lambda^+} \frac{e^{-\sum_i t_i/\lambda}}{Z^N(\lambda)} \frac{1}{\lambda^{+}-\lambda^{-}}\, d\lambda\\
+    &amp;= \frac{1}{\sigma}\int_{\lambda^-}^{\lambda^+} \frac{e^{-\sum_i t_i/\lambda}}{Z^N(\lambda)}\, d\lambda.
+  \end{aligned}\]
+
+    <p>Here, I assume a uniform prior for \(\lambda\) (which can vary in
+  \([\lambda^{-},\lambda^{+}]\)) given by</p>
+
+\[P(\lambda\mid H_1) = \left\{
+  \begin{array}{ll}
+  \frac{1}{\lambda^{+}-\lambda^{-}} = \frac{1}{\sigma} &amp; \lambda^{-}\leq\lambda\leq\lambda^{+}\\
+  0                                                    &amp; \mbox{otherwise}
+  \end{array}
+  \right.\]
+  </li>
+  <li>
+    <p><strong>Evidence for H_2:</strong>
+For two given parameters \(\lambda_1, \lambda_2\) we have,</p>
+
+\[\begin{aligned}
+    P(D\mid \lambda_1, \lambda_2, H_1)
+    &amp;= \prod_i \left[\eta \frac{e^{-t_i/\lambda_1}}{Z(\lambda_1)} + (1-\eta) \frac{e^{-t_i/\lambda_2}}{Z(\lambda_2)}\right]\\
+  \end{aligned}\]
+
+    <p>The evidence is obtained by marginalization over all allowed
+  values of \(\lambda_1\) and \(\lambda_2\) as</p>
+
+\[\begin{aligned}
+    P(D\mid H_2)
+    &amp;= \int_{\lambda_1}\int_{\lambda_2}
+    P(D\mid \lambda_1,\lambda_2, H_2) P(\lambda_1,\lambda_2\mid H_2)\, d\lambda_1 d\lambda_2\\
+    &amp;= \int_{\lambda_1^-}^{\lambda_1^+}\int_{\lambda_2^-}^{\lambda_2^+}
+    \prod_i \left[\eta \frac{e^{-t_i/\lambda_1}}{Z(\lambda_1)} + (1-\eta) \frac{e^{-t_i/\lambda_2}}{Z(\lambda_2)} \right]
+    \frac{1}{\lambda_1^{+}-\lambda_1^{-}}\frac{1}{\lambda_2^{+}-\lambda_2^{-}}\, d\lambda_1 d\lambda_2\\
+    &amp;= \frac{1}{\sigma_{1}\sigma_{2}}\int_{\lambda_1^-}^{\lambda_1^+}\int_{\lambda_2^-}^{\lambda_2^+}
+    \prod_i \left[\eta \frac{e^{-t_i/\lambda_1}}{Z(\lambda_1)} + (1-\eta) \frac{e^{- t_i/\lambda_2}}{Z(\lambda_2)} \right]
+ \end{aligned}\]
+
+    <p>Uniform priors are also assumed for \(\lambda_1\) and
+  \(\lambda_2\) and \(\sigma_{1}\equiv
+  \lambda^{+}_{1}-\lambda^{-}_{1}\), \(\sigma_{2}\equiv
+  \lambda^{+}_{2}-\lambda^{-}_{2}\).</p>
+  </li>
+</ul>
+
+<p>The ratio of the two evidences gives us the ratio of the two
+  hypotheses. The integrals in the evidences can be easily calculated
+  numerically.</p>
+
+<p>For the example of <a href="../w02/w02-lecture.html">Week 02</a>, the data was \(N = 6\)
+  \begin{equation}
+  {t_1,\ldots,t_6}= {1.2,2.1,3.4,4.1,7,11}.
+  \end{equation}</p>
+
+<p>Assuming \(\eta = 0.5\), \(t_{-} = 1\) mins, \(t_{+} = 20\) mins;
+  and \(\lambda^{-}= \lambda_1^{-}= \lambda_2^{-}= 0.05\), and
+  \(\lambda^{+}= \lambda_1^{+}= \lambda_2^{+}=80\), produces,</p>
+
+\[\begin{aligned}
+    P(H_1\mid \{1.2,2.1,3.4,4.1,7,11\}) &amp;= e^{-16.213},\\
+    P(H_2\mid \{1.2,2.1,3.4,4.1,7,11\}) &amp;= e^{-16.499}.\\
+  \end{aligned}\]
+
+<p>That is</p>
+
+<p>\begin{equation}
+  \frac{P(H_1\mid {1.2,2.1,3.4,4.1,7,11})}{P(H_2\mid {1.2,2.1,3.4,4.1,7,11})} = e^{0.286} = 1.33.
+  \end{equation}</p>
+
+<p>That is, the amount of data is small, and the evidence favors \(H_1\) but only slightly.</p>
+
+<p><strong>Question:</strong> what would you do if you wanted to relax the
+  condition that the mixing parameter \(\eta\) has a fixed value. Can
+  you do inference to determine its value given the data?</p>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

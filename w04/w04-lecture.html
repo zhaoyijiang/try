@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#p-value-definition" id="markdown-toc-p-value-definition">p-value: definition</a></li>
+  <li><a href="#example" id="markdown-toc-example">Example:</a>    <ul>
+      <li><a href="#the-p-value-approach" id="markdown-toc-the-p-value-approach">The p-value approach</a></li>
+      <li><a href="#the-bayesian-approach" id="markdown-toc-the-bayesian-approach">The Bayesian approach</a></li>
+      <li><a href="#which-method-do-you-prefer" id="markdown-toc-which-method-do-you-prefer">Which method do you prefer?</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-students-t-test-a-widely-used-p-value" id="markdown-toc-the-students-t-test-a-widely-used-p-value">The Student’s t-test: a widely used p-value</a>    <ul>
+      <li><a href="#read-the-documentation--look-at-your-data" id="markdown-toc-read-the-documentation--look-at-your-data">Read the documentation – look at your data</a></li>
+      <li><a href="#what-does-the-students-distribution-have-to-do-with-any-of-this" id="markdown-toc-what-does-the-students-distribution-have-to-do-with-any-of-this">What does the Student’s distribution have to do with any of this?</a></li>
+      <li><a href="#is-this-p-value-what-you-really-want-to-know" id="markdown-toc-is-this-p-value-what-you-really-want-to-know">Is this p-value what you really want to know?</a></li>
+    </ul>
+  </li>
+  <li><a href="#correcting-for-multiple-hypothesis-testing" id="markdown-toc-correcting-for-multiple-hypothesis-testing">Correcting for multiple hypothesis testing</a>    <ul>
+      <li><a href="#the-bonferroni-correction-controlling-the-familywise-error-rate" id="markdown-toc-the-bonferroni-correction-controlling-the-familywise-error-rate">The bonferroni correction: controlling the familywise error rate</a></li>
+      <li><a href="#false-discovery-rate-fdr" id="markdown-toc-false-discovery-rate-fdr">False Discovery Rate (FDR)</a></li>
+    </ul>
+  </li>
+  <li><a href="#proper-p-value-etiquette" id="markdown-toc-proper-p-value-etiquette">Proper p-value etiquette</a>    <ul>
+      <li><a href="#what-p-values-are-not" id="markdown-toc-what-p-values-are-not">What p-values are not</a></li>
+      <li><a href="#define-precisely-your-p-value-as-a-probability-of-something" id="markdown-toc-define-precisely-your-p-value-as-a-probability-of-something">Define precisely your p-value as a probability of something</a></li>
+      <li><a href="#specify-the-null-hypothesis" id="markdown-toc-specify-the-null-hypothesis">Specify the null hypothesis</a></li>
+      <li><a href="#look-in-your-data-for-those-expected-false-cases" id="markdown-toc-look-in-your-data-for-those-expected-false-cases">Look in your data for those expected false cases</a></li>
+    </ul>
+  </li>
+  <li><a href="#comparing-p-values-of-different-experiments--dont" id="markdown-toc-comparing-p-values-of-different-experiments--dont">Comparing p-values of different experiments – don’t</a></li>
+  <li><a href="#and-if-you-have-more-than-one-alternative-hypothesis" id="markdown-toc-and-if-you-have-more-than-one-alternative-hypothesis">And if you have more than one alternative hypothesis?</a></li>
+</ul>
+
+<h1 class="no_toc" id="week-04">week 04:</h1>
+
+<h1 class="no_toc" id="significance-the-students-t-test-and-p-values"><em>Significance: The Student’s t-test and p-values</em></h1>
+
+<h2 id="p-value-definition">p-value: definition</h2>
+
+<p>You have a hypothesis \(H_1\), usually <em>complicated</em>, that you suspect
+may explain your experimental observations, and a null hypothesis
+\(H_0\), usually simpler, that could also explain your results.</p>
+
+<p>A new result comes in for which you \(H_1\) hypothesis assigns a
+particular “score” \(= sc\).</p>
+
+<p>The p-value of \(sc\) is the <strong>cumulative probability</strong> that using the
+<strong>null hypothesis</strong> you could have got that score or higher (assuming that
+higher score is better).</p>
+
+\[\mbox{pvalue}(sc) = P(\mbox{score} &gt;= sc \mid H_0).\]
+
+<p>If \(\mbox{p-value}(sc)\) is small, that means there is little chance
+of that score being obtained under the null model. A common mistake is
+to think that such a small p-value implies that your hypothesis \(H_1\)
+is true. <strong>A p-value says nothing about your hypothesis, but about the
+hypothesis you would like to reject.</strong> Rejecting the null hypothesis
+does not imply that your hypothesis is true.</p>
+
+<h2 id="example">Example:</h2>
+
+<p>Remember the homework where you where running a new experiment which
+for a previous researcher had a failure frequency of \(f^0= 0.2\), and
+you observed ‘ssfff’, that is, a sequence of 2 successes (s) followed
+by three failures (f) ?</p>
+
+<p>We can introduce two hypotheses</p>
+
+<ul>
+  <li>
+    <p><strong>\(H_0\):</strong> The failure frequency \(f\) is equal to \(f^0\) (\(f = 0.20\)).</p>
+  </li>
+  <li>
+    <p><strong>\(H_1\):</strong> The failure frequency \(f\) is larger than \(f^0\) (\(f &gt; 0.20\)).</p>
+  </li>
+</ul>
+
+<h3 id="the-p-value-approach">The p-value approach</h3>
+
+<p><em>We can calculate what is the probability under the null hypothesis
+of obtaining in 5 attempts the observed result or something more
+extreme.</em></p>
+
+<p>Those events are: ‘ssfff’, ‘sffff’, and ‘fffff’. Resulting in a
+p-value,</p>
+
+\[\begin{aligned}
+pval(\mbox{'ssfff'})
+&amp;= P(\mbox{'ssfff'}\mid H_0) +P(\mbox{'sffff'}\mid H_0) +P(\mbox{'fffff'}\mid H_0)\\
+&amp;= \frac{5!}{3!2!} 0.2^3 0.8^2 + \frac{5!}{4!1!} 0.2^4 0.8 + \frac{5!}{5!0!} 0.2^5 \\
+&amp;= 0.0512 + 0.0064 + 0.00032\\
+&amp;= 0.05792
+\end{aligned}\]
+
+<p><strong>What would you do with this result?</strong></p>
+
+<p>Oftentimes, a p-value is used to “reject” the null hypothesis if the
+pvalue is smaller than \(0.05\). Would you or would you not reject the
+null hypothesis after this result?  Why 0.05?</p>
+
+<h3 id="the-bayesian-approach">The Bayesian approach</h3>
+
+<p>We have learned to calculate the posterior probability \(P(f \mid
+\mbox{'ssfff'})\) which tell us a lot about the value of the failure
+parameter \(f\) given the data. Namely,</p>
+
+<p>\begin{equation}
+P(f \mid \mbox{‘ssfff’}) =
+\frac{6!}{3! 2!}\, f^3 (1-f)^2,
+\end{equation}</p>
+
+<p>which is given in Figure 1. The maximum of this posterior distribution
+is \(f^* = 0.6\), far away from the failure frequency \(f^0 = 0.2\) of
+the null hypothesis.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="Figure1.png" style="width:300px;" /> <br />
+    Figure 1. Posterior probabilities of the
+  frequency of failure given that you have obtained 2 successes and 3
+  failures.
+  </div>
+</div>
+
+<p>Bayesian hypothesis comparison tells us</p>
+
+\[\begin{aligned}
+\frac{P(H_0\mid \mbox{'ssfff'})}{P(H_1\mid \mbox{'ssfff'})}
+&amp;=
+\frac{P(\mbox{'ssfff'}\mid H_0)\,P(H_0)}
+     {P(\mbox{'ssfff'}\mid H_1)\,P(H_1)}.
+\end{aligned}\]
+
+<p>Let us assume that both hypotheses are equally likely \(P(H_0) =
+P(H_1)\). Then the ratio of the two hypotheses is the ratio of the
+evidences of the data given \(H_0\) and \(H_1\), as</p>
+
+\[\begin{aligned}
+\frac{P(H_0\mid \mbox{'ssfff'})}{P(H_1\mid \mbox{'ssfff'})}
+&amp;=
+\frac{P(\mbox{'ssfff'}\mid H_0)}{P(\mbox{'ssfff'}\mid H_1)}.
+\end{aligned}\]
+
+<p>And using marginalization,</p>
+
+\[\begin{aligned}
+\frac{P(\mbox{'ssfff'}\mid H_0)}{P(\mbox{'ssfff'}\mid H_1)}
+&amp;=
+\frac{\int_{0}^{1} P(\mbox{'ssfff'}\mid f, H_0)\,P(f\mid H_0)\, df}
+{\int_{0}^{1} P(\mbox{'ssfff'}\mid f, H_1)\,P(f\mid H_1)\, df}.
+\end{aligned}\]
+
+<p>Let’s assume that for the \(H_0\) hypothesis the probability does not
+have to be <em>precisely</em> \(f^0\), but it can take the range \(f^0\pm
+0.01\).</p>
+
+<p>Using uniform priors</p>
+
+\[\begin{aligned}
+P(f\mid H_0) &amp;= \left\{
+\begin{array}{ll}
+\frac{1}{0.21-0.19}  &amp; \mbox{for}\quad 0.19 &lt; f &lt; 0.21\\
+0                    &amp; \mbox{otherwise}
+\end{array}
+\right.\\
+P(f\mid H_1) &amp;= \left\{
+\begin{array}{ll}
+\frac{1}{1.0-0.2} &amp; \mbox{for}\quad 0.2 &lt; f &lt; 1\\
+0                 &amp; \mbox{otherwise}
+\end{array}
+\right.
+\end{aligned}\]
+
+<p>we have</p>
+
+\[\begin{aligned}
+\frac{P(H_0\mid \mbox{'ssfff'})}{P(H_1\mid \mbox{'ssfff'})}
+=
+\frac{P(\mbox{'ssfff'}\mid H_0)}{P(\mbox{'ssfff'}\mid H_1)}
+&amp;=
+\frac{\int_{0}^{1} P(\mbox{'ssfff'}\mid f)\,P(f\mid H_0)\,df}{\int_{0}^{1} P(\mbox{'ssfff'}\mid f)\,P(f\mid H_1)\, df}\\
+&amp;=
+\frac{\frac{1}{0.02}\,\int_{0.19}^{0.21} f^3 (1-f)^2 \,df}{\frac{1}{0.80}\,\int_{0.2}^{1} f^3 (1-f)^2 \,df}\\
+&amp;=
+\frac{\frac{1}{0.02}\,\left[\frac{1}{4}f^4+\frac{1}{6}f^6-\frac{2}{5}f^5\right]^{0.21}_{0.19}}
+{\frac{1}{0.80}\,\left[\frac{1}{4}f^4+\frac{1}{6}f^6-\frac{2}{5}f^5\right]^{1}_{0.20}}\\
+&amp;=
+\frac{0.005127}{0.020480}\\
+&amp;=
+\frac{20.02}{79.98}
+\end{aligned}\]
+
+<p>Thus, given the data and our priors, there is a 80:20 chance that the
+failure probability is larger than 0.2.</p>
+
+<h3 id="which-method-do-you-prefer">Which method do you prefer?</h3>
+
+<ul>
+  <li>
+    <p>As you can see in this example, the p-value does not use any information about the
+\(H_1\) hypothesis, thus does not provide any information about
+\(H_1\), while the Bayesian method does.</p>
+  </li>
+  <li>
+    <p>Calculating a p-value can be easier, especially for methods with many
+parameters, and you should feel free to use it, provided that you
+know what you are doing, and interpret the results correctly.  The
+above p-value of \(\sim\)0.06 does not mean that the probability of
+the null hypothesis being false is 94%, it is just the probability
+of obtaining the results you got under the null hypothesis.</p>
+
+    <p>Sometimes it is difficult to decide what to do with a given p-value result.
+More about this later in this lecture.</p>
+  </li>
+  <li>
+    <p>In my opinion, if possible, the Bayesian method is preferable as it
+conveys a lot more information. Just the posterior probability (Figure
+1) gives you a lot of information about what the data tells about the
+value of the parameters. It is also more robust to small fluctuations
+as allowing you integrate around the value 0.2 for \(H_0\).</p>
+  </li>
+</ul>
+
+<h2 id="the-students-t-test-a-widely-used-p-value">The Student’s t-test: a widely used p-value</h2>
+
+<p>It is typical to provide a p-value to compare the mean of a
+experimental distribution to a known mean of a null hypothesis. Let’s
+consider one practical case.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="RNaseP.png" style="width:300px;" /> <br />
+  </div>
+</div>
+
+<p>There are genes that do not produce proteins, but the functional
+product is the RNA molecule. Many of those functional RNAs form stable
+structures.  RNaseP RNA is an example of a structural RNA that
+functions as a ribozyme (a RNA enzyme).  RNaseP RNA is responsible for
+trimming the ends of tRNAs. As many other functional RNAs, RNAseP RNA
+has a structure.</p>
+
+<p>Finding the structure of one of those functional RNAs is an
+interesting problem. One conclusive way is using crystallography, but
+that is hard and slow. We have faster computational methods that can
+predict structures given the RNA sequence.  There are also
+experimental techniques (named RNA structural or chemical probing)
+that given an RNA molecule, can calculate the reactivity of each
+residue for rather long RNA molecules. These chemical reactivities
+correlate with the flexibility of the RNA molecule, thus they are
+expected to inform us about which residues are paired and unpaired in
+the molecule, thus providing experimental information about RNA
+structure (<a href="2006_kw_nprot.pdf">see for instance</a>).</p>
+
+<p>I have taken chemical probing data for a well known RNA molecule,
+RNaseP RNA, from the RNA Mapping DataBase
+([RMDB])(https://rmdb.stanford.edu/), a repository of RNA structure
+probing. <a href="RNASEP_DMS_0000.rdat">Here</a> is the original data if you want
+to double check my analysis (which I encourage you to do). And here
+are the files extracted from the previous file of <a href="RNASEP_DMS_0000.rdat.outp">reactivities for
+bases that are paired</a>, and <a href="RNASEP_DMS_0000.rdat.outu">reactivities
+for bases that are not paired</a>, for the
+wild type RNaseP RNA sequence.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="shape_box.png" style="width:300px;" /> <br />
+    Figure 3. Mean and standard deviation
+    for the reactivity data of one chemical probing experiment for RNaseP RNA.
+  </div>
+</div>
+
+<p>In Figure 3, I show a typical plot. As you well know, I do not like those
+plots, and I think you should never use them. This plots simply tells us
+what the mean and standard deviation of the reactivities are if we separate
+the base paired residues from those that are unpaired.</p>
+
+<p>Another typical thing to do is to add a mysterious p-value associated
+to that plot. I have followed that trend. Let the null hypothesis be
+that a residue is unpaired. One such typical method is called
+<strong>Student’s t-test</strong>.  I have used a Python function that implements
+the Student’s t-test, named
+<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html"><strong>ttest_ind</strong></a>.  I have
+used the ttest matlab function out of the box in order to calculate
+the p-value of the distribution of paired residues relative to that of
+unpaired residues (the null hypothesis).</p>
+
+<p>The <strong>ttest</strong> function assigns a p-value of \(4.6e^{-9}\) for the
+paired residue distribution to have the mean of the unpaired residue
+distribution.</p>
+
+<p>From this small p-value, you <em>may</em> be tempted to conclude that clearly
+you can use chemical probing data to distinguish between residues are
+paired from those that are not, thus to infer a structure for the RNA.</p>
+
+<p><strong>That conclusion would be wrong</strong></p>
+
+<h3 id="read-the-documentation--look-at-your-data">Read the documentation – look at your data</h3>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="matlab_ttest.png" style="width:300px;" /> <br />
+    Figure 3. Matlab documentation for function ttest(x,m).
+  </div>
+</div>
+
+<p>If you go to the matlab documentation for the <a href="https://www.mathworks.com/help/stats/ttest.html"><strong>ttest</strong>
+function</a>, the first
+thing you read is that in order to use the Student’s t-test, the
+distribution of the data <strong>has to be Gaussian</strong> (see Figure 3).
+However, if you go to the Python documentation, they don’t even bother
+mentioning that fact. It is only when you go to the linked wikipedia
+pages.</p>
+
+<p>Is that the case for this data?</p>
+
+<p>Figure 4 shows that the distributions of reactivity scores both for
+paired and unpaired residues are obviously not Gaussian.</p>
+
+<p><em>never use a p-value test without looking at the actual distribution first</em></p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="shape_histogram.png" style="width:300px;" /> <br />
+    Figure 4. The distributions of reactivity scores for paired and unpaired
+    residues.
+  </div>
+</div>
+
+<h3 id="what-does-the-students-distribution-have-to-do-with-any-of-this">What does the Student’s distribution have to do with any of this?</h3>
+
+<p>For this section, I am following Sivia’s book “Data Analysis”,
+Sections 2.3 and 3.2.</p>
+
+<p>Let us be Bayesian again. We have an experiments in which the
+measurements \(\{x_k\}\) are Gaussian. The <em>ttest</em> calculates the
+probability that the experiment’s mean could have come from a process
+of mean \(\mu\).</p>
+
+<p>Bayes’ theorem tells us that the posterior probability for the two
+parameters of the Gaussian distribution \(\mu\) and \(\sigma\) is given
+by</p>
+
+\[\begin{equation}
+P(\mu, \sigma\mid \{x_k\}, I)
+\propto P(\{x_k\}\mid \mu, \sigma, I) \times P(\mu, \sigma\mid I),
+\end{equation}\]
+
+<p>where \(P(\mu, \sigma\mid I)\) is the prior probability of the
+parameters.</p>
+
+<p>Since we are comparing only means, the Bayesian thing to do is to integrate to all
+possible values of the variance \(\sigma\)</p>
+
+\[\begin{equation}
+P(\mu\mid \{x_k\}, I)
+\propto \int_0^{\infty} P(\{x_k\}\mid \mu, \sigma, I) \times P(\mu, \sigma\mid I)\, d\sigma.
+\end{equation}\]
+
+<p>The probability of the data given \(\mu\) and \(\sigma\) is</p>
+
+\[\begin{equation}
+P(\{x_k\}\mid \mu, \sigma, I)
+= \prod_k P(x_k\mid \mu, \sigma, I)
+= \frac{1}{\left(\sqrt{2\pi\sigma^2}\right)^N} \mbox{exp}\left[ -\frac{1}{2\sigma^2}\sum_{k=1}^N(x_k-\mu)^2\right].
+\end{equation}\]
+
+<p>Assuming uninformative and independent priors</p>
+
+\[P(\mu, \sigma\mid  I) = P(\mu\mid  I)\, P(\sigma\mid  I)\]
+
+<p>where</p>
+
+\[\begin{aligned}
+P(\mu\mid  I) &amp;= \left\{
+\begin{array}{ll}
+\frac{1}{\mu_{+}-\mu_{-}}  &amp; \mbox{for}\quad \mu_{-} &lt; \mu &lt; \mu_{+}\\
+0                          &amp; \mbox{otherwise}
+\end{array}
+\right.\\
+P(\sigma\mid  I) &amp;= \left\{
+\begin{array}{ll}
+\mbox{constant} &amp; \mbox{for}\quad \sigma &gt; 0\\
+0                 &amp; \mbox{otherwise}
+\end{array}
+\right.
+\end{aligned}\]
+
+<p>are constants, which allows us to include the prior in the
+proportionality.</p>
+
+<p>The posterior probability of \(\mu\) is then</p>
+
+\[\begin{equation}
+P(\mu\mid \{x_k\}, I)
+\propto
+ \int_0^{\infty} \frac{1}{\sigma^N} \mbox{exp}\left[ -\frac{1}{2\sigma^2}\sum_{k=1}^N(x_k-\mu)^2\right]\, d\sigma.
+\end{equation}\]
+
+<p>Introducing a change of variable</p>
+
+\[t = \frac{\sqrt{\sum_k (x_k-\mu)^2}}{\sigma}\quad \mbox{then}\quad d\sigma = -\frac{\sqrt{\sum_k (x_k-\mu)^2}}{t^2}\, dt\]
+
+<p>we obtain,</p>
+
+\[\begin{aligned}
+P(\mu\mid \{x_k\}, I)
+&amp;\propto
+\int_0^{\infty} \left(\frac{t}{\sqrt{\sum_k (x_k-\mu)^2}}\right)^N \left(e^{-t^2/2}\right)\ \frac{\sqrt{\sum_k (x_k-\mu)^2}}{t^2}\, dt\\
+&amp;=
+\left(\sqrt{\sum_k (x_k-\mu)^2}\right)^{-N+1} \int_0^{\infty} t^{N-2} e^{-t^2/2} dt.
+\end{aligned}\]
+
+<p>Then, since the integral is a constant that does not depend on  the data or \(\mu\),</p>
+
+\[\begin{equation}
+P(\mu\mid \{x_k\}, I)
+\propto
+ \left(\sum_k (x_k-\mu)^2\right)^{\frac{-N+1}{2}}.
+\end{equation}\]
+
+<p>Introducing the sample mean \(\bar x = \frac{1}{N}\sum_k x_k\), and using the identity</p>
+
+\[\sum_k (x_k-\mu)^2 = N\left(\bar x - \mu\right)^2 + \sum_k\left(x_k-\bar x\right)^2,\]
+
+<p>and introducing \(V\equiv \sum_k\left(x_k-\bar x\right)^2\) which is
+not dependent on \(\mu\)</p>
+
+<p>we have,</p>
+
+\[\begin{equation}
+P(\mu\mid \{x_k\}, I)
+\propto
+ \left[N (\bar x-\mu)^2 + V\right]^{\frac{-N+1}{2}},
+\end{equation}\]
+
+<p>which is one of many representations of the Student’s t distribution.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="Student.png" style="width:300px;" /> <br />
+    Figure 5. Comparison of the Student's t distribution for a zero sample mean and
+    different values of N to the Gaussian distribution of mean zero and sigma one.
+  </div>
+</div>
+
+<p>The Student’s distribution is much like the Gaussian distribution. It
+is symmetric around \(\mu\). The main difference from a Gaussian is
+that the tails are much fatter and they extend further from the mean
+value. As \(N\) becomes larger, the Student’s t distribution becomes
+closer to the Gaussian distribution. (See Figure 5).</p>
+
+<h3 id="is-this-p-value-what-you-really-want-to-know">Is this p-value what you really want to know?</h3>
+
+<p>Student’s t-test or not, it is obvious that the means of the two
+chemical probing distributions for paired and unpaired residues are
+different (Figure 4). For some experiments, knowing that the means are
+different is all you need.  But let us think again about what we would
+like to achieve here.  You want to see if chemical probing
+reactivities will help you distinguish residues that are base paired
+from those that are not paired.</p>
+
+<p>The p-value calculation you would like to do is:</p>
+
+<p><strong>for a given
+reactivity value, what is the probability that I could have obtained
+that reactivity or smaller if the residue were unpaired?</strong></p>
+
+<p>We can calculate an empirical version of this p-value using the data
+we have.  From the distribution of unpaired residues in Figure 4, I
+find</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>reactivity</em></th>
+      <th><em>p-value</em></th>
+      <th><em>unpaired residues with this reactivity or lower</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.0029</td>
+      <td>0.02</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>0.0034</td>
+      <td>0.05</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>0.0042</td>
+      <td>0.10</td>
+      <td>10%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This results is telling us that we need to restrict to very small reactivities
+so that not too many false positives start appearing.</p>
+
+<p><strong>Notice that I have not had to invoke any <em>fancy-named statistical
+test</em> to do this calculation, nor have I had to make any assumptions
+about the data.</strong></p>
+
+<p>Remember that our objective is to decide on whether and how can I use
+the residue reactivities to infer which residues are paired and which
+aren’t. P-values refer to one single testing: <em>I look at the reactivity
+of one single residue</em>. Answering the above question requires testing
+all residues in the RNA structure. This is a problem of multiple
+testing that we approach next.</p>
+
+<h2 id="correcting-for-multiple-hypothesis-testing">Correcting for multiple hypothesis testing</h2>
+
+<p>The p-values we have discussed so far give us a probability per
+test. If I do my experiment one more time, and I obtain one particular
+outcome, the p-value is the probability of that outcome (or another
+more extreme) happening just under the null hypothesis.</p>
+
+<p><em>How to interpret a p-value if you repeat the experiment many times?</em>
+ This issue is very relevant in modern high-throughput biology. If you
+ repeat a test many times, even a small p of obtaining that result
+ under the null hypothesis, could results in a large number of cases
+ controlled by the null hypothesis with p-value \(p\) or smaller (false positives).</p>
+
+<p>How many false positives? approximately \(n p\), for \(n\) tests, when
+you assume that all observed scores come from the null hypothesis.</p>
+
+<p>Here is a good read about what to do with p-values for multiple
+testing <a href="http://www.nature.com/nbt/journal/v27/n12/full/nbt1209-1135.html#f1">“How does multiple testing correction work?” by
+W. Noble</a></p>
+
+<h3 id="the-bonferroni-correction-controlling-the-familywise-error-rate">The bonferroni correction: controlling the familywise error rate</h3>
+
+<p>A simple thing to do is, if you aim for a certain p-value \(p\) and you do \(n\) tests,
+impose that for any given test you obtain a p-value of <strong>p/n</strong>. This is called
+the bonferroni correction.</p>
+
+<p>This is also called controlling the familywise error rate, as
+\begin{equation}
+P(\cup_i {p_i \leq p}) \leq \sum_i P(p_i\leq p/n) \leq n \frac{p}{n} = p.
+\end{equation}</p>
+
+<p>This is considered a very conservative approach for very large number or tests.</p>
+
+<h3 id="false-discovery-rate-fdr">False Discovery Rate (FDR)</h3>
+
+<p>Let’s go back to our problem of using chemical probing data to
+estimate RNA residues that are paired into a structure.</p>
+
+<ul>
+  <li>
+    <p>N = number of tests (number of residues in the RNA molecule, N=265)</p>
+  </li>
+  <li>
+    <p>\(sc^\ast\) a chosen score (reactivity)</p>
+  </li>
+  <li>
+    <p>\(p^\ast\) p-value probability that a <em>unpaired</em> residue has a score \(sc \leq sc^\ast\).</p>
+  </li>
+  <li>
+    <p>\(F^\ast\) number of residues with a score \(sc \leq sc^\ast\).</p>
+  </li>
+</ul>
+
+<p>The False Discovery Rate is defined as <strong>the fraction of the
+measurements we called positives at the p-value threshold \(p^\ast\)</strong>
+(named above \(F^\ast\)), <strong>that are expected to be false positives.</strong>
+That is, assuming that all \(N\) measurements are drawn from the null
+hypothesis,</p>
+
+\[\begin{aligned}
+\mbox{FDR}         &amp;= \frac{\mbox{N} \times p^\ast}{F^\ast}.
+\end{aligned}\]
+
+<p>Introducing also</p>
+
+<ul>
+  <li>
+    <p>\(T\) = Trues (residues that are paired, N=160)</p>
+  </li>
+  <li>
+    <p>\(TF^\ast\) = number of T with a score \(sc \leq sc^\ast\), that is, T \(\cap\, F^\ast\).</p>
+  </li>
+</ul>
+
+<p>We can calculate the sensitivity corresponding to that FDR as</p>
+
+\[\begin{aligned}
+\mbox{Sensitivity} &amp;= \frac{TF^\ast}{T}.
+\end{aligned}\]
+
+<p>In a given experiment, you want to find a good tradeoff between the
+cost of having false positive (the FDR) with the benefit of finding
+more positives (the sensitivity).</p>
+
+<p>Using the data we have, we can calculate p-values, FDR, and
+sensitivity for different reactivity scores as,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>reactivity</em></th>
+      <th><em>p-value</em></th>
+      <th><em>FDR</em></th>
+      <th><em>Sensitivity (%)</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.0029</td>
+      <td>0.02</td>
+      <td>0.17</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>0.0034</td>
+      <td>0.06</td>
+      <td>0.34</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>0.0042</td>
+      <td>0.10</td>
+      <td>0.45</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>0.0063</td>
+      <td>0.28</td>
+      <td>0.67</td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Thus, in order to identify 50% of the paired bases (sensitivity), you
+should expect that about 66% of the bases that you call paired are
+really not paired (FDR). This is a more informative <em>and sober</em> view
+of the power of chemical probing, than our original assertion about
+the means of the two distribution being different with a very small
+p-value.</p>
+
+<h2 id="proper-p-value-etiquette">Proper p-value etiquette</h2>
+
+<p>As David Mackay puts it, “[..] p-values [..] should be treated with
+<em>extreme caution</em>”.  Even the American Statistical Association has
+issued recent <a href="http://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf">warnings on the use of
+p-values</a></p>
+
+<h3 id="what-p-values-are-not">What p-values are not</h3>
+
+<ul>
+  <li>
+    <p>p-values say nothing about your beloved hypothesis. <em>Rejecting the
+null hypothesis does not mean that your hypothesis is true.</em></p>
+  </li>
+  <li>
+    <p>p-values are not the probability of the null model given the
+data. <em>p-values tell you about the probability of the data, given the
+null hypothesis.</em> A p-value of 0.01 does not mean that there is a 1%
+chance for the null model to be true; rather, that you should expect a
+1% false positives.</p>
+  </li>
+  <li>
+    <p>p-values are not posteriors of the null model given the data, and
+cannot be used to asses model strength or to compare different
+models.</p>
+  </li>
+  <li>
+    <p><em>p-values are often used as a measure of statistical significance,
+but that is bogus.  p-values tell you about the number of false
+positives that have sneaked into your experiment</em>.  In an experiment
+with \(N\) observation, a p-value of \(p\) means that you should
+expect find about \(N p\) false positives amongst your positives.</p>
+  </li>
+  <li>
+    <p>Is a small p-value significant? Remember from our <a href="../w00/w00-lecture.html#the-random-variable-f_xx-is-uniformly-distributed">w01
+lectures</a>,
+the \(CDF_X(X)\) is distributed uniformly. Thus, a p-value which are
+values from a CDF is also distributed uniformly.</p>
+
+    <p>If your data follows the null hypothesis, you should be as
+surprised of getting a p-value of 0.05 as you would be of getting a
+0.99 or any other value, because they are being drawn from a Uniform
+\([0.1]\) distribution.</p>
+  </li>
+</ul>
+
+<h3 id="define-precisely-your-p-value-as-a-probability-of-something">Define precisely your p-value as a probability of something</h3>
+
+<p>When you say you are calculating a p-value, you cannot assume the
+reader should know what you are talking about. And conversely, if you
+read in a paper that something is “significant with a p-value of blah”
+and that is all the explanation they provide, do not feel stupid if
+you have no idea what they are talking about!</p>
+
+<h3 id="specify-the-null-hypothesis">Specify the null hypothesis</h3>
+
+<p>It is also not obvious what the null hypothesis is, that should always be specified.</p>
+
+<h3 id="look-in-your-data-for-those-expected-false-cases">Look in your data for those expected false cases</h3>
+
+<p>Do not use the word “significant”. All a p-value is giving you is an
+idea of how many false positives you should find in your set of
+predictions. It is your responsibility to estimate if that number is
+reasonable or not, and to find those false predictions.  They may give
+you an idea of other effects (alternative hypotheses) that you are so
+far ignoring.</p>
+
+<h2 id="comparing-p-values-of-different-experiments--dont">Comparing p-values of different experiments – don’t</h2>
+
+<p>There is an infectious disease that if left untreated, affected people
+have a probability of recovery of \(p_0 = 0.4\). We will call this the
+null hypothesis \(H_0\).</p>
+
+<p>Your lab is testing two new treatments, treatment A (<em>TrA</em>) and
+treatment B (<em>TrB</em>). You run two different experiments (<em>expA</em> and
+<em>expB</em>) where <em>TrA</em> or <em>TrB</em> is given to two different groups of
+affected people.</p>
+
+<p>Your analysis tells you that the p-values for the outcomes
+of <em>expA</em> and <em>expB</em> respect to the null hypothesis \(H_0\) are</p>
+
+\[\begin{aligned}
+\mbox{pval}(expA) &amp;= 0.2131,\\
+\mbox{pval}(expB) &amp;= 1.05 e^{-5}.\\
+\end{aligned}\]
+
+<p>It <em>seems</em> tempting to conclude from this results that <em>TrB</em> is a more
+effective treatment than <em>TrA</em>.</p>
+
+<p><strong>That conclusion would be wrong.</strong></p>
+
+<p><em>You can never compare two hypotheses by looking to their p-values
+relative to a third null hypothesis. There are many hidden and
+possibly confounding variables in that calculation, one of them the
+sample size.</em></p>
+
+<p>Let’s see what could be going on behind the scenes. A way of obtaining
+the previous result is the following:</p>
+
+<ul>
+  <li><em>expA</em> includes 15 infected people, 8 of which recovered after using <em>TrA</em>.</li>
+  <li><em>expB</em> includes 300 infected people, 157 of which recovered after using <em>TrB</em>.</li>
+</ul>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="Figure_pval1.png" style="width:300px;" /> <br />
+    Figure 6. Probability density under the null hypothesis and p-values for expA and expB.
+  </div>
+</div>
+
+<p>The corresponding p-values, that is, the probabilities of <strong>at least</strong> 8
+(157) recoveries out of 15 (300) under the null hypothesis \(H_0\) of
+no treatment at all are</p>
+
+\[\begin{aligned}
+\mbox{pval}(expA) &amp;= \sum_{n=8}^{15}    P(n\mid N=15,  p_0) \\
+&amp;= \sum_{n=8}^{15}    \frac{15!} {n! (15-n)!}  0.4^n 0.6^{15-n} \\
+&amp;= 0.2131,\\
+\mbox{pval}(expB) &amp;= \sum_{n=157}^{300} P(n\mid N=300, p_0) \\
+&amp;= \sum_{n=157}^{300} \frac{300!}{n! (300-n)!} 0.4^n 0.6^{300-n} \\
+&amp;= 1.05 e^{-5}.\\
+\end{aligned}\]
+
+<p>However, any simple analysis (for instance looking at the sample mean
+for \(p_A\) and \(p_B\), the probabilities of survival under <em>TrA</em> and
+<em>TrB</em>) tell you that those two treatments seem to be similar in
+effectiveness,</p>
+
+\[\begin{aligned}
+p_A^* &amp;= \frac{8}{15} = 0.533,\\
+p_B^* &amp;= \frac{157}{300} = 0.523.
+\end{aligned}\]
+
+<p><strong>What is going on?</strong></p>
+
+<p>Because the sample sizes for the two experiments are
+so different, the distribution \(P(n\mid N=300, H_0)\) is much
+narrower than \(P(n\mid N=15, H_0)\), thus the p-value of <em>expB</em> is
+smaller simply because the sample size is larger (see Figure 6).</p>
+
+<p>If you calculate the posterior distributions \(P(p_A\mid expA)\) and
+\(P(p_B\mid expB)\), which we have done before in <a href="../w02/w02-lecture.html">w02</a>,</p>
+
+\[\begin{aligned}
+P(p_A\mid expA) &amp;=   \frac{16!} {8! 7!}\,  p_A^{8} (1-p_A)^{7}\\
+P(p_B\mid expB) &amp;=   \frac{301!}{157! 143!}\, p_B^{157} (1-p_B)^{143} \\
+\end{aligned}\]
+
+<p>you can conclude that your assessment of \(p_B\) is more precise than
+that of \(p_A\), due to the larger amount of data, but they are
+perfectly compatible with both treatments having the same
+effectiveness.  (see Figure 7).</p>
+
+<div id="figcontainer">
+  <div id="figure">
+    <img src="Figure_pval2.png" style="width:300px;" /> <br />
+    Figure 7. Posterior probability of the efficiency of treatment A and treatment B given the
+    data.
+  </div>
+</div>
+
+<p>As we did in the homework of w02, you remember that when the data
+follows a binomial distribution, the best estimate of the Bernoulli
+parameter \(p\) and its confidence value are given by</p>
+
+\[\begin{equation}
+p^\ast  = \frac{n}{N} \quad \sigma = \sqrt{\frac{p^\ast(1-p^\ast)}{N}}.
+\end{equation}\]
+
+<p>The best estimates and confidence values for the effectiveness
+of the two treatments are</p>
+
+\[\begin{aligned}
+p_A &amp;\approx 0.533 \pm 0.129\\
+p_B &amp;\approx 0.523 \pm 0.029.
+\end{aligned}\]
+
+<p>In fact, if the two experiments had been run with using the same
+treatment, you would have obtained one “significant” p-value and one
+“non significant” p-value just because of the different sample size.</p>
+
+<p>In each case, the p-value is telling you the right thing regarding the null hypothesis. For <em>expA</em>, you don’t have enough data to reject \(p_A=p_0=0.4\), which is the same than the posterior of \(p_A\) in Figure 7 is telling you. On the other hand, for <em>expB</em>, you have enough data to reject \(p_B=p_0=0.4\) as a likely value of the probability of recovery. The wrong statement is to use those two results to make any claims about the effectiveness of <em>TrA</em> versus <em>TrB</em>. The posterior distributions of \(p_A\) and \(p_B\) in Figure 7 are telling you a lot more (with the same data) regarding the likelihood of any possible value of the probability of recovery under each treatment.</p>
+
+<h2 id="and-if-you-have-more-than-one-alternative-hypothesis">And if you have more than one alternative hypothesis?</h2>
+
+<p>The Bayesian approach to the question of comparing multiple hypothesis
+is clear. If you had multiple hypotheses \(H_1\ldots H_n\), one can
+calculate</p>
+
+\[P(H_i\mid D) =
+\frac{P(D\mid H_i)\ P(H_i) }
+{P(D\mid H_1)\ P(H_1) + \ldots + P(D\mid H_n)\ P(H_n)}, \quad 1\leq i \leq n,\]
+
+<p>which just requires to specify some priors for the different hypotheses.</p>
+
+<p>I am not sure how to come up with a p-value-based calculation using
+more than one null hypothesis.</p>
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

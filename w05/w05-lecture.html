@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#maximum-likelihood" id="markdown-toc-maximum-likelihood">Maximum Likelihood</a></li>
+  <li><a href="#least-squares" id="markdown-toc-least-squares">Least-squares</a>    <ul>
+      <li><a href="#fit-to-a-straight-line" id="markdown-toc-fit-to-a-straight-line">Fit to a straight line</a></li>
+    </ul>
+  </li>
+  <li><a href="#quantitative--trait-loci-qtl-analysis" id="markdown-toc-quantitative--trait-loci-qtl-analysis">Quantitative  Trait Loci (QTL) analysis</a>    <ul>
+      <li><a href="#the-models" id="markdown-toc-the-models">The models</a></li>
+      <li><a href="#hypothesis-testing" id="markdown-toc-hypothesis-testing">Hypothesis testing</a>        <ul>
+          <li><a href="#the-prior-probability" id="markdown-toc-the-prior-probability">The prior probability</a></li>
+          <li><a href="#approximating-the-probability-of-the-data" id="markdown-toc-approximating-the-probability-of-the-data">Approximating the probability of the data</a></li>
+          <li><a href="#the-ml-values-of-the-parameters-and-their-confidence-values" id="markdown-toc-the-ml-values-of-the-parameters-and-their-confidence-values">The ML values of the parameters and their confidence values</a></li>
+          <li><a href="#putting-things-together" id="markdown-toc-putting-things-together">Putting things together</a></li>
+          <li><a href="#finally" id="markdown-toc-finally">Finally!</a></li>
+        </ul>
+      </li>
+      <li><a href="#generalization-to-many-loci" id="markdown-toc-generalization-to-many-loci">Generalization to many loci</a></li>
+      <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-05">week 05:</h1>
+
+<h1 class="no_toc" id="maximum-likelihood-and-least-squares">Maximum likelihood and least squares</h1>
+
+<p>For this topic, I will follow Sivia’s Chapters 3 and 5.  One of the
+first instances of using Maximum likelihood for quantitative trait
+loci mapping is this Lander and Botstein paper from 1988 <a href="1989_Lander_Mapping.pdf">“Mapping
+mendelian factors underlying quatitative traits loci using RPLF
+linkage maps.”</a></p>
+
+<h2 id="maximum-likelihood">Maximum Likelihood</h2>
+
+<p>We have used Bayes theorem to calculate the
+probability of the parameters (\(X\)) of a given hypothesis (\(H\)) given the data (\(D\))
+as</p>
+
+\[P(X\mid D, H) \propto P(D\mid X, H)\, P(X\mid H)\]
+
+<p>where \(P(X\mid H)\) is the prior probability of the parameters.</p>
+
+<p>We have seen some examples in which we have calculated the posterior
+probability distribution explicitly. Oftentimes we get away with just
+finding the parameter values that maximize the posterior probability.</p>
+
+<p>If we do not have any information before doing the analysis, we will use
+a flat prior, which is a constant, so then we can write</p>
+
+\[P(X\mid D, H) \propto P(D\mid X, H).\]
+
+<p>Thus the value of the parameters \(X^\ast\) that maximizes the posterior  are those
+that maximize the probability of the data, and they are usually referred to as
+the <strong>maximum likelihood</strong> estimate of the parameters.</p>
+
+<p>We have already calculated those for  some distributions.
+Here is a re-cap,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Probability of the data</th>
+      <th><em>ML parameters \(X_i^\ast\)</em></th>
+      <th>confidence of the ML estimate \(\sigma_i^\ast\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Exponential (\(\lambda\))</td>
+      <td>\(\lambda^\ast = \frac{1}{N} \sum_i d_i\)</td>
+      <td>\(\sigma^\ast_{\lambda} = \lambda^\ast / \sqrt{N}\)</td>
+    </tr>
+    <tr>
+      <td>Binomial (\(p\))</td>
+      <td>\(p^\ast =n/N\)</td>
+      <td>\(\sigma^\ast_{p}       = \sqrt{p^\ast(1-p^\ast)} / \sqrt{N}\)</td>
+    </tr>
+    <tr>
+      <td>Gaussian (\(\mu,\sigma\) )</td>
+      <td>\(\mu^\ast = \frac{1}{N} \sum_i d_i\)</td>
+      <td>\(\sigma^\ast_{\mu}     = \sigma^\ast/\sqrt{N}\)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>\(\sigma^\ast = \sqrt{\frac{\sum_i (d_i-\mu^\ast)^2}{N}}\)</td>
+      <td>\(\sigma^\ast_{\sigma}  = \sigma^\ast / \sqrt{2N}\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>assuming \(D=\{d_1,\ldots , d_N\}\), or \(D = \{n, N\}\) in the binomial case.</p>
+
+<p>For any given parameter \(X_i\),</p>
+
+\[X_i \sim X_i^\ast \pm \sigma_i^\ast.\]
+
+<h2 id="least-squares">Least-squares</h2>
+
+<p>If we assume that the data are independent, then the joint probability
+\(P(D\mid X, H)\) is given by the product of the probabilities of
+each independent experiment \(\{d_k\}_{k=1}^{N}\)</p>
+
+\[P(D\mid X, H) = \prod_{k=1}^{N} P(d_k\mid X, H).\]
+
+<p>And if we further assume the we know how <em>ideal</em> data behaves as a
+function of the parameters, except for a noise that can be modeled by
+a Gaussian distribution as,</p>
+
+\[d_k - f_k(X) \sim {\cal N}(0, \sigma_k).\]
+
+<p>If we further assume that all measurements follow the same Gaussian distribution,
+that is</p>
+
+\[\sigma_k = \sigma,\]
+
+<p>and that \(\sigma\) is fixed and known, then we have,</p>
+
+\[P(D\mid X, H) =
+\frac{1}{(\sigma \sqrt{2\pi})^N} e^{-\frac{\sum_k(d_k-f_k)^2}{2\ \sigma^2}}.\]
+
+<p>Since the maximum of the posterior distributions of the parameters will occur when</p>
+
+\[\chi^2 \equiv \sum_k \left(d_k-f_k\right)^2\]
+
+<p>is minimum, the optimal solution for the parameters (which are
+<em>hiding</em> in \(f_k\)) is referred to as the <strong>least-square</strong> estimate.</p>
+
+<p>The least-square procedure is widely used in data analysis. Here, we have seen
+how its justification relies on the data being Gaussian, and the use of uniform prior.
+The least-square quantity \(\chi^2\) is referred as the <strong>\(l_2\)-norm</strong>.</p>
+
+<h3 id="fit-to-a-straight-line">Fit to a straight line</h3>
+
+<p>Next we are going to consider a biological case in which the data is
+given by pairs \(\{d_k = (x_k, y_k)\}_{k=1}^N\) such that they fit to
+a straight line with Gaussian noise \(\sigma_k\)</p>
+
+\[y_k - (a + b x_k) \sim {\cal N}(0, \sigma_k).\]
+
+<p>Here, the parameters are those defining the straight line, offset
+(\(a\)) and slope (\(b\)), and the \(N\) Gaussian noise parameters
+\(\{\sigma_k\}\).</p>
+
+<h2 id="quantitative--trait-loci-qtl-analysis">Quantitative  Trait Loci (QTL) analysis</h2>
+
+<p>We have two strains of a given organism that differ in one quantitative
+trait. We want to see if we can identify which genomic region is responsible
+for this phenotypic variability. That is, to map the genomic <strong>loci</strong>
+responsible for this <strong>quantitative trait</strong> difference (QTL mapping).</p>
+
+<p>For instance, wild isolates of two different species of fly:
+<em>D. simulans</em> and <em>D. mauritiana</em> that have different fly male sine
+song carrier frequency means</p>
+
+\[\mu_{\mbox{mau}} \approx 186 \,\mbox{Hz},\]
+
+\[\mu_{\mbox{sim}} \approx 176 \,\mbox{Hz}.\]
+
+<p>(This is an example we have
+seen before by 
+<a href="ding_nature2016.pdf">Ding <em>et al.</em></a>).</p>
+
+<p>In order to do this, one performs backcrosses between the F1 hybrid
+progeny (<em>mau</em>\(\times\)<em>sim</em>) and the parents, producing a large
+population of backcross males B (F1 \(\times\) parents) in which we
+expect to find a mosaic of the genomic loci of the parents.</p>
+
+<p>You then collect two types of data for the backcrossed population,
+\(N\)</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Figure1.png" style="width:300px;" /> <br />
+     Figure 1. Sine song carrier frequency in parental strains, F1 hybrids, and backcross males.
+   </div>
+ </div>
+
+<ul>
+  <li>
+    <p>their <strong>phenotype</strong> \(\{f_k\}_{k=1}^{N}\) (sine song male frequencies for our example),</p>
+  </li>
+  <li>
+    <p>their <strong>genotype</strong> \(\{g_k\}_{k=1}^{N}\) (using for instance RNA-seq).</p>
+
+    <p>We have observed that the <em>mau</em> allele is largely dominant (Figure
+1, a reproduction of Figure 1b in <a href="ding_nature2016.pdf">Ding. et
+al.</a>).  For a backcrossed male fly \(k\), we
+use \(g_k\) to designate a <em>sim</em> homozygous male, that is, if the
+<em>sim</em> sequence is present in both alleles, we assign \(g_k=1\),
+otherwise (the <em>mau</em> sequence is in at least one allele) we use
+\(g_k=0\).</p>
+
+    <p>In real life, you are going to test a large number of potential
+informative loci, here for simplicity we consider that one single loci.</p>
+  </li>
+</ul>
+
+<h3 id="the-models">The models</h3>
+
+<ul>
+  <li>
+    <p><strong>QTL model</strong>: The loci is responsible for the phenotype such that there
+  is a linear fit</p>
+
+\[f_k = a + b g_k + \epsilon,\]
+
+    <p>where the error \(\epsilon\) is drawn from a Gaussian distribution \({\cal N}(0, \sigma_Q)\).</p>
+
+    <p>Then, the probability of the data \(D=\{f_k,g_k\}\) given the QTL
+model with parameters \(a\), \(b\) and \(\sigma_Q\) is</p>
+
+\[P(D\mid a, b, \sigma_Q, QTL) =
+\frac{1}{\left(\sqrt{2\pi}\sigma_Q\right)^N} e^{-\frac{\sum_k (f_k-a-b g_k)^2}{2\sigma_Q^2}}\]
+  </li>
+  <li>
+    <p><strong>NQTL model</strong>: the loci does not explain the phenotype (the null model),</p>
+
+\[f_k = c + \epsilon,\]
+
+    <p>Then, the probability of the data \(D=\{f_k,g_k\}\) given the NQTL
+model with parameters \(c\) and \(\sigma_{N}\) is</p>
+
+\[P(D\mid c, \sigma_N, NQTL) =
+\frac{1}{\left(\sqrt{2\pi}\sigma_N\right)^N} e^{-\frac{\sum_k (f_k-c)^2}{2\sigma_N^2}}\]
+  </li>
+</ul>
+
+<p>Deciding if this loci has a quantitative influence in the phenotype
+becomes a <strong>hypothesis testing</strong> question, that requires evaluating
+this quantity:</p>
+
+\[\frac{P(QTL\mid D)}{P(NQTL\mid D)}.\]
+
+<h3 id="hypothesis-testing">Hypothesis testing</h3>
+
+<p>As we have seen before</p>
+
+\[\frac{P(QTL\mid D)}{P(NQTL\mid D)} =
+\frac{P(D\mid QTL)}{P(D\mid NQTL)}\frac{P(QTL)}{P(NQTL)}
+.\]
+
+<p>Assuming we have no idea of whether the loci is or not a QTL, we use
+\(P(QTL) = P(NQTL) = 1/2\), then the comparison of the models becomes the
+comparisons of the evidences</p>
+
+\[\frac{P(QTL\mid D)}{P(NQTL\mid D)} =
+\frac{P(D\mid QTL)}{P(D\mid NQTL)}
+.\]
+
+<p>For the QTL model, we have 2 parameters (\(a\) and \(b\)) for the
+straight line fit, and one parameter for the Gaussian noise
+(\(\sigma_Q\)).  The NQTL model depends on 2 parameters \(c\) and
+\(\sigma_N\).</p>
+
+<p>If we further assume that \(\sigma_Q\) and   \(\sigma_N\) are known,</p>
+
+\[\begin{aligned}
+P(D\mid QTL) &amp;=
+\int_{-\infty}^{\infty} da \int_{-\infty}^{\infty} db\,
+P(D\mid a, b, \sigma_Q, QTL)\, P(a,b\mid QTL),\\
+P(D\mid NQTL) &amp;=
+\int_{-\infty}^{\infty} dc\,
+P(D\mid c, \sigma_N, NQTL)\, P(c\mid NQTL).
+\end{aligned}\]
+
+<h4 id="the-prior-probability">The prior probability</h4>
+
+<p>We assume independent and flat priors,</p>
+
+\[P(a,b\mid QTL)=P(a\mid QTL)P(b\mid QTL),\]
+
+<p>such that,</p>
+
+\[\begin{aligned}
+P(a\mid QTL)  &amp;= \left\{
+\begin{array}{cc}
+\frac{1}{\sigma_a}\equiv\frac{1}{a^{+}-a^{-}}  &amp; a^{-}\leq a \leq a^{+},\\
+0                                              &amp; \mbox{otherwise}
+\end{array}
+\right.\\
+P(b\mid QTL)  &amp;= \left\{
+\begin{array}{cc}
+\frac{1}{\sigma_b}\equiv\frac{1}{b^{+}-b^{-}} &amp; b^{-}\leq b\leq b^{+},\\
+0                  &amp; \mbox{otherwise}
+\end{array}
+\right.\\
+P(c\mid NQTL) &amp;= \left\{
+\begin{array}{cc}
+\frac{1}{\sigma_c}\equiv\frac{1}{c^{+}-c^{-}} &amp; c^{-}\leq c\leq c^{+},\\
+0                  &amp; \mbox{otherwise}
+\end{array}
+\right.
+\end{aligned}\]
+
+<p>where  we have introduced,</p>
+
+\[\sigma_a \equiv a_{+} - a_{-} &gt; 0,\quad \sigma_b \equiv b_{+} - b_{-} &gt; 0,\]
+
+\[\sigma_c \equiv c_{+} - c_{-} &gt; 0,\]
+
+<p>for some <em>constant</em> values \(a_{\pm}\), \(b_{\pm}\), and \(c_{\pm}\)
+which are arbitrary but large enough not to introduce a cut in the
+<em>evidence</em>.</p>
+
+<h4 id="approximating-the-probability-of-the-data">Approximating the probability of the data</h4>
+
+<p>Remember from <a href="../w02/w02-lecture.html">w02</a> that you can take the ML
+value of the parameters and their confidence value to approximate
+\(P(D\mid a, b, \sigma_Q, QTL)\) and \(P(D\mid c, \sigma_N, NQTL)\).</p>
+
+<p>Introducing the log probabilities</p>
+
+\[\begin{aligned}
+L^{Q}(a,b) \equiv \log P(D\mid a, b, \sigma_Q, QTL),\\
+L^{N}(c) \equiv \log P(D\mid c, \sigma_N, NQTL).
+\end{aligned}\]
+
+<p>A Taylor expansion around the ML values results in</p>
+
+\[\begin{aligned}
+L^{Q}(a,b) &amp;\approx
+L^{Q}(a^\ast, b^\ast) 
++\frac{1}{2}\left.\frac{\delta^2 L^{Q}}{\delta a^2}\right|_{\ast} (a-a^\ast)^2
++\frac{1}{2}\left.\frac{\delta^2 L^{Q}}{\delta b^2}\right|_{\ast} (b-b^\ast)^2
++\left.\frac{\delta^2 L^{Q}}{\delta a\delta b}\right|_{\ast} (a-a^\ast)(b-b^\ast)
+\\
+L^{N}(c) &amp;\approx
+L^{N}(c^\ast) +
+\frac{1}{2}\left.\frac{\delta^2 L^{N}}{\delta c^2}\right|_{\ast} (c-c^\ast)^2
+\end{aligned}\]
+
+<p>where the ML values of the parameters \(a^\ast, b^\ast, c^\ast\) are defined by</p>
+
+\[\left.\frac{\delta L^{Q}}{\delta a}\right|_{\ast} = 0,\quad
+\left.\frac{\delta L^{Q}}{\delta b}\right|_{\ast} = 0,\]
+
+\[\left.\frac{\delta L^{N}}{\delta c}\right|_{\ast} = 0.\]
+
+<h4 id="the-ml-values-of-the-parameters-and-their-confidence-values">The ML values of the parameters and their confidence values</h4>
+
+<p>Let’s calculate the actual values of the ML parameters and their confidence values.</p>
+
+<p>The log probabilities are given by</p>
+
+\[\begin{aligned}
+L^Q &amp;\propto - \frac{\sum_k (f_k-a-b g_k)^2}{2\sigma_Q^2},\\
+L^N &amp;\propto - \frac{\sum_k (f_k-c)^2}{2\sigma_N^2},
+\end{aligned}\]
+
+<p>where we are keeping only the
+terms that depend on the parameters we are going to optimize.</p>
+
+<p>Then, the first derivatives respect to the parameters are</p>
+
+\[\begin{aligned}
+\frac{\delta L^{Q}}{\delta a} &amp;= \frac{1}{\sigma_Q^2}\sum_k (f_k-a-b g_k),\\
+\frac{\delta L^{Q}}{\delta b} &amp;= \frac{1}{\sigma_Q^2}\sum_k (f_k-a-b g_k)g_k,\\
+\frac{\delta L^{N}}{\delta c} &amp;= \frac{1}{\sigma_N^2}\sum_k (f_k-c).
+\end{aligned}\]
+
+<p>Then, introducing</p>
+
+\[\overline{f}  = \frac{1}{N}\sum_k f_k,\quad
+\overline{g}  = \frac{1}{N}\sum_k g_k,\]
+
+\[\overline{gg} = \frac{1}{N}\sum_k g_k g_k,\quad
+\overline{fg} = \frac{1}{N}\sum_k f_k g_k,\]
+
+<p>we have for the ML values of the parameters,</p>
+
+\[\begin{aligned}
+b^\ast &amp;= \frac{\overline{fg} - \overline{f}\overline{g}}{\overline{gg} - \bar{g}\bar{g}},\\
+a^\ast &amp;= \overline{f} - b^\ast \overline{g},\\
+c^\ast &amp;= \overline{f}.\\
+\end{aligned}\]
+
+<p>provided that \(\overline{gg} - \bar{g}\bar{g}\neq 0\).</p>
+
+<p>As for the confidence values</p>
+
+\[\begin{aligned}
+\frac{\delta^2 L^{Q}}{\delta a^2} &amp;= -\frac{N}{\sigma_Q^2}
+\\
+\frac{\delta^2 L^{Q}}{\delta b^2} &amp;=  -\frac{N}{\sigma_Q^2}\overline{gg},
+\\
+\frac{\delta^2 L^{Q}}{\delta a \delta b} &amp;=  -\frac{N}{\sigma_Q^2}\overline{g},
+\\
+\frac{\delta^2 L^{N}}{\delta c^2} &amp;= -\frac{N}{\sigma_N^2}.
+\end{aligned}\]
+
+<p>Exponentiating the approximations to the log probabilities, we obtain
+the following approximations</p>
+
+\[\begin{aligned}
+P(D\mid a, b, \sigma_Q, QTL) &amp;\approx
+P(D\mid a^\ast, b^\ast, \sigma_Q, QTL)\,\, \mbox{exp}
+\left[
++\frac{1}{2}\left.\frac{\delta^2 L^Q}{\delta a^2}\right|_{\ast} (a-a^\ast)^2
++\frac{1}{2}\left.\frac{\delta^2 L^Q}{\delta b^2}\right|_{\ast} (b-b^\ast)^2
++\left.\frac{\delta^2 L^Q}{\delta a\delta b}\right|_{\ast} (a-a^\ast)(b-b^\ast)
+\right]\\
+P(D\mid c, \sigma_N, NQTL) &amp;\approx
+P(D\mid c^\ast,  \sigma_N, NQTL)\,\, \mbox{exp}
+\left[
++\frac{1}{2}\left.\frac{\delta^2 L^N}{\delta c^2}\right|_{\ast} (c-c^\ast)^2
+\right].
+\end{aligned}\]
+
+<h4 id="putting-things-together">Putting things together</h4>
+
+<p>Introducing the \(2\times 2\) matrix \(Q\)</p>
+
+\[Q = \frac{N}{\sigma_Q^2}
+\left(
+\begin{array}{cc}
+1        &amp; \overline{g}\\
+{\overline g} &amp; \overline{gg}
+\end{array}
+\right)\]
+
+<p>then we can write</p>
+
+\[\begin{aligned}
+P(D\mid QTL) &amp;\approx
+P(D\mid a^\ast, b^\ast, \sigma_Q, QTL)\,
+\left[
+\int da \int db\,
+e^{-\frac{1}{2}(a-a^\ast,b-b^\ast) Q {a-a^\ast\choose b-b^\ast}}
+\right]\,
+\frac{1}{\sigma_a}\frac{1}{\sigma_b}
+\\
+P(D\mid NQTL) &amp;\approx
+P(D\mid c^\ast, \sigma_N, NQTL)\,
+\left[
+\int dc\, e^{-\frac{1}{2}\frac{N}{\sigma_N^2}(c-c^\ast)^2}
+\right]\,
+\frac{1}{\sigma_c}
+.
+\end{aligned}\]
+
+<p>These integrals can be approximated by a closed form expression (the
+case of the NQTL model with one parameter we did explicitly in
+<a href="../w03/w03-lecture.html">w03</a>).</p>
+
+<p>we have,</p>
+
+\[\begin{aligned}
+P(D\mid QTL) &amp;\approx P(D\mid a^\ast, b^\ast, \sigma_Q, QTL)
+\times
+\frac{2\pi}{\sqrt{\det{Q}}}\frac{1}{\sigma_a \sigma_b}\, 
+\\
+P(D\mid NQTL) &amp;\approx  P(D\mid c^\ast, \sigma_N, NQTL) 
+\times
+\sqrt{\frac{2\pi\sigma_N^2}{N}}\frac{1}{\sigma_c}.
+\end{aligned}\]
+
+<h4 id="finally">Finally!</h4>
+
+<p>The ratio of the probabilities of the QTL respect to the NQTL model is
+given by</p>
+
+\[\frac{P(QTL\mid D)}{P(NQTL\mid D)} =
+\frac{P(D\mid a^\ast, b^\ast, \sigma_Q, QTL)}{P(D\mid c^\ast, \sigma_N, NQTL)}
+\times
+\sqrt{\frac{2\pi/N}{\overline{gg} - \bar{g} \bar{g}}}
+\frac{
+\frac{\sigma_Q}{\sigma_a}\frac{\sigma_Q}{\sigma_b}
+}
+{
+\frac{\sigma_N}{\sigma_c}
+}
+.\]
+
+<p>Notice the presence of both the <strong>data fit</strong> term and the <strong>Occam’s
+razor</strong> term. The QTL includes the NQTL model as a particular case, so
+by looking at the <em>data fit</em> term, the QTL model would always have
+higher probability than the NQTL model.  It is the Occam’s razor term
+the one that compensates by the fact that the QTL model has one more
+parameter than the NQTL model.</p>
+
+<p>In <a href="ding_nature2016.pdf">Ding et. al</a>, they use a method similar to
+<a href="](1989_Lander_Mapping.pdf)">Lander &amp; Botstein</a>, in which they only
+calculate the data fit term (named LOD). All LOD are always positive
+(see <a href="1989_Lander_Mapping.pdf">Lander/Botstein, Figures 2 and
+3</a>). Thus, they need to find threshold values
+(named T), “above which a QTL will be declared present”.  Selecting
+the appropriate threshold T is “an important issue […]  What LOD
+threshold T should be used in order to maintain an acceptably low rate
+of false positives?”.</p>
+
+<p>Identifying the threshold(s) T becomes a classical <strong>p-value</strong>
+calculation based on additional experiments for some previously known
+true and false QTLs. Besides, different thresholds have to be apply
+depending on the genome size and the density of restriction enzyme
+marks (see <a href="1989_Lander_Mapping.pdf">Lander/Botsein, Figure 4</a>).</p>
+
+<p><strong>Doing the proper Bayesian calculation removes the need for such
+  threshold value.</strong></p>
+
+<h3 id="generalization-to-many-loci">Generalization to many loci</h3>
+
+<p>If we are trying to test if the observed phenotype variability is do
+to more than one loci, we would include one parameter \(b^\alpha\) for
+each locus tested \(1\leq \alpha\leq L\) as</p>
+
+\[f_k = a + \sum_{\alpha = 1}^{L} b^\alpha g^\alpha_k + \epsilon.\]
+
+<h3 id="assumptions">Assumptions</h3>
+
+<p>These are the assumptions in the QTL mapping derivation presented here,
+each of which could be questioned and removed if necessary</p>
+
+<ul>
+  <li>
+    <p>Linear fit between phenotype and genotype.</p>
+  </li>
+  <li>
+    <p>Gaussian noise.</p>
+  </li>
+  <li>
+    <p>All noise follows the same Gaussian \({\cal N}(0, \sigma)\),</p>
+  </li>
+  <li>
+    <p>\(\sigma\) is known.</p>
+  </li>
+  <li>
+    <p>For the linear regression parameters, we have integrated their
+posterior probability approximated by a second-order Taylor
+expansion of the log probability around their maximum likelihood
+values.</p>
+  </li>
+</ul>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

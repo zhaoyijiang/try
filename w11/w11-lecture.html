@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#chemical-reactions" id="markdown-toc-chemical-reactions">Chemical reactions</a>    <ul>
+      <li><a href="#evolution-equation-for-a-general-reaction" id="markdown-toc-evolution-equation-for-a-general-reaction">Evolution equation for a general reaction</a></li>
+      <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+      <li><a href="#multiple-reactions" id="markdown-toc-multiple-reactions">Multiple reactions</a></li>
+    </ul>
+  </li>
+  <li><a href="#transcriptional-activation" id="markdown-toc-transcriptional-activation">Transcriptional activation</a>    <ul>
+      <li><a href="#one-binding-site" id="markdown-toc-one-binding-site">One binding site</a></li>
+      <li><a href="#multiple-binding-sites" id="markdown-toc-multiple-binding-sites">Multiple binding sites</a>        <ul>
+          <li><a href="#non-cooperative-binding" id="markdown-toc-non-cooperative-binding">Non-cooperative binding</a></li>
+          <li><a href="#cooperative-binding-the-hill-function" id="markdown-toc-cooperative-binding-the-hill-function">Cooperative binding: The Hill Function</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#transcriptional-inhibition" id="markdown-toc-transcriptional-inhibition">Transcriptional inhibition</a></li>
+  <li><a href="#transcription-summary" id="markdown-toc-transcription-summary">Transcription summary</a></li>
+  <li><a href="#simplest-feedback-loop-autoregulation" id="markdown-toc-simplest-feedback-loop-autoregulation">Simplest Feedback loop: Autoregulation</a>    <ul>
+      <li><a href="#numerical-solutions-for-ordinary-differential-equations-odes-the-euler-method" id="markdown-toc-numerical-solutions-for-ordinary-differential-equations-odes-the-euler-method">Numerical Solutions for ordinary differential equations (ODEs): The Euler Method</a></li>
+      <li><a href="#autoregulation-controls-the-response-time-of-the-system" id="markdown-toc-autoregulation-controls-the-response-time-of-the-system">Autoregulation controls the response time of the system</a></li>
+    </ul>
+  </li>
+  <li><a href="#gene-regulation-with-a-negative-feedback-loop" id="markdown-toc-gene-regulation-with-a-negative-feedback-loop">Gene regulation with a negative feedback loop</a>    <ul>
+      <li><a href="#negative-feedback-loops-produce-oscillations" id="markdown-toc-negative-feedback-loops-produce-oscillations">Negative feedback loops produce oscillations</a></li>
+    </ul>
+  </li>
+  <li><a href="#gene-regulation-with-a-positive-feedback-loop" id="markdown-toc-gene-regulation-with-a-positive-feedback-loop">Gene regulation with a positive feedback loop</a>    <ul>
+      <li><a href="#the-phopphoq-system" id="markdown-toc-the-phopphoq-system">The PhoP/PhoQ system</a></li>
+      <li><a href="#positive-feedback-produces-bistability" id="markdown-toc-positive-feedback-produces-bistability">Positive Feedback produces bistability</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-11">week 11:</h1>
+
+<h1 class="no_toc" id="feedback-control-in-biological-interactions">Feedback Control in Biological Interactions</h1>
+
+<p>For these lectures, I have followed many different sources.  Some of
+them are: Chapter 9 of P. Nelson’s book, <a href="tyson.pdf">“Biochemical
+oscillations”</a> by J. Tyson, the paper <a href="gonze_kinetics.pdf">“Chemical and
+enzymatic kinetics”</a> by D. Gonze, <a href="grossman.pdf">“Positive
+feedback in cellular control systems”</a> by Mitrophanov &amp;
+Grossman.</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="feedbackloops.png" style="width:300px;" /> <br />
+   Figure 1. Solid arrows represent
+   chemical reactions producing or consuming compounds. Dashed arrows
+   represent regulatory signals: a modification to the chemical reaction
+   by a species which concentration's that may not be  substrate or product of the
+   reaction. Regulatory signals end with either an arrow (indicating
+   activation) or with a blunt end (indicating inhibition). Figure from J. Tyson's
+   "Biochemical oscillations"
+   </div>
+</div>
+
+<p>Feedback loops occur in many different biological systems. From gene
+regulation, RNA and protein production, protein phosphorylation,
+catalysis, to cell cycle and circadian rhythms. Feedback loops can be
+positive or negatives, and they give raise to many different
+behaviors: stable, unstable, cyclic, oscillatory, hysteresis, etc.</p>
+
+<p>Here are some examples of feedback loops from J. Tyson’s <a href="tyson.pdf">paper</a>.</p>
+
+<h2 id="chemical-reactions">Chemical reactions</h2>
+
+<p>This is some background on chemical reactions which are the building
+blocks of any feedback loop.</p>
+
+<p>Consider four different compounds A, B, C, D (these could be enzymes,
+RNA, transcription factors,…).  Assume that they such that the
+interaction of A and B produce the compounds C and D,</p>
+
+\[A+ B\overset{k}{\longrightarrow} C+D\]
+
+<p>where A, B, C, and D, in the above equation represent the
+concentration (that is, the average number of molecules per unit
+volume) of the different compounds.</p>
+
+<p>In a chemical reaction, there is stochasticity as the molecules have
+to collide to interact, but not all collisions are successful.  The
+probability that one collision is successful is given by \(k\) which
+represent the probability of change per time unit. The number of collisions
+is proportional to the concentration of the substrates A and B, so the
+rate of the reaction is going to be proportional to the quantity</p>
+
+\[v = k A B\]
+
+<p>which is referred to as the <strong>mass action law</strong>.</p>
+
+<p>The change with time of the concentrations of the different compounds
+is given by</p>
+
+\[\begin{aligned}
+\frac{d A}{d t} = \frac{d B}{d t} &amp;= -k\ A B\\
+\frac{d C}{d t} = \frac{d D}{d t} &amp;= +k\ A B.
+\end{aligned}\]
+
+<p>The sign in the right hand side of the equations indicate that every
+time the reaction proceeds, one molecule of substrates A and B
+disappears and one molecule of products C and D appears. These results
+can be derived from the master equations similarly to how we derived
+those of the average concentration of RNA in the previous week. You
+can find the derivation in the <a href="w11-sections.html">sections</a>.</p>
+
+<p>The variation in the concentrations of the four species governed by
+these differential equations for some particular starting
+concentrations is given in Figure 2.</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="ode_example.png" style="width:300px;" /> <br />
+   Figure 2. Time evolution of the concentrations of species A, B, C, and D,
+ for the rate constant value k=1.0.
+   </div>
+</div>
+
+<h3 id="evolution-equation-for-a-general-reaction">Evolution equation for a general reaction</h3>
+
+<p>In general, for one reaction with \(N\) substrates \(X_1,\ldots X_N\),</p>
+
+\[n_1 X_1 + \ldots + n_N X_N \overset{k}{\longrightarrow} p_1 X_1 + \ldots  + p_N X_N\]
+
+<p>the mass action law is given by</p>
+
+\[v = k\ (X_1)^{n_1}\ldots (X_N)^{n_N} = k\ \prod_{i=1}^N (X_i)^{n_i}\]
+
+<p>and the change with time of one species \(X_i\) is given by</p>
+
+\[\frac{d X_i}{d t} = (p_i-n_i)\ v = \eta_i\ v.\]
+
+<p>were \(\eta_i = p_i -n_i\) is the <strong>stoichiometric coefficient</strong>.</p>
+
+<h3 id="examples">Examples</h3>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="degradation.png" style="width:300px;" /> <br />
+   Figure 3. Degradation curves as a function of time for a substrate
+   A with different rate constants (k). The concentration of A at time zero is 20.
+   </div>
+</div>
+
+<ul>
+  <li>
+    <p><strong>Degradation, conformational change, or dissociation</strong></p>
+
+\[\begin{aligned}
+ A\overset{k}{\longrightarrow} \emptyset&amp;\quad\mbox{Degradation}\\
+ or\\
+ A\overset{k}{\longrightarrow} A^\ast&amp;\quad\mbox{Conformational change}\\
+ or\\
+ A\overset{k}{\longrightarrow} B + C&amp;\quad\mbox{Dissociation}
+ \end{aligned}\]
+
+    <p>follow the same dynamics for the substrate \(A\)</p>
+
+\[\frac{d A}{d t} = - k A.\]
+
+    <p>After integrating</p>
+
+\[A(t) = A_0 e^{-k t},\]
+
+    <p>where \(A_0\) is the concentration of species \(A\) at time zero, see Figure 2.</p>
+  </li>
+  <li>
+    <p><strong>Cooperative</strong></p>
+
+\[3 A \overset{k}{\longrightarrow} C + A\]
+
+    <p>Three molecules of species \(A\) are required to produce species
+\(C\), but one of molecule of species \(A\) is conserved, resulting
+in the equation</p>
+
+\[\frac{d A}{d t} = -2 k A^3\]
+  </li>
+</ul>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="serial.png" style="width:300px;" /> <br />
+   Figure 4. Concentration evolution curves as a function of time for two serial reactions
+   involving three species A, B, C. Starting concentrations are 20, 0, 0 respectively.
+   </div>
+</div>
+
+<ul>
+  <li>
+    <p><strong>Serial reactions</strong></p>
+
+\[A \overset{k_1}{\longrightarrow} B \overset{k_2}{\longrightarrow} C\]
+
+    <p>The dynamics is given by</p>
+
+\[\begin{aligned}
+ \frac{d A}{d t} &amp;= -k_1\ A\\
+ \frac{d B}{d t} &amp;= k_1\ A - k_2\ B\\
+ \frac{d C}{d t} &amp;=  k_2\ B.
+ \end{aligned}\]
+
+    <p>We can obtain an analytic solution for this process, see Figure 4, given by</p>
+
+\[\begin{aligned}
+ A(t) &amp;= A_0\ e^{-k_1\ t}\\
+ B(t) &amp;= \frac{A_0\ k_1}{k_2 - k_1}\ \left( e^{-k_1\ t} - e^{-k_2\ t}\right)\\
+ C(t) &amp;= A_0\ \left[1-\frac{1}{k_2-k_1}\left( k_2\ e^{-k_1\ t} - k_1\ e^{-k_2\ t} \right)\right], 
+ \end{aligned}\]
+
+    <p>under the initial conditions \(A(t=0) = A_0, B(t=0) = 0\), and \(C(t=0)=0\).</p>
+
+    <p>The degradation of species \(A\) has not changed. Species \(B\)
+ increases its concentration for a while until it starts being used
+ to produce species \(C\). After a very long time, the concentration
+ of species \(A\) and \(B\) is zero, and \(C\) reaches the starting
+ concentration of species \(A\) (\(A_0 = 20\)).</p>
+  </li>
+</ul>
+
+<h3 id="multiple-reactions">Multiple reactions</h3>
+
+<p>And for \(R\) reactions involving \(N\) substrates \(X_1\ldots X_N\), with rate constants \(k_1,\ldots k_R\),</p>
+
+\[\begin{aligned}
+n^1_1\ X_1 + \ldots + n^1_N\ X_N &amp;\overset{k_1}{\longrightarrow} p^1_1 X_1 + \ldots + p^1_N X_N\\
+\vdots\\
+n^R_1\ X_1 + \ldots + n^R_N\ X_N &amp;\overset{k_R}{\longrightarrow} p^R_1 X_1 + \ldots + p^R_N X_N
+\end{aligned}\]
+
+<p>the contribution of the different reactions is additive,</p>
+
+\[\begin{aligned}
+\frac{d X_i}{d t}
+&amp;= (p^1_i-n^1_i)\ k_1 (X_1)^{n^1_1}\ldots (X_N)^{n^1_N} + \ldots + (p^R_i-n^R_i)\ k_R (X_1)^{n^R_1}\ldots (X_N)^{n^R_N}\\
+&amp;= \sum_{r=1}^R (p^r_i-n^r_i)\ k_r (X_1)^{n^r_1}\ldots (X_N)^{n^r_N}\\
+&amp;= \sum_{r=1}^R (p^r_i-n^r_i)\ k_r \prod_{j=1}^{N}(X_j)^{n^r_j}\\
+&amp;= \sum_{r=1}^R \eta^r_i\ v_r.
+\end{aligned}\]
+
+<p>where \(\eta^r_i\) is the stoichiometry of species \(X_i\) in reaction
+\(r\), and \(v_r\) is the mass action law of reaction \(r\).</p>
+
+<h2 id="transcriptional-activation">Transcriptional activation</h2>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="TA1.png" style="width:300px;" /> <br />
+   Figure 5. Transcriptional activation depending on one binding site.
+   </div>
+</div>
+
+<h3 id="one-binding-site">One binding site</h3>
+
+<p>Let’s assume that the activation of a gene that produces a 
+RNA, requires one particular transcription factor (X) to bind to one
+specific binding site upstream of the gene.</p>
+
+<p>Let’s assume the following</p>
+
+<ul>
+  <li>
+    <p>We describe as \(D_1\) the state of the gene such that X is bound
+  and transcription occurs. Let’s \(k^+_1\) be the rate of X binding.</p>
+  </li>
+  <li>
+    <p>We describe as \(D_0\) the gene state such that X is not bound and
+  transcription does not occur. The TF binding to the gene is reversible.
+  Let’s \(k^-_1\) be the rate of X
+  unbinding, leaving the gene inactive in state \(D_0\).</p>
+  </li>
+  <li>
+    <p>Production of the RNA is only possible when the transcription factor
+  is bound (state \(D_1\)). When the gene is in \(D_1\) state, RNA
+  transcription occurs with rate \(k_t\).</p>
+  </li>
+  <li>
+    <p>The transcription factor (X) has some known rates of production
+(\(k_a\)) and degradation (\(k_b\)).</p>
+  </li>
+  <li>
+    <p>The RNA is also subject to degradation with rate \(k_d\).</p>
+  </li>
+  <li>
+    <p>The rates of TF binding/unbinding \(D_1 \leftrightarrow D_0\) are
+  fast (several times per second), while the rate of transcription is
+  much slower (it can take up to several minutes). Thus,</p>
+  </li>
+</ul>
+
+\[k^+_1 \approx k^-_1 &gt;&gt; k^t.\]
+
+<p>The reactions describing this process of transcriptional activation
+with one binding site are:</p>
+
+\[\begin{aligned}
+\emptyset\overset{k_a}{\longrightarrow} X             &amp;\quad\mbox{TF production}\\
+X        \overset{k_b}{\longrightarrow} \emptyset     &amp;\quad\mbox{TF degradation}\\
+X + D_0  \overset{k^+_1}{\longrightarrow} D_1         &amp;\quad\mbox{TF binding}\\
+D_1      \overset{k^-_1}{\longrightarrow} D_0 + X     &amp;\quad\mbox{TF unbinding}\\
+D_1      \overset{k_t}  {\longrightarrow} D_1 + RNA   &amp;\quad\mbox{RNA production (transcription)}\\
+RNA      \overset{k_d}  {\longrightarrow} \emptyset   &amp;\quad\mbox{RNA degradation}.
+\end{aligned}\]
+
+<div id="figcontainer"> <div id="figure">
+     <img src="TranscriptionActivation.png" style="width:300px;" /> <br />
+   Figure 6. (A) Transcription rate (dRNA/dt) for one activation binding site.
+   (B) Transcription rate (dRNA/dt) in the presence of two activation binding
+   sites both cooperative (purple) and non-cooperative (yellow). (C) Transcription rate (dRNA/dt) in the presence of
+   an arbitrary number of activation binding sites. Parameter values are
+   v=1 and K=1.5.
+   </div>
+</div>
+
+<p>The corresponding kinetic equations (following the general rule described above) are</p>
+
+\[\begin{aligned}
+\frac{d X}{d t} &amp;= k_a - k_b X - k^+_1 X D_0 + k^-_1 D_1\\
+\frac{d D_1}{d t} = -\frac{d D_0}{d t} &amp;=k^+_1 X D_0 - k^-_1 D_1\\
+\frac{d RNA}{d t} &amp;= k_t D_1 - k_d RNA.
+\end{aligned}\]
+
+<p>The assumption that the binding/unbinding of the TF  is very fast compared to that
+of the production of RNA, implies that by the time
+binding/unbinding has reached equilibrium, the transcription kinetics is still underway.
+Thus, we can make the assumption that binding/unbinding has reached steady state</p>
+
+\[\frac{d D_1}{d t} = -\frac{d D_0}{d t} = 0\]
+
+<p>That is</p>
+
+\[k^+_1 X D_0 = k^-_1 D_1.\]
+
+<p>Introducing \(D_T = D_0+D_1\) as the</p>
+
+\[k^+_1 X (D_T-D_1) = k^-_1 D_1.\]
+
+<p>or</p>
+
+\[D_1 = \frac{k^+_1 X D_T}{k^-_1+k^+_1 X}.\]
+
+<p>Let’s introduce the <strong>dissociation equilibrium constant</strong></p>
+
+\[K_1 = \frac{k^-_1}{k^+_1}\]
+
+\[D_1 = D_T\ \frac{X}{K_1+X}.\]
+
+<p>Under this assumption of binding/unbinding steady state, the remaining equations become</p>
+
+\[\begin{aligned}
+\frac{d X}{d t} &amp;= k_a - k_b X\\
+\frac{d RNA}{d t} &amp;= k_t D_T\ \frac{X}{K_1+X} - k_d RNA.
+\end{aligned}\]
+
+<p>That is,</p>
+
+<ul>
+  <li>
+    <p>The kinetics of the TF depends only on its own synthesis and degradation</p>
+
+\[\frac{d X}{d t} = k_a - k_b X\]
+  </li>
+  <li>
+    <p>The concentration of RNA for fast binding/unbinding of one activator (X) is then given by</p>
+
+\[\frac{d RNA}{d t} = k_t D_T\ \frac{X}{K_1+X} - k_d RNA.\]
+
+    <p>That is, the transcription process is controlled by the activator
+concentration (X) according to the equation</p>
+
+\[\frac{d RNA}{d t} = v\ \frac{X}{K_1+X}\]
+
+    <p>where \(v=k_t D_T\) is a constant. This is a hyperbolic curve
+referred to as a <strong>non-cooperative binding curve</strong> (see Figure 6A).</p>
+  </li>
+</ul>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="TA2.png" style="width:300px;" /> <br />
+   Figure 7. Transcriptional activation depending on two binding sites.
+   </div>
+</div>
+
+<h3 id="multiple-binding-sites">Multiple binding sites</h3>
+
+<p>Now let’s assume that the gene has two binding sites upstream of the transcription start site.
+The activator (X) has to bind to both sites for transcription to occur, then the
+reactions controlling transcription are given by (see Figure 7)</p>
+
+\[\begin{aligned}
+\emptyset\overset{k_a}{\longrightarrow} X  \overset{k_b}{\longrightarrow} \emptyset   &amp;\quad\mbox{TF production/degradation}\\
+X + D_0  \underset{k^-_1}{\overset{k^+_1}{\rightleftharpoons}} D_1                    &amp;\quad\mbox{TF binding/unbinding to one site}\\
+X + D_1  \underset{k^-_2}{\overset{k^+_2}{\rightleftharpoons}} D_2                    &amp;\quad\mbox{TF binding/unbinding to second site}\\
+D_2      \overset{k_t}  {\longrightarrow} D_2 + RNA                                   &amp;\quad\mbox{RNA production (transcription)}\\
+RNA      \overset{k_d}  {\longrightarrow} \emptyset                                   &amp;\quad\mbox{RNA degradation}.
+\end{aligned}\]
+
+<p>And the kinetic equations are given by</p>
+
+\[\begin{aligned}
+\frac{d X}{d t} &amp;= k_a - k_b X - k^+_1 X D_0 + k^-_1 D_1 - k^+_2 X D_1 + k^-_2 D_2\\
+\frac{d D_0}{d t} &amp;= k^-_1 D_1 - k^+_1 X D_0\\
+\frac{d D_1}{d t} &amp;= k^+_1 X D_0 - k^-_1 D_1 - k_2^+ X D_1 + k_2^- D_2\\
+\frac{d D_2}{d t} &amp;= k_2^+ X D_1 - k_2^- D_2\\
+\frac{d RNA}{d t} &amp;= k_t D_2 - k_d RNA.
+\end{aligned}\]
+
+<p>If we assume that the binding/unbinding kinetics is much faster than transcription, we can assume steady state</p>
+
+\[\frac{d D_0}{d t} = \frac{d D_1}{d t} = \frac{d D_2}{d t} = 0\]
+
+<p>which implies that</p>
+
+\[k^-_1 D_1 = k^+_1 X D_0\\
+k^-_2 D_2 = k^+_2 X D_1.\]
+
+<p>Introducing the disequilibrium constants \(K_1 = k^-_1/k^+_1\) and \(K_2 = k^-_2/k^+_2\), we obtain</p>
+
+\[\begin{aligned}
+D_1 &amp;= \frac{X D_0}{K_1}\\
+D_2 &amp;= \frac{X D_1}{K_2} = \frac{X^2 D_0}{K_1 K_2}.
+\end{aligned}\]
+
+<p>Introducing \(D_T = D_0 + 2 D_1 + D_2\) which is the total number of
+genes per unit volume (since when binding to one site, it could be
+either of the two sites), we have</p>
+
+\[D_T = D_0 + 2\frac{X D_0}{K_1} + \frac{X^2 D_0}{K_1 K_2} = D_0\left(1+2\frac{X}{K_1} + \frac{X^2}{K_1 K_2}\right)\]
+
+<p>or</p>
+
+\[D_0 = \frac{D_T}{1+2\frac{X}{K_1} + \frac{X^2}{K_1 K_2}}.\]
+
+<p>Then the kinetics of transcription is given by</p>
+
+\[\frac{d RNA}{dt} = k_t D_2 = k_t \frac{X^2 D_0}{K_1 K_2} =
+k_t \frac{D_T \frac{X^2}{K_1K_2}}{1+2\frac{X}{K_1} + \frac{X^2}{K_1 K_2}}\]
+
+<p>We can now distinguish two situation:</p>
+
+<h4 id="non-cooperative-binding">Non-cooperative binding</h4>
+
+<p>Under non-cooperative binding, the two sites load independently with the same rates, thus, \(K_1 = K_2 = K\).
+Then the kinetics of transcription is given by</p>
+
+\[\begin{aligned}
+\frac{d RNA}{dt}
+&amp;= k_t \frac{D_T X^2/K^2}{1+2 X/K + X^2/K^2}\\
+&amp;= k_t D_T \left(\frac{X/K}{1+X/K}\right)^2
+\end{aligned}\]
+
+<p>In 
+Figure 6B, we compare the dynamics of two independent (non-cooperative) binding sites (in yellow) to that
+of one binding site (cyan).</p>
+
+<h4 id="cooperative-binding-the-hill-function">Cooperative binding: The Hill Function</h4>
+
+<p>If the binding to the two sites is cooperative, that means, that the binding of the second
+site is faster than that of the first one, that is \(k_2^+ &gt;&gt; k_1^+\), and  \(k_2^- \sim k_1^-\).
+That translate into \(K_2 = \frac{k_2^-}{k_2^+} &lt;&lt; K_1 = \frac{k_1^-}{k_1^+}\).</p>
+
+<p>Under cooperative binding conditions, we can introduce a parameter \(K\)
+defined by</p>
+
+\[K_2 = \frac{K^2}{K_1}\]
+
+<p>such that \(K\) is finite, and \(K_2 \rightarrow 0\) as \(K_1 \rightarrow \infty\).</p>
+
+<p>Then</p>
+
+\[\frac{d RNA}{dt} = k_t D_T\frac{\left(\frac{X}{K}\right)^2}{1+2\frac{X}{K_1} + \left(\frac{X}{K}\right)^2}\]
+
+<p>since cooperative binding implies that \(K_1 &gt;&gt; K\), we can approximate the above expression as</p>
+
+\[\frac{d RNA}{dt} \approx k_t D_T \frac{\left(\frac{X}{K}\right)^2}{1+\left(\frac{X}{K}\right)^2}\]
+
+<p>which can be re-written as</p>
+
+\[\frac{d RNA}{dt} \approx v \frac{X^2}{K^2+X^2}\]
+
+<p>where \(v = k_t D_T\) is a constant. This function is referred to as a <a href="https://en.wikipedia.org/wiki/Hill_equation_(biochemistry)"><strong>Hill
+equation</strong></a>
+with Hill coefficient \(n=2\).</p>
+
+<p>In Figure 6B, we compare the dynamics of two cooperative binding sites
+(in purple) to that of two independent (non-cooperative) binding sites
+(in yellow), and one binding site (cyan).</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="TA3.png" style="width:300px;" /> <br />
+   Figure 8. Transcriptional activation depending on multiple binding sites.
+   </div>
+</div>
+
+<p>In the case of many (\(n\)) cooperative biding sites (see Figure 8), the above expression generalizes to</p>
+
+\[\frac{d RNA}{dt} = v \frac{X^n}{K^n+X^n}\]
+
+<p>In Figure 6C, we show different Hill functions for different cases of
+cooperative binding sites.  We observe that under cooperative binding,
+less amount of the activator is required for the rate of transcription
+to reach is maximum value.</p>
+
+<h2 id="transcriptional-inhibition">Transcriptional inhibition</h2>
+
+<p>Transcription can also be inhibited by binding of an inhibitor.
+If X acts as a transcriptional inhibitor, we have the following reaction scheme,</p>
+
+\[\begin{aligned}
+\emptyset\overset{k_a}{\longrightarrow} X  \overset{k_b}{\longrightarrow} \emptyset   &amp;\quad\mbox{X production/degradation}\\
+X + D_0  \underset{k^-_1}{\overset{k^+_1}{\rightleftharpoons}} D_1                    &amp;\quad\mbox{X binding/unbinding}\\
+D_0      \overset{k_t}  {\longrightarrow} D_0 + RNA                                   &amp;\quad\mbox{Transcription only in the absence of X}
+\end{aligned}\]
+
+<p>where transcription only occurs in the absence of the inhibitor X.</p>
+
+<p>And the kinetic equations are given by</p>
+
+\[\begin{aligned}
+\frac{d X}{d t} &amp;= k_a - k_b X - k^+_1 X D_0 + k^-_1 D_1\\
+\frac{d D_0}{d t} = - \frac{d D_1}{d t} &amp;= k^-_1 D_1 - k^+_1 X D_0\\
+\frac{d RNA}{d t} &amp;= k_t D_0.
+\end{aligned}\]
+
+<p>Under steady state \(\frac{d D_0}{d t} = \frac{d D_1}{d t} = 0\),
+we have</p>
+
+\[D_0 = K_1 \frac{D_1}{X}\]
+
+<p>where \(K_1 = k^-_1/k^+_1\). Introducing \(D_T = D_0 + D_1\), we obtain</p>
+
+\[\frac{dRNA}{d t} = k_t D_T \frac{K_1/X}{1+ K_1/X} = v \frac{K_1}{K_1+X}\]
+
+<p>for \(v = k_t D_T\).</p>
+
+<p>This generalizes for multiple inhibitory sites as</p>
+
+\[\frac{dRNA}{d t} = v \frac{K_1^n}{K_1^n+X^n}\]
+
+<p>which is also a Hill equation.</p>
+
+<p>In Figure 9, we show the effect in transcription rate of inhibition under different degrees of cooperativity.
+Reciprocally to activation, as cooperativeness increases, less inhibitor is required to achieve the same
+rate of inhibition.</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="TranscriptionInactivation.png" style="width:300px;" /> <br />
+   Figure 9. Transcription inhibition. parameters are v=1 and K=1.5.
+   </div>
+</div>
+
+<h2 id="transcription-summary">Transcription summary</h2>
+
+<p>Here is a summary of the simplified kinetics of transcription
+regulation that we have discussed so far.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><em><strong>Type</strong></em></td>
+      <td><em><strong>Trascription rate</strong> dRNA/dt</em></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Activation 1 site</td>
+      <td>\(v\frac{X}{K+X}\)</td>
+      <td>Figure 6A</td>
+    </tr>
+    <tr>
+      <td>Activation n sites/uncooperative</td>
+      <td>\(v\left(\frac{X}{K+X}\right)^n\)</td>
+      <td>Figure 6B</td>
+    </tr>
+    <tr>
+      <td>Activation n sites/cooperative</td>
+      <td>\(v\frac{X^n}{K^n+X^n}\)</td>
+      <td>Figure 6C</td>
+    </tr>
+    <tr>
+      <td>Inhibition n sites/cooperative</td>
+      <td>\(v\frac{K^n}{K^n+X^n}\)</td>
+      <td>Figure 9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where \(X\) is the TF concentration, and \(K\) the dissociation
+equilibrium constant which describes the strength of the binding.</p>
+
+<h2 id="simplest-feedback-loop-autoregulation">Simplest Feedback loop: Autoregulation</h2>
+
+<p>In autoregulation, a protein (a transcription factor) represses (or
+activates) the transcription of its own gene. This is an important
+mechanism, for instance negative autoregulation occurs in 40% of
+E. coli transcription factors (<a href="rosenfeld.pdf">Rosenfeld <em>et. al</em></a>).</p>
+
+<p>Autoregulation can be simple (no feedback loop) or involving a
+feedback look by which the species either activates (positive
+feedback) or inhibits (negative feedback) its own production. Figure</p>
+<ol>
+  <li>gives a graphical representation of these simple feedback loops.</li>
+</ol>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="autoregulation.png" style="width:300px;" /> <br />
+   Figure 10. Autoregulation with simple (a), a positive feedback loop (b) and a negative loop (c).
+   </div>
+</div>
+
+<p>The kinetic equations for the autoregulation of a species X is given by</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><em><strong>Type</strong></em></td>
+      <td><em><strong>Concentration change with time</strong></em></td>
+    </tr>
+    <tr>
+      <td>simple regulation</td>
+      <td>\(dX/dt = k_s - k_d X\)</td>
+    </tr>
+    <tr>
+      <td>negative autoregulation</td>
+      <td>\(dX/dt = k_s \frac{K^n}{K^n+X^n} - k_d X\)</td>
+    </tr>
+    <tr>
+      <td>positive autoregulation</td>
+      <td>\(dX/dt = k_s \frac{X^n}{K^n+X^n} - k_d X\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where we have used Hill functions to describe the positive and negative feedback loops.</p>
+
+<p>The differential equation for the simple regulation case has an analytical solution
+given by</p>
+
+\[X(t) = \frac{k_s}{k_d} \left(1-e^{-k_d t}\right)\quad \mbox{simple autoregulation}.\]
+
+<p>However most differential equations do not have analytical
+solutions, but good approximate solutions can be found numerically.</p>
+
+<h3 id="numerical-solutions-for-ordinary-differential-equations-odes-the-euler-method">Numerical Solutions for ordinary differential equations (ODEs): The Euler Method</h3>
+
+<p>The autoregulation differential equations belong to the category
+of ordinary differential equations (ODE).</p>
+
+<p>Many different numerical methods exist to solve ODEs.
+Numerical methods to solve differential equations were introduced
+a long time  before computers.
+Next I will discuss one of the simplest methods, the
+<strong>Euler method</strong>, which dates to Leonhard Euler (1707-1783).</p>
+
+<p>You can find different packages to solve ODES, such as
+<a href="http://www.math.pitt.edu/~bard/xpp/xpp.html">XPP</a>, and several
+<a href="https://www.mathworks.com/help/matlab/math/choose-an-ode-solver.html">matlab
+packages</a>
+to name a few.  A good review of methods and software packages that
+implement them is this report <a href="gonze_numerics.pdf">“Numerical methods for ordinary
+differential equations’</a>.</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="autoreg_plot.png" style="width:300px;" /> <br />
+   Figure 11. Simple autoregulation (cyan), negative autoregulation (yellow), and positive autoregulation (purple).
+Parameters are K = 1; ks=1 for the simple method and ks=2 for both positive and negative autoregulation, and kd=1 for all three cases.
+The Hill coefficient for both feedback loops is n=1.
+ Original concentration at t=0 is 0.01 for all three methods. 
+   </div>
+</div>
+
+<p>Even if you decide to use a package for your work, I would recommend
+that you implement your own <em>at least once</em> so you understand the
+details, and are better prepared to assign parameter values when you
+decide to move to use a given package. The Euler method what we as
+showing next is the simplest, and it just simply discretizes the
+meaning of a derivative.</p>
+
+<p>Consider a differential equation for variable \(X\)</p>
+
+\[\frac{d X}{d t} = f(t,X).\]
+
+<p>By a numerical solution we understand, starting from a known value \(X_0\) at \(t_0\), to calculate
+\(X_1\), \(X_2\), \(X_3\), at times \(t_1=t_0+\Delta t\), \(t_2=t_0+2\Delta t\ldots\)</p>
+
+<p>The Euler method, updates those values as</p>
+
+\[X_{n+1} = X_{n} + \Delta t *  f(t_n,X_n)\]
+
+<p>The value of \(\Delta t\) is arbitrary. The smaller you make \(\Delta
+t\) the better your recursion will approximate the actual continuous
+derivative. In Figure 11, I have used \(\Delta t = 0.01\).</p>
+
+<h3 id="autoregulation-controls-the-response-time-of-the-system">Autoregulation controls the response time of the system</h3>
+
+<p>Applying the Euler method to the positive and negative autoregulation feedback networks results in Figure 11.</p>
+
+<ul>
+  <li>
+    <p><strong>Negative autoregulation speeds up the response time</strong> relative to the
+simple case, and steady state is reached faster. Many biological
+examples have been studied of negative autoregulation, particularly
+in bacteria. Here is an example, <a href="rosenfeld.pdf">“Negative autoregulation speeds
+the response times of transcription networks.”</a> by
+Rosenthal <em>et al.</em>.</p>
+  </li>
+  <li>
+    <p><strong>Positive autoregulation slows down the response time</strong> relative to
+  the simple case, and the steady state is reached at a later
+  time. Positive autoregulation has been designed in experimental
+  systems, for which the mathematical models fit well the observed
+  data.  Here is an example, <a href="MaedaSano.pdf">“Regulatory dynamics of synthetic gene
+  networks with positive feedback”</a> by Maeda &amp; Sano.</p>
+  </li>
+</ul>
+
+<h2 id="gene-regulation-with-a-negative-feedback-loop">Gene regulation with a negative feedback loop</h2>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="goodwin.png" style="width:300px;" /> <br />
+   Figure 12. The Goodwin model is a negative feedback loop. Species X modifies transcription (R)
+by a negative feedback loop that we model by a non-linear Hill function.
+   </div>
+</div>
+
+<p>The Goodwin model was introduced by B. Goodwin in 1965 in this work
+<a href="goodwin_paper.pdf">“Oscillatory behavior in enzymatic control
+process”</a>.  The Goodwin model is the prototype of a
+negative feedback loop that produces interesting behaviors (in this
+case oscillations).</p>
+
+<p>In the Goodwin model a gene produces a species of RNA (R) which in turn produces
+a protein (P). The protein (P) is involved in some metabolic process which
+results in the production of another protein (X), which acts as an inhibitor in
+the production of the RNA.</p>
+
+<p>The reactions for the Goodwin model are given in Figure 12. The
+associated differential equations are</p>
+
+\[\begin{aligned}
+\frac{d R}{dt} &amp;= k_1 \frac{K^n}{K^n+X^n} - k_2 R\\
+\frac{d P}{dt} &amp;= k_3 R - k_4 P\\
+\frac{d X}{dt} &amp;= k_5 P - k_6 X
+\end{aligned}\]
+
+<p>where we have modeled the negative feedback loop that the protein X
+exerts on transcription by a Hill function.</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="goodwin_plot.png" style="width:300px;" /> <br />
+   Figure 13. Dynamics of the Goodwin model. Parameters are k1=k3=k5=1,
+k2=k4=k6=0.1, K = 1. Initial concentrations are R = 0, P=0.2, X = 2.5.
+</div>
+</div>
+
+<h3 id="negative-feedback-loops-produce-oscillations">Negative feedback loops produce oscillations</h3>
+
+<p>The behavior of the Goodwin model can be seen in Figure 13, where I
+have solved numerically the differential equations for some particular
+values of the parameters.  The Goodwin model shows periodic
+oscillations for \(n&gt;8\). For \(n&lt;8\) the oscillations are dampened.</p>
+
+<p>This is the first model that showed oscillations at the molecular level.
+Oscillation in molecular biology systems are well documented, and
+it is important to have mathematical models that reproduce them.</p>
+
+<p>The Hill coefficient \(n\) represents the degree of cooperativeness,
+that is how many molecules of regulator \(X\) bind to the promoter region.
+The Goodwin model has been criticized because a cooperativity of \(n&gt;8\) is very high
+and unrealistic for most biological situations. There is more recent
+work trying to lower the non-linearity requirement in order to obtain
+oscillatory behaviors, for instance by adding phosphorylation/de-phosphorylation
+processes, as in with <a href="goodwin_gonze.pdf">work</a> by Gonze &amp; Abou-Jaoude.</p>
+
+<h2 id="gene-regulation-with-a-positive-feedback-loop">Gene regulation with a positive feedback loop</h2>
+
+<p>Positive feedback loops have some other interesting properties
+relative to negative loops such as, bistability, hysteresis, and
+activation surges.  Here I follow the work of Mitrophanov &amp; Groisman
+<a href="grossman.pdf">“Positive feedback in cellular control systems”</a>.</p>
+
+<h3 id="the-phopphoq-system">The PhoP/PhoQ system</h3>
+
+<p>In the PhoP/PhoQ operon in bacterium <em>Salmonella enterica</em>, there is a positive feedback loop.
+The operon has a constitutive promoter, and another promoter that can be induced
+by the presence of PhoP in phosphorylated form (Figure 14).</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="phoP.png" style="width:300px;" /> <br />
+   Figure 14. Diagrammatic representation of the PhoP phosphorylation/de-phosphorylation positive
+feedback loop.
+</div>
+</div>
+
+<p>The differential equations are given by</p>
+
+\[\begin{aligned}
+\frac{d U}{dt} &amp;= k_1 + k_2 \frac{P^n}{K^n+P^n} + k^-_a P - (k_d + k^+_a) U\\
+\frac{d P}{dt} &amp;= k^+_a U - (k_d + k^-_a) P
+\end{aligned}\]
+
+<div id="figcontainer"> <div id="figure">
+     <img src="PhoP_plot0.png" style="width:300px;" /> <br />
+   Figure 15. Effect in protein concentration due to the presence of
+a inducible promoter. Parameters are: k1=0.01, k2 = 0.3, ka+ = 5 ka- = 20, kd = 0.08,
+K=0.2, n=2, for time measured in minutes and concentrations in microM.
+</div>
+</div>
+
+<p>where P stands for the phosphorylated form of PhoP, and U stands for
+the un-phosphorylated form of PhoP. \(k_1\) is the rate of the
+constitutive promoter, and \(k_2\) the rate of the inducible
+promoter. We have modeled the positive feedback induced by the
+phosphorylated form of PhoP by a Hill function. \(k^+_a\) and
+\(k^-_a\) are the rates of exchange between the phosphorylated and
+un-phosphorylated forms. Both forms of the protein degrade with rate
+\(k_d\).</p>
+
+<p>In the absence of the inducible promoter (\(k2=0\)), and using
+parameters close to the biological conditions, both concentration of
+the phosphorylated and unphosphorylated form of the protein are very
+low. By contrast, when the inducible promoter is turned on, the
+phosphorylated protein activates the inducible promoter and the
+concentrations of both states of protein PhoP increase drastically
+(Figure 15).</p>
+
+<div id="figcontainer"> <div id="figure">
+     <img src="PhoP_plot1.png" style="width:300px;" /> <br />
+   Figure 16. The positive feedback loop of PhoP (with the same biologically
+relevant parameters than in Figure 15), shows only one steady state under
+a Hill coefficient of 2 (left-hand side panels), but two different steady states (bistability) 
+when the Hill coefficient is 3 (right-hand side panels). In purple trajectories starting
+from an initial concentration of 4.0 (for both forms of the protein). In blue trajectories
+starting from an initial concentration of 0.1 (for both forms of the protein).
+</div>
+</div>
+
+<h3 id="positive-feedback-produces-bistability">Positive Feedback produces bistability</h3>
+
+<p>A system is called bistable if it can reach different steady states depending
+of the initial conditions of the system. Positive feedback loops can provide
+bistable solutions. The PhoP/PhoQ system, under biological relevant
+parameters, exhibits bistatiblity for cooperative factor \(n=3\), but not
+for \(n=2\).</p>
+
+<p>In Figure 16, we show for the same parameter conditions than in Figure 15,
+we compare the evolution of the concentrations of the phosphorylated and
+un-phosphorylated forms of the protein PhoP starting from two different
+concentrations: 4.0, 4.0 (in purple) and 0.1, 0.1 (in blue).
+While both initial conditions.</p>
+
+<p>The second steady state corresponds to very small concentrations of
+the protein.  This is a known phenomena. For instance, the E. coli
+lactose utilization system (the Lac Operon) has two different steady
+states, one achieving high concentrations, and the other very small
+concentrations.</p>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

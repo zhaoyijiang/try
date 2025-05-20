@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#preliminars" id="markdown-toc-preliminars">Preliminars</a></li>
+  <li><a href="#finding-the-breakpoints-of-backcrossed-flies" id="markdown-toc-finding-the-breakpoints-of-backcrossed-flies">Finding the breakpoints of backcrossed flies</a>    <ul>
+      <li><a href="#the-model" id="markdown-toc-the-model">The model</a>        <ul>
+          <li><a href="#the-pz_imid-z_i-1" id="markdown-toc-the-pz_imid-z_i-1">The \(P(Z_i\mid Z_{i-1})\)</a></li>
+          <li><a href="#the-px_i-mid-g_i" id="markdown-toc-the-px_i-mid-g_i">The \(P(X_i \mid G_i)\)</a></li>
+          <li><a href="#the-pg_i-mid-z_i" id="markdown-toc-the-pg_i-mid-z_i">The \(P(G_i \mid Z_i)\)</a></li>
+          <li><a href="#finally-px_i-mid-z_i" id="markdown-toc-finally-px_i-mid-z_i">Finally \(P(X_i \mid Z_i)\)</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-data" id="markdown-toc-the-data">The data</a></li>
+      <li><a href="#implementation-issues" id="markdown-toc-implementation-issues">Implementation issues</a></li>
+      <li><a href="#a-luxury-you-will-not-have-in-real-live" id="markdown-toc-a-luxury-you-will-not-have-in-real-live">A luxury you will not have in real live</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-06">week 06:</h1>
+
+<h1 class="no_toc" id="probabilistic-models-and-inference">Probabilistic models and Inference</h1>
+
+<h2 id="preliminars">Preliminars</h2>
+
+<p>Present all your reasoning, derivations, plots and code as part of the homework. Imagine that you are writing a short paper that anyone in class should to be able to understand.  If you are stuck in some point, please describe the issue and how far you got. A jupyter notebook if you are working in Python is not required, but recommended.</p>
+
+<h2 id="finding-the-breakpoints-of-backcrossed-flies">Finding the breakpoints of backcrossed flies</h2>
+
+<p>For this homework, we are going to infer the breakpoints of a male fly for
+which we have <a href="w06-homework_backcross.reads">mapped reads</a> in a region of 10,000 nucleotides.</p>
+
+<p>The fly is a backcross resulting from a large-scale experiment in
+which from parents <em>Drosophila Simulans</em> (Dsim) and <em>Drosophila
+Sechellia</em> (Dsec), F1 hybrid females (Dsec/Dsim) were crossed with
+Dsec/Dsec parent males.</p>
+
+<p>We also know the sequences of Dsim (\(A\)) and Dsec (\(B\)) for the
+region of interest, which are giving
+<a href="w06-homework_backcross_genome.afa">here</a>.</p>
+
+<p>You should use all the assumptions we make in the <a href="w06-lecture.html">w06
+lecture</a>, with one simplification.  Since we know
+the Dsim/Dsim ancestry is not possible, we are going to assume only
+two possible ancestry states</p>
+
+\[\begin{aligned}
+\mbox{Dsim}&amp;/\mbox{Dsec} = AB,
+\\
+\mbox{Dsec}&amp;/\mbox{Dsec} = BB.
+\end{aligned}\]
+
+<p>Here are some more details about the conditional probabilities that we
+skipped on the <a href="w06-lecture.html">lecture notes</a>.</p>
+
+<h3 id="the-model">The model</h3>
+
+<h4 id="the-pz_imid-z_i-1">The \(P(Z_i\mid Z_{i-1})\)</h4>
+
+<p>Lets introduce the notation described in Figure 1,</p>
+
+\[P(BB\mid BB) = P(AB\mid AB) = p\]
+
+<p>to indicate the probability of staying in the same ancestry.</p>
+
+<p>Let’s assume that due to previous experience with these two Drosophila species,
+we expect that there is going to be on average one breakpoint (that is a change from homozygous BB to heterozygous AB or viceversa)
+per chromosome.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="homework_HMM.png" style="width:300px;" /> <br />
+     Figure 1. A graphical representation of the HMM.
+   </div>
+ </div>
+
+<p>Our synthetic chromosome has length \(L\), in general, if the number of expected breakpoint is \(n\),
+then the length of a continuous regions without breakpoints is</p>
+
+\[l = \frac{L}{n+1},\]
+
+<p>and because for a geometric distribution</p>
+
+\[l = \frac{p}{1-p}\]
+
+<p>then we set the probability of staying in the same ancestry as</p>
+
+\[p = \frac{L/(n+1)}{1+L/(n+1)}\]
+
+<p>if we expect \(n\) breaks in a region of length \(L\).</p>
+
+<h4 id="the-px_i-mid-g_i">The \(P(X_i \mid G_i)\)</h4>
+
+<p>Let’s introduce \(X_i = \{n_a, n_c, n_g, n_t\}\), where \(n_x\) is the count of
+residue \(x\) in the reads that cover position \(i\).</p>
+
+<p>The conditional probability \(P(X \mid G)\) is a multinomial distribution</p>
+
+\[P(X_i \mid G_i) = \frac{(n_a+n_c+n_g+n_t)!}{n_a! n_c! n_g! n_t!}
+\left\{
+\begin{array}{ll}
+p_1^{n_a} q_1^{n_c+n_g+n_t} &amp; \mbox{for}\, G_i = aa\\
+p_1^{n_c} q_1^{n_g+n_t+n_a} &amp; \mbox{for}\, G_i = cc\\
+\ldots &amp; \\
+p_2^{n_a+n_c} q_2^{n_g+n_t} &amp; \mbox{for}\, G_i = ac\\
+\ldots &amp; \\
+\end{array}
+\right.\]
+
+<p>For some Gaussian noise with standard deviation given by \(\epsilon\)
+and</p>
+
+\[\begin{aligned}
+p_1 &amp;= 1-\epsilon\\
+q_1 &amp;= \frac{\epsilon}{3}
+\end{aligned}\]
+
+<p>and</p>
+
+\[\begin{aligned}
+p_2 &amp;= \frac{1-\epsilon}{2}\\
+q_2 &amp;= \frac{\epsilon}{2}.
+\end{aligned}\]
+
+<p>For this homework, the person who generated the reads tells you that \(\epsilon = 0.4\).</p>
+
+<p>As an example, for locus 10 in Figure 1, we have</p>
+
+\[X_{10} = (5,5,0,0),\]
+
+<p>and</p>
+
+\[P(X_{10}\mid G_{10}) = \frac{10!}{5! 5!}
+\left\{
+\begin{array}{ll}
+p_1^5 q_1^5 &amp; \mbox{for}\, G_{10} = aa, cc\\
+q_1^{10}    &amp; \mbox{for}\, G_{10} = gg, tt\\
+p_2^{10}    &amp; \mbox{for}\, G_{10} = ac      \\
+p_2^5 q_2^5 &amp; \mbox{for}\, G_{10} = ag, at, cg, ct\\
+q_2^{10}    &amp; \mbox{for}\, G_{10} = gt
+\end{array}
+\right.\]
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="emissions.png" style="width:300px;" /> <br />
+     Figure 2. Reads and genome data are given for three hypothetical loci 
+     as examples.
+   </div>
+ </div>
+
+<h4 id="the-pg_i-mid-z_i">The \(P(G_i \mid Z_i)\)</h4>
+
+<p>As for the probability of the genotype given the ancestry, we have</p>
+
+\[\begin{aligned}
+P(G_i \mid BB) &amp;=
+\left\{
+\begin{array}{ll}
+1 &amp; G_i=g_i^B g_i^B\\
+0 &amp; \mbox{otherwise}
+\end{array}
+\right.
+\\
+P(G_i \mid AB) &amp;=
+\left\{
+\begin{array}{ll}
+1 &amp; G_i=g_i^A g_i^B\\
+0 &amp; \mbox{otherwise}
+\end{array}
+\right.
+\end{aligned}\]
+
+<p>where \(g^A_i\) is the residue at position \(i\) for strain \(A\), and similarly for \(g^B_i\).</p>
+
+<p>For locus 10 in Figure 1, we have</p>
+
+\[\begin{aligned}
+P(G_{10} \mid BB) &amp;=
+\left\{
+\begin{array}{ll}
+1 &amp; G_{10}=cc\\
+0 &amp; \mbox{otherwise}
+\end{array}
+\right.
+\\
+P(G_{10} \mid AB) &amp;=
+\left\{
+\begin{array}{ll}
+1 &amp; G_{10}=ac\\
+0 &amp; \mbox{otherwise}
+\end{array}
+\right.
+\end{aligned}\]
+
+<p><a href="http://genome.cshlp.org/content/21/4/610.full">Andolfatto <em>et al.</em></a>
+assume a more general case in which there could be sequencing error,
+thus a non-zero probability for other genotypes. We have simplified
+the model and assume no sequencing error at all.</p>
+
+<h4 id="finally-px_i-mid-z_i">Finally \(P(X_i \mid Z_i)\)</h4>
+
+<p>is given by</p>
+
+\[P(X_i \mid Z_i) = \sum_{G_i} P(X_i \mid G_i)\, P(G_i\mid Z_i)\]
+
+<p>For locus 10 in Figure 1, we have</p>
+
+\[\begin{aligned}
+P(X_{10} \mid BB)
+&amp;= \sum_{G_{10}} P(X_{10} \mid G_{10})\, P(G_{10}\mid BB)\\
+&amp;= P(X_{10} \mid cc)\\
+&amp;= \frac{10!}{5! 5!}\ p_1^5 q_1^5\\
+P(X_{10} \mid AB)
+&amp;= \sum_{G_{10}} P(X_{10} \mid G_{10})\, P(G_{10}\mid AB)\\
+&amp;= P(X_{10} \mid ac)\\
+&amp;= \frac{10!}{5! 5!}\ p_2^{10}\\
+\end{aligned}\]
+
+<p>Since \(q_1\) is an error term, then \(p_2&gt;&gt;q_1\) and \(p_2\approx p_1\),
+then we have</p>
+
+\[P(X_{10} \mid AB) &gt;&gt; P(X_{10} \mid BB)\]
+
+<p>as one would expect by looking at the data in Figure 1.</p>
+
+<h3 id="the-data">The data</h3>
+
+<p>You are given two files</p>
+
+<ul>
+  <li>
+    <p>The <a href="w06-homework_backcross.reads">mapped reads</a> for a region of 10,000 nucleotides.</p>
+
+    <p>This file has 10,000 rows, each with four columns. Each column represents the
+number of As, Cs, Gs, and Ts (in that order) that appeared in all the reads that mapped to that position.</p>
+  </li>
+  <li>
+    <p>The <a href="w06-homework_backcross_genome.afa">sequence</a> of the genomic regions for the two species “A” and “B”, in <a href="https://en.wikipedia.org/wiki/FASTA_format">fasta format</a>.</p>
+  </li>
+</ul>
+
+<h3 id="implementation-issues">Implementation issues</h3>
+
+<ul>
+  <li><em>need to work in logarithms</em></li>
+</ul>
+
+<p>The forward and backward algorithms require to multiply many small numbers (probabilities). If you try
+   to implement them as multiplications, you will see that soon you run out of precission. Numbers will be
+   so small that you cannot distinguish them.</p>
+
+<p>The solution is to work in logarithm space. Insted of using probabilities, you take the logarithm of
+   the probabilities, and instead of multiplying them you sum them.</p>
+
+<p>So for instance, the first recursion in the forward algorithm</p>
+
+\[f_{AA}(i) = P(X_i\mid AA)
+   \left[ p  \, f_{AA}(i-1) + (1-p)\, f_{AB}(i-1) \right]\]
+
+<p>becomes</p>
+
+\[\log f_{AA}(i) = \log P(X_i\mid AA) + \log
+   \left[ e^{ \log p+ \log f_{AA}(i-1)} + e^{\log{(1-p)} + \log f_{AB}(i-1)} \right]\]
+
+<ul>
+  <li><em>sum exponentials in a clever way</em></li>
+</ul>
+
+<p>In the previous expression, we still need to calculate terms of the form</p>
+
+\[\log\left(e^a+e^b\right).\]
+
+<p>A numerical trick to keep this quantity in bounds is to find the largest
+   of the two values, say \(a&gt;b\) and to calculate</p>
+
+\[\log\left(e^a+e^b\right) = \log e^a\left(1+e^{b-a}\right) = a + \log{ (1+e^{b-a})}.\]
+
+<p>Now the term we are exponentiating is \(b-a&lt;0\) and that exponential
+   is always small.</p>
+
+<p>There are functions both in Matlab and Python that implement this
+   “logsumexp” calculation.</p>
+
+<h3 id="a-luxury-you-will-not-have-in-real-live">A luxury you will not have in real live</h3>
+
+<p>Because this is a simulated experiment, as a control, I can give you 
+<a href="w06-homework_backcross_genome.info">information about the actual breakpoints</a>,
+so that you can check whether your inference is getting the right answer or not.</p>
+
+<p>However, one thing you could do in real live is to <strong>generate synthetic
+data</strong> to test your implementation before you deploy your algorithm on
+real data for which you do not know the real answer.</p>
+
+<p>Because the model we have introduced is probabilistic, for each node,
+you have defined a probability distribution from which you can
+sample. A <strong>probabilistic model is a generative model</strong>. That is how I
+generated the data for this homework. That is a powerful tool to
+have.</p>
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

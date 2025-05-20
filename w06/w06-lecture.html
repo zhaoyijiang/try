@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#probabilistic-graphical-models" id="markdown-toc-probabilistic-graphical-models">Probabilistic Graphical Models</a>    <ul>
+      <li><a href="#definition" id="markdown-toc-definition">Definition</a></li>
+      <li><a href="#the-parts-of-the-bayesian-network" id="markdown-toc-the-parts-of-the-bayesian-network">The parts of the Bayesian network</a></li>
+      <li><a href="#what-to-do-with-a-bayesian-network" id="markdown-toc-what-to-do-with-a-bayesian-network">What to do with a Bayesian network?</a></li>
+      <li><a href="#our-example-from-genomic-reads-to-recombination-breakpoints" id="markdown-toc-our-example-from-genomic-reads-to-recombination-breakpoints">Our example: From genomic reads to recombination breakpoints</a></li>
+      <li><a href="#the-model-a-hidden-markov-model" id="markdown-toc-the-model-a-hidden-markov-model">The Model (a Hidden Markov Model)</a>        <ul>
+          <li><a href="#the-random-variables" id="markdown-toc-the-random-variables">The random variables</a></li>
+          <li><a href="#the-conditional-probabilities" id="markdown-toc-the-conditional-probabilities">The conditional probabilities</a></li>
+        </ul>
+      </li>
+      <li><a href="#the-inference-question" id="markdown-toc-the-inference-question">The inference question</a></li>
+      <li><a href="#the-parameters" id="markdown-toc-the-parameters">The parameters</a></li>
+    </ul>
+  </li>
+  <li><a href="#inference" id="markdown-toc-inference">Inference</a>    <ul>
+      <li><a href="#forward--algorithm" id="markdown-toc-forward--algorithm">Forward  Algorithm</a></li>
+      <li><a href="#backward-algorithm" id="markdown-toc-backward-algorithm">Backward Algorithm</a></li>
+      <li><a href="#decoding" id="markdown-toc-decoding">Decoding</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-06">week 06:</h1>
+
+<h1 class="no_toc" id="probabilistic-models-and-inference">Probabilistic models and Inference</h1>
+
+<p>In this week’s lectures, we discuss probabilistic graphical models
+and how to do inference using them. As a practical case, we are going
+to implement the probabilistic model introduced by <a href="http://genome.cshlp.org/content/21/4/610.full">Andolfatto <em>et
+al.</em></a> to assign
+ancestry to chromosomal segments.</p>
+
+<p>There are many good books to learn about probabilistic models.
+<a href="KollerFriedman.pdf">“Probabilistic graphical models: principles and
+techniques”</a>
+(by Koller &amp; Friedman) is a comprehensive source about more general
+probabilistic models than the one we are going to study
+here. <a href="durbin_book.pdf">“Biological sequence
+analysis”</a> (by Durbin <em>et al.</em>) while
+concentrates on genomic sequences, is a good reference to learn
+about some basic (and widely used) probabilistic models, as it
+provides detailed descriptions of some of the fundamental
+algorithms. Another good source is <a href="http://www.dam.brown.edu/people/mumford/vision/pattern.html">“Pattern
+Theory”</a>
+(by Mumford and Desolneux).</p>
+
+<h2 id="probabilistic-graphical-models">Probabilistic Graphical Models</h2>
+
+<h3 id="definition">Definition</h3>
+
+<p>A probabilistic graphical model is a graphical representation of the
+relationships between different random variables. It consists of <strong>nodes</strong>
+that represent random variables and <strong>edges</strong> that represent their
+relationships by conditional probabilities. Probabilistic graphical models
+also go by the name of <strong>Bayesian networks</strong> (BN).</p>
+
+<p>Let me light it up with an example in Figure 1 taken from <a href="KollerFriedman.pdf">Koller &amp;
+Friedman</a>.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="PGM1.png" style="width:300px;" /> <br />
+     Figure 1. A example of a Bayesian network (BN).
+   </div>
+ </div>
+
+<p>A professor is writing a recommendation letter for a student.  Let’s
+“letter” be the strength of the letter. The strength of the letter is
+going to be based on the student’s “grades”, and “SAT” scores, both of
+which are available to the professor.  The model in Figure 1 assumes
+that the grades depend both on the student’s “intelligence”, and on
+the course’s “difficulty”, while the “SAT” scores depend only on the
+intelligence.</p>
+
+<h3 id="the-parts-of-the-bayesian-network">The parts of the Bayesian network</h3>
+
+<p>The random variables are</p>
+
+<ul>
+  <li>intelligence (\(i\))</li>
+  <li>course difficulty (\(d\))</li>
+  <li>course grades (\(g\))</li>
+  <li>SAT scores (\(s\))</li>
+  <li>strength of letter (\(l\))</li>
+</ul>
+
+<p>Thus, we have a joint distribution of 5 random variables</p>
+
+\[P(d,i,g,s,l)\]
+
+<p>With all generality (using the chain rule) we can write</p>
+
+\[\begin{aligned}
+P(d, i, g, s, l) &amp;= P(l\mid d,i,g,s)\, P(d,i,g,s)\\
+             &amp;= P(l\mid d,i,g,s)\, P(s\mid d,i,g)\, P(d,i,g)\\
+             &amp;= P(l\mid d,i,g,s)\, P(s\mid d,i,g)\, P(g\mid d,i)\, P(d,i)\\
+             &amp;= P(l\mid d,i,g,s)\, P(s\mid i)    \, P(g\mid d,i)\, P(i\mid d)\, P(d)\\
+\end{aligned}\]
+
+<p>This is a complex set of <em>possible</em> dependencies, some of which do not
+really exist for the problem at hand; for instance, the intelligence
+of the student is not dependent of the difficulty of the courses she
+takes, thus in the expression above \(P(i\mid d) = P(i)\).</p>
+
+<p>What the BN in Figure 1 describes is how to simplify the joint
+distribution of the 5 random variables. It is telling us which are the
+dependencies (amongst all possible) that we are going to consider.
+The edges represent conditional dependences between the random
+variables (nodes), such that the node at the end of the arrow depends
+on the node from where the edge starts. In a general BN, a node can
+have many arrows landing on it (many dependencies) from other nodes.</p>
+
+<p>The graphical model in Figure 1 says that</p>
+
+\[\begin{aligned}
+P(l\mid d,i,g,s) &amp;= P(l\mid g)\quad \mbox{"l" does not directly depend on "d", "i", or "s"}
+\\
+P(s\mid d,i,g)   &amp;=P(s\mid i)\quad \mbox{"s" does not directly depend on "d",  or "g"}
+\\
+P(i\mid g)       &amp;=P(i)\quad \mbox{"i" does not directly depend on "g"}
+\\
+\end{aligned}\]
+
+<p>so that, the joint probability of all random variables is given by</p>
+
+\[P(d,i,g,s,l) = P(l\mid g)\, P(s\mid i)\, P(g\mid d,i)\, P(i)\, P(d).\]
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="andolfattoS8.png" style="width:300px;" /> <br />
+   </div>
+ </div>
+
+<h3 id="what-to-do-with-a-bayesian-network">What to do with a Bayesian network?</h3>
+
+<p><strong>Inference</strong>. Inference about some of the random variables, assuming
+that we have information about others.</p>
+
+<p>In a Bayesian network, the random variables for which we have
+information become the <strong>evidence</strong>. From the other variables, we can
+decide which to do inference on and which to treat as hidden variables
+which will be integrated out to all possible values in order to make
+our inferences.</p>
+
+<p>Several scenarios for the student letter example,</p>
+
+<ul>
+  <li>
+    <p>We know the outcome of “letters”, and also have access to the
+grades and SAT scores, and we may want to infer the intelligence of
+the student.</p>
+
+    <p>In this case the course grades will become a “hidden” variable that
+you will integrate out to all values.</p>
+  </li>
+  <li>
+    <p>You want to predict the strength of the letter you will be able to
+ write by knowing the grades and SAT scores, in which case both
+ intelligence and course difficulty become hidden variables.</p>
+  </li>
+</ul>
+
+<p>Let’s approach inference with a probabilistic graphical model using a
+biology example implemented recently.</p>
+
+<h3 id="our-example-from-genomic-reads-to-recombination-breakpoints">Our example: From genomic reads to recombination breakpoints</h3>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="andolfattoS5.png" style="width:300px;" /> <br />
+   </div>
+ </div>
+
+<p>The probabilistic model proposed by <a href="http://genome.cshlp.org/content/21/4/610.full">Andolfatto <em>et
+al.</em></a> is given in their
+Figure S8 reproduced here.  The problem is to assign ancestry
+(homozygous for one of the parents or heterozygous) to the different
+genomic loci of a given male fly by analyzing genomic reads.</p>
+
+<p>Andolfatto uses males flies created by crossing female F1 hybrids of
+<em>Drosophila Simulans</em> (Dsim) and <em>Drosophila Sechellia</em> (Dsec) with
+Dsec males. The resulting males would have an ancestry (Z) that is
+either Dsec/Dsec or Dsec/Dsim at different loci (see Figure S5 from
+Andolfatto <em>et al.</em> reproduced here). The genotype (G), that is the
+collection of actual nucleotides in both alleles, is unknown, and will
+be treated as a nuisance variable. What we know from the experiment is
+a collection of mapped reads (X) for each locus (genomic position).</p>
+
+<p>For a given locus in one individual, the question is how to determine
+which reads correspond to parent Dsim versus parent Dsec, which will
+in turn determine the ancestry (Z) of the locus being either
+\(Dsim/Dsec\) or \(Dsec/Dsec\). Because the F1 females were crossed
+only to parent \(Dsec\) males (but not to parent \(Dsim\) males), the
+genotype \(Dsim/Dsim\) does not occur.  (The reason for only crossing
+F1 females is because the F1 males are sterile.)</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="andolfattoF1.png" style="width:300px;" /> <br />
+     Figure 1 from Andolfatto et al. (http://genome.cshlp.org/content/21/4/610.full)
+   </div>
+ </div>
+
+<p>Andolfatto’s model assumes a more general situation in which the
+ancestry of a given individual at different loci, named \(Z\), could
+be either AA, or BB, or AB (Figure 1 from Andolfatto <em>et al.</em>
+reproduced here).</p>
+
+<h3 id="the-model-a-hidden-markov-model">The Model (a Hidden Markov Model)</h3>
+
+<h4 id="the-random-variables">The random variables</h4>
+
+<p>Figure 2 shows an example of the three random variables for the
+problem of inferring ancestry from mapped reads with specific examples.</p>
+
+<p>The random variables for  a given locus (<em>i.e.</em> a genomic position) \(i\) are</p>
+
+<ul>
+  <li>
+    <p>\(X_i\) is the collection of reads for locus \(i\).</p>
+
+\[X_i = \{n^i_a, n^i_c, n^i_g, n^i_t\},\]
+
+    <p>where \(n^i_a\) is the number of read that have residue “a” at the locus \(i\)</p>
+  </li>
+  <li>
+    <p>\(G_i\) is the genotype at locus \(i\)</p>
+
+\[G_i \in \{aa, ac, ag, at, cc, cg, ct, gg, gt, tt \},\]
+
+    <p>are the actual residues at the locus for the two alleles. We have
+no information about order, thus there are 10 possible values for
+\(G_i\).</p>
+  </li>
+  <li>
+    <p>\(Z_i\) is the ancestry at locus \(i\)</p>
+
+\[Z_i \in \{AA, BB, AB\}\]
+
+    <p>where \(AA\) means the locus is homozygous for parent \(A\), \(BB\) means the locus is homozygous for parent \(B\),
+and \(AB\) means the locus is heterozygous.</p>
+
+    <div id="figcontainer">
+ <div id="figure">
+   <img src="example.png" style="width:300px;" /> <br />
+   Figure 2. An illustration of problem of inferring ancestry from mapped reads. Three loci are given
+   as examples.
+  </div>
+</div>
+
+    <p>In principle, each  \(Z_i\) can take three values. For the particular experiment described by Andolfatto <em>et al.</em>
+(assigning \(A = Dsim\) and \(B= Dsec\)), only two cases
+are possible \(BB\) and \(AB\), as the backcrosses are between Dsim/Dsec females and Dsec/Dsec males (Figure S5).
+Andolfatto describes the more general model with three possible ancestors.</p>
+  </li>
+</ul>
+
+<h4 id="the-conditional-probabilities">The conditional probabilities</h4>
+
+<p>We want to calculate the joint probability of all random variables for all sites \(1\leq i \leq L\), for
+ a chromosome of length \(L\),</p>
+
+\[P(X_1 G_1 Z_1,\ldots, X_L G_L Z_L).\]
+
+<p>The Bayesian network in Andolfatto’s Figure S8, establishes the following dependencies</p>
+
+\[P(X_1 G_1 Z_1 \ldots X_L  G_L Z_L)
+= P(X_1 G_1 Z_1)\  P(X_2 G_2 Z_2 \mid X_1  G_1 Z_1)\ \ldots P(X_{L} G_{L} Z_{L} \mid X_{L-1}  G_{L-1} Z_{L-1}).\]
+
+<p>This particular set of dependencies in the joint probability such that
+the probabilities at one node \(i\) depends only on the probability at
+the node before \(i-1\), define this model as a <strong>Hidden Markov
+Model</strong>. Hidden Markov Models (HMMs) are a subset of of the much
+larger set of probabilistic graphical models or Bayesian networks.</p>
+
+<p>This graphical model also tells us (see Figure S8)</p>
+
+\[\begin{aligned}
+P(X_i G_i Z_i \mid X_{i-1}  G_{i-1} Z_{i-1}) &amp;= P(Z_{i}\mid Z_{i-1})    \,  P(G_{i}\mid Z_{i})\,  P(X_{i}\mid G_{i}),\\
+P(X_1 G_1 Z_1)                               &amp;= P_{\mbox{prior}}(Z_{1}) \,  P(G_{1}\mid Z_{1})\,  P(X_{1}\mid G_{1}).\\
+\end{aligned}\]
+
+<h3 id="the-inference-question">The inference question</h3>
+
+<p>An example of the inference problem is given in Figure 2.
+Figure 2 shows three loci as examples. Each locus has 8 mapped
+reads (the evidence). We also know the genome sequence of the two
+parental species A (top in red) and B (top in blue).  The data for the
+first locus almost unambiguously indicates that the ancestry is
+AB. For the two other loci, either due to ambiguity or errors in the
+reads both possibilities AB and BB are plausible. The question is
+which one is the more likely?</p>
+
+<p>We know the reads \(\{X_i\}_1^L\), and we want to infer the ancestry for each locus \(\{Z_i\}_1^L\).
+Thus, the \(\{G_i\}_1^L\) are  hidden random variables that we want to integrate.</p>
+
+<p>The joint marginal is given by</p>
+
+\[P(X_1 Z_1,\ldots, X_LZ_L) = \sum_{G_1} \ldots \sum_{G_L} P(X_1 G_1 Z_1,\ldots, X_L G_L Z_L).\]
+
+<p>Because of the Markovian nature of this particular Bayesian network</p>
+
+\[\begin{aligned}
+P(X_1 Z_1,\ldots, X_LZ_L) &amp;= \prod_{i} P(Z_i\mid Z_{i-1}) \sum_{G_i} P(G_{i}\mid Z_{i})P(X_{i}\mid G_{i})
+\\
+&amp;= \prod_{i} P(Z_i\mid Z_{i-1})\,P(X_{i}\mid Z_{i})
+\end{aligned}\]
+
+<p>for the marginal probabilities are</p>
+
+\[P(X_{i}\mid Z_{i}) \equiv \sum_{G_i} P(G_{i}\mid Z_{i})\,  P(X_{i}\mid G_{i}).\]
+
+<h3 id="the-parameters">The parameters</h3>
+
+<p>The conditional probabilities of this probabilistic model can be
+separated into two depending on whether they are conditioned on the
+locus before or not:</p>
+
+<ul>
+  <li>
+    <p>The \(P(Z_i\mid Z_{i-1})\).</p>
+
+    <p>Because any ancestry \(Z\) can be one of three cases \(Z=\{AA, BB,
+AB\}\), those represent three conditional probability distributions
+\(P(Z\mid AA)\), \(P(Z\mid BB)\), \(P(Z\mid AB)\).</p>
+
+    <p>given by</p>
+
+\[\begin{aligned}
+&amp;P(AA\mid AA) \quad P(BB\mid BB) \quad \\
+&amp;P(AB\mid AA) \quad P(AB\mid BB) \quad a\ breakpoint\\
+&amp;P(BB\mid AA) \quad P(AA\mid BB) \quad a\ double\ breakpoint\\
+\end{aligned}\]
+
+    <p>and</p>
+
+\[\begin{aligned}
+&amp;P(AB\mid AB) \\
+&amp;P(AA\mid AB) \quad a\ breakpoint\\
+&amp;P(BB\mid AB) \quad a\ breakpoint\\
+\end{aligned}\]
+  </li>
+  <li>
+    <p>The \(P(X_i\mid Z_{i})\).</p>
+
+    <p>More about these probability distributions when we get to the homework.</p>
+  </li>
+</ul>
+
+<p>Figure 3 shows a different graphical representation of the Andolfatto HMM,
+where all the parameters that connect one locus with the next are explicit.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="HMM.png" style="width:300px;" /> <br />
+     Figure 3. Graphical representation of the HMM for assigning ancestry.
+   </div>
+ </div>
+
+<p>Andolfatto <em>et al.</em>, sets these parameters by looking at actual data.</p>
+
+<p>Double breakpoints are not observed,</p>
+
+\[P(AA\mid BB) = 0\\
+P(BB\mid AA) = 0.\]
+
+<p>If we assume that all segment have on average the same length then we
+can use one single parameter to characterize when there is no
+breakpoint as</p>
+
+\[P(AA\mid AA) = P(BB\mid BB) = P(AB\mid AB) = p.\]
+
+<p>Finally, Andolfatto uses the fact that on average there is about 1
+breakpoint per chromosome in Drosophila species.  The length of
+a region without breakpoints is determined by a geometric
+distribution of Bernoulli parameter \(p\)</p>
+
+\[l = \frac{p}{1-p}.\]
+
+<p>Then having on average only two regions (one breakpoint) per chromosome of length \(L\), results in</p>
+
+\[\frac{L}{2} = \frac{p}{1-p}.\]
+
+<p>or</p>
+
+\[p = \frac{L}{L+2},\]
+
+<p>for a chromosome of length \(L\).</p>
+
+<p>Next week’s lectures will cover parameter estimation for a probabilistic model.</p>
+
+<h2 id="inference">Inference</h2>
+
+<p>Using the probabilistic model (Figure1 and Andolfatto’s Figure S8) we
+can do calculate the breakpoints for a given chromosome of a given
+individual. In order to do that, we need to calculate
+the probability of the mapped reads under any possible ancestry</p>
+
+\[P(X_1 \ldots X_L) = \sum_{Z_1}\ldots\sum_{Z_L} P(X_1 Z_1,\ldots, X_LZ_L).\]
+
+<p>We will see later <em>why</em> we need to calculate this quantity. Let’s focus know
+on <em>how</em> are we going to calculate it.</p>
+
+<p>Because of the Markovian property of this particular probabilistic model, we can write</p>
+
+\[P(X_1 \ldots X_L) = \sum_{Z_1}\ldots\sum_{Z_L} P(X_1 Z_1)\ P(X_2 Z_2\mid X_1 Z_1)\ldots P(X_L Z_L\mid X_{L-1} Z_{L-1}).\]
+
+<p>This marginal probability has \(3^L\) terms, too many in general to be calculated directly.</p>
+
+<p>Fortunately, we can calculate that marginal probability very
+efficiently with an algorithm that is linear in \(L\) instead of
+exponential.</p>
+
+<p>In fact, we have two algorithms that can calculate \(\) efficiently,
+the <strong>forward and backward</strong> algorithms.  We are introducing both,
+because both algorithm will be used to infer the breakpoints.</p>
+
+<h3 id="forward--algorithm">Forward  Algorithm</h3>
+
+<p>For each locus \(1\leq i\leq L\), we define \(f_{Z}(i)\) as the
+probability of loci \(X_1\ldots X_{i}\), where all loci from \(1\ldots i-1\)
+have been marginalized (sumed) to all possible ancestry, and loci \(i\) has
+ancestor \(Z\), that is</p>
+
+\[\begin{aligned}
+f_{Z}(i)
+&amp;= P(X_1\ldots X_{i-1}, X_{i} Z_i=Z)\\
+&amp;= \sum_{Z_1}\ldots\sum_{Z_{i-1}} P(X_1 Z_1\ldots X_{i-1} Z_{i-1}, X_{i} Z_i=Z)\\
+&amp;= \sum_{Z_1}\ldots\sum_{Z_{i-1}}
+P(X_1 Z_1)\ P(X_2 Z_2\mid X_1 Z_1)\ldots
+P(X_{i-1} Z_{i-1}\mid X_{i-2} Z_{i-2})\
+P(X_i Z_i=Z\mid X_{i-1} Z_{i-1})\\
+&amp;=
+\sum_{Z_{i-1}}
+P(X_i Z_i=Z\mid Z_{i-1})\
+f_{Z_{i-1}}(i-1).
+\end{aligned}\]
+
+<p>The name <em>forward</em> should be self-explanatory now. In order to
+calculate \(f_Z(i)\), I need to know \(f_{Z}(i-1)\), …</p>
+
+<p>More explicitly, the <strong>forward probabilities</strong> are calculated using a
+forward recursion starting from \(i = 2\)</p>
+
+\[\begin{aligned}
+f_{AA}(i) = P(X_i\mid AA)\
+[
+&amp;+ p  \, f_{AA}(i-1)
+\\
+&amp;+ q_A\, f_{AB}(i-1)]
+\\
+f_{BB}(i) = P(X_i\mid BB)\
+[
+&amp;+ p  \, f_{BB}(i-1)
+\\
+&amp;+ q_B\, f_{AB}(i-1)]
+\\
+f_{AB}(i) = P(X_i\mid AB)\
+[
+&amp;+ p    \, f_{AB}(i-1)
+\\
+&amp;+ (1-p)\, f_{AA}(i-1)
+\\
+&amp;+ (1-p)\, f_{BB}(i-1)]
+.
+\end{aligned}\]
+
+<p>The initialization conditions for \(i=1\) use the prior probabilities \(P(X)\).
+For the first locus,</p>
+
+\[\begin{aligned}
+f_{AA}(1) &amp;= P(X_1\mid AA)\, P(AA)
+\\
+f_{BB}(1) &amp;= P(X_1\mid BB)\, P(BB)
+\\
+f_{AB}(1) &amp;= P(X_1\mid AB)\, P(AB)
+\\
+\end{aligned}\]
+
+<p>Then the probability \(P(X_1\ldots X_L)\) is given by</p>
+
+\[P(X_1\ldots X_L) = f_{AA}(L) + f_{BB}(L) + f_{AB}(L).\]
+
+<p>This type of algorithm is called a <strong>dynamic programming (DP)</strong>
+algorithm.  Dynamic programming algorithms were introduced by <a href="https://www.rand.org/content/dam/rand/pubs/papers/2008/P550.pdf">Richard
+Bellman in
+1954</a>.</p>
+
+<h3 id="backward-algorithm">Backward Algorithm</h3>
+
+<p>For each locus \(1\leq i\leq L\), we define \(b_{Z}(i)\) as the
+probability of \(X_{i+1}\ldots X_{L}\) (summing to all possible
+ancestry), conditioned on the fact that locus \(i\) has ancestor \(Z
+\in \{AA, BB, AB\}\).</p>
+
+\[\begin{aligned}
+b_{Z}(i)
+&amp;= P(X_{i+1}\ldots X_L\mid Z_i=Z)\\
+&amp;= \sum_{Z_{i+1}}\ldots\sum_{Z_{L}}
+P(X_{i+1} Z_{i+1}\ldots X_L Z_L\mid Z_i=Z)\\
+&amp;= \sum_{Z_{i+1}}\ldots\sum_{Z_{L}}
+P(X_{i+1}Z_{i+1}\mid Z_i = Z)\
+P(X_{i+2} Z_{i+2}\mid X_{i+1} Z_{i+1})\ \ldots
+P(X_{L-1} Z_{L-1}\mid X_{L-2} Z_{L-2})\
+P(X_L Z_L\mid X_{L-1} Z_{L-1})\\
+&amp;=\sum_{Z_{i+1}} 
+P(X_{i+1}Z_{i+1}\mid Z_i = Z)\ b_{Z_{i+1}}(i+1).
+\end{aligned}\]
+
+<p>The name <em>backward</em> should be self-explanatory now. In order to
+calculate \(b_Z(i)\), I need to know \(b_{Z}(i+1)\), …</p>
+
+<p>Those <strong>backward probabilities</strong> are calculated using a backwards
+recursion starting from \(i = L-1\)</p>
+
+\[\begin{aligned}
+b_{AA}(i) &amp;=
+\begin{array}{r}
++ p    \, b_{AA}(i+1)\, P(X_{i+1}\mid AA)\\
++ (1-p)\, b_{AB}(i+1)\, P(X_{i+1}\mid AB)
+\end{array}
+\\\\
+b_{BB}(i) &amp;=
+\begin{array}{r}
++ p    \, b_{BB}(i+1)\, P(X_{i+1}\mid BB)\\
++ (1-p)\, b_{AB}(i+1)\, P(X_{i+1}\mid AB)
+\end{array}
+\\\\
+b_{AB}(i) &amp;=
+\begin{array}{r}
++ p    \, b_{AB}(i+1)\, P(X_{i+1}\mid AB)\\
++ q_A  \, b_{AA}(i+1)\, P(X_{i+1}\mid AA)\\
++ q_B  \, b_{BB}(i+1)\, P(X_{i+1}\mid BB)
+\end{array}
+\end{aligned}\]
+
+<p>The initialization conditions for \(i=L\) use the prior probabilities \(P(X)\)</p>
+
+\[\begin{aligned}
+b_{AA}(L) &amp;= 1,
+\\
+b_{BB}(L) &amp;= 1,
+\\
+b_{AB}(L) &amp;= 1.
+\\
+\end{aligned}\]
+
+<p>The backward probabilities are calculated independently from the forward probabilities.</p>
+
+<p>The probability \(P(X_1\ldots X_L)\) is given by</p>
+
+\[P(X_1\ldots X_L) = f_{AA}(1)\ b_{AA}(1) + f_{BB}(1)\  b_{BB}(1) + f_{AB}(1)\  b_{AB}(1).\]
+
+<p>And in general, for any locus \(i\)</p>
+
+\[P(X_1\ldots X_L) = f_{AA}(i)\ b_{AA}(i) + f_{BB}(i)\  b_{BB}(i) + f_{AB}(i)\  b_{AB}(i).\]
+
+<p><em>Why do we want to do pretty much the same calculation in the forward and backward directions?</em></p>
+
+<h3 id="decoding">Decoding</h3>
+
+<p>Now we can use the <em>forward</em> and <em>backward</em> probabilities to make
+inferences about ancestry.</p>
+
+<p>The <strong>posterior probabilities</strong> that the ancestor at a given position
+\(i\) is either \(AA\) or \(BB\) or \(AB\) are given for each locus
+\(i\) by</p>
+
+\[\begin{aligned}
+P(Z_i=AA\mid X_1\ldots X_L) &amp;= \frac{P(X_1\ldots X_i Z_i=AA\ldots X_L)}{P(X_1\ldots X_L)},
+\\
+P(Z_i=BB\mid X_1\ldots X_L) &amp;= \frac{P(X_1\ldots X_i Z_i=BB\ldots X_L)}{P(X_1\ldots X_L)},
+\\
+P(Z_i=AB\mid X_1\ldots X_L) &amp;= \frac{P(X_1\ldots X_i Z_i=AB\ldots X_L)}{P(X_1\ldots X_L)}.
+\end{aligned}\]
+
+<p>And using the forward and backward calculation, we can write</p>
+
+\[\begin{aligned}
+P(Z_i=AA\mid X_1\ldots X_L) &amp;= \frac{f_{AA}(i)\, b_{AA}(i)}{f_{AA}(i)\, b_{AA}(i) + f_{BB}(i)\, b_{BB}(i) + f_{AB}(i)\, b_{AB}(i)},
+\\
+P(Z_i=BB\mid X_1\ldots X_L) &amp;= \frac{f_{BB}(i)\, b_{BB}(i)}{f_{AA}(i)\, b_{AA}(i) + f_{BB}(i)\, b_{BB}(i) + f_{AB}(i)\, b_{AB}(i)},
+\\
+P(Z_i=AB\mid X_1\ldots X_L) &amp;= \frac{f_{AB}(i)\, b_{AB}(i)}{f_{AA}(i)\, b_{AA}(i) + f_{BB}(i)\, b_{BB}(i) + f_{AB}(i)\, b_{AB}(i)}.
+\end{aligned}\]
+
+<p>These posterior probabilities are robust because they make inference on the state of a given position (locus),
+based on what has been observed for <em>all other</em> loci.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="posteriors.png" style="width:300px;" /> <br />
+     Figure 4. Posterior probabilities for a male fly backcross in a 1,000 nucleotides region.
+   </div>
+ </div>
+
+<p>I have simulated mapped reads for a male fly backcross</p>
+
+\[\mbox{Dsim/Dsec} \times \mbox{Dsec/Dsec},\]
+
+<p>and a hypothetical region of 1,000 bases, where I introduced one breakpoint.</p>
+
+<p>In Figure 4, I display for each position \(1\leq i\leq 1000\), the
+three posterior probabilities</p>
+
+\[P(Z_i=\mbox{Dsim}/\mbox{Dsim}),\\
+P(Z_i=\mbox{Dsec}/\mbox{Dsec}),\\
+P(Z_i=\mbox{Dsec}/\mbox{Dsim}),\\\]
+
+<p>obtained using the posterior decoding algorithm.</p>
+
+<p>The posterior probabilities, clearly indicate the presence of two
+regions Dsim/Dsec and Dsec/Dsec, with one breakpoint (and only one)
+occurring around position 600. As expected, due to the nature of the
+backcross the posterior probability of having ancestry Dsim/Dsim are
+zero at every position.</p>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

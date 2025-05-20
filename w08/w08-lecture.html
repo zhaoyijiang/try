@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#feedforward-networks" id="markdown-toc-feedforward-networks">Feedforward networks</a>    <ul>
+      <li><a href="#a-single-neuron" id="markdown-toc-a-single-neuron">A single neuron</a>        <ul>
+          <li><a href="#parts-of-a-single-neuron" id="markdown-toc-parts-of-a-single-neuron">Parts of a single neuron</a></li>
+          <li><a href="#the-space-of-weights" id="markdown-toc-the-space-of-weights">The space of weights</a></li>
+        </ul>
+      </li>
+      <li><a href="#what-a-single-neuron-can-learn-to-be-a-binary-classifier" id="markdown-toc-what-a-single-neuron-can-learn-to-be-a-binary-classifier">What a single neuron can learn: to be a binary classifier</a>        <ul>
+          <li><a href="#the-learning-rule" id="markdown-toc-the-learning-rule">The learning rule</a></li>
+          <li><a href="#the-error-function" id="markdown-toc-the-error-function">The error function</a></li>
+          <li><a href="#backpropagation" id="markdown-toc-backpropagation">Backpropagation</a></li>
+          <li><a href="#the-batch-gradient-descent-learning-algorithm-for-a-feedforward-network" id="markdown-toc-the-batch-gradient-descent-learning-algorithm-for-a-feedforward-network">The batch gradient descent learning algorithm for a feedforward network</a></li>
+          <li><a href="#the-on-line-stochastic-gradient-descent-learning-algorithm" id="markdown-toc-the-on-line-stochastic-gradient-descent-learning-algorithm">The on-line stochastic gradient descent learning algorithm</a></li>
+          <li><a href="#how-well-does-the-batch-learning-algorithm-do" id="markdown-toc-how-well-does-the-batch-learning-algorithm-do">How well does the batch learning algorithm do?</a></li>
+          <li><a href="#regularization-beyond-descent-on-the-error-function" id="markdown-toc-regularization-beyond-descent-on-the-error-function">Regularization: beyond descent on the error function</a></li>
+        </ul>
+      </li>
+      <li><a href="#learning-as-a-communication-channel" id="markdown-toc-learning-as-a-communication-channel">Learning as a communication channel</a></li>
+      <li><a href="#learning-as-inference-probabilistic-interpretation-of-learning" id="markdown-toc-learning-as-inference-probabilistic-interpretation-of-learning">Learning as inference (Probabilistic interpretation of learning)</a></li>
+      <li><a href="#making-further-inferences" id="markdown-toc-making-further-inferences">Making further inferences</a></li>
+      <li><a href="#monte-carlo-implementation-for-a-single-neuron" id="markdown-toc-monte-carlo-implementation-for-a-single-neuron">Monte Carlo implementation for a single neuron</a></li>
+      <li><a href="#generalization-to-many-neurons-many-layers-and-many-outcomes" id="markdown-toc-generalization-to-many-neurons-many-layers-and-many-outcomes">Generalization to many neurons, many layers and many outcomes</a>        <ul>
+          <li><a href="#the-one-hot-enconding-of-categorical-variables" id="markdown-toc-the-one-hot-enconding-of-categorical-variables">The one-hot enconding of categorical variables</a></li>
+          <li><a href="#the-outputactivity-from-a-linear-logistic-function-to-softmax-activation" id="markdown-toc-the-outputactivity-from-a-linear-logistic-function-to-softmax-activation">The output/activity: from a linear logistic function to softmax activation</a></li>
+          <li><a href="#neural-network-with-many-outputs" id="markdown-toc-neural-network-with-many-outputs">Neural network with many outputs</a></li>
+          <li><a href="#neural-network-with-many-layers" id="markdown-toc-neural-network-with-many-layers">Neural network with many layers</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#feedback-networks" id="markdown-toc-feedback-networks">Feedback networks</a>    <ul>
+      <li><a href="#content-addressable-memories" id="markdown-toc-content-addressable-memories">Content addressable memories</a></li>
+      <li><a href="#hopfield-network-definition" id="markdown-toc-hopfield-network-definition">Hopfield Network Definition</a></li>
+      <li><a href="#the-memory-challenge" id="markdown-toc-the-memory-challenge">The memory challenge</a></li>
+      <li><a href="#what-happens-if-we-add-another-letter-to-the-network" id="markdown-toc-what-happens-if-we-add-another-letter-to-the-network">What happens if we add another letter to the network?</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-08">week 08:</h1>
+
+<h1 class="no_toc" id="neural-networks---learning-as-inference">Neural Networks - Learning as Inference</h1>
+
+<p>In this lecture, I follow David Mackay very closely. In particular his
+lectures <a href="https://www.youtube.com/watch?v=Z1pcTxvCOgw&amp;t=6s">15</a> and
+<a href="https://www.youtube.com/watch?v=OvMGPHpa_tM">16</a>, which correspond to
+Chapters 39, 41 and 42 of his book <a href="http://www.inference.org.uk/itprnn/book.pdf">Information Theory, Inference, and
+Learning algorithms</a>.</p>
+
+<h2 id="feedforward-networks">Feedforward networks</h2>
+
+<h3 id="a-single-neuron">A single neuron</h3>
+
+<p>A single neuron (Figure 1) has</p>
+
+<ul>
+  <li>The <strong>inputs</strong> \(\mathbf{x}=(x_1,\ldots,x_I)\),</li>
+  <li>One output \(y\) which is called the <strong>activity</strong>,</li>
+  <li>Parameters \(\mathbf{w}=w_1,\ldots,w_I\), usually called the <strong>weights</strong>.</li>
+</ul>
+
+<p>The neuron adds up the weighted sum of the inputs into a
+variable called the <strong>activation</strong> \(a\),</p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="one_neuron.png" style="width:300px;" /> <br />
+   Figure 1. One neuron (from D. Mackay's chapter 39).
+   </div>
+ </div>
+
+\[a = w_0 + \sum_{i=1}^I w_i x_i\]
+
+<p>where \(w_0\) called the <strong>bias</strong> is the activation in the absence of inputs.</p>
+
+<p>The <strong>activity</strong> of the neuron is a function of the activation \(y(a)\).
+Several commonly used forms for the activity are</p>
+
+<ul>
+  <li>
+    <p>The <strong>linear logistic function</strong></p>
+
+    <p><img src="activation1.png" style="width:200px;" />
+   \(y(a) = \frac{1}{1+e^{-a}}\)</p>
+  </li>
+  <li>
+    <p>The <strong>sigmoid</strong> (tanh) function</p>
+
+    <p><img src="activation2.png" style="width:200px;" />
+\(y(a) = tanh(a)\)</p>
+  </li>
+  <li>
+    <p>The <strong>step</strong> function</p>
+
+    <p><img src="activation3.png" style="width:200px;" />
+\(y(a) = \left\{
+\begin{matrix} 
+ 1&amp; a &gt;    0\\
+ 0&amp; a \leq 0
+ \end{matrix}
+ \right.\)</p>
+  </li>
+</ul>
+
+<p>Depending in how we combine many single neurons, there is essentially
+two types of networks: <strong>feedforward</strong> networks, where all the information
+flows in one direction, and <strong>feedback</strong> networks where all nodes are
+connected (Figure 2).</p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="networks.png" style="width:300px;" /> <br />
+   Figure 2. Two type of networks (from D. Mackay's Lecture 15).
+   </div>
+ </div>
+
+<h4 id="parts-of-a-single-neuron">Parts of a single neuron</h4>
+
+<p>As a recap, the basic concepts of a neuron are</p>
+
+<ul>
+  <li>
+    <p><strong>The Architecture.</strong> A single neuron has a number \(I\) of inputs \(x_i\), and
+ one output \(y\). Each input has associated a weight \(w_i\), for \(0\leq i \leq I\).</p>
+  </li>
+  <li>
+    <p><strong>The Activation.</strong> In response to the inputs, the neuron computes the <strong>activation</strong></p>
+  </li>
+</ul>
+
+\[a = \mathbf{w}\cdot \mathbf{x} = \sum_{i=0}^I w_i x_i,\]
+
+<p>and \(x_0=1\), so we can add the bias in the same equation.</p>
+
+<ul>
+  <li>
+    <p><strong>The Activity rule.</strong> The neuron output is set as a logistic/step
+  function of the activation and the inputs \(y(\mathbf{x},\mathbf{w})\).</p>
+
+    <p>We are going to study a neuron in which the output is between
+(0,1), such that the activity \(y(\mathbf{x},\mathbf{w})\) is given
+by the logistic function</p>
+
+\[y(\mathbf{x},\mathbf{w}) = \frac{1}{1+e^{-a}} = \frac{1}{1+e^{-\mathbf{w}\cdot \mathbf{x}}}.\]
+
+    <p>In the <a href="w08-sections.html">sections</a>, we will discuss some motivation
+for the linear logistic function.</p>
+
+    <p>The activity \(y(\mathbf{w},\mathbf{x})\) can be seen as the <strong>probability
+according to the neuron</strong> that the input deserves a response, and
+the neuron fires (\(y=1\)) or that the input is not worth a
+response and the neuron does not fire (\(y=0\)).</p>
+  </li>
+</ul>
+
+<div id="figcontainer">
+<div id="figure">
+     <img src="weights-0.png" style="width:300px;" /> <br />
+   Figure 3. Neuron activity for a neuron with two inputs as a function
+   of the inputs. The values of the weights are: w0 = -15, w1 = 2 w2 =
+   1. We use the logistic function to describe the activity of the neuron.
+   </div>
+</div>
+
+<h4 id="the-space-of-weights">The space of weights</h4>
+
+<p>Consider the simple situation of only two input to the neuron
+\(\mathbf{x}=(x_1, x_2)\), and only two weights \(\mathbf{w}=(w_1,
+w_2)\) and no bias.  The neuron’s activation is given by</p>
+
+\[y = \frac{1}{1+ e^{-(w_0 + w_1 x_1 + w_2 x_2)}}\]
+
+<p>and we can plot it as a function of the inputs as in Figure 3.</p>
+
+<div id="figcontainer">
+<div id="figure">
+     <img src="weights-1.png" style="width:300px;" /> <br />
+   Figure 4. Effect on neuron activity of a zero weight.
+   </div>
+</div>
+
+<p>If a weight is zero, there is no activity change associated with changes in the
+corresponding input, as described in Figure 4.</p>
+
+<div id="figcontainer">
+<div id="figure">
+     <img src="weights-2.png" style="width:300px;" /> <br />
+   Figure 5. Effect on neuron activity of the bias term.
+   </div>
+</div>
+
+<p>The effect of changing the value of the bias can be observed in Figure 5.</p>
+
+<p>The effect of changing the value of the weights can be observed in Figure 6.</p>
+
+<div id="figcontainer">
+<div id="figure">
+     <img src="weights-3.png" style="width:300px;" /> <br />
+   Figure 6. Effect on neuron activity of changes in one of the weights.
+   </div>
+</div>
+
+<p>We can also use contour plots, in which we represent in the inputs
+space lines corresponding to different values of the activity
+\(y\). Using contour plots we observe in Figure 7 the effect of making
+the weight larger or smaller in absolute magnitude. Doubling the
+weights makes the contour lines closer to each other, while halving
+the weight make the same contour lines wider.</p>
+
+<div id="figcontainer">
+<div id="figure">
+  <img src="weights-4.png" style="width:300px;" /> <br />
+     Figure 7. Effect on neuron activity of scaling the weights. The
+     contours correspond to the values a = 0.0, 1, and -1. Arrows
+     point in the direction of the weight vector.
+     </div>
+ </div>
+
+<h3 id="what-a-single-neuron-can-learn-to-be-a-binary-classifier">What a single neuron can learn: to be a binary classifier</h3>
+
+<p><em>Imagine that you want to separate apples from oranges from a bucket
+in which they are all mixed up. Would you trust a single neuron to do
+that?</em></p>
+
+<h4 id="the-learning-rule">The learning rule</h4>
+
+<p>The central idea of <strong>supervised learning</strong> is this: given a number of
+examples of the input vector \(\mathbf{x}^{(1)}\ldots \mathbf{x}^{(N)}\) and their
+target output \(t^{(1)}\ldots t^{(N)}\), we hope the neuron will learn
+their relationship (whichever that is).</p>
+
+<p>Training the network requires finding the values of the weights that
+best fit the training data. If the neuron is well trained, given an
+input \(\mathbf{x}\) will produce an output \(y\) which is very close
+to the target \(t\).</p>
+
+<p>Data:    \(D = \{\mathbf{x}^{(1)}, t^{(1)},\ldots, \mathbf{x}^{(N)}, t^{(N)}\}\)</p>
+
+<p>Outputs: \(\{y^{(1)},\ldots, y^{(N)}\}\)</p>
+
+<p>Error:   \(\{y^{(1)}-t^{(1)},\ldots,y^{(N)}-t^{(N)}\}\) where we expect these errors to be small.</p>
+
+<p><strong>Thus “learning” is equivalent to adjusting the parameters (weights)
+of the network</strong> such that the output \(y^{(n)}\) of the network is
+close to the target \(t^{(n)}\) for all \(n\) examples.</p>
+
+<p><strong>Have we done this before in a different context?</strong></p>
+
+<p>In our apples and oranges example, let’s give an assignment of \(t=1\)
+for an apple, and \(t=0\) for an orange.  In a well trained neuron
+will produce assignments \(y\) similar to these:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Orange_1  y(Orange_1, w) = 0.01
+Apple_1   y(Apple_1,  w) = 0.91
+Orange_2  y(Orange_2, w) = 0.09
+Orange_3  y(Orange_3, w) = 0.05
+Apple_2   y(Apple_1,  w) = 0.97
+</code></pre></div></div>
+
+<p>How to do that? We find a function to optimize.</p>
+
+<h4 id="the-error-function">The error function</h4>
+
+<p>For each input \(\{\mathbf{x}^{(n)}, t^{(n)}\}\), we introduce an
+objective function that will measure how close the neuron output
+\(y(\mathbf{x}^{(n)},\mathbf{w})\) is to \(t^{(n)}\). That objective
+function is also called <strong>the error function</strong>.</p>
+
+<p>We introduce the error function</p>
+
+\[G(\mathbf{w}) = - \sum_{n=1}^{N} \left[ t^{(n)} \log(y^{(n)}) + (1-t^{(n)}) \log(1-y^{(n)})\right],\]
+
+<p>where \(y^{(n)} = y(\mathbf{x}^{(n)},\mathbf{w})\).</p>
+
+<div id="figure">
+  <img src="errorf.png" style="width:300px;" /> <br />
+
+     Figure 8. Contribution to the error function G(w) for one data
+     point as a function of y(n) for the two possible cases t(n)=0 and
+     t(n)=1. (From D. Mackay's video lecture 15.)
+     </div>
+<p>&lt;/div&gt;</p>
+
+<p>For each data point \((\mathbf{x}^{(n)},t^{(n)})\), its contribution to the error function is
+given by Figure 8.</p>
+
+<p>As a binary classification problem, such as sorting apples from
+oranges, we can interpret \(y(\mathbf{x},\mathbf{w})\) and
+\(1-y(\mathbf{x},\mathbf{w})\) (both between zero and one) as the
+probabilities of the two possible events: apple (\(t=1\)) or orange
+(\(t=0\)) for an input \(\mathbf{x}\) given the weights of the neuron,
+then \(G(\mathbf{w})\) is the “information content” (remember <a href="../w01/w01-lecture.html">w01
+lectures</a>?) of the data \(\{t^{(1)},\ldots,
+t^{(N)}\}\).</p>
+
+<h4 id="backpropagation">Backpropagation</h4>
+
+<p>The training process is an exercise of minimizing \(G(\mathbf{w})\), that is, of adjusting
+the weights so that \(G(\mathbf{w})\) reaches it lowest value.</p>
+
+<p>Notice that \(G(\mathbf{w})\) is bound by below by zero,</p>
+
+\[G(\mathbf{w}) \geq 0,\]
+
+<p>and it is zero only when \(y^{(n)}(\mathbf{x},\mathbf{w}) = t^{(n)}\).</p>
+
+<p>To minimize, we take the derivative of \(G(\mathbf{w})\) respect to one of the weights \(w_i\) given by</p>
+
+\[\frac{\delta G(\mathbf{w})}{\delta w_i}
+= -\sum_n \left[\frac{t^{(n)}}{y^{(n)}}-\frac{1-t^{(n)}}{1-y^{(n)}}\right]\, \frac{\delta y^{(n)}}{\delta w_i}
+= -\sum_n \frac{t^{(n)}-y^{(n)}}{y^{(n)} (1-y^{(n)})}\, \frac{\delta y^{(n)}}{\delta w_i}\]
+
+<p>Introducing</p>
+
+\[\frac{\delta y^{(n)}}{\delta w_i}
+= x^{(n)}_i\, \frac{e^{-\mathbf{w}\mathbf{x}^{(n)}}}{(1+e^{-\mathbf{w}\mathbf{x}^{(n)}})^2}
+= x^{(n)}_i y^{(n)} (1-y^{(n)}),\]
+
+<p>we obtain,</p>
+
+\[\frac{\delta G(\mathbf{w})}{\delta w_i} = -\sum_n \left[t^{(n)}-y^{(n)}\right] x^{(n)}_i.\]
+
+<p>Taking all derivative together we construct <strong>the gradient</strong> vector,</p>
+
+\[\mathbf{g} = \frac{\delta G(\mathbf{w})}{\delta \mathbf{w}} = -\sum_n \left[t^{(n)}-y^{(n)}\right] \mathbf{x}^{(n)}.\]
+
+<p>The quantity \(e^{(n)} = t^{(n)}-y^{(n)}\) is referred to as the <strong>error</strong>.</p>
+
+<p><strong>Backpropagation</strong> in the neural network community referees to given the errors,
+to calculate the gradient</p>
+
+\[\mathbf{g} = \sum_n -e^{(n)}\,\mathbf{x}^{(n)}.\]
+
+<p><strong>Backpropagation</strong> \(\longleftrightarrow\) <strong>differentiation</strong>.</p>
+
+<p>Then we can implement a “gradient descent” method in which we
+iteratively update the weights by a quantity \(\eta\) in the opposite
+direction to the gradient,</p>
+
+\[\mathbf{w}^{new} = \mathbf{w}^{0ld} - \eta\,\mathbf{g} = \mathbf{w}^{0ld} + \eta\,\sum_n e^{(n)}\,\mathbf{x}^{(n)}\]
+
+<p>The parameter \(\eta\) in the neural network community is referred to
+as <strong>the learning rate</strong>. And it is a free parameter that one has to
+set somehow.</p>
+
+<p>Depending on whether we update the weights by looking to all data
+point at the time, or each one of them independently, we can
+distinguish two different algorithms, the <strong>batch learning</strong> algorithm
+and the <strong>on-line learning</strong> algorithm.</p>
+
+<h4 id="the-batch-gradient-descent-learning-algorithm-for-a-feedforward-network">The batch gradient descent learning algorithm for a feedforward network</h4>
+
+<p>For a data set \(\{\mathbf{x}^{(n)}, t^{(n)}\}_{n=1}^N\),</p>
+
+<ul>
+  <li>Start with a set of arbitrary weights \(\mathbf{w}_0\), and use the activity rule to calculate
+for each data point</li>
+</ul>
+
+\[y^{(n)}_0 = \frac{1}{1+e^{-\mathbf{w}_0 \mathbf{x^{(n)}}}}\]
+
+<ul>
+  <li>Use backpropagation to calculate the next set of values for the weights \(\mathbf{w}_1\) as</li>
+</ul>
+
+\[\mathbf{w}_1 = \mathbf{w}_0 + \eta \sum_n \left(t^{(n)}-y^{(n)}_0\right) \mathbf{x^{(n)}}\]
+
+<p>We can repeat this two steps for a fixed and large number of
+iterations, or until the errors for all data points are smaller than a
+desired small number.</p>
+
+<h4 id="the-on-line-stochastic-gradient-descent-learning-algorithm">The on-line stochastic gradient descent learning algorithm</h4>
+
+<p>Alternative, we could update all weights, by taking one data point at the time.
+Start with a set of arbitrary weights \(\mathbf{w}_0\)</p>
+
+<ul>
+  <li>Select one data point \(m\in [1,N]\), and  use the activity rule to calculate</li>
+</ul>
+
+\[y^{(m)}_0 = \frac{1}{1+e^{-\mathbf{w}_0 \mathbf{x^{(m)}}}}\]
+
+<ul>
+  <li>Use backpropagation to calculate the next set of values for the weights \(\mathbf{w}_1\) as</li>
+</ul>
+
+\[\mathbf{w}_1 = \mathbf{w}_0 + \eta \left(t^{(m)}-y^{(m)}_0\right) \mathbf{x^{(m)}}\]
+
+<p>Then one can go back to select another point from the data set and repeat the process.</p>
+
+<p>While batch learning is a gradient descent algorithm, on-line learning
+algorithm is a stochastic gradient descent algorithm.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="apples.data.png" style="width:300px;" /> <br />
+     Figure 9. Labeled data that we use as training set to learn
+     the three weights of the neuron. Apples are represented in purple, and have
+     target value t=1. Oranges are represented in green, and have target value t=0.
+     </div>
+</div>
+
+<h4 id="how-well-does-the-batch-learning-algorithm-do">How well does the batch learning algorithm do?</h4>
+
+<p>Let’s go back to our apple/oranges classification task, using a neuron
+with two inputs \(x_1\) and \(x_2\). Perhaps \(x_1\) could be a
+measure of the skin color of the fruit, and \(x_2\) could be a measure
+of the roughness of the skin for each fruit example.</p>
+
+<p>There are then three weights \(w_0, w_1, w_2\), including the bias
+\(w_0\). The activity rule is given by</p>
+
+\[y(\mathbf{w},\mathbf{x}) =\frac{1}{1+e^{-(w_0+w_1 x_1 + w_2 x_2)}}.\]
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="apples.weights.png" style="width:300px;" /> <br />
+     Figure 10. Parameter evolution as a function of the number of iterations in
+     the batch-learning algorithm.
+     </div>
+</div>
+
+<p>We assume we have labeled data, that is \(N=10\) examples in which we
+have measured the value of the two variables \(x_1\) and \(x_2\), and
+ we know whether they are apples, A(t=1) or oranges, O(t=0).
+The labeled data is given in Figure 9.</p>
+
+<p>We perform batch gradient descent with learning rate \(\eta = 0.01\).
+Figure 10 describes the changes in the parameter values as a function
+of the number of iterations. Figure 11 describes contour plots for
+different number of iterations.</p>
+
+<h4 id="regularization-beyond-descent-on-the-error-function">Regularization: beyond descent on the error function</h4>
+
+<div id="figcontainer">
+  <div id="figure">
+     <img src="apples.contours.png" style="width:300px;" /> <br />
+     Figure 11. Contour plots for different number of iterations
+     </div>
+</div>
+
+<p>We have seen that if the data is in fact linearly separable, the algorithm works.
+But as the number of iterations becomes larger and larger, the weights also become
+larger in magnitude, and the logistic function becomes steeper and steeper (Figure 11).
+That is an undesirable behavior named <strong>overfitting</strong>.</p>
+
+<p>Why is it undesirable?</p>
+
+<p>A way to avoid having weights arbitrarily large and overfitting to the data has
+the name of <strong>regularization</strong>. The idea consists of adding a term to the optimization
+function such that it penalizes large values of the weights.
+We introduce the modified objective function</p>
+
+\[M(\mathbf{w}) = G(\mathbf{w}) + \alpha R(\mathbf{w})\]
+
+<p>where</p>
+
+\[R(\mathbf{w}) = \frac{1}{2}\,\sum_i w_i^2.\]
+
+<p>The weight update rule in the presence of this regularization becomes</p>
+
+\[\mathbf{w}^\prime = (1-\alpha\eta)\, \mathbf{w} + \eta \sum_n\left(t^{(n)}-y^{(n)}_0\right) \mathbf{x^{(n)}},\]
+
+<p>and the parameter \(\alpha\) is called the weight decay regularizer.</p>
+
+<div id="figcontainer">
+  <div id="figure">
+     <img src="apples.reg.png" style="width:300px;" /> <br />
+     Figure 12. Effect of regularization for a linear neuron.
+     </div>
+</div>
+
+<p>In Figure 12, we show examples of different weight-decay regularizer values and its effect on the learned weights.</p>
+
+<h3 id="learning-as-a-communication-channel">Learning as a communication channel</h3>
+
+<div id="figcontainer">
+  <div id="figure">
+     <img src="learning.png" style="width:300px;" /> <br />
+     Figure 13. Learning as communication. Figure extracted from MacKay's Chapter 40, combined with
+     the cover of his lectures.
+     </div>
+</div>
+
+<p>We can think of learning as a communication method. From a large
+number of inputs \(\{\mathbf{x}^{(n)} , t^{(n)}\}_{n=1}^N\), we learn
+parameters (weights) which normally live in a much lower dimensional
+space than the input data \(\{\mathbf{w}^{(i)} \}_{i=1}^I\), \(I&lt;&lt;
+N\). Then I could give you the \(I\) learned weights and just the
+\(\{\mathbf{x}^{(n)}\}_{n=1}^N\) inputs, and you should be able to
+approximate the label inputs \(\{t^{(n)}\}_{n=1}^N\) by using the
+activity of the neural network</p>
+
+\[\hat {t}^{(n)} = \frac{1}{1+e^{-\mathbf{w} \mathbf{x}^{(n)}}},\]
+
+<p>which in a well trained network should be similar to the original labels
+\(\hat {t}^{(n)} \approx t^{(n)}\).</p>
+
+<p>The processes of estimating the parameters receives the name of
+<strong>coding</strong>. <strong>Coding</strong> is what in a probabilistic framework, we have
+been calling estimating the posterior probability of the parameters
+\(P(\mathbf{w}\mid D)\). (See Figure 13.)</p>
+
+<p>The process of reconstructing the labels from the weights receives the
+name of <strong>decoding</strong>. <strong>Decoding</strong> is what in a probabilistic
+framework, we have been calling this course the probability of the
+data given a set of parameters (aka the likelihood of the parameters)
+\(P(D\mid \mathbf{w})\). (See Figure 13.)</p>
+
+<h3 id="learning-as-inference-probabilistic-interpretation-of-learning">Learning as inference (Probabilistic interpretation of learning)</h3>
+
+<p>Every time someone is optimizing a function, you can take it,
+exponentiate it, and try to interpret it as a probability
+distribution. Here we are going to do just that for our one neuron
+network.</p>
+
+<p>For the single neuron network, we find the weights of the neuron by optimizing the
+function of the weights,</p>
+
+\[M(\mathbf{w}) = G(\mathbf{w}) + \alpha\,E(\mathbf{w}).\]
+
+<p>\(G(\mathbf{w})\) is the error function that depends on the data
+\(D=\{t^{(1)},\ldots,t^{(N)}\}\),
+and the inputs \(\{\mathbf{x}^{(1)}, \ldots,\mathbf{x}^{(N)}\}\).
+On the other hand, \(E(\mathbf{w})\) is the regularization term that does not depend
+on the data. This should remind you of the posterior probability of the parameters</p>
+
+\[P(\mathbf{w}\mid D) \propto P(D\mid \mathbf{w}) P(\mathbf{w}),\]
+
+<p>where \(P(D\mid \mathbf{w})\) depends on the data, but the prior \(P(\mathbf{w})\) does not.</p>
+
+<p>We can interpret that the posterior probability of
+the weights as given by</p>
+
+\[P(\mathbf{w}\mid D)
+= \frac{e^{-M(\mathbf{w})}}{Z_M}\,
+= \frac{e^{-G(\mathbf{w})}e^{-\alpha E(\mathbf{w})}}{Z_M},\]
+
+<p>such that, the probability of the data in terms of the error function</p>
+
+\[P(D\mid \mathbf{w}) = e^{-G(\mathbf{w})},\]
+
+<p>and the prior in terms of the regularization term</p>
+
+\[P(\mathbf{w}) = \frac{e^{-\alpha E(\mathbf{w})}}{Z_E}.\]
+
+<p>Because of expression for \(G(\mathbf{w})\), we can see that for each individual label \(t\)</p>
+
+\[P(t=1\mid \mathbf{w}) = y(\mathbf{w})\quad
+P(t=0\mid \mathbf{w}) = 1-y(\mathbf{w}).\]
+
+<p>or</p>
+
+\[P(t\mid \mathbf{w}) = y^t\,(1-y)^{1-t}.\]
+
+<p>For the regularization function \(\alpha E(\mathbf{w}) = \alpha \frac{1}{2}\sum_i w_i w_i\),
+then the prior probability, is a Gaussian distribution</p>
+
+\[P(\mathbf{w}) = \frac{e^{-\frac{\alpha}{2}\sum_i w_i w_i}}{Z_E}\]
+
+<p>with mean \(\mu =0\), and \(\sigma^2 = 1/\alpha\). Therefore \(Z_E = (\frac{2\pi}{\alpha})^{I/2}\).</p>
+
+<h3 id="making-further-inferences">Making further inferences</h3>
+
+<p>With a probabilistic interpretation of learning in hand, now we can
+use our neuron not just to learn the parameters, and fit the given
+data, but also to make inference about the probability of a future
+label \(t\) corresponding to a set of new inputs \(\mathbf{x}\) as</p>
+
+\[P(t=1\mid D) = \int_{\mathbf{w}} P(\mathbf{w}\mid D)\, y(\mathbf{w},\mathbf{x})\, dw_1 \ldots dw_I,\]
+
+<p>that is, we can calculate the neuronal output being \(t=1\), by
+summing to the probability of the neuronal output being \(t=1\) for all
+possible values of the parameters \(\mathbf{w}\) weighted by the
+probability of the parameters given the data so far.</p>
+
+<p>For our neuron with two inputs</p>
+
+\[P(t=1\mid D) = \int_{w_0}\int_{w_1}\int_{w_2} P(\mathbf{w}\mid D)\,
+\frac{1}{1+e^{-(w_0+w_1 x_1+w_2 x_2)}}\, dw_0 dw_1 dw_2.\]
+
+<p>Calculating the posterior probability \(P(\mathbf{w}\mid D)\) can be a
+bear, even for a single neuron with two inputs. We need to use some
+approximate method.</p>
+
+<h3 id="monte-carlo-implementation-for-a-single-neuron">Monte Carlo implementation for a single neuron</h3>
+
+<p>We are going to use an approximate sampling method, <strong>the Monte
+Carlo</strong> approach, in which we take a number of samples \(S\) of values
+of the weights, according to the posterior distribution, and then we
+approximate</p>
+
+\[P(t=1\mid D) \approx \frac{1}{S} \sum_{s=1}^S \frac{1}{1+e^{-(w^s_0+w^s_1 x_1+w^s_2 x_2)}}.\]
+
+<p>How to obtain the representative parameter samples
+\(\mathbf{w}^1,\ldots,\mathbf{w}^S\)?</p>
+
+<p>Here I am going to use the <strong>Metropolis-Hastings</strong> Monte Carlo method
+(there are others). We start with one arbitrary set of parameters
+(weights) \(\mathbf{w}\), and calculate \(M = M(\mathbf{w})\).</p>
+
+<ul>
+  <li>
+    <p>Modify the weights by a random amount, \(\eta_i\)</p>
+
+\[w^\prime_i = w_i + \eta_i\]
+
+    <p>and calculate the new function \(M^\prime = M(\mathbf{w^\prime})\).</p>
+  </li>
+  <li>
+    <p>Accept the new weights \(\mathbf{w^\prime}\) under one of these two conditions:</p>
+
+    <ul>
+      <li>
+        <p>The new weights have better probability than the old ones</p>
+
+        <p>\(\frac{P(\mathbf{w^\prime})}{P(\mathbf{w})}=\frac{e^{-M^\prime}}{e^{-M}} &gt; 1\), that is accept if \(M^\prime-M &lt; 0\)</p>
+
+        <p>This condition is like the gradient descent of backpropagation, in which for sure the new weights increase the probability.</p>
+      </li>
+      <li>
+        <p>Even if the new weights have worse probability
+than the old
+one \(\frac{P(\mathbf{w^\prime})}{P(\mathbf{w})} &lt; 1\), accept the new parameterization provided that</p>
+
+        <p>\(\frac{P(\mathbf{w^\prime})}{P(\mathbf{w})}=\frac{e^{-M^\prime}}{e^{-M}} &gt; r\), that is, accept if \(e^{-(M^\prime-M)} &gt; r\).</p>
+
+        <p>where \(r\) is a random number between 0 and 1.</p>
+
+        <p>Under this second condition condition, we are introducing some noise, hoping that the optimization will not get stuck in a local minimum.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>These two steps get repeated for a large number of iterations.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="apples_MC.weights.png" style="width:300px;" /> <br />
+     Figure 14. Parameter evolution as a function of the number of iterations in
+     the Metropolis-Hastings Monte Carlo algorithm. The total number of iterations is 100,000.
+     The learning rate is 0.01.
+     </div>
+</div>
+
+<p>We can use the Metropolis-Hastings Monte Carlo algorithm to calculate
+\(P(\mathbf{w}\mid D)\), for our problem in Figure 9 of separating
+apples from oranges, which we can compare with the batch-learning
+algorithm we implemented before.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="apples_MC.contours.png" style="width:300px;" /> <br />
+     Figure 15. Contour plots for different number of iterations of the MC algorithm. The contours
+     correspond to y=0.5, y=0.27 and y=0.73.
+     </div>
+</div>
+
+<p>In Figure 14, we observe how the weights evolve with the iterations of
+the Monte Carlo algorithm, and how that compares to Figure 10 for the
+batch-learning algorithm. The Monte Carlo approach introduces a lot
+more variability in the weights space.</p>
+
+<p>In Figure 15, we describe several contours from MC iterations, starting
+after iteration 10,000.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="apples_MC.inference.png" style="width:300px;" /> <br />
+     Figure 16. (Left) Contours obtained after averaging 30 samples of
+     weights sampled from the posterior using the MC algorithm. (Right)
+     contours obtained by taking the most probable parameters under the batch-learning
+     algorithm.
+     </div>
+</div>
+
+<p>In Figure 16, we show the result of estimating the \(P(t\mid D)\)
+using Bayesian inference, compared to the same calculation using a
+fixed value of the weights obtained by backpropagation.</p>
+
+<p><strong>What do you think of the difference?</strong> I think the Bayesian approach
+of taking several samples from the posterior distribution
+\(P(\mathbf{w}\mid D)\) (Figure 16, left) is a big improvement over
+just taking one value of the parameters (Figure 16, right). Can you
+tell why?</p>
+
+<h3 id="generalization-to-many-neurons-many-layers-and-many-outcomes">Generalization to many neurons, many layers and many outcomes</h3>
+
+<p>The single-neuron network described here can be easily be generalized to be a fully connected neural network with many different outputs and going through many different layers from inout to output.</p>
+
+<h4 id="the-one-hot-enconding-of-categorical-variables">The one-hot enconding of categorical variables</h4>
+
+<p>The states of our single-neuron network (active/inactive) can be easily rewritten using a one-hot representation.</p>
+
+\[\begin{aligned}
+\mbox{output/activity}\quad &amp;\mbox{one-hot}\\
+t = \{0,1\}\quad       \quad &amp;\bar t    = [t_1, t_2]\\
+t = 1\, \mbox{(Apple)} \quad &amp;\bar t(A) = [1,   0]\\
+t = 0\, \mbox{(Orange)}\quad &amp;\bar t(O) = [0,   1]\\
+\end{aligned}\]
+
+<p>This one-hot representation easily generalizes for a categorical variable with more than two outcomes \(\{t_1,\ldots t_O\}\) as,</p>
+
+\[\bar t_1 = [1,0,\ldots,0]\\
+\bar t_2 = [0,1,\ldots,0]\\
+\dot\quad \\
+\dot\quad \\
+\dot\quad \\
+\bar t_O = [0,0,\ldots,1]\\\]
+
+<h4 id="the-outputactivity-from-a-linear-logistic-function-to-softmax-activation">The output/activity: from a linear logistic function to softmax activation</h4>
+
+<p>The outcome of the single-neuron \(0\leq y\leq 1\)</p>
+
+\[y(\bar x,\bar W) = \frac{1}{1+ e^{-\sum_i x_i W_i}}\]
+
+<p>can be easily extended to</p>
+
+\[y_1(\bar x,\bar W^1) = \frac{1}{1+ e^{-\sum_i x_i W_i^1}}\\
+y_2(\bar x,\bar W^2) = \frac{1}{1+ e^{-\sum_i x_i W_i^2}}\\\]
+
+<p>which can be easily converted to a  \(2\)-dimentional probability outcome \(\bar p\),</p>
+
+\[\bar p = \{p_1,p_2\},\]
+
+<p>such that \(p_1 + p_2 = 1\), using the softmax function</p>
+
+\[p_1 = \frac{e^{y_1}}{e^{y_1} + e^{y_2}}\\
+p_2 = \frac{e^{y_2}}{e^{y_1} + e^{y_2}}.\]
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="NN1.png" style="width:600px;" /> <br />
+   A fully connected neural network with one layer.
+   </div>
+ </div>
+
+<h4 id="neural-network-with-many-outputs">Neural network with many outputs</h4>
+
+<p>The above result generalizes easily to a network with many possible outcomes.</p>
+
+<p>A \(O\)-dimentional  outcome \(\bar y\),</p>
+
+\[\bar y = \{y_1,\ldots, y_O\},\]
+
+<p>can be converted to a probability vector \(\bar p\) using the softmax function</p>
+
+\[\bar p = \{p_1,\ldots, p_O\},\]
+
+<p>such that</p>
+
+\[p_o = \frac{e^{y_o}}{e^{y_1} + \ldots + e^{y_O}}, \quad \mbox{and}\quad \sum_{o=1}^O p_o = 1.\]
+
+<p>And the loss function \(G\) easily generalizes to the cross entropy between the true outcomes \((t^{(n)}_1,\ldots, t^{(n)}_O)\)
+and the predicted outcomes \((p^{(n)}_1,\ldots, p^{(n)}_O)\) summed to all \(1\leq n\leq N\) cases in the training set.</p>
+
+\[G(w) = - \sum_{n=1}^N \sum_{o=1}^O t^{(n)}_o \log p^{(n)}_o(w).\]
+
+<h4 id="neural-network-with-many-layers">Neural network with many layers</h4>
+
+<p>Additionally, the neural network can be extended to have an arbitrary number of internal layers.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="NN2.png" style="width:600px;" /> <br />
+   Example of a multilayered NN.
+   </div>
+ </div>
+
+<h2 id="feedback-networks">Feedback networks</h2>
+
+<p>Our one neuron network belongs to the category of <strong>feedforward
+networks</strong>, in which arrows flow in one direction. Another type of
+networks are those in which all neurons are connected to all other
+neurons, those are called <strong>feedback networks</strong> (Figure 1).</p>
+
+<p>Now we are going to study of a particular type of feedback network
+in the context of a “memory problem”.</p>
+
+<div id="figcontainer">
+   <div id="figure">	 
+     <img src="abc_abc.png" style="width:300px;" /> <br />
+     Figure 17. Memory representation for  several letters.
+     </div>
+ </div>
+
+<h3 id="content-addressable-memories">Content addressable memories</h3>
+
+<p>We would like to design a network to mimic how human memory works.  In
+particular, we want our network to memorize letter. I will describe
+letters with a \(5\times 5\) grid. Figure 17 has some examples.</p>
+
+<div id="figcontainer">
+  <div id="figure">	 
+     <img src="abc_noise.png" style="width:300px;" /> <br />
+     Figure 18. Noisy memory representations of an  "A".
+     </div>
+</div>
+
+<p>Some basic properties of human memory that we would like our memory
+network to reproduce are:</p>
+
+<ul>
+  <li>
+    <p>A desired memory stays (desired memories are attractive minima)</p>
+  </li>
+  <li>
+    <p>Can add one memory at the time without losing previous ones, and
+without requiring major changes in the network architecture.</p>
+  </li>
+  <li>
+    <p>Noisy versions of existing memories are identified as such.</p>
+  </li>
+  <li>
+    <p>Robust to memory impediments (<em>e.g.</em> you have been drinking).</p>
+  </li>
+</ul>
+
+<p>For instance, if the network has learned “A”, it should be able to
+recognize as “A’s” all three variants shown in Figure 18.</p>
+
+<p>We are going to build this memory network using a Hopfield network,
+which an example of a feedback network.</p>
+
+<h3 id="hopfield-network-definition">Hopfield Network Definition</h3>
+
+<div id="figcontainer">
+  <div id="figure">	 
+     <img src="hopfield.png" style="width:300px;" /> <br />
+     Figure 19.  Architecture of a Hopfield feedback network (from MacKay's Chapter 42).
+     </div>
+</div>
+
+<p>In a Hopfield network, there are N neurons all connected to each other.</p>
+
+<ul>
+  <li>
+    <p><strong>Architecture</strong></p>
+
+    <p>\(N\) neurons fully connected with bi-directional connections (weights) that are symmetric</p>
+
+\[w_{nm} = w_{mn}\quad 1\leq n, m \leq N.\]
+
+    <p>Neurons do not have a self-connection, that is \(w_{nn} = 0\).</p>
+
+    <p>We denote as \(y_n\) the output of neuron \(n\).</p>
+  </li>
+  <li>
+    <p><strong>Activation</strong></p>
+
+    <p>Every neuron’s output is an input for all other neurons:</p>
+
+\[a_n = \sum_m w_{nm} y_m\]
+  </li>
+  <li>
+    <p><strong>Activity</strong></p>
+
+    <p>Uses a step function</p>
+
+\[y(a) = \left\{\begin{matrix}
++1 &amp; a \geq 0\\
+-1 &amp; a &lt; 0\\
+\end{matrix}
+\right.\]
+  </li>
+  <li>
+    <p><strong>Learning rule</strong></p>
+
+    <p>For a Hopfield network with \(N\) neurons, there are \(\frac{N
+(N-1)}{2}\) weights to determine.</p>
+
+    <p>The rule to set the weights is the <strong>Hebb’s rule</strong>. If we want to
+learn \(K\) letters (or patterns), we assign</p>
+
+\[w_{nm} = \sum_{k=1}^K y_n^{(k)} y_m^{(k)}.\]
+
+    <p>The Hebb rule has a biological motivation. If two neurons are
+correlated, it makes sense that an increase in the activity of one
+of the neurons would increase the activity of the other
+neuron. <a href="https://en.wikipedia.org/wiki/Hebbian_theory">Hebb’s rule</a>
+introduced in 1949 by Donald Hebb does exactly that.</p>
+  </li>
+</ul>
+
+<p>Now we have all we need to know about a Hopfield feedback network.</p>
+
+<p>If we want to build a Hopfield network for one of our letters, say
+“A”, we need \(N=25\) neurons connected by \(600\) weights. Letter
+“A” (Figure 17) is represented by</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> "A" = -1, -1, 1, -1, -1, -1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, -1, 1.
+</code></pre></div></div>
+
+<p>Using Hebb’s rule for \(K=1\), we can build the weight of the network which are given by</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 0  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+ 1  0 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+-1 -1  0 -1 -1 -1  1 -1  1 -1 -1  1  1  1 -1 -1  1 -1  1 -1  1 -1 -1 -1  1 
+ 1  1 -1  0  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+ 1  1 -1  1  0  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+ 1  1 -1  1  1  0 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+-1 -1  1 -1 -1 -1  0 -1  1 -1 -1  1  1  1 -1 -1  1 -1  1 -1  1 -1 -1 -1  1 
+ 1  1 -1  1  1  1 -1  0 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+-1 -1  1 -1 -1 -1  1 -1  0 -1 -1  1  1  1 -1 -1  1 -1  1 -1  1 -1 -1 -1  1 
+ 1  1 -1  1  1  1 -1  1 -1  0  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+ 1  1 -1  1  1  1 -1  1 -1  1  0 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  1 -1 
+-1 -1  1 -1 -1 -1  1 -1  1 -1 -1  0  1  1 -1 -1  1 -1  1 -1  1 -1 -1 -1  1 
+-1 -1  1 -1 -1 -1  1 -1  1 -1 -1  1  0  1 -1 -1  1 -1  1 -1  1 -1 -1 -1  1 
+-1 -1  1 -1 -1 -1  1 -1  1 -1 -1  1  1  0 -1 -1  1 -1  1 -1  1 -1 -1 -1  1 
+ 1  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  0  1 -1  1 -1  1 -1  1  1  1 -1 
+ 1  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  0 -1  1 -1  1 -1  1  1  1 -1 
+-1 -1  1 -1 -1 -1  1 -1  1 -1 -1  1  1  1 -1 -1  0 -1  1 -1  1 -1 -1 -1  1 
+ 1  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  0 -1  1 -1  1  1  1 -1 
+-1 -1  1 -1 -1 -1  1 -1  1 -1 -1  1  1  1 -1 -1  1 -1  0 -1  1 -1 -1 -1  1 
+ 1  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  0 -1  1  1  1 -1 
+-1 -1  1 -1 -1 -1  1 -1  1 -1 -1  1  1  1 -1 -1  1 -1  1 -1  0 -1 -1 -1  1 
+ 1  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  0  1  1 -1 
+ 1  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  0  1 -1 
+ 1  1 -1  1  1  1 -1  1 -1  1  1 -1 -1 -1  1  1 -1  1 -1  1 -1  1  1  0 -1 
+-1 -1  1 -1 -1 -1  1 -1  1 -1 -1  1  1  1 -1 -1  1 -1  1 -1  1 -1 -1 -1  0 .
+</code></pre></div></div>
+
+<h3 id="the-memory-challenge">The memory challenge</h3>
+
+<p>Can the network trained on “A”, recognize an imperfect A?</p>
+
+<p>Using this network trained on “A”, we can see how well the network
+fixes imperfect memories.  We provided to the network imperfect “A”s
+with variable number of wrong pixels, and we found:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Average error for A: before   after
+                      5.24%   0.00%
+		  8.38%   0.00%
+		 12.52%   0.00%
+                     16.39%   0.00%
+		 20.10%   0.08%
+</code></pre></div></div>
+
+<p>That is the network corrects most of the erroneous versions of “A”.</p>
+
+<h3 id="what-happens-if-we-add-another-letter-to-the-network">What happens if we add another letter to the network?</h3>
+
+<p>It is easy to see how to the Hebb’s rule allows to add new memories to the network.
+If we now add the letters “C” and “Z”, the weights change to:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 0  1 -1  1  1 -1 -1  1  1  1 -1 -1  1 -1  1 -1  1  1 -1  1  1  1  1  1 -1 
+ 1  0  1  3  3  1 -3 -1 -1 -1  1 -3 -1 -3 -1  1 -1 -1 -3 -1 -1  3  3  3  1
+-1  1  0  1  1 -1 -1 -3  1 -3 -1 -1  1 -1 -3 -1  1 -3 -1 -3  1  1  1  1  3 
+ 1  3  1  0  3  1 -3 -1 -1 -1  1 -3 -1 -3 -1  1 -1 -1 -3 -1 -1  3  3  3  1 
+ 1  3  1  3  0  1 -3 -1 -1 -1  1 -3 -1 -3 -1  1 -1 -1 -3 -1 -1  3  3  3  1 
+-1  1 -1  1  1  0 -1  1 -3  1  3 -1 -3 -1  1  3 -3  1 -1  1 -3  1  1  1 -1 
+-1 -3 -1 -3 -3 -1  0  1  1  1 -1  3  1  3  1 -1  1  1  3  1  1 -3 -3 -3 -1 
+ 1 -1 -3 -1 -1  1  1  0 -1  3  1  1 -1  1  3  1 -1  3  1  3 -1 -1 -1 -1 -3 
+ 1 -1  1 -1 -1 -3  1 -1  0 -1 -3  1  3  1 -1 -3  3 -1  1 -1  3 -1 -1 -1  1 
+ 1 -1 -3 -1 -1  1  1  3 -1  0  1  1 -1  1  3  1 -1  3  1  3 -1 -1 -1 -1 -3 
+-1  1 -1  1  1  3 -1  1 -3  1  0 -1 -3 -1  1  3 -3  1 -1  1 -3  1  1  1 -1 
+-1 -3 -1 -3 -3 -1  3  1  1  1 -1  0  1  3  1 -1  1  1  3  1  1 -3 -3 -3 -1 
+ 1 -1  1 -1 -1 -3  1 -1  3 -1 -3  1  0  1 -1 -3  3 -1  1 -1  3 -1 -1 -1  1 
+-1 -3 -1 -3 -3 -1  3  1  1  1 -1  3  1  0  1 -1  1  1  3  1  1 -3 -3 -3 -1 
+ 1 -1 -3 -1 -1  1  1  3 -1  3  1  1 -1  1  0  1 -1  3  1  3 -1 -1 -1 -1 -3 
+-1  1 -1  1  1  3 -1  1 -3  1  3 -1 -3 -1  1  0 -3  1 -1  1 -3  1  1  1 -1 
+ 1 -1  1 -1 -1 -3  1 -1  3 -1 -3  1  3  1 -1 -3  0 -1  1 -1  3 -1 -1 -1  1 
+ 1 -1 -3 -1 -1  1  1  3 -1  3  1  1 -1  1  3  1 -1  0  1  3 -1 -1 -1 -1 -3 
+-1 -3 -1 -3 -3 -1  3  1  1  1 -1  3  1  3  1 -1  1  1  0  1  1 -3 -3 -3 -1 
+ 1 -1 -3 -1 -1  1  1  3 -1  3  1  1 -1  1  3  1 -1  3  1  0 -1 -1 -1 -1 -3 
+ 1 -1  1 -1 -1 -3  1 -1  3 -1 -3  1  3  1 -1 -3  3 -1  1 -1  0 -1 -1 -1  1 
+ 1  3  1  3  3  1 -3 -1 -1 -1  1 -3 -1 -3 -1  1 -1 -1 -3 -1 -1  0  3  3  1 
+ 1  3  1  3  3  1 -3 -1 -1 -1  1 -3 -1 -3 -1  1 -1 -1 -3 -1 -1  3  0  3  1 
+ 1  3  1  3  3  1 -3 -1 -1 -1  1 -3 -1 -3 -1  1 -1 -1 -3 -1 -1  3  3  0  1 
+-1  1  3  1  1 -1 -1 -3  1 -3 -1 -1  1 -1 -3 -1  1 -3 -1 -3  1  1  1  1  0 .
+</code></pre></div></div>
+
+<p>After adding three letter to the network, it is still capable of fixing most of the bad representations of A</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Average error for A: before   after
+                      5.24%   0.29%
+		  8.38%   0.45%
+                     12.52%   0.86%
+                     16.39%   1.70%
+		 20.10%   2.87%
+</code></pre></div></div>
+
+<p>By the time we have added 5 memories, the network becomes more and more imperfect.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Average error for A: before    after
+                      5.24%     3.51%
+                      8.38%     6.11%
+		  12.52%    8.25%
+                      16.39%   10.94%
+                      20.10%   13.65%
+</code></pre></div></div>
+
+<p>Similarly, we could observe the behavior of the network if we corrupt some of the weights in the network.</p>
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

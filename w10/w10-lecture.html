@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#stochastic-gating-of-a-single-ion-channel" id="markdown-toc-stochastic-gating-of-a-single-ion-channel">stochastic gating of a single ion channel</a>    <ul>
+      <li><a href="#a-two-state-continuous-time-markov-process" id="markdown-toc-a-two-state-continuous-time-markov-process">A two-state continuous-time Markov process</a></li>
+      <li><a href="#the-transition-probability-matrix" id="markdown-toc-the-transition-probability-matrix">The transition probability matrix</a></li>
+      <li><a href="#deterministic-solution" id="markdown-toc-deterministic-solution">Deterministic solution</a></li>
+      <li><a href="#the-steady-state-solution" id="markdown-toc-the-steady-state-solution">The steady-state solution</a></li>
+      <li><a href="#dwell-times" id="markdown-toc-dwell-times">Dwell Times</a></li>
+      <li><a href="#stochastic-simulations-monte-carlo-algorithm" id="markdown-toc-stochastic-simulations-monte-carlo-algorithm">Stochastic simulations: Monte Carlo algorithm</a></li>
+    </ul>
+  </li>
+  <li><a href="#fluctuating-populations-of-rnas-in-a-cell-a-birth-death-process" id="markdown-toc-fluctuating-populations-of-rnas-in-a-cell-a-birth-death-process">Fluctuating populations of RNAs in a cell: a Birth-Death process</a>    <ul>
+      <li><a href="#the-birth-death-master-equation" id="markdown-toc-the-birth-death-master-equation">The birth-death master equation</a></li>
+      <li><a href="#the-deterministic-approach-huge-numbers-of-particles" id="markdown-toc-the-deterministic-approach-huge-numbers-of-particles">The deterministic approach (huge numbers of particles)</a></li>
+      <li><a href="#the-steady-state" id="markdown-toc-the-steady-state">The steady-state</a></li>
+      <li><a href="#stochastic-simulation-the-gillespie-algorithm" id="markdown-toc-stochastic-simulation-the-gillespie-algorithm">Stochastic simulation: The Gillespie algorithm</a></li>
+    </ul>
+  </li>
+  <li><a href="#gene-regulation" id="markdown-toc-gene-regulation">Gene regulation</a>    <ul>
+      <li><a href="#transcriptional-bursting" id="markdown-toc-transcriptional-bursting">Transcriptional bursting</a></li>
+      <li><a href="#rna-and-protein-populations-from-a-regulated-gene" id="markdown-toc-rna-and-protein-populations-from-a-regulated-gene">RNA and Protein populations from a regulated gene.</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-10">week 10:</h1>
+
+<h1 class="no_toc" id="molecular-dynamics-as-a-markov-process">Molecular Dynamics as a Markov Process</h1>
+
+<p>For these lectures, I have followed Chapter 8 of Philip Nelson’s book
+<a href="http://www.physics.upenn.edu/biophys/PMLS/">“Physical models of living
+systems”</a>. I have also
+followed the more comprehensive, but really great review <a href="stochastic_simulations_dgonze.pdf">“Stochastic
+simulations, applications to biomolecular
+networks”</a>
+by Gonze and Ouattara, 2014.  A beautiful description of Ion channel
+gating as a Markov process is given by G. D. Smith in <a href="IonChannels_GDSmith.pdf">“Modeling of
+Stochastic Gating of Ion Channels”</a>.</p>
+
+<h2 id="stochastic-gating-of-a-single-ion-channel">stochastic gating of a single ion channel</h2>
+
+<p>Cells contain numerous ion channels. Ion channels are transmembrane
+proteins that strand the cell membrane and facilitate (by opening and
+closing) the movement of many different molecules in-and-out of the
+cell.</p>
+
+<p>Using patch clamp techniques, we can measure the dynamics of
+a single ion channel. Using a continuous-time Markov process
+with two states (open and close), we can model the stochastic
+gating of a single ion channel.</p>
+
+<h3 id="a-two-state-continuous-time-markov-process">A two-state continuous-time Markov process</h3>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="channelHMM.png" style="width:300px;" /> <br />
+     Figure 1. The two-state ion channel continuous time Markov model. Kc is the
+     instantaneous probability of the channel to close, and Ko is the instantaneous probability
+     of the channel opening.
+   </div>
+</div>
+
+<p>The dynamics of the ion channel gating can be
+described as</p>
+
+\[O(open) \overset{k_c}{\underset{k_o}{\rightleftharpoons}} C(close)\]
+
+<p>where 
+\(k_o\) and \(k_c\) are the reaction constants of the process.</p>
+
+<p>These reaction constants can be interpreted as probabilities per unit
+time of the stochastic process of the channel opening and
+closing. That is</p>
+
+<ul>
+  <li>
+    <p>The probability of the channel transitioned from C to O between time \(t\) and
+  \(t+\Delta t\) is given by</p>
+
+\[t(C\rightarrow O) \equiv P(O, t+\Delta t\mid C,t) = k_o \Delta t.\]
+  </li>
+  <li>
+    <p>The probability of the channel transitioned from O to C between time \(t\) and
+  \(t+\Delta t\) is given by</p>
+
+\[t(O\rightarrow C) \equiv P(C, t+\Delta t\mid O,t) = k_c \Delta t.\]
+  </li>
+  <li>
+    <p>Thus, the probabilities that the channel remained closed (open) from \(t\) to \(t+\Delta t\) are given by</p>
+
+\[\begin{aligned}
+ t(C\rightarrow C) \equiv P(C, t+\Delta t\mid C,t) &amp;= 1 -k_o \Delta t\\
+ t(O\rightarrow O) \equiv P(O, t+\Delta t\mid O,t) &amp;= 1 -k_c \Delta t.
+ \end{aligned}\]
+  </li>
+</ul>
+
+<p>This is a Markov process, in which the state \(S_i=\{O,C\}\), at a given time \(i\Delta t\)
+is determined by the previous state \(S_{i-1}\).</p>
+
+\[S_0
+\underset{t(S_0\rightarrow S_1)}{\overset{\Delta t}{\longrightarrow}} S_1
+\underset{t(S_1\rightarrow S_2)}{\overset{\Delta t}{\longrightarrow}} S_2
+\underset{t(S_2\rightarrow S_3)}{\overset{\Delta t}{\longrightarrow}}
+\ldots
+\underset{t(S_{N-1}\rightarrow S_N)}{\overset{\Delta t}{\longrightarrow}} S_N\]
+
+<p>We can represent this continuous-time stochastic process as a two
+state Markov process, see Figure 1. Notice how the two probabilities that emerge
+from a given state (either O or C) sum up to one.</p>
+
+<h3 id="the-transition-probability-matrix">The transition probability matrix</h3>
+
+<p>Introducing</p>
+
+\[\begin{aligned}
+P(O\mid t)&amp;\quad \mbox{ probability of being open at time}\ t\\
+P(C\mid t)&amp;\quad \mbox{ probability of being closed at time}\ t
+\end{aligned}\]
+
+<p>such that</p>
+
+\[P(O\mid t) + P(C\mid t) = 1 \quad \mbox{ for all}\ t's.\]
+
+<p>One can write, using the graphical representation described in Figure 1,</p>
+
+\[\begin{aligned}
+P(O\mid t+\Delta t)&amp;=
+\left.
+\begin{array}{rl}
++ k_o \Delta t     &amp; P(C\mid t)\\
++ (1-k_c \Delta t) &amp; P(O\mid t)
+\end{array}
+\right.
+\\
+P(C\mid t+\Delta t)&amp;= 
+\left.
+\begin{array}{rl}
++ k_c \Delta t     &amp; P(O\mid t)\\
++ (1-k_o \Delta t) &amp; P(C\mid t)
+\end{array}
+\right.
+\end{aligned}\]
+
+<p>The above equations can be re-written as</p>
+
+\[{P(O\mid t+\Delta t) \choose P(C\mid t+\Delta t)} =
+\left(
+\begin{array}{cc}
+1-k_c \Delta t &amp; k_o \Delta t  \\
+k_c \Delta t   &amp; 1-k_o \Delta t &amp; 
+\end{array}
+\right)
+{P(O\mid t) \choose P(C\mid t)}\]
+
+<p>Introducing the transition matrix \(T\) given by</p>
+
+\[T
+=
+\left(
+\begin{array}{cc}
+t(O\rightarrow O) &amp;  t(C\rightarrow O) \\
+ t(O\rightarrow C) &amp; t(C\rightarrow C) &amp; 
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+1-k_c \Delta t &amp; k_o \Delta t  \\
+k_c \Delta t   &amp; 1-k_o \Delta t &amp; 
+\end{array}
+\right),\]
+
+<p>we can write</p>
+
+\[{P(O\mid t+\Delta t) \choose P(C\mid t+\Delta t)} = T\ {P(O\mid t) \choose P(C\mid t)}.\]
+
+<p>The matrix \(T\) is such that the sum of the probabilities in each column is 1.</p>
+
+<p>Using vector  notation</p>
+
+\[\vec{P}(t) = {P(O\mid t) \choose P(C\mid t)},\]
+
+<p>we can write</p>
+
+\[\vec{P}(t+\Delta t) = T\ \vec{P}(t).\]
+
+<p>Then, for \(t +2\Delta t\), we have</p>
+
+\[\vec{P}(t+2\Delta t) = T\  \vec{P}(t+\Delta t) = T^2\ \vec{P}(t),\]
+
+<p>and in general for \(t + n\Delta t\), we have</p>
+
+\[\vec{P}(t+n\Delta t) = T^n\ \vec{P}(t).\]
+
+<p>This equation is usually referred as the <a href="https://en.wikipedia.org/wiki/Chapman–Kolmogorov_equation">Chapman-Kolmologov
+equation</a>.
+This is a general result for all continuous-time Markov processes.</p>
+
+<h3 id="deterministic-solution">Deterministic solution</h3>
+
+<p>The state equations can be re-written as</p>
+
+\[\begin{aligned}
+P(C\mid t+\Delta t) - P(C\mid t) &amp;= k_c\Delta t\ P(O\mid t) - k_o\Delta t P(C\mid t)\\
+P(O\mid t+\Delta t) - P(O\mid t) &amp;= k_o\Delta t\ P(C\mid t) - k_c\Delta t P(O\mid t).
+\end{aligned}\]
+
+<p>that is</p>
+
+\[\begin{aligned}
+\frac{P(C\mid t+\Delta t) - P(C\mid t)}{\Delta t} &amp;= k_c\ P(O\mid t) - k_o\ P(C\mid t)\\
+\frac{P(O\mid t+\Delta t) - P(O\mid t)}{\Delta t} &amp;= k_o\ P(C\mid t) - k_c\ P(O\mid t).
+\end{aligned}\]
+
+<p>If we take the limit of very small time intervals \(\Delta t \rightarrow 0\),
+then the transition equations can be written in continuous form as</p>
+
+\[\begin{aligned}
+\frac{d P(O\mid t)}{d t} &amp;= k_o\ P(C\mid t) - k_c\ P(O\mid t)\\
+\frac{d P(C\mid t)}{d t} &amp;= k_c\ P(O\mid t) - k_o\ P(C\mid t).
+\end{aligned}\]
+
+<p>Using the relationship \(P(C\mid t) = 1 - P(O\mid t)\), we have</p>
+
+\[\begin{aligned}
+\frac{d P(O\mid t)}{d t} &amp;= k_o - (k_c+k_o)\ P(O\mid t)\\
+\frac{d P(O\mid t)}{d t} &amp;= k_c - (k_c+k_o)\ P(C\mid t)
+\end{aligned}\]
+
+<p>The time-dependent solutions are given by</p>
+
+\[\begin{aligned}
+P(O\mid t) &amp;= \frac{k_o}{k_c+k_o} + \left(P(O\mid 0) - \frac{k_o}{k_c+k_o}\right)e^{-(k_c+k_o)t}\\
+P(C\mid t) &amp;= \frac{k_c}{k_c+k_o} + \left(P(C\mid 0) - \frac{k_c}{k_c+k_o}\right)e^{-(k_c+k_o)t}.
+\end{aligned}\]
+
+<p>Using the Chapman-Kolmologov equation in continuous form</p>
+
+\[\vec{P}(t+\Delta t) - \vec{P}(t) = (T - I)\ \vec{P}(t).\]
+
+<p>Let’s introduce  the matrix \(Q\)</p>
+
+\[Q = \frac{1}{\Delta t}\ \left(T-I\right) =
+\left(
+\begin{array}{cc}
+-k_c&amp;k_o\\
+k_c&amp;-k_o
+\end{array}
+\right).\]
+
+<p>The matrix \(Q\) represents the changes per unit time from and to a given state.
+Because the sum of all changes have to be zero. We observe that
+as the sum of each column in \(Q\) is zero.</p>
+
+<p>Then, we have in the limit \(\Delta t \rightarrow 0\),</p>
+
+\[\frac{d\vec{P}(t)}{dt} = Q\ \vec{P}(t).\]
+
+<p>The general solution for this equation is</p>
+
+\[\vec{P}(t) = \vec{P}(t=0)\ e^{t\ Q}.\]
+
+<p><strong>This is a general result for all continuous-time Markov processes.</strong></p>
+
+<p>For the particular Ion channel case, we have found already the solutions to the general equation given by</p>
+
+\[\begin{aligned}
+P(O\mid t) &amp;= \frac{k_o}{k_c+k_o} + \left(P(O\mid 0) - \frac{k_o}{k_c+k_o}\right)e^{-(k_c+k_o)t}\\
+P(C\mid t) &amp;= \frac{k_c}{k_c+k_o} + \left(P(C\mid 0) - \frac{k_c}{k_c+k_o}\right)e^{-(k_c+k_o)t}.
+\end{aligned}\]
+
+<p>In general, in a cell there are many channels working together, if we consider the average of many of such ion channels,
+we find that the average state at a given time \(t\) is</p>
+
+\[\begin{aligned}
+\langle channel(t)\rangle
+&amp;= 1\times P(O\mid t) + 0\times P(C\mid t)\\
+&amp;= P(O\mid t)\\
+&amp;= \frac{k_o}{k_c+k_o} + \left(P(O\mid 0) - \frac{k_o}{k_c+k_o}\right)e^{-(k_c+k_o)t}
+.
+\end{aligned}\]
+
+<p>In Figure 2, we show both this continuous average (in blue), as well as the 
+sample average of 100 different stochastic simulations (in purple).
+This is the <a href="ionchannel.pl">code</a> used to produce Figure 2.</p>
+
+<h3 id="the-steady-state-solution">The steady-state solution</h3>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Figure2.png" style="width:300px;" /> <br />
+     Figure 2. Single ion channel simulations. In yellow, the result of one simulation
+     using the Monte Carlo algorithm. In purple, the average of 100 such simulations.
+     In blue, the continuous time solution. (A) Ko=Kc = 0.01, (B) Ko=0.05, Kc = 0.01,
+     (C) Ko=Kc=0.15. We assume the channel is open at t=0.
+   </div>
+</div>
+
+<p>In the limit of large time \(t\), we obtain the steady state probabilities which are given by</p>
+
+\[\begin{aligned}
+P(O\mid \infty) &amp;= \frac{k_o}{k_c+k_o}\\
+P(C\mid \infty) &amp;= \frac{k_c}{k_c+k_o}.
+\end{aligned}\]
+
+<p>It is called steady-state, because in this limit the probabilities of staying open/close
+do not depend on time anymore</p>
+
+\[\frac{P(O\mid t)}{dt} = 0\quad \mbox{at steady state}.\]
+
+<p>An alternative form of finding the steady-state solution, is by finding the solution to
+the differential equations for which</p>
+
+\[\frac{P(O\mid t)}{dt} = 0.\]
+
+<p>In Figure 2, we see how the steady state (in blue) behaves as a function of the rates.</p>
+
+<ul>
+  <li>
+    <p>If \(k_o=k_c\) (Figure 2A), then</p>
+
+\[P(O\mid \infty) = P(C\mid \infty) = \frac{1}{2}.\]
+  </li>
+  <li>
+    <p>As the rates become larger (Figure 2C), the system reaches steady state (blue line) faster.</p>
+  </li>
+</ul>
+
+<h3 id="dwell-times">Dwell Times</h3>
+
+<p>We can calculate the expected time that the channel will remain open
+(or closed).</p>
+
+<p>If we assume the channel is O at time \(t\), the probability that it
+stays open until \(t+\tau\), assuming \(m\) infinitesimal steps, such
+that \(\tau = m\ \Delta t\)</p>
+
+\[\begin{aligned}
+P(O, t+\tau\mid O,t)
+&amp;= P(O, t+\tau\mid O,t+\tau-\Delta t)\\
+&amp;\times P(O, t+\tau-\Delta t\mid O,t+\tau-2\Delta t)\\
+&amp;\times \ldots\\
+&amp;\times P(O, t+\Delta t\mid O,t)\\
+&amp;= \left(1-k_c\Delta t\right)^m\\
+&amp;= \left(1-k_c\ \frac{\tau}{m}\right)^m.
+\end{aligned}\]
+
+<p>In the limit of \(\Delta t\rightarrow 0\) and \(m\rightarrow \infty\)
+such that \(\tau = m\Delta t\) remains constant, we have</p>
+
+\[\begin{aligned}
+P(O, t+\tau\mid O,t)
+&amp;= \lim_{m\rightarrow \infty} \left(1-k_c\ \frac{\tau}{m}\right)^m\\
+&amp;= e^{-k_c\ \tau}
+\end{aligned}\]
+
+<p>Finally, the probability of a dwell time \(\tau\) requires adding the normalization term \(k_c\) which is 
+the contribution of changing to close after \(t+\tau\),  then</p>
+
+\[P_O(\tau) = k_c\ e^{-k_c\ \tau}.\]
+
+<p>and the expectation is</p>
+
+\[\langle \tau \rangle_O = \int_0^1 \tau\ k_c\ e^{-k_c\ \tau} d\tau = \frac{1}{k_c}.\]
+
+<p>Similarly for the dwell time in the closed state, resulting in</p>
+
+\[\langle \tau\rangle_O = \frac{1}{k_c}\\
+\langle \tau\rangle_C = \frac{1}{k_o}.\]
+
+<p>In Figure 2, one can see this behavior. For small rates, the dwell
+times are large, and the channels stays in one state for a while
+(Figure 2A, where the expected dwell time is 100 time units for both
+states).  When the rates become smaller, the dwell times are small and
+the channels rapidly fluctuates between the open and closed state
+(Figure 2C. where the expected dwell time is 1 time unit for both
+states).</p>
+
+<h3 id="stochastic-simulations-monte-carlo-algorithm">Stochastic simulations: Monte Carlo algorithm</h3>
+
+<p>When the fluctuation times are not very small, the opening/closing of an ion channel is not
+deterministic but stochastic. The transition matrix</p>
+
+\[T = \left(
+\begin{array}{cc}
+1-k_c \Delta t &amp; k_o \Delta t  \\
+k_c \Delta t   &amp; 1-k_o \Delta t &amp; 
+\end{array}
+\right)\]
+
+<p>is such that \(T_{ij}\) gives us the probability of transitioning from
+one state (O or C) at time \(t\), to the state (O or C) at time
+\(t+\Delta t\).</p>
+
+<p>We can simulate this process computationally.</p>
+
+<p>Draw a random number \(x\) between 0 an 1,</p>
+
+<ul>
+  <li>
+    <p>If the current state is O,</p>
+
+    <ul>
+      <li>if \(x &lt; k_c\Delta t\), then the channel closes,</li>
+      <li>otherwise it stays O</li>
+    </ul>
+  </li>
+  <li>
+    <p>If the current state is C,</p>
+
+    <ul>
+      <li>if \(x &lt; k_o\Delta t\), then the channel opens,</li>
+      <li>otherwise it stays C.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>In Figure 2, I show simulations of the ion channel system, for
+different values of \(k_c\) and \(k_o\).  Figures 2A and 2B show the
+difference in steady-state between the case \(k_c=k_c\) and
+\(k_o&gt;k_c\).  Figure 2C shows how as \(k_c\) and \(k_o\) increase in
+magnitude, the dwell time in each state becomes smaller, and the
+system switches between open and close states much faster than before</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-RNA.png" style="width:300px;" /> <br />
+     Figure 3. RNA synthesis/degradation as
+   a birth-death process. k1 is the rate (probability per unit time)
+   of RNA synthesis, and k2 is the rate of RNA degradation. We assume
+   that these rates are constant. Figure from Gonze and Ouattara, 2014.
+   </div>
+</div>
+
+<h2 id="fluctuating-populations-of-rnas-in-a-cell-a-birth-death-process">Fluctuating populations of RNAs in a cell: a Birth-Death process</h2>
+
+<p>The production and degradation of RNA molecules in a cell is another
+process that has been successfully model as a continuous-time Markov process. We assume there
+is rate (probability per unit time) \(k_1\) of an RNA molecule being produced,
+and another rate \(k_2\) for the RNA molecule to be degraded. We can write the process as
+a set of two reactions:</p>
+
+\[\begin{aligned}
+\emptyset &amp;\overset{k_1}{\longrightarrow} RNA \quad \mbox{RNA synthesis (birth)}\\
+RNA          &amp;\overset{k_2}{\longrightarrow}  \emptyset \quad \quad\, \mbox{RNA degradation (death)}
+\end{aligned}\]
+
+<p>In our simple model, we are going to assume that these rates are constant in time, but
+they could easily be time-dependent.</p>
+
+<p>There is a whole machinery of protein-RNA molecules behind both
+transcription and RNA degradation, which we are ignoring here. We are
+just representing the combined output of those two processes, that is,
+the number of molecules of a given RNA as a function of time.</p>
+
+<h3 id="the-birth-death-master-equation">The birth-death master equation</h3>
+
+<p>The process of RNA synthesis/degradation is fundamentally stochastic.
+We introduce the probability</p>
+
+\[P(R\mid t)\]
+
+<p>defined as the probability of having \(R\) RNA molecules at time
+\(t\). Knowing this probability distribution would give us information
+about the state of the system at all times.</p>
+
+<p><em>We are going to assume that in a very small time interval \(\Delta
+t\), only one of the two possible reactions, or none at all is going
+to occur.</em> (Double event would occur with probability proportional to
+\((\Delta t)^2\) which we assume is very very small.)</p>
+
+<p>We can write what the probability distribution will be at time
+\(t+\Delta t\), \(P(R\mid t+\Delta t)\), as a function of the
+probability distribution at time \(t\), \(P(R\mid t)\), after
+considering all possible single-reaction events that can occur in the
+interval \(\Delta t\).</p>
+
+<p>In general terms, if we have \(R\) reactions (two for our RNA processing question)</p>
+
+\[\begin{aligned}
+P(X\mid t+\Delta t) =
+&amp;\sum_{r=1}^R P(X-\eta_r\mid t)\ P(\mbox{change in}\ \Delta t\ \mbox{due to r})\\
+&amp;+ P(X\mid t)\ P(\mbox{no change in}\ \Delta t),
+\end{aligned}\]
+
+<p>where \(X=(X_1,\ldots,X_n)\) is the total number of molecules of all
+species \(n\) in the system. For each reaction \(r\) and each species
+\(X_i\), \(\eta_r^i\) is the difference between the coefficient in the
+right and left sides of the reaction of species \(X_i\) in reaction
+\(r\).  For instance, \(\eta_b(R) = 1\) for the RNA synthesis (birth)
+reaction, and \(\eta_d(R) = -1\) for the RNA degradation (death)
+reaction.</p>
+
+<p>As for the probabilities of the possible individual events that can
+occur in \(\Delta t\), we have</p>
+
+\[P(\mbox{change in}\ \Delta t\ \mbox{due to r}) = w_r(X-\eta_r) \Delta t\]
+
+\[P(\mbox{no change in}\ \Delta t) = 1 - \sum_r w_r(X)\Delta t\]
+
+<p>where \(w_r(X_1,\ldots,X_n)\) is called the “propensity” of the
+reaction, and it is defined as the probability that the reaction will
+occur per unit time.</p>
+
+<p>In summary, for \(R\) reactions, with reactivities \(w_r(X)\), and
+coefficients \(\eta_r\) for \(1\leq r\leq R\), the recursion equation
+is given by</p>
+
+\[\begin{aligned}
+P(X\mid t+\Delta t) =
+&amp;\sum_{r=1}^R P(X-\eta_r\mid t)\ w_r(X-\eta_r) \Delta t\\
+&amp;+ P(X\mid t)\ \left(1 - \sum_r w_r(X)\Delta t\right),
+\end{aligned}\]
+
+<p>In our case, there is only one species, and two reactions</p>
+
+<ul>
+  <li>X = R, the number of RNA molecules</li>
+  <li>
+    <p>For the birth reaction \(\emptyset \overset{k_1}{\longrightarrow} RNA\)</p>
+
+\[\eta_b = 1\]
+
+\[w_b(R) = k_1\]
+  </li>
+  <li>
+    <p>For the death reaction, \(RNA \overset{k_2}{\longrightarrow}  \emptyset\)</p>
+
+\[\eta_d = -1\]
+
+\[w_d(R) = k_2 R\]
+
+    <p>since any of the existing \(R\) molecules could be  the one to be degraded.</p>
+  </li>
+</ul>
+
+<p>Explicitly, we have</p>
+
+\[\begin{aligned}
+P(R\mid t+\Delta t) &amp;=\\
+&amp;\begin{array}{rl}
+ + k_1\ \Delta t\ P(R-1\mid t)         &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA synthesis reaction}\\
+ + k_2\ (R+1)\ \Delta t\ P(R+1\mid t)  &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA degradation reaction}\\
+ + (1-k_1\Delta t -k_2 R\Delta t)\ P(R\mid t)         &amp; \mbox{no change over}\ \Delta t.
+ \end{array}
+\end{aligned}\]
+
+<p>This is known as the <strong>master equation</strong>.</p>
+
+<p>The process is Markovian as the number of RNA molecules at a given time depends only on the previous
+state, but not on its history.</p>
+
+<p>The master equation can be re-written a</p>
+
+\[\begin{aligned}
+\frac{P(R\mid t+\Delta t) - P(R\mid t)}{\Delta t} &amp;= 
+ + k_1\ P(R-1\mid t)       
+ + k_2\ (R+1)\ P(R+1\mid t)  
+ -(k_1 +k_2 R)\ P(R\mid t).
+\end{aligned}\]
+
+<p>And in the limit of \(\Delta t\) very small,</p>
+
+\[\begin{aligned}
+\frac{d P(R\mid t)}{d t} &amp;= 
+ + k_1\ P(R-1\mid t)       
+ + k_2\ (R+1)\ P(R+1\mid t)  
+ -(k_1 +k_2 R)\ P(R\mid t).
+\end{aligned}\]
+
+<p>If all the rates are constant, this equation can be solved
+analytically. You can find the solution and how to get it <a href="general_birth-death_crawford.pdf">in this
+paper for instance</a>. Here we are
+going to concentrate on</p>
+
+<ul>
+  <li>Finding the deterministic solution in the limit of very large number of particles.</li>
+  <li>Finding stochastic solutions by simulation using the Gillespie algorithm.</li>
+</ul>
+
+<h3 id="the-deterministic-approach-huge-numbers-of-particles">The deterministic approach (huge numbers of particles)</h3>
+
+<p>Some RNAs are very abundant in a cell. When \(R\) is very large,
+changing it by one molecule is insignificant. In that case, it
+makes more sense to look at the dynamics of the averages
+the master equation above.</p>
+
+<p>Multiplying by \(R\) and summing to all possible values of \(R\) in both sides
+of the master equation above, we have</p>
+
+\[\begin{aligned}
+\sum_R R\ \frac{d P(R\mid t)}{d t} &amp;= 
+ + k_1\ \left[ \sum_R R\        P(R-1\mid t)  - \sum_R R \ P(R\mid t)\right]  
+ + k_2\ \left[ \sum_R R\ (R+1)\ P(R+1\mid t)  - \sum_R R^2\ P(R\mid t)\right].
+\end{aligned}\]
+
+<p>A change of variable in the first and third right-hand side terms
+results in,</p>
+
+\[\begin{aligned}
+\sum_R R\ \frac{d P(R\mid t)}{d t} &amp;= 
+ + k_1\ \left[ \sum_R (R+1)\  P(R\mid t)  - \sum_R R\   P(R\mid t)\right]  
+ + k_2\ \left[ \sum_R (R-1)R\ P(R\mid t)  - \sum_R R^2\ P(R\mid t)\right].
+\end{aligned}\]
+
+<p>Which can be simplified to</p>
+
+\[\begin{aligned}
+ \frac{d \sum_R R\ P(R\mid t)}{d t} &amp;= 
+ + k_1\ \sum_R P(R\mid t) 
+ - k_2\ \sum_R R\ P(R\mid t).
+\end{aligned}\]
+
+<p>or</p>
+
+\[\frac{d \langle R\rangle_t}{d t} = k_1 - k_2 \langle R\rangle_t.\]
+
+<p>The solution of this differential equation is</p>
+
+\[\langle R\rangle_t = \langle R\rangle_0\ e^{-k_2 t} + \frac{k_1}{k_2}\left(1-e^{-k_2 t}\right),\]
+
+<p>where \(\langle R\rangle_0\) is the average number of RNA molecules at
+time \(t=0\).</p>
+
+<h3 id="the-steady-state">The steady-state</h3>
+
+<p>If we assume that \(\langle R\rangle_0 = 0\), then</p>
+
+\[\langle R\rangle_t = \frac{k_1}{k_2}\left(1-e^{-k_2 t}\right),\]
+
+<p>which has the steady state solution</p>
+
+\[\langle R\rangle_\infty = \frac{k_1}{k_2}.\]
+
+<h3 id="stochastic-simulation-the-gillespie-algorithm">Stochastic simulation: The Gillespie algorithm</h3>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Figure-Gillespie.png" style="width:300px;" /> <br />
+   Figure 4. The Gillespie algorithm. wr is the propensity of a given
+   reaction r. The sum of all propensities is given by WR.
+   </div>
+ </div>
+
+<p>Having the large-number deterministic solution is useful, but RNA synthesis
+and degradation is mostly stochastic.</p>
+
+<p>Let’s go back to the master equation. If the rates \(k_1\) and \(k_2\) are constants, there is an analytical
+solution. However, oftentimes a simulation is more productive than
+trying to find analytical solutions.</p>
+
+<p>We could use a brute force Monte Carlo simulation as the one we
+described above for the ion channel gating. There is a different and
+much faster and <em>exact</em> algorithm that we can use here, <strong>the
+Gillespie algorithm</strong>.</p>
+
+<p>In the Monte Carlo algorithm I used in Figure 1 for ion channel
+gating, I sampled at all possible time increments \(\Delta t\).  The
+Gillespie algorithm avoids taking a sample at every single time
+increment by estimating the dwell time in which no change is going to
+occur.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Fig-RNApop.png" style="width:300px;" /> <br />
+   Figure 5. Gillespie simulation of 3 time series of an RNA population.
+   In blue, we depict the deterministic
+   solution. In purple, we depict the averages over 200 simulations.
+   </div>
+ </div>
+
+<p>The Gillespie algorithm takes advantage of dwell times, and jumps from
+one dwell time to the next avoiding sampling in at all intermediate
+times. The Gillespie algorithm consists of <strong>two steps</strong>, and it works
+as follows (see Figure 4)</p>
+
+<ul>
+  <li>
+    <p><strong>(1) Sample a dwell time \(\tau\)</strong></p>
+
+    <p>The time \(\tau\) until a reaction occurs with  probability</p>
+
+\[P(\tau) = W_R e^{-W_R \tau},\]
+
+    <p>where \(W_R = \sum_r w_r\) is the sum of the propensities of all reactions.</p>
+
+    <p>This dwell time probability can be calculated similarly to how we did it
+for the dwell times of a gated ion channel. The  probability of dwell time \(\tau\)
+is given by the probability that 
+ the species
+in the reaction \(X=\{X_1,\ldots, X_N\}\) remain unchanged from time
+\(t\) to \(t+\tau\), multiplied by the probability that there is  a change
+immediately after at time \(t+\tau+\Delta t\). That is,</p>
+
+\[\begin{aligned}
+P(\tau) \propto\, &amp;  \,P(X, t+\tau\mid X,t) \\
+\propto\, &amp; \,P(X, t+\tau\mid X,t) \\
+\propto\, &amp; \,P(X, t+\tau\mid X,t+\tau-\Delta t) \\
+\, &amp; \,\times \,P(X, t+\tau-\Delta t\mid X,t+\tau-2\Delta t) \\
+\, &amp; \,\times \ldots\\
+\, &amp; \,\times \,P(X, t+\Delta t\mid X,t)\\
+\propto\, &amp; \,\left(1- \sum_r w_r(X)\Delta t\right)^m\\
+\propto\, &amp; \.\,\left(1-W_R\ \frac{\tau}{m}\right)^m.
+\end{aligned}\]
+
+    <p>In the limit of \(\Delta t\rightarrow 0\) and \(m\rightarrow \infty\)
+such that \(\tau = m\Delta t\) remains constant, we have</p>
+
+\[P(\tau) \propto \lim_{m\rightarrow \infty} \left(1-W_R\ \frac{\tau}{m}\right)^m = e^{-W_R\ \tau}.\]
+
+    <p>Adding the normalization constant \(W_R\) (the instantaneous total
+probability of change), we obtain for the probability of dwell
+times \(\tau\) as,</p>
+
+\[P(\tau) = W_R\, e^{-W_R\ \tau}.\]
+  </li>
+  <li>
+    <p><strong>(2) Sample a reaction to take place in \(\Delta t\).</strong></p>
+
+    <p>Of all possible reactions that could occur in \(\Delta t\), we sample
+them according to their propensity \(w_r\), that is,</p>
+
+\[P(r) = w_r / W_R.\]
+  </li>
+</ul>
+
+<p>The Gillespie algorithm samples <em>exactly</em> the stochastic process described by the master equation.</p>
+
+<p>For  the particular birth-death model of RNA synthesis/degradation, described by
+the reactions</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>r</em></th>
+      <th><em>reaction</em></th>
+      <th>propensity</th>
+      <th>\(\eta(R)\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>\(\emptyset \overset{k_1}{\longrightarrow}  RNA\)</td>
+      <td>\(k_1\)</td>
+      <td>\(+1\)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>\(RNA       \overset{k_2}{\longrightarrow}  \emptyset\)</td>
+      <td>\(k_2 R\)</td>
+      <td>\(-1\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>the Gillespie algorithm works as follows,</p>
+
+<ul>
+  <li>
+    <p>We keep a count of the current number of RNA molecules \(R\) at time \(t\),</p>
+  </li>
+  <li>
+    <p>sample a dwell time \(\tau\) from the exponential distribution</p>
+
+\[P(\tau) = W_R e^{-W_R \tau},\]
+
+    <p>where \(W_R = k_1+k_2 R\).</p>
+
+    <p>Then \(t\) increases to \(t+\tau\)</p>
+  </li>
+  <li>
+    <p>We draw a random number \(0&lt;x\leq 1\) such that</p>
+
+    <ul>
+      <li>If \(x &lt; \frac{k_1}{k_1+k_2 R}\), then \(R\) increases by one molecule, \(R \rightarrow R+1\)</li>
+      <li>otherwise, \(R\) decreases by one molecule, \(R \rightarrow R-1\)</li>
+    </ul>
+  </li>
+  <li>Update the number of RNA molecules</li>
+  <li>Go back to sampling another dwell time until we decide to end the reaction.</li>
+</ul>
+
+<p>I have simulated several stochastic processes using the Gillespie
+algorithm, given in Figure 5.  We observe how the averages converge to
+the limit \(k_1/k_2\). We also observe that as the number of RNA molecules
+increases, the simulations w approach the
+deterministic solution.</p>
+
+<h2 id="gene-regulation">Gene regulation</h2>
+
+<p>This approach to modeling the expression and regulation of a single
+gene is derived from this work: <a href="Thattai_PNAS2001.pdf">“Intrinsic noise in gene
+regulation”</a> by Thattai and Oudenaarden, PNAS
+2001; and <a href="ozbudak_nature2002.pdf">“Regulation of noise in the expression of a single
+gene”</a> by Ozbudak <em>et al.</em>, Nature
+2002.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Fig-RNAburst.png" style="width:300px;" /> <br />
+   Figure 6. Transcriptional bursting as a birth-death process. Genes
+   spontaneously transition from active to inactive with fixed probabilities
+   per unit time: ku (from active to inactive) and kb (from inactive to active).
+   </div>
+ </div>
+
+<h3 id="transcriptional-bursting">Transcriptional bursting</h3>
+
+<p>Here we consider the same RNA processing question but where we also
+model the activation and deactivation of the gene responsible from
+producing the RNA. When the gene is activated (bound to transcription
+factors), RNA molecules are produced with rate \(k_1\), and degraded
+with rate \(k_2\).  When the gene is inactive, RNA molecules can only
+be degraded, but not produced.</p>
+
+<p>Notice that the activation/deactivation part of the problem is identical to the
+open/closing dynamics of a single ion channel.</p>
+
+<p>The reactions (Figure 6) are given by</p>
+
+\[\begin{aligned}
+\mbox{Gene(I)} &amp;\overset{k_b}{\longrightarrow}  \mbox{Gene(A)}        \hspace{20mm}  \mbox{Gene activation}\\
+\mbox{Gene(A)} &amp;\overset{k_u}{\longrightarrow}  \mbox{Gene(I)}        \hspace{21mm}  \mbox{Gene inactivation}\\
+\mbox{Gene(A)} &amp;\overset{k_1}{\longrightarrow}  \mbox{Gene(A)} + RNA  \hspace{5mm}   \mbox{RNA synthesis}\\
+RNA            &amp;\overset{k_2}{\longrightarrow}  \emptyset             \hspace{34mm}  \mbox{RNA degradation}\\
+\end{aligned}\]
+
+<p>Now, the probability distribution has two random variables, whether
+the gene is active (A) or inactive (I), and the number of RNA
+molecules \(R\) present at a given time \(t\).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>r</em></th>
+      <th><em>reaction</em></th>
+      <th>propensity</th>
+      <th>\(\eta(R)\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>\(\mbox{Gene(I)} \overset{k_b}{\longrightarrow}  \mbox{Gene(A)}\)</td>
+      <td>\(k_b\)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>\(\mbox{Gene(A)} \overset{k_u}{\longrightarrow}  \mbox{Gene(I)}\)</td>
+      <td>\(k_u\)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>\(\mbox{Gene(A)} \overset{k_1}{\longrightarrow}  \mbox{Gene(A)} + RNA\)</td>
+      <td>\(k_1\)</td>
+      <td>\(+1\)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>\(RNA            \overset{k_2}{\longrightarrow}  \emptyset\)</td>
+      <td>\(k_2 R\)</td>
+      <td>\(-1\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where \(R\) stands for the number of RNA molecules.</p>
+
+<p>The probability of finding \(R\) RNA molecules at time \(t+\Delta t\)
+in either the active or inactive gene state as a function of the
+probabilities at time \(t\), assuming that only one of the four
+reactions (or none) could have happened are given by</p>
+
+\[\begin{aligned}
+P(A, R\mid t+\Delta t) &amp;=\\
+&amp;\begin{array}{rl}
+ + k_b\ \Delta t\ P(I, R\mid t)           &amp; \mbox{change at}\ \Delta t\ \mbox{do to Gene activation reaction}\\
+ + k_1\ \Delta t\ P(A, R-1\mid t)         &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA synthesis reaction}\\
+ + k_2\ (R+1)\ \Delta t\ P(A, R+1\mid t)  &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA degradation reaction}\\
+ + (1-k_u\Delta t - k_1\Delta t - k_2 R\Delta t)\ P(A, R\mid t)   &amp; \mbox{no change over}\ \Delta t.
+ \end{array}\\
+P(I, R\mid t+\Delta t) &amp;=\\
+&amp;\begin{array}{rl}
+ + k_u\ \Delta t\ P(A, R\mid t)           &amp; \mbox{change at}\ \Delta t\ \mbox{do to Gene inactivation reaction}\\
+ + k_2\ (R+1)\ \Delta t\ P(I, R+1\mid t)  &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA degradation reaction}\\
+ + (1-k_b\Delta t - k_2 R\Delta t)\ P(I, R\mid t)   &amp; \mbox{no change over}\ \Delta t.
+ \end{array}
+\end{aligned}\]
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Fig-ALLpop.png" style="width:300px;" /> <br />
+   Figure 7. Gillespie simulation of the gene regulation process. In yellow a sampled
+   trajectory, in blue the deterministic solution, in purple the averages of 200 samples.
+   </div>
+ </div>
+
+<p>Resulting in the master equations</p>
+
+\[\begin{aligned}
+\frac{d P(A, R\mid t)}{d t}  =
+ &amp;+ k_b\  P(I, R\mid t)           \\
+ &amp;+ k_1\  P(A, R-1\mid t)         \\
+ &amp;+ k_2\ (R+1)\  P(A, R+1\mid t)  \\
+ &amp;- (k_u +  k_1 +  k_2 R)\ P(A,R\mid t).
+\\
+\frac{d P(I, R\mid t)}{d t} =
+&amp;+ k_u\ P(A, R\mid t)           \\
+ &amp;+ k_2\ (R+1)\ P(I, R+1\mid t)  \\
+ &amp;- (k_b +  k_2 R)\ P(I, R\mid t)  
+\end{aligned}\]
+
+<p>This stochastic system describes a well-known characteristic of transcription, known as
+<strong>transcriptional bursting</strong>, which consists on the population of RNA molecules not
+being stable but experiencing large fluctuations as a function of time.</p>
+
+<p>In this model, when the gene activation/deactivation rates are large,
+the gene activates and deactivates fast and the RNA population remains
+quite stable. When the gene activation/deactivation rates are small,
+the system dwells longer times in either activation (deactivation)
+state, and the RNA population disappears and reappears in bursts as
+described in the left panels of Figure 7. Notice that only the
+stochastic simulations, but not the deterministic solution (in blue)
+show the bursting phenomena.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Fig-GeneRegulation.png" style="width:300px;" /> <br />
+   Figure 8. Model that includes regulation of a single gene, transcription and translation,
+   as well as RNA and Protein degradation processes.
+   </div>
+ </div>
+
+<h3 id="rna-and-protein-populations-from-a-regulated-gene">RNA and Protein populations from a regulated gene.</h3>
+
+<p>In this last example, in addition to gene regulation and RNA production and degradation,
+we incorporate translation and protein degradation. The reactions (Figure 8) are given by</p>
+
+\[\begin{aligned}
+\mbox{Gene(I)} &amp;\overset{k_b}{\longrightarrow}  \mbox{Gene(A)}          \hspace{20mm}  \mbox{Gene activation}\\
+\mbox{Gene(A)} &amp;\overset{k_u}{\longrightarrow}  \mbox{Gene(I)}          \hspace{22mm}  \mbox{Gene inactivation}\\
+\mbox{Gene(A)} &amp;\overset{k_1}{\longrightarrow}  \mbox{Gene(A)}  + RNA   \hspace{5mm}   \mbox{RNA synthesis}\\
+RNA            &amp;\overset{k_2}{\longrightarrow}  \emptyset               \hspace{34mm}  \mbox{RNA degradation}\\
+RNA            &amp;\overset{k_3}{\longrightarrow}  RNA + Protein           \hspace{8mm}  \mbox{Protein synthesis}\\
+Protein        &amp;\overset{k_4}{\longrightarrow}  \emptyset               \hspace{34mm}  \mbox{Protein degradation}
+\end{aligned}\]
+
+<p>There are two more reactions in this system (relative to the gene
+regulation + RNA processing above). The table of reactions and
+propensities for gene expression is</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>r</em></th>
+      <th><em>reaction</em></th>
+      <th>propensity</th>
+      <th>\(\eta(R)\)</th>
+      <th>\(\eta(P_r)\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>\(\mbox{Gene(I)} \overset{k_b}{\longrightarrow}  \mbox{Gene(A)}\)</td>
+      <td>\(k_b\)</td>
+      <td>\(0\)</td>
+      <td>\(0\)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>\(\mbox{Gene(A)} \overset{k_u}{\longrightarrow}  \mbox{Gene(I)}\)</td>
+      <td>\(k_u\)</td>
+      <td>\(0\)</td>
+      <td>\(0\)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>\(\mbox{Gene(A)} \overset{k_1}{\longrightarrow}  \mbox{Gene(A)} + RNA\)</td>
+      <td>\(k_1\)</td>
+      <td>\(+1\)</td>
+      <td>\(0\)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>\(RNA            \overset{k_2}{\longrightarrow}  \emptyset\)</td>
+      <td>\(k_2 R\)</td>
+      <td>\(-1\)</td>
+      <td>\(0\)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>\(RNA            \overset{k_3}{\longrightarrow}  RNA + Protein\)</td>
+      <td>\(k_3 R\)</td>
+      <td>\(0\)</td>
+      <td>\(+1\)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>\(Protein        \overset{k_4}{\longrightarrow}  \emptyset\)</td>
+      <td>\(k_4 P_r\)</td>
+      <td>\(0\)</td>
+      <td>\(-1\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where \(R\) and \(Pr\) stand for the number of RNA and Protein molecules
+respectively.</p>
+
+<p>The changes in the joint probability distribution after a small time
+\(\Delta t\) after allowing at most one reaction in that \(\Delta t\)
+interval are given by</p>
+
+\[\begin{aligned}
+P(A, R, Pr\mid t+\Delta t) &amp;=\\
+&amp;\begin{array}{rl}
+ + k_b\ \Delta t\ P(I, R, Pr\mid t)           &amp; \mbox{change at}\ \Delta t\ \mbox{do to Gene activation reaction}\\
+ + k_1\ \Delta t\ P(A, R-1, Pr\mid t)         &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA synthesis reaction}\\
+ + k_2\ (R+1)\ \Delta t\ P(A, R+1, Pr\mid t)  &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA degradation reaction}\\
+ + k_3 R\ \Delta t\ P(A, R, Pr-1\mid t)       &amp; \mbox{change at}\ \Delta t\ \mbox{do to Protein synthesis reaction}\\
+ + k_4\ (Pr+1)\ \Delta t\ P(A, R, Pr+1\mid t) &amp; \mbox{change at}\ \Delta t\ \mbox{do to Protein degradation reaction}\\
+ + (1-k_u\Delta t - k_1\Delta t - k_2 R\Delta t - k_3 R\Delta t - k_4 Pr\Delta t)\ P(A, R, Pr\mid t)   &amp; \mbox{no change over}\ \Delta t.
+ \end{array}\\
+P(I, R, Pr\mid t+\Delta t) &amp;=\\
+&amp;\begin{array}{rl}
+ + k_u\ \Delta t\ P(A, R, Pr\mid t)           &amp; \mbox{change at}\ \Delta t\ \mbox{do to Gene inactivation reaction}\\
+ + k_2\ (R+1)\ \Delta t\ P(I, R+1, Pr\mid t)  &amp; \mbox{change at}\ \Delta t\ \mbox{do to RNA degradation reaction}\\
+ + k_3 R\ \Delta t\ P(I, R, Pr-1\mid t)       &amp; \mbox{change at}\ \Delta t\ \mbox{do to Protein synthesis reaction}\\
+ + k_4\ (Pr+1)\ \Delta t\ P(I, R, Pr+1\mid t) &amp; \mbox{change at}\ \Delta t\ \mbox{do to Protein degradation reaction}\\
+ + (1-k_b\Delta t - k_2 R\Delta t - k_3 R\Delta t - k_4 Pr\Delta t)\ P(I, R, Pr\mid t)   &amp; \mbox{no change over}\ \Delta t.
+ \end{array}
+\end{aligned}\]
+
+<p>Resulting in the master equations</p>
+
+\[\begin{aligned}
+\frac{d P(A, R, Pr\mid t)}{d t}  =
+ &amp;+ k_b\  P(I, R, Pr\mid t) - k_u\ P(A,R,Pr\mid t) \\
+ &amp;+ k_1\ \left[ P(A, R-1, Pr\mid t)          -     P(A, R, Pr\mid t) \right]  \\
+ &amp;+ k_2\ \left[ (R+1)\  P(A, R+1, Pr\mid t)  - R\  P(A, R, Pr\mid t) \right]  \\
+ &amp;+ k_3\ \left[ R\  P(A, R, Pr-1\mid t)      - R\  P(A, R, Pr\mid t) \right]  \\
+ &amp;+ k_4\ \left[ (Pr+1)\  P(A, R, Pr+1\mid t) - Pr\ P(A, R, Pr\mid t) \right],
+ \\
+\\
+\frac{d P(I, R, Pr\mid t)}{d t} =
+ &amp;+ k_u\ P(A, R, Pr\mid t) - k_b P(I, R, Pr\mid t) \\
+ &amp;+ k_2\ \left[ (R+1)\ P(I, R+1, Pr\mid t)  -      P(I, R, Pr\mid t) \right] \\
+ &amp;+ k_3  \left[ R\ P(I, R, Pr-1\mid t)      -  R\  P(I, R, Pr\mid t) \right] \\
+ &amp;+ k_4\ \left[ (Pr+1)\ P(I, R, Pr+1\mid t) -  Pr\ P(I, R, Pr\mid t) \right].
+\end{aligned}\]
+
+<p>These differential equations can be solved numerically using the
+Gillespie algorithm, which I have done (and you will do in the
+<a href="homework.html">homework</a> and shown results for different parameters
+in Figure 7. In this figure, I compare several stochastic simulations
+using the Gillespie algorithm, with the averages of a large number
+(200) of such simulations (in purple), and with the deterministic
+solution (in blue).</p>
+
+<p>The conditions under which there is transcriptional bursting (left
+middle panel in Figure 7), also affect the production of proteins in a
+similar way (left bottom panel of Figure 7).</p>
+
+<p>The continuous-time differential equations can be obtained with a bit more of
+algebra the <a href="w10-lecture.html#the-deterministic-approach-huge-numbers-of-particles">same
+way</a>
+we obtained those of the RNA population alone by taking averages over populations.</p>
+
+<p>The continuous-time differential equations and are given by</p>
+
+\[\begin{aligned}
+\frac{d \langle \mbox{Gene}\rangle_t}{d t}  &amp;= k_b - (k_b+k_u)\ \langle \mbox{Gene}\rangle_t \\
+\frac{d \langle           R\rangle_t}{d t}  &amp;= k_1\ \langle \mbox{Gene}\rangle_t -  k_2\ \langle R\rangle_t \\
+\frac{d \langle           P\rangle_t}{d t}  &amp;= k_3\ \langle R\rangle_t -  k_4\ \langle P\rangle_t.
+\end{aligned}\]
+
+<p>In next week’s lectures, we will see how to obtain these continuous
+equations for this or any set of reactions, and how to obtain
+numerical solutions for those equations.  The continuous solutions are
+depicted in Figure 7 in blue, and correspond to the averages of many individual
+stochastic trajectories.</p>
+
+<p>From the deterministic equations, one can see that the steady is characterized by</p>
+
+\[\begin{aligned}
+\langle \mbox{Gene}\rangle_{\infty} &amp;= \frac{k_b}{k_b+k_u}\\
+\langle R \rangle_{\infty} = \langle \mbox{Gene}\rangle_{\infty}\ \frac{k_1}{k_2} &amp;= \frac{k_b}{k_b+k_u}\ \frac{k_1}{k_2} \\
+\langle Pr \rangle_{\infty} = \langle R \rangle_{\infty}\ \frac{k_3}{k_4} &amp;= \frac{k_b}{k_b+k_u}\ \frac{k_1 k_3}{k_2 k_4}\\
+\end{aligned}\]
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

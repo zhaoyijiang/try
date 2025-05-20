@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#a-2d-diffusion-reaction-process" id="markdown-toc-a-2d-diffusion-reaction-process">A 2D Diffusion-Reaction process</a></li>
+  <li><a href="#the-gray-scott-model" id="markdown-toc-the-gray-scott-model">The Gray-Scott model</a>    <ul>
+      <li><a href="#the-gray-scott-continuous-differential-equations" id="markdown-toc-the-gray-scott-continuous-differential-equations">The Gray-Scott continuous differential equations</a></li>
+      <li><a href="#the-laplacian-operator-discrete-approximation" id="markdown-toc-the-laplacian-operator-discrete-approximation">The Laplacian operator: discrete approximation</a></li>
+    </ul>
+  </li>
+  <li><a href="#patterns" id="markdown-toc-patterns">Patterns</a></li>
+  <li><a href="#biological-validation" id="markdown-toc-biological-validation">Biological Validation</a></li>
+  <li><a href="#turing-instability-for-a-two-component-system" id="markdown-toc-turing-instability-for-a-two-component-system">Turing instability for a two-component system</a>    <ul>
+      <li><a href="#derivation-of-conditions-for-turing-instability-for-two-reacting-diffusing-chemicals" id="markdown-toc-derivation-of-conditions-for-turing-instability-for-two-reacting-diffusing-chemicals">Derivation of conditions for Turing instability for two reacting-diffusing chemicals</a></li>
+    </ul>
+  </li>
+  <li><a href="#epilogue" id="markdown-toc-epilogue">Epilogue</a></li>
+</ul>
+
+<h1 class="no_toc" id="week-13">week 13:</h1>
+
+<h1 class="no_toc" id="pattern-formation-and-turing-instability">Pattern formation and Turing instability</h1>
+
+<p>Alan Turing had the brilliant intuition (brilliant because it was
+against common thinking, yet extremely simple) that a reaction at a
+stable steady state solution, could be destabilized by an added
+diffusion process and ultimately produce periodic spatial patterns.</p>
+
+<p>The original Turing work is <a href="turing.pdf">“On the chemical basis of
+morphogenesis”</a>.  A good recent source is this
+<a href="http://www.karlsims.com/rd.html">“Reaction-diffusion”</a> tutorial by
+Karl Sims.  Another reference is the report <a href="reaction-diffusion.pdf">“The Reaction-Diffusion
+Equations”</a>.</p>
+
+<p>There is even a <a href="http://www.karlsims.com/rd-exhibit.html">Reaction-Diffusion media
+wall</a> at the Boston Museum of
+Science!</p>
+
+<h2 id="a-2d-diffusion-reaction-process">A 2D Diffusion-Reaction process</h2>
+
+<p>Consider a system with species \(X_1\ldots X_N\), in two dimensions
+\((x,y)\),</p>
+
+<ul>
+  <li>
+    <p>A diffusion process is characterized by the Fick equations</p>
+
+\[\begin{aligned}
+\frac{\delta X_1(x, y, t)}{\delta t} &amp;= D_{X_1}\ \nabla^2 X_1(x,y,t) \\
+&amp;\vdots\\
+\frac{\delta X_N(x, y, t)}{\delta t} &amp;= D_{X_N}\ \nabla^2 X_N(x,y,t) 
+\end{aligned}\]
+
+    <p>where \(D_{X_i}\) (for \(1\leq i \leq N\)) are the diffusions
+constants with units of \([distance]^2/[time]\).</p>
+
+    <p>The Laplace operator \(\nabla^2\) (also referred to as \(\Delta\))
+for a function \(X(x,y,t)\) that depends on \(x\)
+and \(y\) and possibly other variables (like time \(t\) in this
+case) stands for</p>
+
+\[\nabla^2 X(x,y,t) = \frac{\delta^2 X(x,y,t)}{\delta^2 x} + \frac{\delta^2 X(x,y,t)}{\delta^2 y}.\]
+  </li>
+  <li>
+    <p>A reaction process is characterized by the deterministic equations</p>
+
+\[\begin{aligned}
+\frac{\delta X_1(x, y, t)}{\delta t} &amp;= F_1(X_1,\ldots, X_N; k)\\ 
+&amp;\vdots\\
+\frac{\delta X_N(x, y, t)}{\delta t} &amp;= F_N(X_1,\ldots, X_N; k)\\ 
+\end{aligned}\]
+
+    <p>where the functions \(F_i(X_1,\ldots, X_N; k)\)  depend on
+the species, and a number of rate constants that we designate
+generically with \(k\).</p>
+  </li>
+</ul>
+
+<p>Combining the two sources of variability together for species \(X_i\)
+result in the diffusion-reaction equation</p>
+
+\[\begin{aligned}
+  \frac{\delta X_i(x, y, t)}{\delta t}
+  &amp;= D_{X_i}\ \nabla^2 X_i(x,y,t)
+ + F_i(X_1,\ldots, X_N; k).
+  \end{aligned}\]
+
+<h2 id="the-gray-scott-model">The Gray-Scott model</h2>
+
+<p>The Gray-Scott model is a 2D model of diffusion-reaction that can
+produce interesting patterns.  Two species \(A\) and \(B\) interact
+such that 2 molecules of \(B\) interact with one molecule of \(A\) in
+order to transform \(A\) into a \(B\) molecule (see Figure 1),</p>
+
+\[A+ 2 B\overset{k}{\longrightarrow} 3 B.\]
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Gray-Scott.png" style="width:300px;" /> <br />
+     Figure 1. The Gray-Scott diffusion-reaction model. Adapted
+     from K. Sims (http://www.karlsims.com/rd.html).
+   </div>
+</div>
+
+<p>The \(A\) molecules are produced and destroyed with the same rate
+constant (\(f\)), that is,</p>
+
+\[\emptyset \overset{f}{\longrightarrow} A \overset{f}{\longrightarrow} \emptyset.\]
+
+<p>While \(B\) can only be produced by the above
+reactions involving 2 \(B\)s and one \(A\), \(B\) decays on its own
+with a rate (\(f+g\)) larger than the one controlling the decay of
+\(A\).</p>
+
+\[B \overset{f+g}{\longrightarrow} \emptyset.\]
+
+<p>The \(A\) and \(B\) molecules are also subject to diffusion (in both
+directions \(x\) and \(y\)) with diffusion constants \(D_A\) and
+\(D_B\) respectively. The Gray-Scott model assumes that molecules of
+species \(A\) diffuse faster that those of \(B\) (\(D_A&gt;D_B\)).</p>
+
+<h3 id="the-gray-scott-continuous-differential-equations">The Gray-Scott continuous differential equations</h3>
+
+<p>The 2D reaction equation for the Gray-Scott model are</p>
+
+\[\begin{aligned}
+\frac{\delta A(x, y, t)}{\delta t} &amp;= D_A\ \nabla^2 A(x,y,t) - k\ A B^2 + f\ (1-A)\\ 
+\frac{\delta B(x, y, t)}{\delta t} &amp;= D_B\ \nabla^2 B(x,y,t) + k\ A B^2 - (f+g)\ B
+\end{aligned}\]
+
+<p>We cannot solve these equations analytically, but we can do a
+simulation using discrete time \(\Delta t\) and distance \(\Delta x\)
+and \(\Delta y\) intervals.</p>
+
+<p>In discrete form, using the Euler algorithm, we can write</p>
+
+\[\begin{aligned}
+A(x, y, t+\Delta t) &amp;= A(x, y, t) + \Delta t\ \left[ D_A\ \nabla^2 A(x,y,t) - k\ A(x,y,t) B^2(x,y,t) + f - f\ A(x,y,t)\right]\\ 
+B(x, y, t+\Delta t) &amp;= B(x, y, t) + \Delta t\ \left[ D_B\ \nabla^2 B(x,y,t) + k\ A(x,y,t) B^2(x,y,t) - (f+g)\ B(x,y,t)\right]
+\end{aligned}\]
+
+<p>What about the Laplacian term?</p>
+
+<h3 id="the-laplacian-operator-discrete-approximation">The Laplacian operator: discrete approximation</h3>
+
+<p>The laplacian operator involves the second derivative respect to the space coordinates,</p>
+
+\[\begin{aligned}
+\nabla^2 A(x, y, t) &amp;= \frac{\delta^2 A(x,y,t)}{\delta x^2} + \frac{\delta^2 A(x,y,t)}{\delta y^2}\\ 
+\nabla^2 B(x, y, t) &amp;= \frac{\delta^2 B(x,y,t)}{\delta x^2} + \frac{\delta^2 B(x,y,t)}{\delta y^2}
+\end{aligned}\]
+
+<p>In discrete space, we can write the derivative of a function as</p>
+
+\[\frac{\delta^2 A(x,y,t)}{\delta x^2} \approx \frac{ A(x+\Delta x,y,t) + A(x-\Delta x,y,t) - 2A(x,y,t)}{(\Delta x)^2}\]
+
+<p>thus and if we assume \(\Delta x = \Delta y = 1\)</p>
+
+\[\nabla^2 A(x, y, t) \approx \left[A(x+1,y,t) + A(x-1,y,t) + A(x,y+1,t) + A(x,y-1,t) - 4 A(x,y,t)\right].\]
+
+<p>Which can be re-written, introducing a \(3\times 3\) <em>kernel</em> matrix</p>
+
+\[K =\left(
+\begin{array}{ccc}
+0    &amp; 1 &amp; 0\\
+1 &amp; -4 &amp; 1\\
+0    &amp; 1 &amp; 0
+\end{array}
+\right),\]
+
+<p>as</p>
+
+\[\nabla^2 A(x, y, t) \approx \sum_{i=0}^{2}\sum_{j=0}^{2} A(x+i-1,y+j-1,t)\ K(i,j).\]
+
+<p>This is called a <em>convolution</em>. In the image analysis <em>lingo</em>, this would be referred to as
+“approximating the laplacian function by a \(3\times 3\) convolution”.</p>
+
+<p>In image analysis, they usual use convolution kernels that smooth the
+derivative, which result in image reconstruction with softer edges. A
+typical kernel, which is the one I am using in this simulation is</p>
+
+\[K =\left(
+\begin{array}{ccc}
+0.25 &amp;  0.5 &amp; 0.25\\
+0.5  &amp; -3 &amp; 0.5\\
+0.25 &amp;  0.5 &amp; 0.25
+\end{array}
+\right).\]
+
+<p>You can find functions that perform this convolution for matlab and
+others, yet is it just a collection of sums, so it is easy to
+implement from scratch.</p>
+
+<h2 id="patterns">Patterns</h2>
+
+<p>Now, we are ready to simulate the diffusion-reaction equations of the Gray-Scott model.
+At a given time \(t\), we know the concentrations of both species for all points of the square,</p>
+
+\[A = A(x,y,t)\\
+B = B(x,y,t)\]
+
+<p>then, we can calculate the concentrations for all points at time \(t+\Delta t\),</p>
+
+\[A^\prime = A(x,y,t+\Delta t)\\
+B^\prime = B(x,y,t+\Delta t)\]
+
+<p>using the equations</p>
+
+\[\begin{aligned}
+A^\prime &amp;= A + \Delta t\ \left[ D_A\ \nabla^2 A - k\ A B^2 + f -f\ A\right]\\ 
+B^\prime &amp;= B + \Delta t\ \left[ D_B\ \nabla^2 B + k\ A B^2 - (f+g)\ B\right]
+\end{aligned}\]
+
+<p>The parameters I have used in the simulation presented in Figure 2 are</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>Parameter</em></th>
+      <th><em>Value</em></th>
+      <th><em>Description</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(k\)</td>
+      <td>\(1.0\)</td>
+      <td>rate of producing species \(B\)</td>
+    </tr>
+    <tr>
+      <td>\(f\)</td>
+      <td>\(0.033\)</td>
+      <td>birth (and death) rate for species \(A\)</td>
+    </tr>
+    <tr>
+      <td>\(g\)</td>
+      <td>\(0.062\)</td>
+      <td>\(g+f\) is the death rate for species \(B\)</td>
+    </tr>
+    <tr>
+      <td>\(D_A\)</td>
+      <td>\(1.0\)</td>
+      <td>diffusion coefficient for species \(A\)</td>
+    </tr>
+    <tr>
+      <td>\(D_B\)</td>
+      <td>\(0.2\)</td>
+      <td>diffusion coefficient for species \(B\)</td>
+    </tr>
+    <tr>
+      <td>\(T\)</td>
+      <td>\(3000\)</td>
+      <td>total time sampled</td>
+    </tr>
+    <tr>
+      <td>\(\Delta t\)</td>
+      <td>\(1\)</td>
+      <td>time increment</td>
+    </tr>
+    <tr>
+      <td>\(L\)</td>
+      <td>\(100\)</td>
+      <td>total distance  sampled in each direction</td>
+    </tr>
+    <tr>
+      <td>\(\Delta x\)</td>
+      <td>\(1\)</td>
+      <td>space increment (both in x and y directions)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We assume that we have a lattice with \(100\times 100\) points. At
+each point \((x,y)\) and at each time \(t\), there is one
+concentration for each species \(A(x,y,t)\) and \(B(x,y,t)\).</p>
+
+<p>The initial conditions (Figure 2 at \(t=0\)) correspond to having
+\(A=1\) everywhere in the square (in blue), and \(B=0\) everywhere in
+the square expect for four small (magenta) areas in which
+\(B=1\). Using these parameters, I obtained the patterns in Figure 2.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Gray-Scott_patterns.png" style="width:300px;" /> <br />
+     Figure 2. Patterns generated with the Gray-Scott diffusion-reaction model as a function of
+     time, using the parameters provided in the text. We depict 
+     A molecules in cyan, and B molecules in magenta.
+   </div>
+</div>
+
+<p>My images (Figure 2) are not as beautiful as <a href="http://www.karlsims.com/rd-images.html">Karl
+Sims</a>’s are, but 
+definitely patterns have emerged!
+Changing the values of the parameters, you can obtain many different patterns.</p>
+
+<p>There are ways of making the pattern more complicated:</p>
+
+<ul>
+  <li>Make diffusion occur with different constant in different directions.</li>
+  <li>Change some the birth/death parameters as a function of the position in the plane.</li>
+  <li>Speed up or down the reaction rate.</li>
+</ul>
+
+<h2 id="biological-validation">Biological Validation</h2>
+
+<p>Turing’s work was purely theoretical.  You may want to check out this
+work by Fraden &amp; Epstein at Brandais University, <a href="http://www.brandeis.edu/now/2014/march/turingpnas.html">“Turing theory of
+morphogenesis
+validated”</a>,
+where they observed experimentally all patterns that Turing predicted,
+plus seven new ones! here is the actual <a href="pnas11115.pdf">paper</a></p>
+
+<h2 id="turing-instability-for-a-two-component-system">Turing instability for a two-component system</h2>
+
+<p>Consider a general reaction with two components \(A\) and \(B\), as in the
+case of the Gray-Scott model. Let’s consider which are the conditions
+under which a stable set of reactions between \(A\) and \(B\), if
+subject to diffusion would become instable and form patterns.  This
+phenomenon is referred to as a <strong>Turing bifurcation</strong> or <strong>Turing
+instability</strong>.</p>
+
+<p>The diffusion-reaction system has the general form</p>
+
+\[\begin{aligned}
+\frac{\delta A(x, y, t)}{\delta t} &amp;= D_A\ \nabla^2 A(x,y,t) + F_A(A,B)\\ 
+\frac{\delta B(x, y, t)}{\delta t} &amp;= D_B\ \nabla^2 B(x,y,t) + F_B(A,B)
+\end{aligned}\]
+
+<p>Now consider a steady-state solution \(A_0(x,y,t)\) and \(B_0(x,y,t)\) of the reaction-only system</p>
+
+\[\begin{aligned}
+\frac{\delta A(x, y, t)}{\delta t} &amp;= F_A(A,B)\\ 
+\frac{\delta B(x, y, t)}{\delta t} &amp;= F_B(A,B)
+\end{aligned}\]
+
+<p>that is, the steady-state solution is characterized by</p>
+
+\[\begin{aligned}
+F_A(A^\ast,B^\ast) = 0\\ 
+F_B(A^\ast,B^\ast) = 0
+\end{aligned}\]
+
+<p>this solution \((A^\ast, B^\ast)\) is stable if the Jacobian matrix \(J\)
+defined by</p>
+
+\[J =
+\left(
+\begin{array}{cc}
+\left.\frac{\delta F_A}{\delta A}\right|_\ast &amp; \left.\frac{\delta F_A}{\delta B}\right|_\ast\\
+\left.\frac{\delta F_B}{\delta A}\right|_\ast &amp; \left.\frac{\delta F_B}{\delta B}\right|_\ast
+\end{array}
+\right)
+\equiv
+\left(
+\begin{array}{cc}
+F^\ast_{AA}&amp;F^\ast_{AB} \\
+F^\ast_{BA}&amp;F^\ast_{BB} 
+\end{array}
+\right)\]
+
+<p>is such that the real part of the eigenvalues is negative.</p>
+
+<p>For a \(2\times 2\) matrix, that is equivalent to the two conditions</p>
+
+<ul>
+  <li>The trace in negative</li>
+</ul>
+
+\[Tr(J) = F^\ast_{AA} + F^\ast_{BB} &lt; 0\]
+
+<ul>
+  <li>And the determinant is positive</li>
+</ul>
+
+\[det(J) = F^\ast_{AA} F^\ast_{BB} - F^\ast_{AB} F^\ast_{BA} &gt; 0\]
+
+<p>Remember that we want to find steady solutions of the reaction that
+become unstable due to the diffusion process. Instability of the
+diffusion-reaction process for a 2-component system requires two
+additional conditions involving the diffusion coefficients</p>
+
+<p>*</p>
+
+\[D_B F^\ast_{AA} + D_A F^\ast_{BB} &gt; 0\]
+
+<p>*</p>
+
+\[D_B F^\ast_{AA} + D_A F^\ast_{BB} &gt; 2 \sqrt{D_A D_B (F^\ast_{AA} F^\ast_{BB} - F^\ast_{AB} F^\ast_{BA})}\]
+
+<p>Derivation of these results can be found in this tutorial <a href="cross_turing.pdf">“Notes on
+turing instability and chemical instabilities”</a> by
+Michael Cross (page 6), which I reproduce below.</p>
+
+<h3 id="derivation-of-conditions-for-turing-instability-for-two-reacting-diffusing-chemicals">Derivation of conditions for Turing instability for two reacting-diffusing chemicals</h3>
+
+<p>Turner’s discovery was that a spatially uniform and stable state (in
+the absence of diffusion) can become unstable due to non uniformities
+appearing as a result of diffusion, and patterns start to appear.</p>
+
+<p><strong>When will a diffusion-reaction start producing patterns?</strong></p>
+
+<p>For two reactants \(A\) and \(B\), subject to a reaction-diffusion process, their 
+concentrations depending on time and space \(A(x,y,t)\) and \(B(x,y,t)\) satisfy
+some equations</p>
+
+\[\begin{aligned}
+ \frac{\delta A(x, y, t)}{\delta t} &amp;= F_A(A,B) + D_A\ \nabla^2 A(x,y,t)\\ 
+ \frac{\delta B(x, y, t)}{\delta t} &amp;= F_B(A,B) + D_B\ \nabla^2 B(x,y,t).
+\end{aligned}\]
+
+<p>We assume that we have found some stable solution of the non-diffusion process \(A^\ast\) and \(B^\ast\)
+which satisfy conditions</p>
+
+\[\begin{aligned}
+F_A(A^\ast,B^\ast) = 0\\ 
+F_B(A^\ast,B^\ast) = 0.
+\end{aligned}\]
+
+<p>Let’s now linearize around those stable solutions</p>
+
+\[\begin{aligned}
+F_A(A,B)  \approx \left.\frac{\delta F_A}{\delta A}\right|_{\ast}\,(A-A^\ast) + \left.\frac{\delta F_A}{\delta B}\right|_{\ast}\,(B-B^\ast) \\ 
+F_B(A,B)  \approx \left.\frac{\delta F_B}{\delta A}\right|_{\ast}\,(A-A^\ast) + \left.\frac{\delta F_B}{\delta B}\right|_{\ast}\,(B-B^\ast).
+\end{aligned}\]
+
+<p>Introducing,</p>
+
+\[\begin{aligned}
+F^\ast_{AA} = \left.\frac{\delta F_A}{\delta A}\right|_{\ast} &amp; \quad\quad F^\ast_{AB} = \left.\frac{\delta F_A}{\delta B}\right|_{\ast}\\
+F^\ast_{BA} = \left.\frac{\delta F_B}{\delta A}\right|_{\ast} &amp; \quad\quad F^\ast_{BB} = \left.\frac{\delta F_B}{\delta B}\right|_{\ast}\\
+\end{aligned}\]
+
+<p>we can write,</p>
+
+\[\begin{aligned}
+\frac{\delta A(x, y, t)}{\delta t} &amp;= F^\ast_{AA}\ (A-A^\ast) + F^\ast_{AB}\ (B-B^\ast) + D_A\ \nabla^2 A(x,y,t)\\ 
+\frac{\delta B(x, y, t)}{\delta t} &amp;= F^\ast_{BA}\ (A-A^\ast) + F^\ast_{BB}\ (B-B^\ast) + D_B\ \nabla^2 B(x,y,t).
+\end{aligned}\]
+
+<p>Introducing</p>
+
+\[\begin{aligned}
+a(x,y,t) = A(x,y,t) - A^\ast\\ 
+b(x,y,t) = B(x,y,t) - B^\ast,
+\end{aligned}\]
+
+<p>we have the linearized equations</p>
+
+\[\begin{aligned}
+\frac{\delta a(x, y, t)}{\delta t} &amp;= F^\ast_{AA}\ a(x,y,t) + F^\ast_{AB}\ b(x,y,t) + D_A\ \nabla^2 a(x,y,t)\\ 
+\frac{\delta b(x, y, t)}{\delta t} &amp;= F^\ast_{BA}\ a(x,y,t) + F^\ast_{BB}\ b(x,y,t) + D_B\ \nabla^2 b(x,y,t).
+\end{aligned}\]
+
+<p>Introducing vectorial notation</p>
+
+\[\begin{aligned}
+\left(
+\begin{array}{c}
+\frac{\delta a}{\delta t} \\
+\frac{\delta b}{\delta t} 
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+ F^\ast_{AA} &amp; F^\ast_{AB}\\
+ F^\ast_{BA} &amp; F^\ast_{BB}
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+a \\
+b 
+\end{array}
+\right)
++
+\left(
+\begin{array}{cc}
+ D_A &amp; 0\\
+ 0   &amp; D_B
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+\nabla^2 a \\
+\nabla^2 b
+\end{array}
+\right)
+\end{aligned}\]
+
+<p>and</p>
+
+\[\begin{aligned}
+\mathbf{u} =
+\left(
+\begin{array}{c}
+a \\
+b 
+\end{array}
+\right)
+\end{aligned}\]
+
+<p>we have the linearized equations in vectorial form,</p>
+
+\[\begin{aligned}
+\frac{\delta \mathbf{u}}{\delta t}
+=
+\left(
+\begin{array}{cc}
+ F^\ast_{AA} &amp; F^\ast_{AB}\\
+ F^\ast_{BA} &amp; F^\ast_{BB}
+\end{array}
+\right)
+\mathbf{u}
++
+\left(
+\begin{array}{cc}
+ D_A &amp; 0\\
+ 0   &amp; D_B
+\end{array}
+\right)
+\nabla^2 \mathbf{u}.
+\end{aligned}\]
+
+<p>We can make an ansatz that \(\mathbf{u}(x,y,t)\) has a constant term \(\mathbf{u_0}\), and such that the
+dependencies in time and space are given by</p>
+
+\[\mathbf{u}(x,y,t) = \mathbf{u_0}\ e^{\alpha\ t} e^{i\beta\ (x+y)} = \left(
+\begin{array}{c}
+a_0\ e^{\alpha\ t} e^{i\beta\ (x+y)}\\
+b_0\ e^{\alpha\ t} e^{i\beta\ (x+y)}
+\end{array}
+\right),\]
+
+<p>for some positive constants \(\alpha\) and \(\beta\).</p>
+
+<p>Notice that we are assuming that both reactants \(A\) and \(B\) have
+the same dependencies in time and space.  This is an important
+simplification for the results that we will find.</p>
+
+<p>Under these assumptions for \(\mathbf{u}(x,y,t)\), the linear differential equation becomes</p>
+
+\[\begin{aligned}
+\alpha\ \mathbf{u} =
+\left(
+\begin{array}{cc}
+ F^\ast_{AA} &amp; F^\ast_{AB}\\
+ F^\ast_{BA} &amp; F^\ast_{BB}
+\end{array}
+\right)
+\mathbf{u}
+-
+\beta^2
+\left(
+\begin{array}{cc}
+ D_A &amp; 0\\
+ 0   &amp; D_B
+\end{array}
+\right)
+\mathbf{u}.
+\end{aligned}\]
+
+<p>or</p>
+
+\[\begin{aligned}
+\left(
+\begin{array}{cc}
+ F^\ast_{AA}-\beta^2 D_A &amp; F^\ast_{AB}\\
+ F^\ast_{BA} &amp; F^\ast_{BB}-\beta^2 D_B
+\end{array}
+\right)
+\mathbf{u}
+=
+\alpha\ \mathbf{u}.
+\end{aligned}\]
+
+<p>And since this results has to be true for all values of \(t\) and \(x,y\), we have</p>
+
+\[\begin{aligned}
+\left(
+\begin{array}{cc}
+ F^\ast_{AA}-\beta^2 D_A &amp; F^\ast_{AB}\\
+ F^\ast_{BA} &amp; F^\ast_{BB}-\beta^2 D_B
+\end{array}
+\right)
+\mathbf{u_0}
+=
+\alpha\ \mathbf{u_0}.
+\end{aligned}\]
+
+<p>This has now become a 2D eigenvalue problem for the 2D matrix</p>
+
+\[M = \left(
+\begin{array}{cc}
+ F^\ast_{AA}-\beta^2 D_A &amp; F^\ast_{AB}\\
+ F^\ast_{BA} &amp; F^\ast_{BB}-\beta^2 D_B
+\end{array}
+\right).\]
+
+<p>\(\mathbf{u_0}\) has two solutions, which are the two eigenvectors of
+\(M\) corresponding to its two eigenvalues</p>
+
+\[\alpha_{1,2} = \frac{Tr(M) \pm \sqrt{Tr^{2}(M) - 4 \det(M)}}{2},\]
+
+<p>where the trace of \(M\) is</p>
+
+\[Tr(M) = F^\ast_{AA} + F^\ast_{BB} - \beta^2\ (D_A+D_B),\]
+
+<p>and the determinant of \(M\) is given by</p>
+
+\[det(M) = (F^\ast_{AA} - \beta^2 D_A)\ (F^\ast_{BB} - \beta^2 D_B) - F^\ast_{AB}\ F^\ast_{BA}.\]
+
+<p>The eigen values \(\alpha_{1,2}\) are the two solutions to the quadratic equation in \(\alpha\) resulting from
+imposing the condition</p>
+
+\[det(M-\alpha I) = det  \left(
+\begin{array}{cc}
+ F^\ast_{AA}-\beta^2 D_A - \alpha &amp; F^\ast_{AB} \\
+ F^\ast_{BA} &amp; F^\ast_{BB}-\beta^2 D_B-\alpha
+\end{array}
+\right)
+= 0.\]
+
+<p>For a solution to be stable we need two conditions</p>
+
+<ul>
+  <li>
+    <p>(a) The solution is real, which requires \(det(M) &gt; 0\)</p>
+  </li>
+  <li>
+    <p>(b) The solution is  negative, which requires \(Tr(M) &lt; 0\).</p>
+  </li>
+</ul>
+
+<p>Remember that the Turing instability occurs when</p>
+
+<ul>
+  <li>
+    <p>(1) There is a stable solution in the absence of diffusion.</p>
+  </li>
+  <li>
+    <p>(2) The solution becomes instable when diffusion is added.</p>
+  </li>
+</ul>
+
+<p>That is</p>
+
+<ul>
+  <li>
+    <p>(1) In the absence of diffusion, we have \(M_0 = M(\beta=0)\), such that</p>
+
+\[Tr(M_0) = F^\ast_{AA} + F^\ast_{BB},\]
+
+    <p>and</p>
+
+\[det(M_0) = F^\ast_{AA}\ F^\ast_{BB}  - F^\ast_{AB}\ F^\ast_{BA}.\]
+
+    <p>And stability requires</p>
+
+    <div class="boxed">
+   * (a) $$F^\ast_{AA} + F^\ast_{BB} &lt; 0$$
+
+   * (b) $$F^\ast_{AA}\ F^\ast_{BB}  - F^\ast_{AB}\ F^\ast_{BA} &gt;0$$
+   </div>
+  </li>
+  <li>
+    <p>(2) When we add diffusion, we want the stability condition to break.</p>
+
+    <p>The modified trace is</p>
+
+\[Tr(M) = Tr(M_0) - \beta^2 (D_A+D_B),\]
+
+    <p>so \(Tr(M)\) is negative as long as \(T(M_0)\) is negative.</p>
+
+    <p>While \(det(M_0) &gt; 0\), diffusion has to be capable of achieving 
+ the condition \(det(M) &lt; 0\) in order to produce instability.</p>
+
+    <p>Notice that</p>
+
+\[det(M) = det(M_0) -\beta^2\ (D_B F^\ast_{AA} + D_A F^\ast_{BB}) + \beta^4\ D_A D_B.\]
+
+    <p>The \(det(M)\) is a parabola as a function of \(\beta^2\), and it is positive for \(\beta = 0\).</p>
+
+    <p>The instability condition will be achieved if the minimum of the parabola is negative.</p>
+
+    <p>The minimum of the parabola corresponds to</p>
+
+\[\beta^2_{min} = \frac{D_B F^\ast_{AA} + D_A F^\ast_{BB}}{2 D_A D_B},\]
+
+    <p>and the value of \(det(M)\) at the minimum is</p>
+
+\[det(M)_{min} = det(M_0) -\frac{(D_B F^\ast_{AA} + D_A F^\ast_{BB})^2}{4 D_A D_B}.\]
+
+    <p>The \(det(M)\) being negative at the bottom of the parabola then requires</p>
+
+    <ul>
+      <li>\(\beta^2_{min} &gt; 0\) or</li>
+    </ul>
+
+    <div class="boxed">
+     $$
+ D_B F^\ast_{AA} + D_A F^\ast_{BB} &gt; 0.
+ $$
+ </div>
+
+    <ul>
+      <li>
+        <p>\(det(M)_{min} &lt; 0\) or</p>
+
+\[det(M_0) &lt; \frac{(D_B F^\ast_{AA} + D_A F^\ast_{BB})^2}{4 D_A D_B},\]
+
+        <p>which can be re-written as</p>
+
+\[4 D_A D_B (F^\ast_{AA} F^\ast_{BB} - F^\ast_{AB} F^\ast_{BA}) &lt; (D_B F^\ast_{AA} + D_A F^\ast_{BB})^2,\]
+
+        <p>or</p>
+      </li>
+    </ul>
+
+    <div class="boxed">
+     $$
+ 2 \sqrt{D_A D_B (F^\ast_{AA} F^\ast_{BB} - F^\ast_{AB} F^\ast_{BA})} &lt; D_B F^\ast_{AA} + D_A F^\ast_{BB}.
+ $$
+   </div>
+  </li>
+</ul>
+
+<p>Thus, we have justified the four conditions we stated without proof in the <a href="#turing-instability-for-a-two-component-system">previous section</a>.</p>
+
+<h2 id="epilogue">Epilogue</h2>
+
+<p>Taking a quote from Turing’s paper on <a href="turing.pdf">morphogenesis</a>, and
+transferring it to our situation,</p>
+
+<p><em>“It must be admitted that the biological examples which it has been
+possible to give in the present [<strong>course</strong>] are very limited. This
+can be ascribed quite simply to the fact that biological phenomena are
+usually very complicated. Taking this in combination with the
+relatively elementary mathematics used in this [course] one could
+hardly expect to find that many observed biological phenomena would be
+covered. [I hope], however, that the imaginary biological systems
+which have been treated, and the principles which have been discussed,
+should be of some help in interpreting real biological forms.”</em></p>
+
+<p>This could directly apply to this course. With the difference that
+Turing’s “elementary mathematics” are much further advanced than mine.</p>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

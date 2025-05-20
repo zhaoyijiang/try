@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#one-dimensional-random-walks-discrete-space-and-time" id="markdown-toc-one-dimensional-random-walks-discrete-space-and-time">One dimensional Random Walks (discrete space and time)</a>    <ul>
+      <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+      <li><a href="#the-probability-distribution" id="markdown-toc-the-probability-distribution">The probability distribution</a></li>
+      <li><a href="#properties" id="markdown-toc-properties">Properties</a></li>
+      <li><a href="#random-walk-with-drunken-pauses" id="markdown-toc-random-walk-with-drunken-pauses">Random walk with drunken pauses</a></li>
+      <li><a href="#the-probability-of-capture" id="markdown-toc-the-probability-of-capture">The probability of capture</a></li>
+      <li><a href="#time-to-capture-hitting-times" id="markdown-toc-time-to-capture-hitting-times">Time to capture (hitting times)</a></li>
+      <li><a href="#2d-random-walks" id="markdown-toc-2d-random-walks">2D Random Walks</a></li>
+    </ul>
+  </li>
+  <li><a href="#brownian-movement-continuous-time-and-space" id="markdown-toc-brownian-movement-continuous-time-and-space">Brownian Movement (continuous time and space)</a>    <ul>
+      <li><a href="#how-fast-is-brownian-motion" id="markdown-toc-how-fast-is-brownian-motion">How fast is Brownian motion?</a></li>
+      <li><a href="#the-diffusion-equations" id="markdown-toc-the-diffusion-equations">The Diffusion Equations</a></li>
+      <li><a href="#some-particular-solutions" id="markdown-toc-some-particular-solutions">Some particular solutions</a>        <ul>
+          <li><a href="#initial-condition-is-a-pulse" id="markdown-toc-initial-condition-is-a-pulse">Initial condition is a pulse</a></li>
+          <li><a href="#absorption-and-reflection" id="markdown-toc-absorption-and-reflection">Absorption and Reflection</a></li>
+          <li><a href="#steady-state-solutions" id="markdown-toc-steady-state-solutions">Steady-state solutions</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-09">week 09:</h1>
+
+<h1 class="no_toc" id="random-walks-in-biology">Random Walks in Biology</h1>
+
+<p>For these lectures, I have followed Howard Berg’s book <a href="http://press.princeton.edu/titles/112.html">“Random walks
+in biology”</a>, as well as
+Chapter 7 of Philip Nelson’s book <a href="http://www.physics.upenn.edu/biophys/PMLS/">“Physical models of living
+systems”</a>.</p>
+
+<p>Most molecules inside a cell are subject to thermal fluctuations.
+Organells inside a cell are also in constant motion. Cells (such as
+bacterial colonies) also interact with each other in aqueous
+environments and are subject to constant movement. This week, we are
+going to describe the basic mathematical rules that control this type
+of thermal random movement.</p>
+
+<h2 id="one-dimensional-random-walks-discrete-space-and-time">One dimensional Random Walks (discrete space and time)</h2>
+
+<p>The concept of random walk was first introduced by Karl Pearson in
+1905, and he used random walks to describe how mosquito could infests
+a forest. At about the same time, Albert Einstein introduced Brownian
+movement to describe the movement of a particle of dust in the air.</p>
+
+<p>This situation is the simplest possible example of a diffusion problem.
+Particles start at time \(t=0\) and position \(x = 0\). Particles move
+according to the following rules:</p>
+
+<h3 id="assumptions">Assumptions</h3>
+
+<ul>
+  <li>
+    <p>Each particle moves after a fixed step time \(\tau\) a fixed step distance \(\delta\) to the left or to the right.</p>
+  </li>
+  <li>
+    <p>Each particle steps left or right with probabilities \(p\) and \(q=1-p\) respectively.</p>
+  </li>
+  <li>
+    <p>Particles move independently from each other.</p>
+  </li>
+  <li>
+    <p>Particles don’t get destroyed or created from other particles.</p>
+  </li>
+</ul>
+
+<p>In Figure 1, I show a simulation for 10 particles for different values of the Bernoulli parameter \(p\)
+of stepping into the left. All particles start at time \(t=0\) in position \(x=0\).</p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Figure1.png" style="width:300px;" /> <br />
+   Figure 1. Five examples of 10 particles performing 1D random walks
+   under different Bernoulli parameters.   
+   </div>
+ </div>
+
+<h3 id="the-probability-distribution">The probability distribution</h3>
+
+<p>After time \(t= N\tau\) (or \(N\) steps), a given particle, will be at
+a position \(x=m\delta\).  The probability distribution for one
+particle to be at position \(m\) after \(N\) steps \(P_N(m)\) follows
+a binomial distribution.</p>
+
+<p>If we assume that the particle moved \(l\) steps to the left (and
+\(N-l\) steps to the right), then we have</p>
+
+\[P_N(l) = \frac{N!}{l! (N-l)!} p^{l}\ (1-p)^{N-l}.\]
+
+<p>Using the relationships,</p>
+
+\[m = (N-l) - l = N -2l,\]
+
+<p>or</p>
+
+\[l   = \frac{N - m}{2}\\
+N-l = \frac{N + m}{2}.\]
+
+<p>The probability of the particle finding itself at position \(m\) (\(x
+= m\ \delta\)) after wandering for \(N\) steps (\(t= N\ \tau\)) is</p>
+
+\[\begin{aligned}
+P_N(m)
+&amp;= \frac{N!}{l! (N-l)!} p^{l}\ (1-p)^{N-l}\\
+&amp;= \frac{N!}{\left(\frac{N-m}{2}\right)! \left(\frac{N + m}{2}\right)!} p^{\frac{N-m}{2}}\ (1-p)^{\frac{N+m}{2}}
+\end{aligned}\]
+
+<h3 id="properties">Properties</h3>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Figure2.png" style="width:300px;" /> <br />
+   Figure 2. Three examples of 500 particles performing 1D random walks
+   under different Bernoulli parameters. Top p= 0.4, middle p = 0.5, bottom p = 0.6.
+   For each condition, in the right panels, we display the probability distribution
+   for the displacement at different steps values
+   n = 100, 1,000, 10,000, and 1000,000.
+   </div>
+ </div>
+
+<ul>
+  <li>
+    <p><strong>The mean position is proportional to the number of steps (the elapsed time)</strong></p>
+
+    <p>The mean of \(P_N(m)\) can be calculated as</p>
+
+\[\langle m\rangle = \sum_{m} m\ P_N(m) = \sum_{l} (N - 2l)\ P_N(l) = N - 2 \sum_{l} l\ P_N(l).\]
+
+    <p>And remembering that for a binomial distribution \(\langle l \rangle = N p\),
+then</p>
+  </li>
+</ul>
+
+<div class="boxed">
+  $$
+   \langle m\rangle = N - 2 N p = N\ (1-2p) = N\ (q-p).
+   $$
+</div>
+
+<p>That is, the mean is proportional to the number of steps.</p>
+
+<p>For the particular case that \(p = q =  1/2\), there is no net displacement.
+   As we can observe for the middle graph in Figure 1.
+   When \(p = q\), we say that the random walk has <strong>no drift</strong>.</p>
+
+<ul>
+  <li>
+    <p><strong>The standard deviation of the displacement is proportional to the square root of the elapsed time.</strong></p>
+
+    <p>The variance of \(P_N(m)\) can be calculated easily by remembering
+that \(m = N - 2l\), as</p>
+
+\[Var(m) = 4 Var(l) = 4 N p q.\]
+
+    <p>Then, the standard deviation is given by</p>
+  </li>
+</ul>
+
+<div class="boxed">
+   $$
+   \sigma = \sqrt{Var(m)} = 2 \sqrt{Npq}.
+   $$
+</div>
+
+<p>Thus, the standard deviation grows with the square root of the elapsed time (\(N\)). We can observe such
+   behavior in Figure 2.</p>
+
+<div id="figcontainer">
+      <div id="figure">
+    	<img src="Figure3.png" style="width:300px;" /> <br />
+      Figure 3. The difference equation satisfied by the probability
+      of finding a particle at position m, after time N.
+      </div>
+    </div>
+
+<ul>
+  <li>
+    <p>Very small particles that can take a very large number of steps per
+second (lysozymes in a cell is a good example).  In that case,
+where</p>
+
+\[N\rightarrow \infty \quad N\ p \rightarrow \infty,\]
+
+    <p>the Binomial distribution (by the central
+limit theorem) approximates a <strong>Gaussian distribution</strong>, with mean
+\(\mu\) and standard deviation \(\sigma\) given by</p>
+
+\[\begin{aligned}
+\mu    &amp;= \langle m\rangle = N\ (p-q)\\
+\sigma &amp;= \sqrt{Var(m)} = 2 \sqrt{N p q }.
+\end{aligned}\]
+
+    <p>That is for \(N\) very large,</p>
+
+\[P_N(m\mid p) \rightarrow P(m\mid \mu, \sigma)\ dm = \frac{1}{\sqrt{2\pi \sigma^2}} e^{-(m-\mu)^2/2\sigma^2}\ dm\]
+
+    <p>Where \(P(m\mid \mu, \sigma)\) is the probability of a particle
+moving from m \(m\) to \(m+dm\), where \(dm\) is very small.</p>
+
+    <p>In Figure 2, I show several examples with a large number of
+trajectories, where we observe the behavior of a 1D random walk, and
+the fit to the Gaussian approximation.</p>
+  </li>
+  <li>
+    <p>The random walk has no memory.  The next position depends only on where we are, not on how we got there. That is,
+it is a <strong>Markovian process</strong>.</p>
+
+    <p>The probability \(P_N(m)\) satisfies the equation (see Figure 3).</p>
+  </li>
+</ul>
+
+<div class="boxed">  
+   $$
+   P_N(m) = q\ P_{N-1}(m-1) + p\ P_{N-1}(m+1).
+   $$
+</div>
+
+<p>This is known as the <strong>master equation</strong> of the diffusion  stochastic process.</p>
+
+<h3 id="random-walk-with-drunken-pauses">Random walk with drunken pauses</h3>
+
+<p>A slight modification of the process can be achieve if we assume that \(p+q &lt;1\) and  that the system
+“does nothing” with probability \(z=1-p-q\). This is called a random walk with <em>drunken pauses</em>. The
+master equation with drunken pauses is given by</p>
+
+<div class="boxed">  
+   $$
+   P_N(m) = q\ P_{N-1}(m-1) + p\ P_{N-1}(m+1) + (1-p-q)\ P_{N-1}(m).
+   $$
+</div>
+
+<p>In this case, if \(l\) is the number of left movement, and \(n\) is the number of steps with no movement
+the net displacement to the right \(m\) is given by the number of moves to the right \(N-l-n\) minus the
+number of movements to the left \(l\),</p>
+
+\[m = N - (l+n) - l  = N - 2l - n.\]
+
+<p>The mean value of the displacement is given by</p>
+
+\[\langle m\rangle = N - 2N\ p - N\ z = N (1 - 2p -z) = N (q+z-p - z) = N(q-p)\]
+
+<p>the same as in the case with no drunken pauses.</p>
+
+<p>An the standard deviation of the displacement is given by</p>
+
+\[\begin{aligned}
+Var(m) &amp;= 4 Var(l) +  Var(n)\\
+&amp;= 4 N\ p(1-p) + N\ z (1-z)\\
+&amp;=4 N\ p(q+z) + N\ z(p+q).
+\end{aligned}\]
+
+<h3 id="the-probability-of-capture">The probability of capture</h3>
+
+<p>A random walk starts at \(x = 0\), what is the probability that it
+reaches a given position \(i &gt; 0\)? (Figure 4).</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="Figure4.png" style="width:300px;" /> <br /> Figure 4. For a 1D random walk,  probability of starting at point 0,
+   and reaching another point i &gt; 0.
+   </div>
+</div>
+
+<p>We are going to use the Markov equation to solve this question.</p>
+
+<p>Lets name such probability \(P(i\mid 0)\), for \(i &gt; 0\).  We are
+going to assume that the particle is in a large media, and there is,
+not risk of reaching the end, that is</p>
+
+\[\begin{aligned}
+P(\infty\mid 0) &amp;= 0
+\end{aligned}\]
+
+<p>According to the Markov equation,</p>
+
+\[\begin{aligned}
+P(i\mid 0)
+&amp;= P(i-1\mid 0)\ p((i-1)\rightarrow i) + P(i+1\mid 0)\ p((i+1)\rightarrow i)\\
+&amp;= P(i-1\mid 0)\ q + P(i+1\mid 0)\ p.
+\end{aligned}\]
+
+<p>To find the form of \(P(i\mid 0)\), let’s make an ansatz of the solution.
+I propose</p>
+
+\[P(i\mid 0) = A \beta^{i} + C\]
+
+<p>The no boundary condition is satisfied if</p>
+
+\[C = 0 \quad \mbox{and}\quad 0 &lt; \beta \leq 1.\]
+
+<p>Then we have</p>
+
+\[P(i\mid 0) = A \beta^{i}\quad \mbox{for}\quad 0 &lt; \beta \leq 1.\]
+
+<p>Because the particle <em>is</em> at position zero, trivially \(P(0\mid 0) = 1\),
+then \(A = 1\).</p>
+
+<p>Then we have</p>
+
+\[P(i\mid 0) = \beta^{i}\quad \mbox{for}\quad 0 &lt; \beta \leq 1.\]
+
+<p>Using the Markov equation we can determine the value of \(\beta\)</p>
+
+\[\beta^i = \beta^{i-1} q + \beta^{i+1} p\]
+
+<p>or multiplying by \(\beta^{-i}\)</p>
+
+\[1 = \frac{1}{\beta} q + \beta p,\]
+
+<p>which can be written as the second order equation</p>
+
+\[p\ \beta^2 -\beta + q = 0.\]
+
+<p>The solutions are</p>
+
+\[\beta = \frac{1\pm \sqrt{1-4 p q}}{2p} = \frac{1\pm \sqrt{(p-q)^2}}{2p} = \frac{1\pm (p-q)}{2p},\]
+
+<p>resulting in</p>
+
+\[\begin{aligned}
+\beta &amp;= 1,\\
+\beta &amp;= \frac{q}{p},
+\end{aligned}\]
+
+<p>then</p>
+
+\[P(i\mid 0) = \left\{
+\begin{array}{ll}
+\left(\frac{q}{p}\right)^{i}\quad \mbox{for} &amp; q &lt; p\\
+1&amp; q \geq p
+\end{array}
+\right.\]
+
+<p>In summary:</p>
+<ul>
+  <li>For \(q &gt; p\), the particle will always reach position \(i\)</li>
+  <li>Even  for \(q &lt; p\), there is a chance of reaching \(i\), given by \((q/p)^i\).</li>
+  <li>In the particular case \(p = q = 0.5\) (an unbiased random walk), position \(i\) is always eventually reached.</li>
+</ul>
+
+<p>This mathematical framework applies for problems such as</p>
+<ul>
+  <li>
+    <p>A very small population of individuals, where birth has probability \(q\) and death has probability \(p\).
+Even if there is no net growth (\(q &lt; p\)), the population can reach a given size \(i\) with probability  \((q/p)^i\).</p>
+  </li>
+  <li>
+    <p>A gambler with no capital, where \(q\) is the probability of winning. Even if \(q &lt; 0.5\) there
+is a chance of winning \(i\) amount of money by probability \((q/p)^i\).</p>
+  </li>
+</ul>
+
+<p>Reciprocally, if starting at position \(i\), the probability of reaching \(0\) is (see Figure 4)</p>
+
+\[P(0\mid i) = \left\{
+\begin{array}{ll}
+\left(\frac{p}{q}\right)^{i}\quad \mbox{for} &amp; p &lt; q\\
+1&amp; p \geq q
+\end{array}
+\right.\]
+
+<p>That is,</p>
+<ul>
+  <li>
+    <p>A population of size \(i\), even with a net growth rate \(q &gt; p\), there
+is a chance of extinction given by \((p/q)^i\).</p>
+  </li>
+  <li>
+    <p>A gambler with a capital \(i\), where \(q\) is the probability of winning. Even if \(q &gt; 0.5\) there
+is a chance of loosing all money given by \((p/q)^i\).</p>
+  </li>
+</ul>
+
+<h3 id="time-to-capture-hitting-times">Time to capture (hitting times)</h3>
+
+<p>Ok, so a population can grow to an arbitrary large size even if there
+is not net growth, but <em>how long would that take?</em></p>
+
+<p>The expected time it would take to go in a random walk from position \(i\) to
+position \(j\)    is called a <strong>hitting time</strong> \(h(j\mid i)\).</p>
+
+<p>Using the Markov recursion again</p>
+
+\[h(i\mid 0) = 1 + h(i+1\mid 0)\ p + h(i-1\mid 0)\ q.\]
+
+<p>Using the ansatz,</p>
+
+\[h(i\mid 0) = A\ i\]
+
+<p>we have</p>
+
+\[A\ i = 1 + A\ (i+1)\ p + A\ (i-1)\ q\]
+
+<p>that is</p>
+
+\[A\ i = 1 + A\ i\ (p+q) + A\ p - A\ q\]
+
+<p>remembering that \(p+q=1\),</p>
+
+\[0 = 1 - A\ (q - p)\]
+
+<p>resulting in</p>
+
+\[A = \frac{1}{q-p}\]
+
+<p>The final result for the hitting time is, for \(i &gt; 0\),</p>
+
+\[h(i\mid 0) =\left\{
+\begin{array}{ll}
+\frac{i}{q-p} &amp; \mbox{if}\,  q &gt; p\\
+\frac{i}{p-q} &amp; \mbox{if}\,  q &lt; p
+\end{array}
+\right.\]
+
+<p>This expression for hitting times tells us</p>
+
+<ul>
+  <li>In general, hitting times are not symmetric.</li>
+  <li>For an unbiased random walk (\(q=p\)), it would take infinite time to return to the origin.</li>
+  <li>For a population of size \(i\), the time it would take to
+reach extinction is proportional so the size of the population.</li>
+</ul>
+
+<p>The answer to our leading questions: <em>how long it would take to a population
+to grow to a given size \(M\)  when there is no positive growth, birth rate (\(q\)) &lt; death rate (\(p\))</em> is:</p>
+
+<ul>
+  <li>Time is proportional to the size \(M\).</li>
+  <li>Time is inversely proportional to \(q-p\)</li>
+  <li>It would take infinite time if the rates of birth and death are identical.</li>
+</ul>
+
+<h3 id="2d-random-walks">2D Random Walks</h3>
+
+<p>The assumptions of a 1D random walk can be generalized for two or
+three dimensions.  If we further assume that the movements in the x
+and y directions are independent from each other, and that each
+movement occurs simultaneously in both directions, so the movement is
+always diagonal, then we can simulate a 2D random walk, as
+described in Figure 5.</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="Figure5.png" style="width:300px;" /> <br /> Figure 5. Sampled two dimensional
+   random walks with N= 50,000 steps each and no drift (p=q).
+   </div>
+</div>
+
+<p>In Figure 5, we observe an important property of random walks:
+because it takes a shorter time to explore closer regions, the
+particle tends to explore proximal regions,
+before exploring more distant regions. After one rarer event
+of wandering away, it process to do more local explorations.
+Because the random walk has no memory, there is never a knowledge
+of what has or has not been explored in the past.</p>
+
+<h2 id="brownian-movement-continuous-time-and-space">Brownian Movement (continuous time and space)</h2>
+
+<p>Brownian movement is named after the botanist Robert Brown, who in
+1827 observed the movement of particles trapped inside pollen grains.
+Brownian motion refers to the macroscopic picture that emerges from a
+random walk.</p>
+
+<p>Lysozymes is a protein commonly found in tear, saliva, mucus, egg
+white, cytoplasmic compartments and other secretions. Lysozymes can
+destroy the cell walls of bacteria.  For a lysozymes, we have the
+following approximate parameters</p>
+
+\[\begin{aligned}
+\delta &amp;= \mbox{path between collisions} \approx 10^{-10} cm\\
+\tau   &amp;= \mbox{time between collisions} \approx 10^{-13} sec\\
+\frac{\delta}{\tau} &amp;= \mbox{ thermal velocity} = 10^3 cm/sec.
+\end{aligned}\]
+
+<p>This is a considerable speed. At that speed, the lysozyme would ran a
+marathon in 1.3 hours. The lysozyme takes \(N = \frac{1}{\tau} =
+10^{13}\) steps per second.</p>
+
+<p>When you take the continuous time and space limit, then a random walk
+becomes Brownian movement.</p>
+
+<p>We assume no drift for the movement of lysozymes, and that the particle is
+at position zero at time zero.</p>
+
+<p>The mean displacement of each molecule at time \(t\) is</p>
+
+\[\langle x(t)\rangle = 0\]
+
+<p>And the variance (or mean-square displacement) (\(t=N\tau\) and \(x= m \delta\))</p>
+
+\[\begin{aligned}
+\langle x(t)^2\rangle
+&amp;= Var(m)\ \delta^2 \\
+&amp;= 4 N p\ q\ \delta^2 \\
+&amp;= 4 \left(\frac{t}{\tau}\right) p\ q\ \delta^2 \\
+&amp;= t\ \frac{\delta^2}{\tau}.
+\end{aligned}\]
+
+<p>We introduce a new variable the <strong>Diffusion coefficient</strong></p>
+
+\[D \equiv \frac{1}{2}\frac{\delta^2}{\tau}.\]
+
+<p>The diffusion coefficient characterizes how a particular type of
+particles wanders (migrated). It depends on properties of the
+particle such as size, as well as on external ones such as the
+structure of the media, and the temperature of the media.</p>
+
+<p>Then, the variance is given by</p>
+
+\[\langle x(t)^2\rangle = 2 D t,\]
+
+<p>and the mean-square deviation of the displacement is</p>
+
+\[\sigma = \sqrt{2Dt}.\]
+
+<p>And using the <strong>Gaussian approximation</strong>, the probability of
+finding the particle at position \(x\) at time \(t\) is</p>
+
+<div class="boxed">
+$$
+P(x\mid t) = \frac{1}{(4\pi Dt)^{1/2}} e^{-\frac{x^2}{4Dt}}
+$$
+</div>
+
+<p>This result generalizes for two and three dimensions. Movement in each
+direction is independent from each other, which results in</p>
+
+\[\langle x^2\rangle = \langle y^2\rangle = \langle z^2\rangle = 2D\ t.\]
+
+<p>Introducing \(r^2 = x^2+y^2\) in 2D and \(r^2 = x^2+y^2+z^2\) in 3D, we have</p>
+
+\[P(r\mid t) = \frac{1}{(4\pi Dt)}       e^{-\frac{r^2}{4Dt}} \mbox{ for 2D}\\
+P(r\mid t) = \frac{1}{(4\pi Dt)^{3/2}} e^{-\frac{r^2}{4Dt}} \mbox{ for 3D}\\\]
+
+<h4 id="how-fast-is-brownian-motion">How fast is Brownian motion?</h4>
+
+<p>Well, it depends on how much time you have been wandering.
+While the mean displacement is zero, the mean squared displacement
+grows with time.</p>
+
+\[\begin{aligned}
+\langle x(t)\rangle &amp;= 0\\
+\langle x^2(t)\rangle &amp;= 2D t\\
+\end{aligned}\]
+
+<p>For the lysozyme particles, the Diffusion coefficient takes the value</p>
+
+\[D = \frac{1}{2} \frac{\delta^2}{\tau} = 10^{-6} cm^2/sec.\]
+
+<p>This is a standard value for small particles. Here are some examples
+of the \(\sigma(t) = \sqrt{\langle x^2(t)\rangle}\) obtained at different
+times</p>
+
+\[\sigma = \sqrt{2Dt}\quad \mbox{or}\quad t = \frac{\sigma^2}{2D}\]
+
+<table>
+  <thead>
+    <tr>
+      <th>t</th>
+      <th><em>\(\sqrt{\langle x^2(t)\rangle}\)</em></th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 \(\mu\)</td>
+      <td>\(10^{-4}\) cm</td>
+      <td>size of a bacterium</td>
+    </tr>
+    <tr>
+      <td>1 ms</td>
+      <td>\(10^{-3}\) cm</td>
+      <td>size of a neuron’s cell body</td>
+    </tr>
+    <tr>
+      <td>8 min</td>
+      <td>0.1 mm</td>
+      <td>length of a neuron’s dendrite</td>
+    </tr>
+    <tr>
+      <td>6 days</td>
+      <td>1 cm</td>
+      <td>length of a neuron’s axon</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>In Brownian motion, the mean-square deviation of the displacement grows with the square-root of the time.</strong>
+There is not such thing as a “Diffusion velocity”.</p>
+
+<h3 id="the-diffusion-equations">The Diffusion Equations</h3>
+
+<p>The diffusion equations describe the macroscopic behavior of a random
+walk when both time and space are continuous variables. The diffusion
+equations are also referred to as  <strong>Fick’s equations</strong>.</p>
+
+<p>We are going to derive the diffusion equations in two different ways.
+We assume a random walk process in which \(p = q\).</p>
+
+<p>Using the Markovian condition
+introduced <a href="w09-lecture.html#properties">above</a>, we can rewrite</p>
+
+\[P_{N+1}(m) = \frac{1}{2} P_N(m-1) + \frac{1}{2} P_N(m+1)\]
+
+<p>as</p>
+
+\[P_{N+1}(m) - P_N(m)  = \frac{1}{2} \left[P_N(m-1) +P_N(m+1) - 2 P_N(m)\right]\]
+
+<p>Introducing</p>
+
+\[P(x,t) = P_N(m)\quad \mbox{for}\ x= m\delta, t = N\tau,\]
+
+<p>and remembering that</p>
+
+\[\frac{\delta P(x,t)}{\delta t} = \lim_{\tau\rightarrow 0} \frac{P(x,t+\tau) - P(x,t)}{\tau},\]
+
+<p>and</p>
+
+\[\frac{\delta^2 P(x,t)}{\delta x^2} = \lim_{\delta\rightarrow 0} \frac{P(x-\delta,t) +P(x+\delta,t) - 2 P(x,t)}{\delta^2},\]
+
+<p>then taking the continuous limit \(\tau,\delta\rightarrow 0\), the above equation becomes
+a differential equation</p>
+
+\[\tau\ \frac{\delta P}{\delta t} = \frac{1}{2} \delta^2 \frac{\delta^2 P}{\delta x^2}\]
+
+<p>or</p>
+
+\[\frac{\delta P}{\delta t} = \frac{1}{2} \frac{\delta^2}{\tau} \frac{\delta^2 P}{\delta x^2}\]
+
+<p>which result in the diffusion equation</p>
+
+\[\frac{\delta P}{\delta t} = D \frac{\delta^2 P}{\delta x^2},\]
+
+<p>where \(D\) is the diffusion coefficient.</p>
+
+<p>Let’s also look at a more intuitive derivation given by Berg in
+<a href="http://press.princeton.edu/titles/112.html">Chapter 2</a>.</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="Figure6.png" style="width:300px;" /> <br /> Figure 6. Diffusion for an unbiased random walk.
+   At time t there are N(i) particles at position i and N(i+1) at position i+1. At
+   the next step, half of the N(i) particles have move right to i+1 and half of the N(i+1)
+   particles have moved left to i.
+   </div>
+</div>
+
+<p>At time \(t\), there are \(N_i\) in between i and i+1, and \(N_{i+1}\)
+particles between \(i+1\) and \(i+2\). At time \(t+\tau\), there has
+been a flux of particles, such that half of the \(N_i\) particles have moved
+to \(i+1\), and half of the \(N_{i+1}\) particles have moved left to \(i\).
+The net flux of particles from \(i\) to \(i+1\), named \(M_i\) is given by</p>
+
+\[M_i = \frac{1}{2} N_{i} - \frac{1}{2} N_{i+1}.\]
+
+<p>Equivalently, the change in the number of particles at
+position \(i\) between times \(t\) and \(t+\tau\) 
+is given by the
+particles that left \((-M_i)\) plus the particles that arrived</p>
+
+\[\Delta N_i = -M_{i} + M_{i-1}.\]
+
+<p>Let’s introduce</p>
+
+<ul>
+  <li>
+    <p><strong>Flux</strong>, or particles crossing per unit of time at a given position \(i\)</p>
+
+\[J_i = \frac{M_i}{\tau}.\]
+  </li>
+  <li>
+    <p><strong>Concentration</strong>, or particles per unit length at a given position \(i\)</p>
+
+\[C_i = \frac{N_i}{\delta}.\]
+  </li>
+</ul>
+
+<p>Then the first equation can be re-written as</p>
+
+\[\begin{aligned}
+J_i
+&amp;= -\frac{1}{2\tau}(N_{i+1}-N_i)\\
+&amp;= -\frac{1}{2\tau}\ (\delta C_{i+1}-\delta C_i)\\
+&amp;= -\frac{\delta^2}{2\tau}\ \frac{C_{i+1}-C_i}{\delta}\\
+&amp;= -D\ \frac{\delta C}{\delta x}.
+\end{aligned}\]
+
+<p>Finally,</p>
+
+<div class="boxed">
+$$
+J_i = -D\ \frac{\delta C}{\delta x}
+$$
+</div>
+
+<p>This result is known as the <strong>first Fick equation</strong>.
+It says that the net flux is proportional to the change in concentration. The
+proportionality constant is the diffusion coefficient \(D=\frac{\delta^2}{2\tau}\).</p>
+
+<p>Then the second equation can be re-written as</p>
+
+\[\begin{aligned}
+\frac{\Delta N_i}{\delta} = \frac{-1}{\delta}\ (M_i - M_{i-1})
+\end{aligned}\]
+
+<p>or</p>
+
+\[\begin{aligned}
+\Delta C_i = \frac{-1}{\delta}\ (M_i - M_{i-1}).
+\end{aligned}\]
+
+<p>Multiplying by \(1/\tau\),</p>
+
+\[\begin{aligned}
+\frac{\Delta C_i}{\tau}
+&amp;= \frac{-1}{\delta}\ \frac{M_i - M_{i-1}}{\tau}\\
+&amp;= \frac{-1}{\delta}\ (J_i-J_{i-1}),
+\end{aligned}\]
+
+<p>which in continuous form becomes</p>
+
+<div class="boxed">
+$$
+\begin{aligned}
+\frac{\delta C_i}{\delta t}
+= -\frac{\delta J_i}{\delta x}.
+\end{aligned}
+$$
+</div>
+
+<p>This result is known as the <strong>second Fick equation</strong>.
+It says that a nonuniform distribution of particles in
+space, will redistribute itself in time.</p>
+
+<p>Combining the two equations together we get to what we have seen before,
+that relates the changes in concentration with respect to time, with those
+respect to position</p>
+
+<div class="boxed">
+   $$  
+   \frac{\delta C_i}{\delta t}
+   = D\ \frac{\delta^2 C_i}{\delta^2 x}.
+   $$
+</div>
+
+<h3 id="some-particular-solutions">Some particular solutions</h3>
+
+<p>In order to find solutions for the diffusion differential
+equations, we need to provide some initialization conditions.</p>
+
+<p>Here I present handful of interesting ones.</p>
+
+<h4 id="initial-condition-is-a-pulse">Initial condition is a pulse</h4>
+
+<p>If we assume that \(N\) particles enter the media at time \(t=0\),
+at position \(x = 0\),
+that is</p>
+
+\[C(x, t=0) = \delta(x)\]
+
+<p>then the solution to the diffusion equation (in 1D) is Gaussian,</p>
+
+\[C(x,t) = N\ P(x,t\mid \mu, \sigma) = \frac{N}{\sqrt{4\pi D\ t}} e^{-x^2/4Dt}.\]
+
+<p>I am not going to show how to obtain this result (easier way is by
+doing a Fourier transform), but you can verify that this solution
+indeed satisfies the diffusion equation.</p>
+
+<p>We had obtained this result before, when looking at the microscopic
+random walks for large \(N\).  If you think about it (Figure 1), we
+where injecting independent particles as a given position, at time
+zero, just the initial conditions we proposed here.</p>
+
+<p>This initial condition applies for instance to a micropipette filled
+with fluid to which one injects a drop of a fluorescent dye.
+\(C(x,t)\) tells us how the dye diffuses along the pipette with time.</p>
+
+<ul>
+  <li>
+    <p>The concentration remains highest at the tip (point of injection)
+  as time goes by.</p>
+  </li>
+  <li>
+    <p>But, the actual concentration decays with the square root of the time
+ (if the problem is in one dimension) or with \(1/t^{3/2}\) in 3D.
+ This is a <em>pretty fast</em> decay!</p>
+  </li>
+</ul>
+
+<p>You observe this behavior in the right middle panel of Figure 2 where
+  we plot the concentration as a function of position for different
+  times.  The Gaussian is always center at \(x=0\), but the size of
+  the peak decreases with time (or number of steps).</p>
+
+<h4 id="absorption-and-reflection">Absorption and Reflection</h4>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="Figure7.png" style="width:300px;" /> <br /> Figure 7. 1D unbiased random walks (100) with
+   absorption at position x = -15 and reflection at position x = 15.
+   </div>
+</div>
+
+<p>So far, we have assumed particles come from one source, and can move
+freely with no physical constraints. That is not normally the case.</p>
+
+<ul>
+  <li>A surface at position \(x_0\) that <strong>absorbs</strong> particles is characterized by</li>
+</ul>
+
+\[C(x_0, t) = 0 \mbox{ for all}\quad t.\]
+
+<ul>
+  <li>A surface the <strong>reflects</strong> particles is characterized by</li>
+</ul>
+
+\[J(x_0, t) = 0 \mbox{ for all}\quad t.\]
+
+<h4 id="steady-state-solutions">Steady-state solutions</h4>
+
+<p>Steady-state solutions are those for which the concentration does not depend on
+time</p>
+
+<p>In 1D:</p>
+
+\[\frac{\delta C(x,t)}{\delta t} = 0 \quad \mbox{or}\quad \frac{\delta^2 C(x,t)}{\delta x^2} = 0.\]
+
+<p>Steady state solutions in one dimension include</p>
+
+<div id="figcontainer">
+     <div id="figure">
+     	  <img src="Figure8.png" style="width:300px;" /> <br /> Figure 8. 1D steady-state Diffusion.
+   </div>
+</div>
+
+<ul>
+  <li>
+    <p>The concentration is constant:</p>
+
+\[C(x,t) = C_0,\]
+
+    <p>which results in no flux
+\(J(x,t) = 0.\)</p>
+  </li>
+  <li>
+    <p>The concentration is linear with distance</p>
+
+\[C(x,t) = C_0 +  x \frac{C_L - C_0}{L}.\]
+
+    <p>Then the flux is constant</p>
+
+\[J(x,t) = -D\ \frac{C_L-C_0}{L}.\]
+  </li>
+</ul>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

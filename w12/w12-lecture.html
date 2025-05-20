@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#a-synthetic-toggle-switch-in-e-coli" id="markdown-toc-a-synthetic-toggle-switch-in-e-coli">A synthetic toggle switch in E. coli</a>    <ul>
+      <li><a href="#bistability" id="markdown-toc-bistability">Bistability</a></li>
+    </ul>
+  </li>
+  <li><a href="#a-synthetic-oscillator-in-e-coli" id="markdown-toc-a-synthetic-oscillator-in-e-coli">A synthetic oscillator in E. coli</a>    <ul>
+      <li><a href="#oscillations" id="markdown-toc-oscillations">Oscillations</a></li>
+      <li><a href="#stochastic-simulations-of-the-oscillations" id="markdown-toc-stochastic-simulations-of-the-oscillations">Stochastic simulations of the oscillations</a></li>
+    </ul>
+  </li>
+  <li><a href="#molecular-bases-of-a-circadian-rhythm-in-drosophila" id="markdown-toc-molecular-bases-of-a-circadian-rhythm-in-drosophila">Molecular bases of a circadian rhythm in Drosophila</a>    <ul>
+      <li><a href="#michaelis-menten-kinetics" id="markdown-toc-michaelis-menten-kinetics">Michaelis-Menten kinetics</a></li>
+      <li><a href="#circadian-oscillations" id="markdown-toc-circadian-oscillations">Circadian oscillations</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-12">week 12:</h1>
+
+<h1 class="no_toc" id="genetic-switches">Genetic Switches</h1>
+
+<p>In these lectures, we are going to discuss three different networks of
+interacting biomolecules. Two of them are not part of any naturally
+occurring system, but both have been synthetically designed in
+E. coli. Those are: a toggle switch with two mutually repressing
+molecules that produce bistability <a href="gardner_nature2000.pdf">“Construction of the genetic
+toggle switch in E. coli.”</a> by Gardner <em>et
+al</em>, and an oscillator named the repressilator <a href="repressilator.pdf">“A synthetic oscillatory
+network of transcriptional regulators”</a> by Elowitz
+&amp; Leibler.</p>
+
+<p>The third system is a mathematical modeling of a circadian rhythm
+found in Drosophila <a href="goldbeter.pdf">“A model for circadian oscillations in the
+Drosophila Period protein (PER)”</a> by A. Goldbeter.  An
+interesting resource about circadian rhythms comes from the Howard
+Hughes Medical Institute
+<a href="https://www.biointeractive.org/classroom-resources/drosophila-biological-clock">BioInteractive</a>
+pages.  Some more information about oscillatory systems in biology can
+be found in <a href="../w11/tyson.pdf">“Biomedical oscillations”</a> by J. Tyson.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-toggle.png" style="width:300px;" /> <br />
+     Figure 1. E. coli toggle switch.
+     Figure by Hasty et al., Nat. Rev. Gen. 2001.
+   </div>
+</div>
+
+<h2 id="a-synthetic-toggle-switch-in-e-coli">A synthetic toggle switch in E. coli</h2>
+
+<p>An E. coli toggle switch has been synthesized <a href="gardner_nature2000.pdf">“Construction of the
+genetic toggle switch in E. coli.”</a> by Gardner
+<em>et al.</em></p>
+
+<p>The E. coli toggle switch described in Figures 1 and 2, includes two
+transcription factors lacI and cI that inhibit each other in a double
+negative feedback loop that results in an overall positive feedback
+loop. A GFP reporter has been added to the system, such that high
+concentrations of cI will result in green fluorescence.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="toggle_diagram.png" style="width:300px;" /> <br />
+     Figure 2. Diagram of the E. coli toggle switch.
+   </div>
+</div>
+
+<p>This is the actual plasmid construct that was implemented</p>
+
+<div id="figcontainer">
+ <div id="figure">
+     <img src="toggle_construct.png" style="width:300px;" /> <br />
+     Figure 3 from Gradner et al., Nature 403, 2000. Promoters
+     are boxes with arrows. T1/T2 are terminators. R1 generically
+     represents a repressor gene (cI in our case). RSB are ribosomal
+     binding sites.
+   </div>
+</div>
+
+<p>The toggle system can be manipulated in two different ways:</p>
+
+<ul>
+  <li>
+    <p>Adding IPTG (Isopropyl \(\beta\)-D-1-triogalactopyranoside), a
+ molecule that inhibits lacI, thus reducing the negative control of
+ lacI over cI. Thus, high concentrations of IPTG would result in more
+ green fluorescence.</p>
+  </li>
+  <li>
+    <p>Raising the temperature. The gene cI is a temperature mutant, such that
+ as the temperature increases, cI degrades faster (\(\delta_2\) increases).
+Thus, a temperature spike should result in lower fluorescence.</p>
+  </li>
+</ul>
+
+<p>Introducing the notation</p>
+
+\[\begin{aligned}
+U &amp;= lacI\\
+V &amp;= cI, gfp\\
+I &amp;= IPTG
+\end{aligned}\]
+
+<p>The kinetic equations of the E. coli switch are given by</p>
+
+\[\begin{aligned}
+\frac{d U}{d t} &amp;= \alpha_1 \frac{K^n}{K^n+V^n} - \delta_1 U\\
+\frac{d V}{d t} &amp;= \alpha_2 \frac{K^n}{K^n+U^n} - \delta_2 V\\
+\end{aligned}\]
+
+<p>where we have introduced one Hill coefficient \(n\), and parameter
+\(K\) to describe both negative feedback loops. \(\alpha_1\) and
+\(\alpha_2\) are compound parameters that take into account both the
+mechanics of transcription and translation. \(\delta_1\) and
+\(\delta_2\) take into account the effects of degradation and
+dissipation.</p>
+
+<p>Adding the inhibitor IPTG would results in a modification of the
+kinetic equation of V=cI,gfp as</p>
+
+\[\begin{aligned}
+\frac{d V}{d t} &amp;= \alpha_2 \frac{K^n}{K^n+\left(\frac{U}{(1+I/K_m)^m}\right)^n} - \delta_2 V\\
+\end{aligned}\]
+
+<p>where another Hill coefficient \(m\), and parameter \(K_m\) has been introduced.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-toggle_nullcline.png" style="width:300px;" /> <br />
+     Figure 3. Nullclines and two stable fixed points. Parameters are a1 =a2 =2, d1=d2=1,n=4,K=1.
+   </div>
+</div>
+
+<h3 id="bistability">Bistability</h3>
+
+<p>A double negative feedback loop (as we already saw in a previous homework) results in
+a system with bistability. The conditions for bistability are</p>
+
+<ul>
+  <li>High connectivity \(n &gt;1\).</li>
+  <li>The \(\alpha_1\) and \(\alpha_2\) parameters have similar magnitude.</li>
+  <li>The degradation parameters \(\delta_1\) and \(\delta_2\) have similar magnitude.</li>
+  <li>Only moderate inhibition by IPTG.</li>
+</ul>
+
+<p>Using parameters \(\alpha_1=\alpha_2 = 2\), \(\delta_1=\delta_2 = 1\),
+\(n=4\), \(K=1\), the study of the nullclines tells us that the system
+has 3 fixed points, two of them stable (Figure 3).  Of the two stable
+fixed points, one corresponds to high concentrations of cI and GFP,
+thus high fluorescence, that the other one corresponds to high
+concentrations lacI and low fluorescence. Using two different initial
+conditions, we can reach each of the two stable steady states (or
+fixed points), see Figure 3.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-toggle_bifurcation.png" style="width:300px;" /> <br />
+     Figure 4. Examples of conditions under which the E. coli toggle
+     becomes mono stable.
+   </div>
+</div>
+
+<p>If the two \(\alpha\) parameters or the two \(\delta\) parameters have
+very different magnitudes, the system has only one steady state. The
+same happens if the Hill coefficient is \(n=1\), that is no
+cooperativity. Figure 4 shows the nullclines under conditions that
+remove bistability. Different values  of the parameters result on
+the system changing the number of steady states,
+that phenomenon is called a
+bifurcation.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-toggle_bistable.png" style="width:300px;" /> <br />
+     Figure 5. Theoretical switch between the two stable steady states
+     induced by either adding an inhibitor (IPTG) or by raising the temperature.
+     Corresponding experimental data in Figures 4, and 5 of Gardner et al.
+   </div>
+</div>
+
+<p>One interesting result of this work is that they made the system
+switch from one steady state (high fluorescence) to another (low
+fluorescence) by using an inhibitor of lacI, and by raising the
+temperature, which increases the clearance rate of cI, see Figure 5.</p>
+
+<p>For a system in the low steady state, a pulse of IPTG is added
+between times 10 and 20.  After the inhibitor is removed at time 20,
+the system remains in the high steady state. At time 40, the
+temperature is raised which brings the system to the low steady
+state. After the temperature is brought back to normal at time 50, the
+system remains in the low steady state.  Those theoretical predictions
+were well confirmed experimentally, see Figure 4 and 5 in <a href="gardner_nature2000.pdf">Gardner et
+al.</a></p>
+
+<h2 id="a-synthetic-oscillator-in-e-coli">A synthetic oscillator in E. coli</h2>
+
+<p>In <a href="repressilator.pdf">“A synthetic oscillatory network of transcriptional
+regulators”</a> by Elowitz &amp; Leibler, constructed a
+synthetic oscillator in E. coli that then named <strong>the
+repressilator</strong>. Although imperfect, this is a seminal work.</p>
+
+<p>The repressilator uses three transcription factors (TF) that form a
+negative feedback loop in which one TF inhibits the production
+of the next TF in a cyclic way (see Figure 6). The repressilator uses
+two of the same TFs used for the toggle (lacI and cI), but there is a third
+TF (TetR) that is placed in between the two.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-repressilator.png" style="width:300px;" /> <br />
+     Figure 6. The E. coli repressilator.
+     Figure by Hasty et al., Nat. Rev. Gen. 2001.
+   </div>
+</div>
+
+<p>The diagrammatic representation of the repressilator is given in
+Figure 7.  The output of the repressilator is given by a GFP reporter
+driven by the same promoter as cI, thus inhibited by TetR.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="repressilator_diagram.png" style="width:300px;" /> <br />
+     Figure 7. Kinetic diagram of the E.coli repressilator.
+   </div>
+</div>
+
+<p>This is the actual construct that was implemented</p>
+
+<div id="figcontainer">
+ <div id="figure">
+     <img src="repressilator_construct.png" style="width:300px;" /> <br />
+     Figure 1a from Elowitz &amp; Liebler, Nature 1999.
+   </div>
+</div>
+
+<p>Introducing the notation</p>
+
+\[\begin{aligned}
+\mbox{gene}\quad     &amp;\quad  \mbox{protein}\\
+m1 = lacI\quad       &amp;\quad p1 = LacI\\
+m2 = tetR\quad       &amp;\quad p2 = TetT\\
+m3 = cI\quad         &amp;\quad  p3 = CI
+\end{aligned}\]
+
+<p>The kinetic equations of the E. coli repressilator are given by</p>
+
+\[\begin{aligned}
+\frac{d m_1}{d t} &amp;= \alpha_0 + \alpha_1 \frac{K^n}{K^n+p_3^n} - \gamma m_1\\
+\frac{d m_2}{d t} &amp;= \alpha_0 + \alpha_2 \frac{K^n}{K^n+p_1^n} - \gamma m_2\\
+\frac{d m_3}{d t} &amp;= \alpha_0 + \alpha_3 \frac{K^n}{K^n+p_2^n} - \gamma m_3\\
+\frac{d p_1}{d t} &amp;= \beta m_1 - \delta p_1\\
+\frac{d p_2}{d t} &amp;= \beta m_2 - \delta p_2\\
+\frac{d p_3}{d t} &amp;= \beta m_3 - \delta p_3\\
+\end{aligned}\]
+
+<h3 id="oscillations">Oscillations</h3>
+
+<p>Using numerical simulations, we can determine the value of the parameters under which the
+repressilator observes oscillations. Here is a typical set of parameters under which
+there is not one stable steady state but oscillations (Figure 8).</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-repressilator_plot1.png" style="width:300px;" /> <br />
+     Figure 8. Oscillatory behavior of the E. coli repressilator.
+   </div>
+</div>
+
+\[\begin{aligned}
+\alpha_0 &amp;= 0\\
+\alpha_1 = \alpha_2 = \alpha_3 &amp;= 100\\
+\gamma &amp;= 1\\
+\beta = \delta = 5\\
+n &amp;= 2
+\end{aligned}\]
+
+<p>The conditions under which the repressilator shows oscillations are</p>
+
+<ul>
+  <li>High connectivity \(n &gt;1\).</li>
+  <li>\(\alpha_i\) parameters of similar magnitude.</li>
+  <li>The effect of the constitutive promoter \(\alpha_0\) has to be small.</li>
+  <li>The period of the oscillations is determined by the
+ protein stability (the period increases as \(\delta\) decreases).</li>
+</ul>
+
+<p>In Figure 9, we show a few examples testing the impact of changing different
+parameters in the oscillatory nature of the model.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-repressilator_plot2.png" style="width:300px;" /> <br />
+     Figure 9. Several examples where the repressilator does not produce oscillations:
+     (a) due to no cooperativity, (b) due to the effect of the non-inducible promoter,
+     (c) &amp; (d) due to a weak inducible promoter. Two examples that alter the
+     period of the oscillations: (e) more stable proteins (small parameter d)
+     increases the period of the oscillations. (f) Stronger inducible promoters
+     increase the period of the oscillations as well. Altered parameters for each
+     situation appear inside a box.
+   </div>
+</div>
+
+<p>In their experimental implementation, Elowitz &amp; Leibler found a lot of
+variability in the period and amplitude of the oscillations both as a
+function of time for one single cell and from cell to cell. Only about
+40% of cells had oscillations.</p>
+
+<p>In the homework, we will investigate another more stable and robust
+E. coli synthetic oscillator.</p>
+
+<h3 id="stochastic-simulations-of-the-oscillations">Stochastic simulations of the oscillations</h3>
+
+<p>The experimental implementation of the repressilator showed large
+variability in the oscillation both as a function of time (Figure 2
+from <a href="repressilator.pdf">paper</a>), as well as from cell to cell (Figure
+3 from <a href="repressilator.pdf">paper</a>). The authors wondered how much of
+that observed variability could be explained by the stochastic nature
+of the problem which is ignored by the deterministic solutions we have
+obtained so far.</p>
+
+<p>As we studied in <a href="../w10/w10-lecture.html">w10</a>, we can implement the Gillespie algorithm
+to describe the stochastic behavior of the repressilator.</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="Fig-repressilator_stochastic.png" style="width:300px;" /> <br />
+     Figure 10. Stochastic simulations of the repressilator. Four independent
+     stochastic simulations are depicted.
+     Parameters are: a0 =0 a1=a2=a3=100, g=1,b=d=5,n=2.
+     In Cyan, we depict the continuous solution.
+   </div>
+</div>
+
+<p>The 15 reactions of the repressilator are</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><em>r</em></th>
+      <th><em>reaction</em></th>
+      <th>propensity \(w_r\)</th>
+      <th>\(\eta\)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1,2,3</td>
+      <td>\(\emptyset \overset{\alpha_0}{\longrightarrow}  m_i\)</td>
+      <td>\(\alpha_0\)</td>
+      <td>\(\eta(m_i)=+1\)</td>
+    </tr>
+    <tr>
+      <td>4,5,6</td>
+      <td>\(\emptyset \overset{\alpha_i}{\longrightarrow}  m_i\)</td>
+      <td>\(\alpha_i \frac{1}{1+p_j^n}\)</td>
+      <td>\(\eta(m_i)=+1\)</td>
+    </tr>
+    <tr>
+      <td>7,8,9</td>
+      <td>\(m_i       \overset{\gamma}{\longrightarrow}  \emptyset\)</td>
+      <td>\(\gamma\ m_i\)</td>
+      <td>\(\eta(m_i)=-1\)</td>
+    </tr>
+    <tr>
+      <td>10,11,12</td>
+      <td>\(m_i       \overset{\beta}{\longrightarrow}  m_i + p_i\)</td>
+      <td>\(\beta\ m_i\)</td>
+      <td>\(\eta(p_i)=+1\)</td>
+    </tr>
+    <tr>
+      <td>13,14,15</td>
+      <td>\(p_i       \overset{\delta}{\longrightarrow}  \emptyset\)</td>
+      <td>\(\delta\ p_i\)</td>
+      <td>\(\eta(p_i)=-1\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where \(i=\{lacI, tetR, cI\}\) corresponds to \(j=\{CI, LacI, TetR\}\).</p>
+
+<p>I have implemented the Gillespie algorithm for this stochastic
+process, using the same default parameters introduced above.  The
+system does show large amount of variability in the shape and period
+of the oscillations for different stochastic simulations (see Figure
+10).</p>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="rhythms.png" style="width:300px;" /> <br />
+     Figure 11. Time scale of different biological rhythms. Figure from 'Biomedical oscillations' by J. J. Tyson.
+   </div>
+</div>
+
+<h2 id="molecular-bases-of-a-circadian-rhythm-in-drosophila">Molecular bases of a circadian rhythm in Drosophila</h2>
+
+<p>There are many oscillatory processes (rhythms) in living organisms
+(Figure 11).  Amongst them are circadian rhythms that usually have a 24h
+period. Circadian rhythms are
+driven by the external cues of day and night on Earth, but they also
+can persist under constant illumination conditions.  The molecular
+mechanisms behind circadian rhythms have been recently discovered 
+by Michael Rosbash, Michael Young, Jeff Hall and others circa 1999.</p>
+
+<p>As you can discover in this movie about the <a href="https://www.biointeractive.org/classroom-resources/drosophila-biological-clock">drosophila circadian
+rhythm</a>,
+a large number of players are involved in the establishment of the
+drosophila circadian rhythm. There is one gene in particular, periodic
+(<em>per</em>), that is at the heart of the process. In this work, <a href="goldbeter.pdf">“A model
+for circadian oscillations in the Drosophila Period protein
+(PER)”</a> by A. Goldbeter, a theoretical mechanism is
+established that supports the experimental observations about the
+<em>per</em> gene and PER protein.</p>
+
+<p>The observations are</p>
+
+<ul>
+  <li>
+    <p>The concentration of the  <em>per</em> RNA varies periodically.</p>
+  </li>
+  <li>
+    <p>The concentrations of the protein product PER also oscillates,
+ but the oscillations follow those of the RNA by a few hours.</p>
+  </li>
+  <li>
+    <p>Only those cells in which PER is overproduced lose periodicity.</p>
+  </li>
+  <li>
+    <p>The protein product PER is multi-phosphorylated.</p>
+  </li>
+</ul>
+
+<p>The model proposed is as follows (Figure 12)</p>
+
+<ul>
+  <li>
+    <p>PER (\(P_0\)) is produced in the cytoplasm from <em>per</em> RNA (\(R\)).</p>
+  </li>
+  <li>
+    <p>PER is phosphorylated several times while in the cytoplasm (\(P_1\), \(P_2\),…).</p>
+  </li>
+  <li>
+    <p>A \(2-\)phosphorylated form of cytoplasmatic PER (\(P_2\)) re-enters the nucleus (\(P_n\)).</p>
+  </li>
+  <li>
+    <p>Nuclear PER (\(P_n\)) interacts with the <em>per</em> promoter through a negative feedback loop, repressing
+ the production of more <em>per</em> RNA.</p>
+  </li>
+  <li>
+    <p>The <em>per</em> RNA is very abundant, thus is not consumed in the production of PER.</p>
+  </li>
+  <li>
+    <p>Only the cytoplasmic phosphorylated form of the protein \(P_2\) is degraded.</p>
+  </li>
+</ul>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="per_diagram.png" style="width:300px;" /> <br />
+     Figure 12. Scheme of circadian oscillations in
+     PER protein (P) and per RNA (R), based on Goldbeter, 1995.
+   </div>
+</div>
+
+<p>According to this mechanism, the simplest kinetic equations of the system are (assume \(N=2\))</p>
+
+\[\begin{aligned}
+\frac{d R}{d t}     &amp;= \alpha\ \frac{K^m}{K^m+{P_n}^m} - v\ R\\
+\frac{d P_0}{d t}   &amp;= k_0 R - k_1^+ P_0 + k^-_1 P_1 \\
+\frac{d P_1}{d t}   &amp;= k_1^+ P_0 - k_1^- P_1 + k^-_2 P_2 - k^+_2 P_1 \\
+\frac{d P_2}{d t}   &amp;= k_2^+ P_1 - k_2^- P_2 + k_n^- P_n- k^+_n P_2 - k_d P_2 \\
+\frac{d P_n}{d t}   &amp;= k^+_n P_2 - k_n^- P_n - k_d P_n\\
+\end{aligned}\]
+
+<p>where we have modeled the negative feedback loop by a Hill function of constant
+\(K\) and coefficient \(m\).</p>
+
+<p>In Goldbeter’s <a href="goldbeter.pdf">work</a>, the phosphorylation and
+de-phosphorilation reactions as well as the degradation of the per RNA
+and the PER protein are proposed to be enzymatic reactions, thus
+instead of the simple (exponentially decaying) form that I introduced
+above, they are assumed to follow the Michaelis-Menten enzymatic
+behavior. Let’s us take a short detour to look at the kinetics of
+enzymatic reactions under Michaelis-Menten conditions.</p>
+
+<p>In Goldbeter’s work, only the phosphorylated \(P_2\) form of PER, but not the nuclear
+form \(P_n\), can decay. In this implementation, we generalize so that both
+forms of the PER can decay enzymatically with the same rate constants.</p>
+
+<h3 id="michaelis-menten-kinetics">Michaelis-Menten kinetics</h3>
+
+<p>The phosphorylation/de-phosphorylation reactions do not occur in isolation, but are
+mediated by an enzyme, and usually requires the formation of an intermediate compound
+\(C\) (Figure 13)</p>
+
+\[P_0 + E  \underset{k^-}{\overset{k^+}{\rightleftharpoons}} C \overset{\alpha}{\longrightarrow} P_1 + E.\]
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="michaelis-menten.png" style="width:300px;" /> <br />
+     Figure 13. Michaelis-Menten mechanism for an enzyme-mediated reaction.
+   </div>
+</div>
+
+<p>The kinetic equations are given by</p>
+
+\[\begin{aligned}
+\frac{d C}{d t} &amp;= k^+ P_0\ E - k^- C - \alpha C.\\
+\frac{d P_1}{d t} &amp;= \alpha\ C
+\end{aligned}\]
+
+<p>We are going to assume that the reversible reaction that forms the complex \(C\) is much faster
+than the dissociation into the new species \(P_1\),</p>
+
+<p>that is</p>
+
+\[k^+,k^- &gt;&gt; \alpha\]
+
+<p>in that case, we expect that the concentration of \(C\) reaches steady state much faster
+than that of \(P_1\),</p>
+
+\[\begin{aligned}
+\frac{d C}{d t} &amp;\approx k^+ P_0\ E - k^- C.\\
+\end{aligned}\]
+
+<p>Because the total concentration of the enzyme \(E_T\) is the sum of the concentration of
+being bound and unbound, we have \(E_T = E+C\), so at steady state</p>
+
+\[k^+ P_0\ (E_T - C) - k^- C = 0\]
+
+<p>or</p>
+
+\[C = E_T\ \frac{P_0}{\frac{k^-}{k^+} + P_0}\]
+
+<p>then the kinetic equation for the product \(P_1\) is a function of the substrate \(P_0\) given
+by</p>
+
+\[\frac{d P_1}{d t} = \alpha\ E_T\ \frac{P_0}{K_M + P_0}\]
+
+<p>where the Michaelis-Menten constant is given by</p>
+
+\[K_M = \frac{k^-}{k^+}.\]
+
+<h3 id="circadian-oscillations">Circadian oscillations</h3>
+
+<p>The Drosophila <em>per</em>/PER kinetic equations introducing the
+Michaelis-Menten enzymatic nature of four
+phosphorylation/de-phosphorylation reactions (with Michaelis-Menten
+constants \(K1,K2,K3, K4\)) and the two <em>per</em> RNA and PER decays
+(characterized by Michaelis-Menten constants \(Km\) and \(Kd\)
+respectively) are</p>
+
+\[\begin{aligned}
+\frac{d R}{d t}     &amp;= \alpha\ \frac{K^m}{K^m+{P_n}^m} - v\ \frac{R}{Km+R}\\
+\frac{d P_0}{d t}   &amp;= k_0\ R - k_1^+ \frac{P_0}{K1+P_0} + k^-_1 \frac{P_1}{K2+P_1} \\
+\frac{d P_1}{d t}   &amp;= k_1^+ \frac{P_0}{K1+P_0} - k_1^- \frac{P_1}{K2+P_1} - k^+_2 \frac{P_1}{K3+P_1} + k^-_2 \frac{P_2}{K4+P_2} \\
+\frac{d P_2}{d t}   &amp;= k_2^+ \frac{P_1}{K3+P_1} - k_2^- \frac{P_2}{K4+P_2} + k_n^- P_n- k^+_n P_2 - k_d \frac{P_2}{Kd+P_2} \\
+\frac{d P_n}{d t}   &amp;= k^+_n P_2 - k_n^- P_n - k_d \frac{P_n}{Kd+P_n}\\
+\end{aligned}\]
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="per_plot1.png" style="width:300px;" /> <br />
+     Figure 14. Oscillations of per RNA and PER protein according to the Goldbeter model.
+   </div>
+</div>
+
+<p>The values of the parameters are not known in principle. They are mostly set by hand,
+by trial and error by requesting that the system has some of the observed features
+of the oscillator:</p>
+
+<ul>
+  <li>Oscillations have a period of approximately 24 hours.</li>
+  <li>The peak of the protein occurs a few hours before the peak of the RNA.</li>
+</ul>
+
+<p>The set of parameters below does produce large and stable oscillations
+both for the per RNA and the PER protein (see Figure 14).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>parameter</strong></th>
+      <th><strong>Description</strong></th>
+      <th><strong>value</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\alpha\)</td>
+      <td><em>per</em> RNA production</td>
+      <td>0.5  nM/h</td>
+    </tr>
+    <tr>
+      <td>\(v\)</td>
+      <td><em>per</em> RNA degradation</td>
+      <td>0.3  nM/h</td>
+    </tr>
+    <tr>
+      <td>\(m\)</td>
+      <td>cooperativity coefficient of PER binding</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>\(K\)</td>
+      <td>Hill constant</td>
+      <td>2 nM</td>
+    </tr>
+    <tr>
+      <td>\(k_0\)</td>
+      <td>translation rate</td>
+      <td>2 nM/h</td>
+    </tr>
+    <tr>
+      <td>\(k_1^+ = k_2^+\)</td>
+      <td>PER phosphorylation rate</td>
+      <td>6 nM/h</td>
+    </tr>
+    <tr>
+      <td>\(k_1^- = k_2^-\)</td>
+      <td>PER de-phosphorylation rate</td>
+      <td>3 nM/h</td>
+    </tr>
+    <tr>
+      <td>\(k_n^+\)</td>
+      <td>PER nuclear import rate</td>
+      <td>2 nM/h</td>
+    </tr>
+    <tr>
+      <td>\(k_n^-\)</td>
+      <td>PER nuclear export rate</td>
+      <td>1 nM/h</td>
+    </tr>
+    <tr>
+      <td>\(k_d\)</td>
+      <td>PER degradation rate</td>
+      <td>0.4 nM/h</td>
+    </tr>
+    <tr>
+      <td>\(Km\)</td>
+      <td>Michaelis constant for RNA degradation</td>
+      <td>0.2  nM</td>
+    </tr>
+    <tr>
+      <td>\(Kd\)</td>
+      <td>Michaelis constant for PER degradation</td>
+      <td>0.1  nM</td>
+    </tr>
+    <tr>
+      <td>\(K1=K3\)</td>
+      <td>Michaelis constant for PER phosphorylation</td>
+      <td>1.5  nM</td>
+    </tr>
+    <tr>
+      <td>\(K2=K4\)</td>
+      <td>Michaelis constant for PER de-phosphorylation</td>
+      <td>2.0  nM</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="figcontainer">
+   <div id="figure">
+     <img src="per_plot2.png" style="width:300px;" /> <br />
+     Figure 15. Behavior of the goldbeter model as a function of
+     the PER decay constant. In this version of the model both P2 and Pn
+     are allowed to decay enzymatically.
+   </div>
+</div>
+
+<p>The oscillations in Figure 14 are robust and stable. An important
+parameter controlling the nature of the oscillations is the PER decay
+constant \(k_d\). Small values of \(k_d\) results in a weakly
+oscillating system with dampened oscillations. The oscillations
+become stronger as \(k_d\) increases, passed some value of \(k_d\) the
+system becomes non-oscillatory (see Figure 15). If only the \(P_2\)
+form of the PER protein is allowed to degrade (as in the original
+Goldbeter model), oscillations are favored, and the range of values of
+\(k_d\) that result in an oscillatory behavior is larger.</p>
+
+<p>As we saw in the <a href="https://www.biointeractive.org/classroom-resources/drosophila-biological-clock">video</a>, there are many
+more players in the system. PER forms a complex with protein timeless
+(TIM).  The transcription of TIM is co-regulated with that of PER, and
+the light dependence of the oscillatory cycle results from the fact
+that TIM is degraded by light. Theoretical models describing the
+interactions between PER and TIM have been constructed, see for
+instance <a href="leloup-goldbeter.pdf">“A model for the circadian rhythm in Drosophila
+incorporating the formation of a complex between the PER and TIM
+proteins”</a> by Leloup &amp;
+Goldbeter, 1999.</p>
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>

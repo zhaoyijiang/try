@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset=utf-8 />
+  <title>  MCB111 Mathematics in Biology </title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<body>
+  <div id="main">
+ 
+    <header>
+      <h3> MCB111: Mathematics in Biology (Fall 2024) </h3>
+    </header>
+ 
+    <nav role="navigation"> 
+      <a href="/">Home</a>  | <a href="/schedule.html">Schedule</a> | <a href="https://canvas.harvard.edu/courses/139673/">Canvas</a> | <a href="https://piazza.com/harvard/fall2024/mcb111">Piazza</a> | <a href="/downloads/MCB111-syllabus.pdf">Syllabus [PDF]</a> | <a href="/downloads/StudentHours_2024.pdf">Student hours schedule [PDF]</a> <br/>
+      
+      Lectures:
+      <a href="/w00/w00-lecture.html"> w00 </a> |
+      <a href="/w01/w01-lecture.html"> w01 </a> |
+      <a href="/w02/w02-lecture.html"> w02 </a> |
+      <a href="/w03/w03-lecture.html"> w03 </a> |
+      <a href="/w04/w04-lecture.html"> w04 </a> |
+      <a href="/w05/w05-lecture.html"> w05 </a> |
+      <a href="/w06/w06-lecture.html"> w06 </a> |
+      <a href="/w07/w07-lecture.html"> w07 </a> |
+      <a href="/w08/w08-lecture.html"> w08 </a> |
+      <a href="/w09/w09-lecture.html"> w09 </a> |
+      <a href="/w10/w10-lecture.html"> w10 </a> |
+      <a href="/w11/w11-lecture.html"> w11 </a> |
+      <a href="/w12/w12-lecture.html"> w12 </a> |
+      <a href="/w13/w13-lecture.html"> w13 </a> |
+      <br/>
+      
+      inclass-notes:
+      <a href="/w02/w02-notes-lecture1.pdf"> w02-l1 </a> |
+      <a href="/w02/w02-notes-lecture2.pdf"> w02-l2 </a> |
+      <a href="/w03/w03-notes-lecture1.pdf"> w03-l1 </a> |
+      <a href="/w04/w04-notes-l1.pdf"> w04-l1 </a> |
+      <a href="/w05/w05-notes-lectures.pdf"> w05 </a> |
+      <a href="/w06/w06-notes-l1.pdf"> w06-l1 </a> |
+      <a href="/w06/w06-notes-l2.pdf"> w06-l2 </a> |
+      <a href="/w07/w07-notes-l1.pdf"> w07-l1 </a> |
+      <a href="/w07/w07-notes-l2.pdf"> w07-l2 </a> |
+      <a href="/w08/w08-notes-l1.pdf"> w08-l1 </a> |
+      <a href="/w08/w08-notes-l2.pdf"> w08-l2 </a> |
+      <a href="/w09/w09-notes-l1.pdf"> w09-l1 </a> |
+      <a href="/w09/w09-notes-l2.pdf"> w09-l2 </a> |
+      <a href="/w10/w10-notes-l1.pdf"> w10-l1 </a> |
+      <a href="/w10/w10-notes-l2.pdf"> w10-l2 </a> |
+      <a href="/w10/w10-notes-l3.pdf"> w10-l3 </a> |
+       <br/>
+      
+      inclass-code: 
+      <a href="/w00/w00-inclass.html"> w00 </a> |
+      <a href="/w01/w01-sections_er_2024_complete.html"> w01 </a> |
+      <a href="/w02/w02-lecture1.html"> w02-l1 </a> |
+      <a href="/w02/w02-lecture2.html"> w02-l2 </a> |
+      <a href="/w03/w03-lecture-code.ipynb"> w03 </a> |
+      <a href="/w04/w04-lecture-code.ipynb"> w04 </a> |
+      <a href="/w13/w13-code.ipynb"> w13 </a> |
+      <br/>
+      
+      Sections: 
+      <a href="/w01/w01-sections.html"> w01 </a> |
+      <a href="/w02/w02-sections.html"> w02 </a> |
+      <a href="/w03/w03-sections_NH_2024.ipynb"> w03 </a> |
+      <a href="/w04/w04-sections_2024.ipynb"> w04 </a> |
+      <a href="/w05/w05-sections_2024.ipynb"> w05 </a> |
+      <a href="/w08/w08-sections_2024.ipynb"> w08 </a> |
+      <a href="/w09/w09-sections_2024-ER.ipynb"> w09 </a> |
+      <a href="/w10/w10-sections_2024-NH.ipynb"> w10 </a> |
+      <a href="/w11/w11-sections_2024_er.ipynb"> w11 </a> |
+     <br/>
+      
+      
+      Homeworks:
+      <a href="/w00/w00-homework.html"> w00 </a> |
+      <a href="/w01/w01-homework.html"> w01 </a> |
+      <a href="/w02/w02-homework.html"> w02 </a> |
+      <a href="/w03/w03-homework.html"> w03 </a> |
+      <a href="/w04/w04-homework.html"> w04 </a> |
+      <a href="/w05/w05-homework.html"> w05 </a> |
+      <a href="/w06/w06-homework.html"> w06 </a> |
+      <a href="/w07/w07-homework.html"> w07 </a> |
+      <a href="/w08/w08-homework.html"> w08 </a> |
+      <a href="/w09/w09-homework.html"> w09 </a> |
+      <a href="/w10/w10-homework.html"> w10 </a> |
+      <a href="/w11/w11-homework.html"> w11 </a> |
+      <a href="/w13/w13-homework.html"> w13 </a> |
+     <br/>
+      
+      Hints: 
+      <a href="/w00/w00-hints.html"> w00 </a> |
+      <br/>
+      
+
+      Final:
+      <br/>
+ 
+     </nav>
+    
+    <br/>
+ 
+    <ul id="markdown-toc">
+  <li><a href="#the-biological-example" id="markdown-toc-the-biological-example">The biological example</a></li>
+  <li><a href="#why-you-want-to-optimize-the-parameters" id="markdown-toc-why-you-want-to-optimize-the-parameters">Why you want to optimize the parameters</a></li>
+  <li><a href="#maximum-likelihood-parameter-estimation-for-complete-data" id="markdown-toc-maximum-likelihood-parameter-estimation-for-complete-data">Maximum likelihood: parameter estimation for complete data</a>    <ul>
+      <li><a href="#maximum-likelihood-derivation" id="markdown-toc-maximum-likelihood-derivation">Maximum likelihood derivation</a></li>
+    </ul>
+  </li>
+  <li><a href="#expectation-maximization-parameter-estimation-for-incomplete-data" id="markdown-toc-expectation-maximization-parameter-estimation-for-incomplete-data">Expectation Maximization: parameter estimation for incomplete data</a>    <ul>
+      <li><a href="#em-optimization-of-other-conditional-probabilities" id="markdown-toc-em-optimization-of-other-conditional-probabilities">EM optimization of other conditional probabilities</a></li>
+    </ul>
+  </li>
+  <li><a href="#why-does-expectation-maximization-work" id="markdown-toc-why-does-expectation-maximization-work">Why does Expectation-Maximization work?</a>    <ul>
+      <li><a href="#a-graphical-description-of-how-em-works" id="markdown-toc-a-graphical-description-of-how-em-works">A graphical description of how EM works</a></li>
+      <li><a href="#em-as-a-variational-method" id="markdown-toc-em-as-a-variational-method">EM as a Variational Method</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 class="no_toc" id="week-07">week 07:</h1>
+
+<h1 class="no_toc" id="probabilistic-models-and-expectation-maximization">Probabilistic models and Expectation Maximization</h1>
+
+<p>In this lecture, we are going to investigate the problem of training
+a probabilistic graphical model or Bayesian network. We will describe
+the method of Maximum likelihood used when we have completely annotated
+data, and the method of Expectation-Maximization used when
+the available data for training is incompletely labeled.</p>
+
+<p>For this week’s lectures, if you do not read anything else, I
+recommend the article <a href="nbt1406.pdf">“What is the expectation maximization
+algorithm?” by Do &amp; Batzoglou</a>.</p>
+
+<p>I am going to rephrase the contents of that article using our
+example of the HMM model
+described by <a href="http://genome.cshlp.org/content/21/4/610.full">Andolfatto <em>et
+al.</em></a> to assign
+ancestry to chromosomal segments.</p>
+
+<h2 id="the-biological-example">The biological example</h2>
+
+<p>We are continuing with the biological problem that we introduced in
+<a href="../w06/w06-lecture.html">week06</a>. <a href="http://genome.cshlp.org/content/21/4/610.full">Andolfatto <em>et
+al.</em></a> introduced an HMM to assign
+ancestry to male fly backcrosses for which we know the genomic sequence,
+and have mapped reads for each backcross individual.</p>
+
+<p>The experimental design allows two ancestral states \(Z=\{AB, BB\}\)</p>
+
+<ul>
+  <li>
+    <p>Heterozygous for <em>Drosophila Simulans</em> (A=Dsim) and <em>Drosophila Sechellia</em> (B=Dsec)</p>
+
+\[Z = AB\]
+  </li>
+  <li>
+    <p>Homozygous for <em>Drosophila Sechellia (B=Dsec)</em></p>
+  </li>
+</ul>
+
+\[Z=BB\]
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="HMM.png" style="width:300px;" /> <br />
+   Figure 1. The ancestry HMM.	   
+   </div>
+ </div>
+
+<p>The HMM is described in Figure 1. The transition probabilities from
+being at ancestry \(Z_i\) at locus \(i\) given the ancestry at the
+previous locus \(Z_{i-1}\) are parameterized by one Bernoulli
+parameter \(p\),</p>
+
+\[P(Z_i\mid Z_{i-1}) =
+\left\{
+\begin{array}{cc}
+p   &amp; \mbox{for}\ Z_i = Z_{i-1}\\
+1-p &amp; \mbox{for}\ Z_i \neq Z_{i-1}
+\end{array}
+\right.\]
+
+<p>In their paper, <a href="http://genome.cshlp.org/content/21/4/610.full">Andolfatto <em>et
+al.</em></a> assigned the
+value of \(p\), based what it is already known about recombination in
+Drosophila species. Mainly, that one should expected on average one
+recombination event from chromosome. That means that in some
+individuals you will find one, in others 0, in others 2, maybe a few
+rare cases with three or more, such that the average will be close to
+one.</p>
+
+<p>If there is on average one break per chromosome, then the average
+length of a region without breakpoints should be \(L/2\) for a
+chromosome of length \(L\), and because the mean of a geometric
+distribution of Bernoulli parameter \(p\) is \(p/(1-p)\), that
+determines the parameter to take the value</p>
+
+\[p = \frac{L/2}{L/2+1}.\]
+
+<p>For some real numbers in Drosophila,</p>
+
+<ul>
+  <li>Chromosome 2L, length = 23.01 million bases</li>
+</ul>
+
+\[p = 0.99999991\]
+
+<ul>
+  <li>Chromosome 4, is much shorter length = 1.35 million bases</li>
+</ul>
+
+\[p = 0.99999852\]
+
+<p><strong>Does such small difference in the values of \(p\) make any difference in the
+inference results?</strong></p>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="Figure2.png" style="width:300px;" /> <br />
+   Figure 2. Analysis of a chromosomal
+   fragment with 4 breakpoints indicated on top with an arrow.  Posterior probabilities identifying
+   the breakpoints are depicted for three different values of the
+   Bernoulli parameter for the HMM, p: (A) Assumes that one breakpoint is expected.
+   (B) Assumes 4 breakpoints
+   (the actual number in the segment). (C) Assumes that 90 breaks are
+   expected. (D) The Bernoulli parameter is set to 0.8 , which should produce on average 2,500 breakpoints.
+   </div>
+ </div>
+
+<h2 id="why-you-want-to-optimize-the-parameters">Why you want to optimize the parameters</h2>
+
+<p>Let’s now concentrate in our re-implementation of the Andolfatto HMM which we did last week.
+Because our implementation uses some slow scripting programming language (python, perl, matlab…),
+we probably cannot deal with very long sequences, so let’s assume a chromosome of length
+\(L=10,000\).</p>
+
+<p>Because this is a generative model, I have the advantage that I can generate the data what otherwise
+you will have to painfully collect in your experiments. For this example, I have introduced
+4 breakpoints.</p>
+
+<p>I ran the decoding algorithm of <a href="../w06/w06-lecture.html">week 06</a>,
+for four different values of the Bernoulli parameter, that correspond
+to a expected number of breakpoints of \(1, 4, 90, 2500\)
+respectively.  Results are given in Figure 2.</p>
+
+<p>Panel (B) corresponds to the optimal value of \(p\), which identifies
+the 4 breakpoints, and only those breakpoints.  In panel (A), a value
+of \(p\) the would result in fewer expected breakpoints, misses two of
+them, the two that are very closed together. In panel (C) you observe
+how as your parameter lowers the number of predicted breakpoints
+(false positives) increases. Finally, panel (D) shows how sensitive
+the results are to changes in the value of the parameters.</p>
+
+<p>So, if you are now convinced that the value of the parameters
+matter, sometimes when the differences are tiny,
+<strong>how do we obtain the optimal value of the parameters?</strong></p>
+
+<h2 id="maximum-likelihood-parameter-estimation-for-complete-data">Maximum likelihood: parameter estimation for complete data</h2>
+
+<p>In many cases, you have a number of examples in which the data is
+actually labeled. In our case, that would mean, a collection
+individuals (male flies) with mapped reads for which we know the
+ancestry for all loci (see Figure 3).  We call this data set of
+labeled data <strong>the training set</strong>.</p>
+
+<p>Using the training set, you can calculate the number of times (counts) that
+each possible transition occurs at each locus \(i\),</p>
+
+\[C_i(AB\rightarrow AB)\\
+C_i(BB\rightarrow BB)\\
+C_i(AB\rightarrow BB)\\
+C_i(BB\rightarrow AB).\]
+
+<p>After collecting all the counts for all loci \(i\) and for all individuals \(1\leq m \leq M\),
+we can calculate the frequency of the parameter \(p\) as</p>
+
+\[p = \frac{\sum_m\sum_i C^m_i(AB\rightarrow AB) + \sum_m\sum_i C^m_i(BB\rightarrow BB)}
+{[\sum_m\sum_i C^m_i(AB\rightarrow AB)+\sum_m\sum_i C^m_i(BB\rightarrow BB)]+[\sum_m\sum_i C^m_i(AB\rightarrow BB)+\sum_m\sum_i C^m_i(BB\rightarrow AB)]}\]
+
+<p>This intuitive estimation of the value of the parameters is called the
+<strong>maximum likelihood</strong> estimation.</p>
+
+<p>The reason is because those estimates are the value of the parameters
+that maximize the probability of the data in the training set.</p>
+
+<h3 id="maximum-likelihood-derivation">Maximum likelihood derivation</h3>
+
+<p>In order to apply ML, we need to have a set of \(M\) individuals for
+which we know both the reads and the ancestry for a given genomic loci
+of length \(L\). That is, the data is</p>
+
+\[D = \{(X^1_1 Z^1_1,\ldots,X^1_L Z^1_L),\ldots ,(X^M_1 Z^M_1,\ldots,X^M_L Z^M_L)\}.\]
+
+<p>The probability of the data, given the model that depends on the parameters \(p\) is</p>
+
+\[P(D\mid p) = \prod_{m=1}^M P(X^m_1\ldots X^m_L\mid p).\]
+
+<p>Introducing the log probability \(L^m(X^m_1\ldots X^m_L\mid p) = \log P(X^m_1\ldots X^m_L\mid p)\),
+the log probability of the data \(D\) given the parameter \(p\) is given by</p>
+
+\[L(D\mid p) = \log P(D\mid p) = \sum_{i=1}^M L^m(X^m_1\ldots X^m_L\mid p).\]
+
+<p>The ML value of the parameter named \(p^\ast\), is given by</p>
+
+\[\left.\frac{d L(X^m_1\ldots X^m_L)}{d p}\right|_{p^\ast} = 0.\]
+
+<p>Notice that under uniform prior hypothesis for \(p\), the ML value, \(p\ast\), is also the value that
+maximizes the posterior probability of the parameter \(p\).</p>
+
+<p>We all generality, we can write</p>
+
+\[P(D\mid p) = \prod_{m=1}^M\prod_{i=1}^L p^{C^m_i(BB\rightarrow BB) +
+C^m_i(AB\rightarrow AB)}(1-p)^{C^m_i(BB\rightarrow AB) + C^m_i(AB\rightarrow BB)}.\]
+
+<p>Then</p>
+
+\[L(D\mid p) = \log(p) \sum_m\sum_i C^m_i(BB\rightarrow BB) + C^m_i(AB\rightarrow AB) +
+\log(1-p) \sum_m\sum_i C^m_i(BB\rightarrow AB) + C^m_i(AB\rightarrow BB).\]
+
+<p>The derivative respect to \(p\), is given by</p>
+
+\[\frac{d L(D\mid p)}{d p} =
+\frac{1}{p}  \sum_m\sum_i \left[C^m_i(BB\rightarrow BB) + C^m_i(AB\rightarrow AB)\right] -
+\frac{1}{1-p}\sum_m\sum_i \left[C^m_i(BB\rightarrow AB) + C^m_i(AB\rightarrow BB)\right].\]
+
+<p>The ML condition results in</p>
+
+\[\frac{1}{p^\ast}  \sum_m\sum_i \left[C^m_i(BB\rightarrow BB) + C^m_i(AB\rightarrow AB)\right] =
+\frac{1}{1-p^\ast}\sum_m\sum_i \left[C^m_i(BB\rightarrow AB) + C^m_i(AB\rightarrow BB)\right].\]
+
+<p>That is, the expression we proposed above</p>
+
+\[p^\ast = \frac{\sum_m\sum_i\left[ C^m_i(AB\rightarrow AB) + C^m_i(BB\rightarrow BB)\right]}
+{\sum_m\sum_i \left[\ C^m_i(AB\rightarrow AB) + C^m_i(BB\rightarrow BB)\right] +
+ \sum_m\sum_i \left[\ C^m_i(AB\rightarrow BB) + C^m_i(BB\rightarrow AB)\right]}\]
+
+<p>This results generalizes when there is more than one parameters. If
+the transition from ancestry \(AB\) could have \(k\) possible values
+\(p(Z_k\mid AB)\), such that \(\sum_k P(Z_k\mid AB) = 1\), the ML
+estimate from labeled data is given by the the fraction of the number
+of times that the transition \(AB\rightarrow Z_k\) occurs in the
+data (\(n(AB\rightarrow Z_k)\)),</p>
+
+\[P(Z_k\mid AB) = \frac{n(AB\rightarrow Z_k)}{\sum_{k^\prime} n(AB\rightarrow Z_{k^\prime})}.\]
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="EM.png" style="width:300px;" /> <br />
+   Figure 3. A re-implementation of Do &amp; Batzoglou's Figure 1 
+   comparing Maximum likelihood training in the presence of labeled data,
+   versus Expectation Maximization training when the data is not labeled.
+   In ML estimation, the parameters are given by their frequency in the training set.
+   In EM estimation, there is an iterative process. At each EM cycle, all possible
+   labelings of the data are considered each weighted by their expected counts
+   (the E-step). Using all those expected counts
+   new ML parameters are estimated. The recursion ends when parameters converge.
+   </div>
+ </div>
+
+<h2 id="expectation-maximization-parameter-estimation-for-incomplete-data">Expectation Maximization: parameter estimation for incomplete data</h2>
+
+<p>But most of the time, we do not have labeled data, you may have mapped
+reads for many different male flies, but not the corresponding
+labeling of the ancestry.</p>
+
+<p>In this situation, you can use a iterative method named Expectation
+Maximization EM). For the particular example of an HMM, as it is our
+case here, it also goes by the name of the <a href="https://en.wikipedia.org/wiki/Baum–Welch_algorithm">Baum-Welch
+algorithm.</a></p>
+
+<p>The EM algorithm has the following steps (Figure 3)</p>
+
+<ul>
+  <li>
+    <p><em>start</em></p>
+
+    <p>One starts with some arbitrary value of the parameters.</p>
+
+    <p>For our case with one parameter</p>
+
+\[p^{(0)}.\]
+  </li>
+  <li>
+    <p><em>E-step (expectation)</em></p>
+
+    <p>In this step you calculate the expected number of times each of the
+transitions is used in each locus, assuming that you sum to all other
+possible values of the ancestry for all other loci. That is</p>
+
+\[\begin{aligned}
+E_i(AB\rightarrow AB)   &amp;= P(X_i\ldots X_{i-1}, X_i Z_i = AB, X_{i+1} Z_{i+1} = AB, X_{i+2}\ldots X_{L}\mid p^{(0)})\\
+E_i(BB\rightarrow BB)   &amp;= P(X_i\ldots X_{i-1}, X_i Z_i = BB, X_{i+1} Z_{i+1} = BB, X_{i+2}\ldots X_{L}\mid p^{(0)})\\
+E_i(AB\rightarrow BB)   &amp;= P(X_i\ldots X_{i-1}, X_i Z_i = AB, X_{i+1} Z_{i+1} = BB, X_{i+2}\ldots X_{L}\mid p^{(0)})\\
+E_i(BB\rightarrow AB)   &amp;= P(X_i\ldots X_{i-1}, X_i Z_i = BB, X_{i+1} Z_{i+1} = AB, X_{i+2}\ldots X_{L}\mid p^{(0)})\\
+\end{aligned}\]
+
+    <p>These <em>expected counts</em>  are the equivalent of the counts in the case of having labeled data.</p>
+
+    <p>The expected counts are easily calculated from the forward and backward probabilities calculated using
+the forward and backward algorithms introduced in <a href="../w06/w06-lecture.html">week 06</a> for each individual \(m\),</p>
+
+\[\begin{aligned}
+E^m_i(AB\rightarrow AB)   &amp;= f_{i,m}^{AB}\ p^{(0)}\ P(X^m_{i+1}\mid AB)\     b_{i+1,m}^{AB}\\
+E^m_i(BB\rightarrow BB)   &amp;= f_{i,m}^{BB}\ p^{(0)}\ P(X^m_{i+1}\mid BB)\     b_{i+1,m}^{BB}\\
+E^m_i(AB\rightarrow BB)   &amp;= f_{i,m}^{AB}\ (1-p^{(0)})\ P(X^m_{i+1}\mid BB)\ b_{i+1,m}^{BB}\\
+E^m_i(BB\rightarrow AB)   &amp;= f_{i,m}^{BB}\ (1-p^{(0)})\ P(X^m_{i+1}\mid AB)\ b_{i+1,m}^{AB}\\
+\end{aligned}\]
+  </li>
+  <li>
+    <p><em>M-step (maximization)</em></p>
+
+\[p^{(1)} = \frac{\sum_m\sum_i E^m_i(AB\rightarrow AB) + \sum_m\sum_i E^m_i(BB\rightarrow BB)}
+{[\sum_m\sum_i E^m_i(AB\rightarrow AB)+\sum_m\sum_i E^m_i(BB\rightarrow BB)]+[\sum_m\sum_i E^m_i(AB\rightarrow BB)+\sum_m\sum_i E^m_i(BB\rightarrow AB)]}\]
+
+    <p>The new \(p^{(1)}\) are used  for a new round of the <em>E-step</em></p>
+  </li>
+  <li>
+    <p><em>end</em></p>
+
+    <p>We iterate the E-step/M-step until convergence, that is \(p^{(n)} \approx p^{(n+1)}\).</p>
+  </li>
+</ul>
+
+<h3 id="em-optimization-of-other-conditional-probabilities">EM optimization of other conditional probabilities</h3>
+
+<p>We could also use the EM algorithm to optimize the conditional
+probabilities \(P(X\mid AB)\) and \(P(X \mid BB)\).</p>
+
+<p>We can introduce,</p>
+
+\[\begin{aligned}
+E_i(X\mid AB) = E_{i-1}(AB\rightarrow AB)+E_{i-1}(BB\rightarrow AB)
+&amp;= P(X_{i}=X\mid AB)\ \left[ \ p^{(0)}\ f_{i-1}^{AB}\ b_{i}^{AB} + \ (1-p^{(0)})\ f_{i-1}^{BB}\ b_{i}^{AB}\right]\\
+E_i(X\mid BB) = E_{i-1}(BB\rightarrow BB)+E_{i-1}(AB\rightarrow BB)
+&amp;= P(X_{i}=X\mid BB)\ \left[ \ p^{(0)}\ f_{i-1}^{BB}\ b_{i}^{BB} + \ (1-p^{(0)})\ f_{i-1}^{AB}\ b_{i}^{BB}\right].
+\end{aligned}\]
+
+<p>Then, the EM algorithm  for optimizing \(P(X\mid AB)\) and \(P(X \mid BB)\) is as,</p>
+
+<ul>
+  <li>
+    <p><em>E-step (expectation)</em></p>
+
+    <p>Calculate the expected values</p>
+
+\[\begin{aligned}
+ E^m_i(X\mid AB) &amp;= P^{(0)}(X^m_{i}=X\mid AB)\ \left[ \ p^{(0)}\ f_{i-1,m}^{AB}\ b_{i,m}^{AB} + \ (1-p^{(0)})\ f_{i-1,m}^{BB}\ b_{i,m}^{AB}\right] \\
+ E^m_i(X\mid BB) &amp;= P^{(0)}(X^m_{i}=X\mid BB)\ \left[ \ p^{(0)}\ f_{i-1,m}^{BB}\ b_{i,m}^{BB} + \ (1-p^{(0)})\ f_{i-1,m}^{AB}\ b_{i,m}^{BB}\right].
+ \end{aligned}\]
+  </li>
+  <li>
+    <p><em>M-step (maximization)</em></p>
+
+    <p>Update \(P(X\mid AB)\) and \(P(X \mid BB)\) as follows</p>
+
+\[\begin{aligned}
+ P^{(1)}(X\mid AB) &amp;=
+ \frac{\sum_i\sum_m E^m_{i}(X\mid AB) }
+ {\sum_{X}\sum_i\sum_m\ E^m_{i}(X\mid AB)}
+ \\
+ P^{(1)}(X\mid BB) &amp;=
+ \frac{\sum_i\sum_m\ E^m_{i}(X\mid BB)}
+ {\sum_X \sum_i\sum_m\ E^m_{i}(X\mid BB)}.
+ \end{aligned}\]
+  </li>
+</ul>
+
+<div id="figcontainer">
+   <div id="figure">
+	<img src="EM-fig.png" style="width:300px;" /> <br />
+   Figure 4. The probability distribution is approximated at each step (n)
+   by a function G(n) guaranteed to be a lower bound for the actual distribution.
+   In the E-step, we use the current value of the parameters to find the "expected values".
+   In the M-step, we use those expectations in order to find new values for the parameters
+   that optimize the lower bound function G(n).
+   </div>
+ </div>
+
+<h2 id="why-does-expectation-maximization-work">Why does Expectation-Maximization work?</h2>
+
+<h3 id="a-graphical-description-of-how-em-works">A graphical description of how EM works</h3>
+
+<p>In the EM algorithm, we alternate between two actions, see Figure 4.</p>
+
+<ul>
+  <li>
+    <p>In the E-step, given a set of values for the parameters,
+we obtain expected counts for al possible labels.</p>
+  </li>
+  <li>
+    <p>In the M-step, we use those expected counts to obtain new
+estimations for the parameters. The M-step can be justified as the new
+values of the parameters are the maximum-likelihood values for a
+function related to our full probability distribution by being a lower
+bound.</p>
+  </li>
+</ul>
+
+<h3 id="em-as-a-variational-method">EM as a Variational Method</h3>
+
+<p>The EM algorithm belongs to the class of <strong>variant methods</strong> in which
+the optimal value for a function as calculated using a different but
+related (<em>variational</em>) objective function.</p>
+
+<p>Let’s use</p>
+
+\[D = \{X^m_1\ldots X^m_L\}_{m=1}^M\]
+
+<p>to describe the observed data (in out case the collection of mapped
+reads for all loci for all male backcross flies).</p>
+
+<p>Let’s use</p>
+
+\[Z = \{Z^m_1\ldots Z^m_L\}_{m=1}^M\]
+
+<p>to refer to the unobserved lated data (in our case the ancestry
+for all loci for all male backcross flies).</p>
+
+<p>And let’s use \(p\) to refer to a
+vector of unknown parameters (in our case just one)</p>
+
+\[p = P(AB\mid AB) = P(BB\mid BB).\]
+
+<p>We can always write by marginalization, for \(z\in Z\)</p>
+
+\[P(D\mid p) = \sum_{z\in Z}  P(D, z\mid p).\]
+
+<p>For any arbitrary probability distribution on the unobserved data \(Q(z)\)</p>
+
+\[\log P(D\mid p) =\log \sum_z P(D, z\mid p) = \log \sum_z Q(z)\frac{P(D, z\mid p)}{Q(z)}\]
+
+<p>such that \(Q(z)\) is a probability distribution in \(Z\), that is
+\(\sum_z Q(z) = 1\). The <em>variant</em> distribution \(Q\) could also be
+conditioned on the data \(X\) or even a completely different set of
+parameters \(\theta\)!, but not on the parameters \(p\) that we are
+trying to optimize.</p>
+
+<p>Using <a href="https://en.wikipedia.org/wiki/Jensen%27s_inequality">Jensen’s
+inequality</a>, we
+can write</p>
+
+\[\log P(D\mid p) \geq \sum_z Q(z\mid D) \log \frac{P(D, z\mid p)}{Q(z\mid D)}.\]
+
+<p>Then two expressions become equal for \(Q(z\mid D) = P(z\mid D, p)\).</p>
+
+<p>In the EM algorithm, we are going to select a different variant distribution for each
+iteration \(n\), where the parameters take values \(p^{(n)}\)</p>
+
+\[Q_{n}(z\mid D) = P(z\mid D, p^{(n)})\]
+
+<p>Notice that these variant distribution is exactly the quantities \(E\)
+that we calculate in the E-step of each iteration.</p>
+
+<p>Introduce</p>
+
+\[G_n(D\mid p) = \sum_z P(z\mid D, p^{(n)}) \log \frac{P(D, z\mid p)}{P(z\mid D, p^{(n)})}\]
+
+<p>Then</p>
+
+\[\log P(D\mid p) \geq  G_n(D\mid  p)\]
+
+<p>Then</p>
+
+\[argmax_p  \log P(D\mid p) \geq argmax_p G_n(D\mid p)\]
+
+<p>and maximizing \(G_n(D\mid p)\) one each iteration results in a
+improvement for \(\log P(D\mid p).\)</p>
+
+<p><strong>In summary</strong>, EM consists of optimizing the function</p>
+
+\[logP(D\mid p)\]
+
+<p>by optimizing at each EM iteration the <strong>variant</strong> function</p>
+
+\[G_n(D\mid p) = \sum_z P(z\mid D, p^{(n)}) \log \frac{P(D, z\mid p)}{P(z\mid D, p^{(n)})}\]
+
+<p>which has the following properties (see Figure 4)</p>
+
+<ul>
+  <li>
+    <p>The variant function is a lower bound to the actual function we want to optimize:</p>
+
+\[G_n(D\mid p) \leq \log P(D\mid p)\]
+  </li>
+  <li>
+    <p>The two functions take the same value when the parameters are set to the current estimate \(p^{(n)}\):</p>
+
+\[G_n(D\mid p=p^{(n)}) = \log P(D\mid p=p^{(n)})\]
+  </li>
+  <li>
+    <p>In addition, optimizing \(G_n(D\mid p)\) is equivalent to optimizing the function:</p>
+
+\[argmax_p G_n(D\mid p) = argmax_p \sum_z P(z\mid D, p^{(n)}) \log  P(D, z\mid p)\]
+
+    <p>as the term \(-\sum_z P(z\mid D, p^{(n)}) \log P(z\mid D, p^{(n)})\) is independent of the parameters.</p>
+  </li>
+</ul>
+
+<p>Thus, at each iteration in the EM algorithm:</p>
+
+<ul>
+  <li>
+    <p><strong>E-step</strong></p>
+
+    <p>Calculate the \(P(z\mid D, p^{(n)})\) for all possible realizations of the unobserved variables.</p>
+
+    <p>In our particular example, we calculate the
+\(E^m_{i}(AB\rightarrow AB\mid p^{(n)})\), \(E^m_{i}(AB\rightarrow
+BB\mid p^{(n)})\), \(E^m_{i}(BB\rightarrow AB\mid p^{(n)})\), and
+\(E^m_{i}(BB\rightarrow BB\mid p^{(n)})\).</p>
+  </li>
+  <li>
+    <p><strong>M-step</strong></p>
+
+    <p>Optimize in \(p\) \(\sum_z P(z\mid D, p^{(n)}) \log P(D, z\mid
+p)\), that is the probability of the date \(D\) for each possible
+completion of the unobserved data, each completions weighted by its
+corresponding posterior probabilities.</p>
+  </li>
+</ul>
+
+<p>A similar proof can be found in the supplemental materials of <a href="nbt1406-S1.pdf">Do &amp; Batzoglou</a>.</p>
+
+<p><strong>The EM algorithm is guarantee to find local maxima.</strong> You would like to re-start the algorithm
+from different starting points and compare results.</p>
+
+
+ 
+    <footer>
+      <hr>
+      <p>
+        <a href="http://rivaslab.org">Elena Rivas</a> | Harvard University
+    </footer>
+ 
+  </div>
+</body>
+</html>
